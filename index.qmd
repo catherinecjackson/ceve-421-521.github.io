@@ -1,0 +1,27 @@
+---
+title: "{{< var course.number >}}: {{< var course.title >}}"
+format: html
+---
+
+This is the course website for the {{< var course.semester >}} edition of {{< var course.number >}}, {{< var course.title >}}, taught at [{{< var university.name >}}]({{< var university.url >}}) by [{{< var instructor.name_no_title >}}]({{< var instructor.url >}}).
+
+## Course Information
+
+- Details on the class and course policies are provided in the [syllabus](syllabus.html).
+- Topics, slides, assignments, and other materials can be found in the [schedule](schedule.html).
+
+## Instructor
+
+{{< var instructor.name >}} is an assistant professor of Civil and Environmental Engineering at Rice University.
+His research integrates Earth science, data science, and decision science to address challenges in climate risk management, water resources, and energy system resilience.
+He also teaches CEVE 421/521 (Climate Risk Management).
+
+## Software Tools
+
+- This course will use the [Julia](https://julialang.org) programming language. Julia is a modern, free, open source language designed for scientific computing.
+- No prior knowledge of Julia (or other programming languages) is required. We will cover all required material in labs.
+- Assignments will be distributed using [GitHub Classroom](https://github.com).
+
+## Acknowledgements
+
+The layout for this site was inspired by and draws from Vivek Srikrishnan's [Environmental Systems Analysis](https://github.com/vsrikrish/environmental-systems-analysis/) course at Cornell, [STA 210](https://sta210-s22.github.io/website/) at Duke University, and [Andrew Heiss's](https://www.andrewheiss.com/teaching/) course materials at Georgia State.

@@ -1,0 +1,22 @@
+---
+title: "Coding Resources"
+execute:
+    error: true
+    warning: true
+format: html
+---
+
+## Plots in Julia
+
+* `Plots.jl` [useful tips](https://docs.juliaplots.org/latest/basics/#Useful-Tips)
+* `Plots.jl` [examples](https://docs.juliaplots.org/latest/generated/gr/)
+* [Plot attributes](http://docs.juliaplots.org/latest/generated/attributes_plot/)
+* [Axis attributes](http://docs.juliaplots.org/latest/generated/attributes_axis/#Axis)
+* [Color names](http://juliagraphics.github.io/Colors.jl/stable/namedcolors/)## Demos
+
+## GitHub Resources
+
+* [Git Basics](https://www.theodinproject.com/lessons/foundations-git-basics) from The Odin Project.
+* [Learn Git Branching](https://learngitbranching.js.org/): An interactive, visual tutorial to how git works.
+* [Version Control](https://missing.csail.mit.edu/2020/version-control/) from MIT's "CS: Your Missing Semester" course.
+* [Git and GitHub for Poets](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV): YouTube playlist covering the basics of git and GitHub.

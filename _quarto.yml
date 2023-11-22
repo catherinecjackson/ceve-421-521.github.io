@@ -1,0 +1,127 @@
+project:
+  type: website
+  preview:
+    port: 4200
+
+website:
+  page-navigation: true
+  title: "{{< var course.number >}} - {{< var course.semester >}}"
+  description: "Homepage for {{< var course.number >}}, {{< var course.title >}}, at Rice University, {{< var course.semester >}}."
+  site-url: https://ceve543.github.io/
+  repo-url: https://www.github.com/ceve543/ceve543.github.io
+  repo-actions: [edit, issue]
+  open-graph: true
+
+  page-footer:
+    right: |
+      Made with [Julia](https://julialang.org) and [Quarto](https://quarto.org/)<br>
+      [View the source on {{< fa brands github >}} GitHub]({{< var course.github >}})
+
+    left: |
+      Content {{< fa copyright >}} {{< var course.copyright_year >}}  by [{{< var instructor.name_no_title >}}]({{< var instructor.url >}}).
+      All content licensed under a {{< fa brands creative-commons >}}
+      {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-nc >}}
+      [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+    center: |
+      **Page still under construction.**
+
+  sidebar:
+    style: docked
+    align: center
+    logo: _assets/logos/Rice_Logo_280_Blue.svg
+    title: "{{< var course.number >}}"
+    search: true
+    tools: 
+      - icon: github
+        href: "{{var course.github}}"
+        text: "Github Repository"
+      - icon: journal-check
+        href: https://canvas.rice.edu
+        text: "Canvas"
+    collapse-level: 1
+    contents:
+      - href: index.qmd
+        text: Overview
+      - href: syllabus.qmd
+        text: Syllabus
+      - href: schedule.qmd
+        text: Lectures
+      - section: "Resources"
+        contents:
+          - text: Installation
+            href: resources/setup.qmd
+          - href: resources/julia-basics.qmd
+            text: Julia Basics
+          - text: Code Resources
+            href: resources/learn-more.qmd
+          - text: Typesetting Mathematics
+            href: resources/latex.qmd
+
+echo: true
+
+format:
+  # customization for HTML documents (i.e., the website)
+  html:
+    theme: 
+      [simplex, _assets/sass/theme.scss]
+    mainfont: "Atkinson Hyperlegible"
+    copy-code: true
+    code-overflow: wrap
+    toc: true
+    anchor-sections: true
+    callout-appearance: simple
+    reference-location: document
+    citations-hover: true
+    code-annotations: hover
+    html-math-method: mathjax
+    include-in-header: mathjax-config.html
+    date-format: "ddd., MMM. D"
+  
+  # customization for RevealJS (i.e., the slides)
+  revealjs:
+    
+    # page numbering
+    slide-number: c/t
+    show-slide-number: all
+
+    # page layout and transition
+    center-title-slide: true
+    width: 1280
+    height: 720
+    transition: none
+    toc: false
+    history: false
+    theme: _assets/sass/slides.scss
+    menu:
+        numbers: true
+    
+    # code, links, and refs
+    link-external-newwindow: true
+    citations-hover: true
+    code-annotations: below
+    
+    # math and code
+    html-math-method: mathjax
+    include-in-header: slides/mathjax-config.html
+    date-format: "ddd., MMM. D"
+
+# references
+bibliography: references.bib
+csl: _assets/references/american-geophysical-union.csl
+
+# code to use
+jupyter: julia-1.9
+
+# execution options
+execute:
+  freeze: auto  
+  cache: true
+
+# reveal-auto-agenda extension
+filters:
+  - reveal-auto-agenda
+
+auto-agenda:
+  bullets: numbered
+  heading: Today

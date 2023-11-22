@@ -1,0 +1,274 @@
+---
+format:
+  html:
+    toc-depth: 3
+    title: Syllabus
+  pdf:
+    documentclass: article
+    fontsize: 11pt
+    geometry:
+      - margin=1in  
+    include-in-header:
+      text: |
+        \renewcommand\toprule[2]\relax
+        \renewcommand\bottomrule[2]\relax
+    filters:
+      - _assets/filters/columns-to-tables.lua
+    title: "{{< var course.number >}} ({{< var course.title >}}) Syllabus"
+    subtitle: "{{< var course.semester >}}"
+---
+
+## Course Description
+
+Climate variability and change pose threats to lives and livelihoods.
+These climate risks can be managed through the design and operation of infrastructure systems, as well as through disaster response and recovery.
+Decisions about how to develop and choose risk management strategies are often based on pure vibes, but occasionally rigorous quantitative analyses that make use of scientific information can inform them (we will focus on these cases).
+These analyses involve integrating knowledge from multiple disciplines to balance competing goals (objectives) under uncertainty.
+
+In this course, you will learn climate science, uncertainty quantification, and decision analysis methods to support climate risk management.
+You will be assigned readings for every class that cover both methods and applications, and will work collaboratively to implement key concepts through programming problem sets.
+Active class participation is required.
+Methods covered include scenario analysis, exploratory modeling, cost-benefit analysis, single- and multi-objective policy search, reinforcement learning, deep uncertainty, robust decision making, and equitable decision making.
+
+## Course Information
+:::: {.columns .course-details}
+
+::: {.column width="30%"}
+### Instructor
+
+* {{< fa sharp user title="Name" >}} [[{{< var instructor.name_no_title >}}]({{< var instructor.url >}})]{.ms-1}
+* {{< fa sharp envelope title="Email" >}} [[{{< var instructor.email >}}](mailto:{{< var instructor.email >}})]{.ms-1}
+* {{< fa sharp building title="Office" >}} [{{< var instructor.office >}}]{.ms-2}
+:::
+
+::: {.column width="30%"}
+### TA
+
+TBD
+::::
+
+::: {.column width="30%"}
+### Meetings
+
+* {{< fa sharp calendar title="Class Days" >}} {{< var course.days >}}
+* {{< fa sharp clock title="Class Time" >}} {{< var course.time >}}
+* {{< fa sharp university title="Class Location" >}} {{< var course.location >}}
+:::
+
+::::
+
+### Prerequisites & Preparation
+
+The following prerequisites are required:
+
+- An introductory course in probability and statistics, such as CEVE 313, is strictly required.
+
+In addition, the following prerequisites are encouraged.
+
+- Some exposure to Python, Julia, Matlab, R, or another programming language
+- Additional coursework in applied statistics
+- Linear algebra (you should be comfortable with matrix notation and basic operations)
+- Optimization (you should be comfortable writing down optimization problems)
+
+If you are unsure whether your background gives you an adequate preparation for this course, *please contact the instructor!*
+
+::: {.callout-tip}
+### What If My Skills Are Rusty?
+
+If your programming, mathematics, or statistics skills are a little rusty, don't worry!
+We will review concepts and build skills over the course of the semester.
+:::
+
+### Required Materials
+
+No textbook is required for this course.
+All materials will be posted as open source on [the course website]({{<var course.url >}}) or on [Canvas](https://canvas.rice.edu/courses/{{<var course.canvas_id >}}).
+
+You will regularly be assigned scientific papers to read.
+Where those are available through the Rice library, you will be expected to access them yourself.
+You are encouraged, though not required, to use Zotero (Rice students have free storage).
+See [Fondren Library's Resources](http://fondrenlearning.blogs.rice.edu/zotero/) for resources.
+
+## A Community of Learning
+
+Rice's [core values](https://www.rice.edu/mission-values) are responsibility, integrity, community, and excellence.
+Our goal is to create a learning community aligned with these core values.
+
+### Core Expectations
+
+Course success involves a dual responsibility on the part of the instructor and the student.
+
+:::: {.columns}
+
+::: {.column width="48%"}
+As the instructor, my responsibility is to provide you with a structure and opportunity to learn.
+To this end, I commit to:
+
+* provide organized and focused lectures, in-class activities, and assignments;
+* encourage students to regularly evaluate and provide feedback on the course;
+* manage the classroom atmosphere to promote learning;
+* schedule sufficient out-of-class contact opportunities, such as office hours;
+* allow adequate time for assignment completion;
+* make lecture materials, class policies, activities, and assignments accessible to students. 
+:::
+
+::: {.column width="48%"}
+Students are responsible for their own learning in the course and should commit to:
+
+* attending all lectures;
+* doing all required preparatory work before class; 
+* actively participating in online and in-class discussions;
+* beginning assignments and other work early; and
+* attending office hours as needed. 
+:::
+
+::::
+
+::: {.callout-important}
+## What If I'm Sick?
+
+Please stay home if you're feeling sick!
+This is beneficial for both for your own recovery and the health and safety of your classmates.
+We will also make any necessary arrangements for you to stay on top of the class material and if whatever is going on will negatively impact your grade, for example by causing you to be unable to submit an assignment on time.
+:::
+
+
+### Diversity, Equity, and Inclusion
+
+Rice is committed to building and maintaining an equitable and inclusive campus community.
+Diversity can refer to multiple ways that we identify ourselves, including but not limited to race, color, national origin, language, sex, disability, age, sexual orientation, gender identity, religion, creed, ancestry, belief, veteran status, or genetic information.
+Each of these diverse identities, along with many others not mentioned here, shape the perspectives our students, faculty, and staff bring to our campus.
+We, at Rice, will work to promote diversity, equity and inclusion not only because diversity fuels excellence and innovation, but because we want to pursue justice.
+We acknowledge our imperfections while we also fully commit to the work, inside and outside of our classrooms, of building and sustaining a campus community that increasingly embraces these core values.
+
+Each of us is responsible for creating a safer, more inclusive environment.
+
+### Accommodation for Students with Disabilities
+
+If you have a documented disability or other condition that may affect academic performance you should: 1) make sure this documentation is on file with the Disability Resource Center (Allen Center, Room 111 / [adarice@rice.edu](mailto:adarice@rice.edu) / x5841) to determine the accommodations you need; and 2) talk with me to discuss your accommodation needs.
+
+### Accommodation for Scheduling Conflicts
+
+If any of our class meetings conflict with your religious events, student athletics, or other non-negotiable scheduling conflict, please let me know ASAP so that we can make arrangements for you.
+
+### Mask Policies
+
+Masks are welcome but not required in the classroom.
+However, if a colleague (student, faculty, or staff) requests that others wear a mask, you are *strongly encouraged* to make them feel safe.
+Please do not ask someone making such a request to disclose their underlying medical condition.
+If for some reason you need your instructor or classmates to wear a mask, please let me know and I will communicate this to the class without disclosing your identity.
+
+These policies may change over the course of the semester as the situation evolves.
+
+## Academic Integrity
+
+This class is designed to encourage collaboration, and students are encouraged to discuss their work with other students.
+Engineering as a profession relies upon the honesty and integrity of its practitioners (see *e.g.* the [American Society for Civil Engineers' Code of Ethics](https://www.asce.org/-/media/asce-images-and-files/career-and-growth/ethics/documents/asce-code-ethics.pdf)).
+**All work submitted must represent the students' own work and understanding**, whether individually or as a group (depending on the particulars of the assignment).
+
+If you are ever unclear about academic integrity, please ask!
+Additionally, always err on the side of providing more information.)
+
+### Rice Honor Code
+
+More specifically, all students will be held to the standards of the Rice Honor Code, a code that you pledged to honor when you matriculated at this institution.
+If you are unfamiliar with the details of this code and how it is administered, you should consult the Honor System Handbook at [honor.rice.edu/honor-system-handbook/](https://honor.rice.edu/honor-system-handbook/).
+This handbook outlines the University's expectations for the integrity of your academic work, the procedures for resolving alleged violations of those expectations, and the rights and responsibilities of students and faculty members throughout the process.
+
+### AI/ML Resource Policy {#sec-llm}
+
+Large language models (LLMs), like GPT, are powerful tools for generating text that can be used for coding and doing data analysis.
+This is at once empowering (LLMs are powerful and can save you time) and risky (LLMs can make mistakes that are hard to detect).
+
+Our general view is that LLMs are powerful tools that you will encounter and use when you leave this classroom, so it's important to learn how to use them responsibly and effectively.
+You are generally permitted to use LLMs in this course, but ultimately, you are responsible for guaranteeing, understanding, and interpreting your results.
+In particular:
+
+- One of the best applications of LLMs is to write code. This can help accelerate your workflow, especially when you are learning new syntax. However, LLMs can make bad decisions about how to structure your code, can introduce bugs, and can mislead you about what your code is doing. You are responsible for understanding and debugging your code, and for ensuring that it does what you intend it to do.
+- LLMs should not be used to generate text that you submit as your own work. If you are assigned a writing assignment, the point is to stimulate your thought process, and you short-cut this if you ask a LLM to generate the response for you. This leads to shallow thinking! However, you *may* use tools including LLMs (but also Grammarly, spell-check, etc.) to help you edit your writing. This can sometimes be a fine line; it's always better to ask if you're not sure, and to disclose your use of these tools in your submission
+
+The following resources may prove useful to you as you work to integrate LLMs into your workflow:
+
+* [GitHub Copilot](https://github.com/features/copilot){target=_blank} is an extension for VS Code that can provide suggestions for code completion and editing. It is [free](https://techcommunity.microsoft.com/t5/educator-developer-blog/step-by-step-setting-up-github-student-and-github-copilot-as-an/ba-p/3736279){target=_blank} for students and educators.
+* [Blog: "Bob Carpenter thinks GPT-4 is awesome"](https://statmodeling.stat.columbia.edu/2023/08/20/bob-carpenter-thinks-gpt-4-is-awesome/){target=_blank}: this post highlights how GPT-4 is able to write a program in Stan, a statistical programming language, and also the mistakes that it makes. Finding and correcting these mistakes requires knowing the Stan language and having a deep understanding of the statistical model, but someone with this expertise could potentially use GPT-4 to accelerate their coding workflow. The comments are also interesting and insightful.
+* [AI Snake Oil](https://www.aisnakeoil.com/){target=_blank} is a blog that seeks to dispel hype, remove misconceptions, and clarify the limits of AI. The authors are in the Princeton University Department of Computer Science.
+* [ChatGPT](https://chat.openai.com/) has both free and paid tiers and can be helpful with writing and interpreting code, though care is needed as described above
+
+### Policy on Web Posting of Course Materials
+
+Uploading course materials to web sites is not an authorized use of the course material.
+Both the poster and the user are in violation of the university policy, which is actionable.
+
+## Grading
+
+Your final grade will be calculated as follow:
+
+| Category | Points (421) | Points (521) |
+| :------- | :---------- | :---------- |
+| Participation | 10 | 10 |
+| Labs | 10 | 10 |
+| Tests | 40 | 40 |
+| Project | 40 | 20 |
+| Lecture Notes | 0 | 10 |
+| Reading Discussion | 0 | 10 |
+
+
+### Participation
+
+Participating fully in the class allows you to gain more from the class and contribute more to the learning of your classmates.
+Some ways to participate include:
+
+- Attending every class
+- Asking questions in class
+- Asking and answering questions on Canvas
+- Coming to office hours
+
+### Labs
+
+On most Fridays we will use class time for hands-on programming exercises ("labs") to give you guided practice applying the concepts and methods from class.
+These labs will be announced on [the course website]({{<var course.url >}}) ahead of time so anyone who is able can bring a laptop to class.
+These labs can be done in groups; if you cannot bring a laptop to class for whatever reason, you will be able to (and are encouraged to) work with other students, though you must turn in your own assignment for grading.
+
+### Tests
+
+In-class written exams will be given for each of the four modules of the course, on the dates listed on the [schedule](./schedule.qmd).
+Tests will cover material from lectures and labs, and we will dedicate a class to review before each exam.
+
+Based on past experience, students enter the class with a wide range of backgrounds and experience.
+The tests are designed so that students who meet the pre-requisites, but do not have extensive additional experience, can do well.
+Students with backgrounds that exceed the minimum pre-requisites may find the tests relatively straightforward.
+
+You will be asked to evaluate your own participation over the course of the semester, and I will provide feedback on your participation as well
+
+### Project
+
+### (521 Only) Lecture Notes
+
+Students in the 521 section (i.e., graduate students) will take notes on one lecture and add them to this course website.
+
+### (521 Only) Reading Discussion
+
+### Late Work Policy
+
+- Late projects will be subjected to a 10% penalty per day, *which can accumulate to 100% of the total grade*.
+- Late labs will not be accepted, because we will discuss solutions in class.
+- Sometimes things come up in life. Please reach out *ahead of time* if you have extenuating circumstances (including University-approved absences or illnesses) which would make it difficult for you to submit your work on time. Work which would be late for appropriate reasons will be given extensions and the late penalty will be waived.
+
+## Preliminary Schedule
+
+| Week    | Course Dates                    | Topic | Reading | Lab |
+| ---------- | --------------- | ---------------------- | ---------------------- | ---------------------- |
+| Week 1  | 1/8, 1/10, 1/12 | Introduction to climate risk management | @frank_newjersey:2022 | Software installation |
+| Week 2  | 1/17, 1/19 | Science of climate hazard | @seneviratne_wg1ch11:2021 | Julia basics  |
+| Week 3  | 1/22, 1/24, 1/26 | Vulnerability, exposure, and impacts | @wing_vulnerability:2020 | Depth-damage functions |
+| Week 4  | 1/29, 1/31, 2/2 | Cost-benefit analysis | @arrow_discount:2013 | The house elevation case study |
+| Week 5  | 2/5, 2/7, 2/8 | Scenario analysis | @bankes_exploratory:1993 | Sea-level rise |
+| Week 6  | 2/12, 2/14, 2/16 | Policy search and optimization |         | Optimal house elevation |
+| Week 7  | 2/19, 2/21, 2/23 | Multiobjective policy search |         | Pareto-optimal house elevation | 
+| Week 8  | 2/26, 2/28, 3/1 | Sequential decision problems | | The lake problem |
+| Week 9  | 3/4, 3/6, 3/8 | Deep uncertainty | @schneider_scenarios:2002, @lempert_robust:2000, @oreskes_verification:1994 | |
+| Week 10 | 3/18, 3/20, 3/22 | Robustness |  |         |     |
+| Week 11 | 3/25, 3/27, 3/29 | Options / flexibility | @fletcher_mombasa2019 | The parking garage |
+| Week 12 | 4/1, 4/3, 4/5 | Equity and justice | @pollack_equity:2023 |     |
+| Week 13 | 4/10, 4/12 | Systemic Risk | @thomson_systemic:2023, @condon_myopia:2021 |     |
+| Week 14 | 4/15, 4/17, 4/19 | Reflections & case studies | @keller_management:2021 |     |

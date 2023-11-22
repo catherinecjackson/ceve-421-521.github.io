@@ -1,0 +1,25 @@
+---
+title: "{{< var course.number >}}: {{< var course.title >}}"
+format: html
+listing:
+  type: table
+  contents:
+    - "slides/*.qmd"
+    - "labs/*/template.qmd"
+  sort:
+    - "date"
+    - "title desc"
+  table-striped: true
+  table-hover: true
+  categories: false
+  fields: [date, title, Module, kind]
+  field-display-names: 
+    date: "Date"
+    title: "Title"
+    module: "Module"
+    kind: "Category"
+  page-size: 100
+---
+
+This page contains links to lectures and reading notes developed over this semester.
+

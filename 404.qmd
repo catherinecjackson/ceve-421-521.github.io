@@ -1,0 +1,8 @@
+---
+title: Page Not Found
+format: html
+---
+
+# 404 Error: Page Not Found
+
+Sorry! That page doesn't seem to exist.
