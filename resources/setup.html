@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CEVE 421/521 - Spring 2024 - Setting Up Your Computer</title>
+<title>CEVE 421/521 - Spring 2024 - Installing Software for the Course</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,7 +73,7 @@ window.MathJax = {
 </script>
 
 
-<meta property="og:title" content="CEVE 421/521 - Spring 2024 - Setting Up Your Computer">
+<meta property="og:title" content="CEVE 421/521 - Spring 2024 - Installing Software for the Course">
 <meta property="og:description" content="">
 <meta property="og:site-name" content="{{< var course.number >}} - {{< var course.semester >}}">
 </head>
@@ -108,7 +108,7 @@ window.MathJax = {
       <a href="../">CEVE 421/521</a> 
         <div class="sidebar-tools-main">
     <a href="../{{var course.github}}" rel="" title="Github Repository" class="quarto-navigation-tool px-1" aria-label="Github Repository"><i class="bi bi-github"></i></a>
-    <a href="https://canvas.rice.edu" rel="" title="Canvas" class="quarto-navigation-tool px-1" aria-label="Canvas"><i class="bi bi-journal-check"></i></a>
+    <a href="../{{var course.canvas}}" rel="" title="Canvas" class="quarto-navigation-tool px-1" aria-label="Canvas"><i class="bi bi-journal-check"></i></a>
 </div>
     </div>
       </div>
@@ -161,7 +161,7 @@ window.MathJax = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../resources/learn-more.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Code Resources</span></a>
+ <span class="menu-text">Learning Resources</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -187,27 +187,25 @@ window.MathJax = {
   <li><a href="#installing-juliaup-on-windows" id="toc-installing-juliaup-on-windows" class="nav-link" data-scroll-target="#installing-juliaup-on-windows">Installing Juliaup on Windows</a></li>
   <li><a href="#installing-juliaup-on-macos" id="toc-installing-juliaup-on-macos" class="nav-link" data-scroll-target="#installing-juliaup-on-macos">Installing Juliaup on MacOS</a></li>
   <li><a href="#installing-julia-1.9" id="toc-installing-julia-1.9" class="nav-link" data-scroll-target="#installing-julia-1.9">Installing Julia 1.9</a></li>
-  <li><a href="#more-resources" id="toc-more-resources" class="nav-link" data-scroll-target="#more-resources">More Resources</a></li>
   </ul></li>
   <li><a href="#install-and-set-up-vs-code" id="toc-install-and-set-up-vs-code" class="nav-link" data-scroll-target="#install-and-set-up-vs-code">Install and Set Up VS Code</a>
   <ul class="collapse">
   <li><a href="#installing-vs-code" id="toc-installing-vs-code" class="nav-link" data-scroll-target="#installing-vs-code">Installing VS Code</a></li>
   <li><a href="#install-the-julia-extension" id="toc-install-the-julia-extension" class="nav-link" data-scroll-target="#install-the-julia-extension">Install the Julia Extension</a></li>
-  <li><a href="#more-resources-1" id="toc-more-resources-1" class="nav-link" data-scroll-target="#more-resources-1">More Resources</a></li>
+  <li><a href="#more-resources" id="toc-more-resources" class="nav-link" data-scroll-target="#more-resources">More Resources</a></li>
   </ul></li>
   <li><a href="#set-up-github" id="toc-set-up-github" class="nav-link" data-scroll-target="#set-up-github">Set Up GitHub</a>
   <ul class="collapse">
   <li><a href="#create-github-account" id="toc-create-github-account" class="nav-link" data-scroll-target="#create-github-account">Create GitHub Account</a></li>
   <li><a href="#github-desktop-optional" id="toc-github-desktop-optional" class="nav-link" data-scroll-target="#github-desktop-optional">GitHub Desktop (Optional)</a></li>
   <li><a href="#install-git" id="toc-install-git" class="nav-link" data-scroll-target="#install-git">Install Git</a></li>
-  <li><a href="#more-resources-2" id="toc-more-resources-2" class="nav-link" data-scroll-target="#more-resources-2">More Resources</a></li>
+  <li><a href="#more-resources-1" id="toc-more-resources-1" class="nav-link" data-scroll-target="#more-resources-1">More Resources</a></li>
   </ul></li>
   <li><a href="#set-up-quarto" id="toc-set-up-quarto" class="nav-link" data-scroll-target="#set-up-quarto">Set up Quarto</a>
   <ul class="collapse">
   <li><a href="#install-quarto" id="toc-install-quarto" class="nav-link" data-scroll-target="#install-quarto">Install Quarto</a></li>
   <li><a href="#install-the-quarto-extension-for-vs-code" id="toc-install-the-quarto-extension-for-vs-code" class="nav-link" data-scroll-target="#install-the-quarto-extension-for-vs-code">Install the Quarto Extension for VS Code</a></li>
   <li><a href="#install-jupyter" id="toc-install-jupyter" class="nav-link" data-scroll-target="#install-jupyter">Install Jupyter</a></li>
-  <li><a href="#more-resources-3" id="toc-more-resources-3" class="nav-link" data-scroll-target="#more-resources-3">More Resources</a></li>
   </ul></li>
   <li><a href="#verify" id="toc-verify" class="nav-link" data-scroll-target="#verify">Verify</a></li>
   </ul>
@@ -218,7 +216,7 @@ window.MathJax = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Setting Up Your Computer</h1>
+<h1 class="title">Installing Software for the Course</h1>
 </div>
 
 
@@ -237,7 +235,7 @@ window.MathJax = {
 <p>If you install course tools using steps other than the ones provided on this page, be aware that your instructors may be able to provide you with only limited support.</p>
 <section id="install-julia" class="level2">
 <h2 class="anchored" data-anchor-id="install-julia">Install Julia</h2>
-<p>I recommend installing Julia using the <code>juliaup</code> tool, which will let you easily manage versions in the future and works seamlessly with VS Code. The instructions can be found at the <a href="https://github.com/JuliaLang/juliaup">JuliaUp GitHub repository</a>, but we will summarize them here.</p>
+<p>The best way to install Julia is through the <code>juliaup</code> tool, which will let you easily manage versions in the future and works seamlessly with VS Code. The instructions can be found at the <a href="https://github.com/JuliaLang/juliaup">JuliaUp GitHub repository</a>, but we will summarize them here.</p>
 <section id="installing-juliaup-on-windows" class="level3">
 <h3 class="anchored" data-anchor-id="installing-juliaup-on-windows">Installing Juliaup on Windows</h3>
 <p>If your computer uses Windows, you can install Juliaup <a href="https://www.microsoft.com/store/apps/9NJNWW8PVKMN">from the Windows Store</a>.</p>
@@ -250,21 +248,20 @@ window.MathJax = {
 <section id="installing-julia-1.9" class="level3">
 <h3 class="anchored" data-anchor-id="installing-julia-1.9">Installing Julia 1.9</h3>
 <p>Once you install Juliaup, install Julia version 1.9 by opening a terminal (in MacOS or Linux) or the command line (in Windows) and entering:</p>
-<pre class="shell"><code>julia add 1.9
-julia default 1.9</code></pre>
-<p>This will install Julia 1.9 and make it the default version, which should maximize package compatibility throughout this course. Going forward, if you want to add new versions or change the default, you can <a href="https://github.com/JuliaLang/juliaup#using-juliaup">follow the Juliaup instructions</a>.</p>
-</section>
-<section id="more-resources" class="level3">
-<h3 class="anchored" data-anchor-id="more-resources">More Resources</h3>
-<p>See <a href="resources/julia-basics.qmd">this tutorial</a> for more information on using Julia.</p>
+<pre class="shell"><code>julia add 1.9.4
+julia default 1.9.4</code></pre>
+<p>This will install Julia 1.9.4 and make it the default version, which should maximize package compatibility throughout this course. Going forward, if you want to add new versions or change the default, you can <a href="https://github.com/JuliaLang/juliaup#using-juliaup">follow the Juliaup instructions</a>.</p>
 </section>
 </section>
 <section id="install-and-set-up-vs-code" class="level2">
 <h2 class="anchored" data-anchor-id="install-and-set-up-vs-code">Install and Set Up VS Code</h2>
-<p>You can skip this section if you already have an IDE you like; just set it up to work with Julia. Otherwise, VS Code is as close to an officially supported editor for Julia as you can get. We will follow <a href="https://www.julia-vscode.org/docs/dev/gettingstarted/">this guide for setting up VS Code with Julia</a>.</p>
+<p>VS Code is as close to an officially supported editor for Julia as you can get. We will follow <a href="https://www.julia-vscode.org/docs/dev/gettingstarted/">this guide for setting up VS Code with Julia</a>.</p>
+<div class="callout-info">
+<p>You can skip this section if you are an experienced programmer and already have a preferred IDE. Your IDE will likely have instructions for Julia and QUarto setup.</p>
+</div>
 <section id="installing-vs-code" class="level3">
 <h3 class="anchored" data-anchor-id="installing-vs-code">Installing VS Code</h3>
-<p>You can download it <a href="https://code.visualstudio.com/download">here</a>; open the downloaded file to install. Make sure to select the correct version for your operating system. If you have a recent Apple mac, make sure to check whether you have an Intel or Apple chip.</p>
+<p>You can download it <a href="https://code.visualstudio.com/download">here</a>; open the downloaded file to install. Make sure to select the correct version for your operating system. If you have a recent Apple mac, make sure to check whether you have an Intel or Apple chip before choosing which version to download. You can also use homebrew or your preferred package manager to install VS Code.</p>
 </section>
 <section id="install-the-julia-extension" class="level3">
 <h3 class="anchored" data-anchor-id="install-the-julia-extension">Install the Julia Extension</h3>
@@ -276,9 +273,9 @@ julia default 1.9</code></pre>
 </ol>
 <p>The Julia VS Code extension offers you some nice features. You can start a REPL (an interactive Julia coding environment) by opening the “Command Palette” (View -&gt; Command Palette, or CTRL/CMD+SHIFT+P) and typing “REPL” to bring up “Julia: Start REPL”. You can also create <code>.jl</code> and <code>.qmd</code> files to write Julia code and execute line by line.</p>
 </section>
-<section id="more-resources-1" class="level3">
-<h3 class="anchored" data-anchor-id="more-resources-1">More Resources</h3>
-<p>See <a href="resources/julia-basics.qmd">this tutorial</a> for more information on using Julia.</p>
+<section id="more-resources" class="level3">
+<h3 class="anchored" data-anchor-id="more-resources">More Resources</h3>
+<p>See <a href="../resources/julia-basics.html">this tutorial</a> for more information on using Julia.</p>
 </section>
 </section>
 <section id="set-up-github" class="level2">
@@ -296,9 +293,9 @@ julia default 1.9</code></pre>
 <h3 class="anchored" data-anchor-id="install-git">Install Git</h3>
 <p><code>git</code> is a version control software that powers GitHub under the hood (<code>git</code> is the version control software, GitHub is an online platform). Based on past experience with the course, you probably already have <code>git</code> installed. If you’re not sure if it’s installed, see instructions <a href="https://github.com/git-guides/install-git">here</a>.</p>
 </section>
-<section id="more-resources-2" class="level3">
-<h3 class="anchored" data-anchor-id="more-resources-2">More Resources</h3>
-<p>See <a href="resources/github.qmd">GitHub official tutorials</a> for more helpful resources and tutorials.</p>
+<section id="more-resources-1" class="level3">
+<h3 class="anchored" data-anchor-id="more-resources-1">More Resources</h3>
+<p>See <a href="https://docs.github.com/en/get-started">GitHub official tutorials</a> for more helpful resources and tutorials.</p>
 </section>
 </section>
 <section id="set-up-quarto" class="level2">
@@ -329,13 +326,9 @@ julia default 1.9</code></pre>
 <li>Windows: see <a href="https://learn.microsoft.com/en-us/windows/python/beginners">Microsoft instructions</a> or <a href="https://docs.conda.io/en/latest/miniconda.html">Conda</a> documentation</li>
 <li>Mac/Linux: see <a href="https://docs.conda.io/en/latest/miniconda.html">Conda</a> documentation</li>
 </ol></li>
-<li>Follow the instructions above</li>
+<li>Follow the instructions above to install Jupyter</li>
 </ol>
 </section>
-</section>
-<section id="more-resources-3" class="level3">
-<h3 class="anchored" data-anchor-id="more-resources-3">More Resources</h3>
-<p>See <a href="resources/quarto.qmd">this tutorial</a> for more information on using Quarto.</p>
 </section>
 </section>
 <section id="verify" class="level2">

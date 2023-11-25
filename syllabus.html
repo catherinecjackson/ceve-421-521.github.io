@@ -91,6 +91,8 @@ window.MathJax = {
   };
 </script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <meta property="og:title" content="CEVE 421/521 - Spring 2024 - Syllabus">
 <meta property="og:description" content="">
@@ -127,7 +129,7 @@ window.MathJax = {
       <a href="./">CEVE 421/521</a> 
         <div class="sidebar-tools-main">
     <a href="./{{var course.github}}" rel="" title="Github Repository" class="quarto-navigation-tool px-1" aria-label="Github Repository"><i class="bi bi-github"></i></a>
-    <a href="https://canvas.rice.edu" rel="" title="Canvas" class="quarto-navigation-tool px-1" aria-label="Canvas"><i class="bi bi-journal-check"></i></a>
+    <a href="./{{var course.canvas}}" rel="" title="Canvas" class="quarto-navigation-tool px-1" aria-label="Canvas"><i class="bi bi-journal-check"></i></a>
 </div>
     </div>
       </div>
@@ -180,7 +182,7 @@ window.MathJax = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./resources/learn-more.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Code Resources</span></a>
+ <span class="menu-text">Learning Resources</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -205,6 +207,7 @@ window.MathJax = {
   <li><a href="#course-information" id="toc-course-information" class="nav-link" data-scroll-target="#course-information">Course Information</a>
   <ul class="collapse">
   <li><a href="#prerequisites-preparation" id="toc-prerequisites-preparation" class="nav-link" data-scroll-target="#prerequisites-preparation">Prerequisites &amp; Preparation</a></li>
+  <li><a href="#course-objectives" id="toc-course-objectives" class="nav-link" data-scroll-target="#course-objectives">Course Objectives</a></li>
   <li><a href="#required-materials" id="toc-required-materials" class="nav-link" data-scroll-target="#required-materials">Required Materials</a></li>
   </ul></li>
   <li><a href="#a-community-of-learning" id="toc-a-community-of-learning" class="nav-link" data-scroll-target="#a-community-of-learning">A Community of Learning</a>
@@ -223,12 +226,11 @@ window.MathJax = {
   </ul></li>
   <li><a href="#grading" id="toc-grading" class="nav-link" data-scroll-target="#grading">Grading</a>
   <ul class="collapse">
-  <li><a href="#participation" id="toc-participation" class="nav-link" data-scroll-target="#participation">Participation</a></li>
+  <li><a href="#reading-quizzes" id="toc-reading-quizzes" class="nav-link" data-scroll-target="#reading-quizzes">Reading Quizzes</a></li>
   <li><a href="#labs" id="toc-labs" class="nav-link" data-scroll-target="#labs">Labs</a></li>
   <li><a href="#tests" id="toc-tests" class="nav-link" data-scroll-target="#tests">Tests</a></li>
   <li><a href="#project" id="toc-project" class="nav-link" data-scroll-target="#project">Project</a></li>
-  <li><a href="#only-lecture-notes" id="toc-only-lecture-notes" class="nav-link" data-scroll-target="#only-lecture-notes">(521 Only) Lecture Notes</a></li>
-  <li><a href="#only-reading-discussion" id="toc-only-reading-discussion" class="nav-link" data-scroll-target="#only-reading-discussion">(521 Only) Reading Discussion</a></li>
+  <li><a href="#reading-discussion" id="toc-reading-discussion" class="nav-link" data-scroll-target="#reading-discussion">Reading Discussion</a></li>
   <li><a href="#late-work-policy" id="toc-late-work-policy" class="nav-link" data-scroll-target="#late-work-policy">Late Work Policy</a></li>
   </ul></li>
   <li><a href="#preliminary-schedule" id="toc-preliminary-schedule" class="nav-link" data-scroll-target="#preliminary-schedule">Preliminary Schedule</a></li>
@@ -267,9 +269,9 @@ window.MathJax = {
 <section id="instructor" class="level3">
 <h3 class="anchored" data-anchor-id="instructor">Instructor</h3>
 <ul>
-<li><i class="fa-sharp fa-user" title="Name" aria-label="user"></i> <span class="ms-1"><a href="https://jamesdossgollin.me">James Doss-Gollin</a></span></li>
-<li><i class="fa-sharp fa-envelope" title="Email" aria-label="envelope"></i> <span class="ms-1"><a href="mailto:jdossgollin@rice.edu">jdossgollin@rice.edu</a></span></li>
-<li><i class="fa-sharp fa-building" title="Office" aria-label="building"></i> <span class="ms-2">Ryon 215</span></li>
+<li><i class="fa-solid fa-user" title="Name" aria-label="user"></i> <span class="ms-1"><a href="https://jamesdossgollin.me">James Doss-Gollin</a></span></li>
+<li><i class="fa-solid fa-envelope" title="Email" aria-label="envelope"></i> <span class="ms-1"><a href="mailto:jdossgollin@rice.edu">jdossgollin@rice.edu</a></span></li>
+<li><i class="fa-solid fa-building" title="Office" aria-label="building"></i> <span class="ms-2">Ryon 215</span></li>
 </ul>
 </section>
 </div><div class="column" style="width:30%;">
@@ -281,9 +283,9 @@ window.MathJax = {
 <section id="meetings" class="level3">
 <h3 class="anchored" data-anchor-id="meetings">Meetings</h3>
 <ul>
-<li><i class="fa-sharp fa-calendar" title="Class Days" aria-label="calendar"></i> MWF</li>
-<li><i class="fa-sharp fa-clock" title="Class Time" aria-label="clock"></i> 11-11:50am</li>
-<li><i class="fa-sharp fa-university" title="Class Location" aria-label="university"></i> TBD</li>
+<li><i class="fa-solid fa-calendar" title="Class Days" aria-label="calendar"></i> MWF</li>
+<li><i class="fa-solid fa-clock" title="Class Time" aria-label="clock"></i> 11-11:50am</li>
+<li><i class="fa-solid fa-university" title="Class Location" aria-label="university"></i> TBD</li>
 </ul>
 </section>
 </div>
@@ -316,10 +318,21 @@ What If My Skills Are Rusty?
 </div>
 </div>
 </section>
+<section id="course-objectives" class="level3">
+<h3 class="anchored" data-anchor-id="course-objectives">Course Objectives</h3>
+<p>After completing this course, you will be able to:</p>
+<ol type="1">
+<li>Evaluate and describe the strengths and weaknesses of different approaches to modeling the impact of weather and climate hazards on critical systems.</li>
+<li>Apply and critique methods for cost-benefit analysis, optimization, policy search, and stochastic control to climate adaptation problems.</li>
+<li>Describe multiple frameworks for decision making under deep uncertainty.</li>
+<li>Decision analytical frameworks well suited to a particular problem and justify the choice.</li>
+</ol>
+</section>
 <section id="required-materials" class="level3">
 <h3 class="anchored" data-anchor-id="required-materials">Required Materials</h3>
 <p>No textbook is required for this course. All materials will be posted as open source on <a href="{{<var course.url >}}">the course website</a> or on <a href="https://canvas.rice.edu/courses/{{<var course.canvas_id >}}">Canvas</a>.</p>
 <p>You will regularly be assigned scientific papers to read. Where those are available through the Rice library, you will be expected to access them yourself. You are encouraged, though not required, to use Zotero (Rice students have free storage). See <a href="http://fondrenlearning.blogs.rice.edu/zotero/">Fondren Library’s Resources</a> for resources.</p>
+<p>You will need a working laptop for this class. If you do not have access to a working laptop, or if you lose access during the semester, please email the instructor.</p>
 </section>
 </section>
 <section id="a-community-of-learning" class="level2">
@@ -399,13 +412,7 @@ What If I’m Sick?
 <li>One of the best applications of LLMs is to write code. This can help accelerate your workflow, especially when you are learning new syntax. However, LLMs can make bad decisions about how to structure your code, can introduce bugs, and can mislead you about what your code is doing. You are responsible for understanding and debugging your code, and for ensuring that it does what you intend it to do.</li>
 <li>LLMs should not be used to generate text that you submit as your own work. If you are assigned a writing assignment, the point is to stimulate your thought process, and you short-cut this if you ask a LLM to generate the response for you. This leads to shallow thinking! However, you <em>may</em> use tools including LLMs (but also Grammarly, spell-check, etc.) to help you edit your writing. This can sometimes be a fine line; it’s always better to ask if you’re not sure, and to disclose your use of these tools in your submission</li>
 </ul>
-<p>The following resources may prove useful to you as you work to integrate LLMs into your workflow:</p>
-<ul>
-<li><a href="https://github.com/features/copilot" target="_blank">GitHub Copilot</a> is an extension for VS Code that can provide suggestions for code completion and editing. It is <a href="https://techcommunity.microsoft.com/t5/educator-developer-blog/step-by-step-setting-up-github-student-and-github-copilot-as-an/ba-p/3736279" target="_blank">free</a> for students and educators.</li>
-<li><a href="https://statmodeling.stat.columbia.edu/2023/08/20/bob-carpenter-thinks-gpt-4-is-awesome/" target="_blank">Blog: “Bob Carpenter thinks GPT-4 is awesome”</a>: this post highlights how GPT-4 is able to write a program in Stan, a statistical programming language, and also the mistakes that it makes. Finding and correcting these mistakes requires knowing the Stan language and having a deep understanding of the statistical model, but someone with this expertise could potentially use GPT-4 to accelerate their coding workflow. The comments are also interesting and insightful.</li>
-<li><a href="https://www.aisnakeoil.com/" target="_blank">AI Snake Oil</a> is a blog that seeks to dispel hype, remove misconceptions, and clarify the limits of AI. The authors are in the Princeton University Department of Computer Science.</li>
-<li><a href="https://chat.openai.com/">ChatGPT</a> has both free and paid tiers and can be helpful with writing and interpreting code, though care is needed as described above</li>
-</ul>
+<p>The <a href="./resources/learn-more.html">resources page</a> has links to helpful ideas about LLMs and how to use them.</p>
 </section>
 <section id="policy-on-web-posting-of-course-materials" class="level3">
 <h3 class="anchored" data-anchor-id="policy-on-web-posting-of-course-materials">Policy on Web Posting of Course Materials</h3>
@@ -425,7 +432,7 @@ What If I’m Sick?
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Participation</td>
+<td style="text-align: left;">Reading quizzes</td>
 <td style="text-align: left;">10</td>
 <td style="text-align: left;">10</td>
 </tr>
@@ -437,69 +444,70 @@ What If I’m Sick?
 <tr class="odd">
 <td style="text-align: left;">Tests</td>
 <td style="text-align: left;">40</td>
-<td style="text-align: left;">40</td>
+<td style="text-align: left;">30</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Project</td>
 <td style="text-align: left;">40</td>
-<td style="text-align: left;">20</td>
+<td style="text-align: left;">40</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Lecture Notes</td>
-<td style="text-align: left;">0</td>
-<td style="text-align: left;">10</td>
-</tr>
-<tr class="even">
 <td style="text-align: left;">Reading Discussion</td>
 <td style="text-align: left;">0</td>
 <td style="text-align: left;">10</td>
 </tr>
 </tbody>
 </table>
-<section id="participation" class="level3">
-<h3 class="anchored" data-anchor-id="participation">Participation</h3>
-<p>Participating fully in the class allows you to gain more from the class and contribute more to the learning of your classmates. Some ways to participate include:</p>
-<ul>
-<li>Attending every class</li>
-<li>Asking questions in class</li>
-<li>Asking and answering questions on Canvas</li>
-<li>Coming to office hours</li>
-</ul>
+<section id="reading-quizzes" class="level3">
+<h3 class="anchored" data-anchor-id="reading-quizzes">Reading Quizzes</h3>
+<p>The purpose of assigning readings is to enhance class discussions. Students who are prepared for class enhance the learning experience for everyone and enable a collaborative group discussion. At the start of classes for which reading was assigned, expect a very short (5 minute) quiz covering basic concepts from the reading. You should be able to get all points on these readings if you have done the reading, even if you found key concepts challenging or confusing.</p>
+<p>Your lowest two reading quizzes will be dropped.</p>
 </section>
 <section id="labs" class="level3">
 <h3 class="anchored" data-anchor-id="labs">Labs</h3>
-<p>On most Fridays we will use class time for hands-on programming exercises (“labs”) to give you guided practice applying the concepts and methods from class. These labs will be announced on <a href="{{<var course.url >}}">the course website</a> ahead of time so anyone who is able can bring a laptop to class. These labs can be done in groups; if you cannot bring a laptop to class for whatever reason, you will be able to (and are encouraged to) work with other students, though you must turn in your own assignment for grading.</p>
+<p>On Fridays we will use class time for hands-on programming exercises (“labs”) to give you guided practice applying the concepts and methods from class. These labs will be announced on <a href="{{<var course.url >}}">the course website</a> ahead of time so anyone who is able can bring a laptop to class. These labs can be done in groups; if you cannot bring a laptop to class for whatever reason, you will be able to (and are encouraged to) work with other students, though you must turn in your own assignment for grading. All labs will cover either a set of programming tools or a case study.</p>
+<p>Your lowest two labs will be dropped.</p>
 </section>
 <section id="tests" class="level3">
 <h3 class="anchored" data-anchor-id="tests">Tests</h3>
-<p>In-class written exams will be given for each of the four modules of the course, on the dates listed on the <a href="./schedule.html">schedule</a>. Tests will cover material from lectures and labs, and we will dedicate a class to review before each exam.</p>
-<p>Based on past experience, students enter the class with a wide range of backgrounds and experience. The tests are designed so that students who meet the pre-requisites, but do not have extensive additional experience, can do well. Students with backgrounds that exceed the minimum pre-requisites may find the tests relatively straightforward.</p>
-<p>You will be asked to evaluate your own participation over the course of the semester, and I will provide feedback on your participation as well</p>
+<p>In-class written exams will be given for each module of the course. Tests are designed to be straightforward and will cover key ideas from reading, as well as key terms and concepts from lecture and code interpretation related to labs.</p>
 </section>
 <section id="project" class="level3">
 <h3 class="anchored" data-anchor-id="project">Project</h3>
+<p>We will build a case study related to house elevation over the course of the semester through weekly labs. Answers will be posted for each lab, so mistakes made in one lab do not pass to the next.</p>
+<p>For a final project, you will be asked to incorporate at least two approaches from the course into the case study. For example, you might improve the representation of additional sources of uncertainty, use a more sophisticated optimization algorithm, or change the objectives of the optimization problem.</p>
 </section>
-<section id="only-lecture-notes" class="level3">
-<h3 class="anchored" data-anchor-id="only-lecture-notes">(521 Only) Lecture Notes</h3>
-<p>Students in the 521 section (i.e., graduate students) will take notes on one lecture and add them to this course website.</p>
-</section>
-<section id="only-reading-discussion" class="level3">
-<h3 class="anchored" data-anchor-id="only-reading-discussion">(521 Only) Reading Discussion</h3>
+<section id="reading-discussion" class="level3">
+<h3 class="anchored" data-anchor-id="reading-discussion">Reading Discussion</h3>
+<p>All students enrolled in the 521 section (i.e., graduate students) will present one of the papers assigned to the class and lead a discussion. This discussion should take 30-50 minutes. You will be graded on the quality of your presentation, the depth of your understanding of the reading, and your ability to lead a discussion. You should sign up for a time by the second week of class. You should meet with your instructor at least one week before your presentation to discuss the reading and your discussion plan.</p>
+<p>Students enrolled in the 421 section may choose to present a paper alone or in a group. If you choose to present a paper, you will be graded on the same scale as the 521 students.</p>
 </section>
 <section id="late-work-policy" class="level3">
 <h3 class="anchored" data-anchor-id="late-work-policy">Late Work Policy</h3>
 <ul>
-<li>Late projects will be subjected to a 10% penalty per day, <em>which can accumulate to 100% of the total grade</em>.</li>
+<li>Late projects will be subjected to a 10% penalty per day. Specifically, your grade will be multiplied <span class="math inline">\(0.9^d\)</span> where <span class="math inline">\(d\)</span> is the number of days late.</li>
 <li>Late labs will not be accepted, because we will discuss solutions in class.</li>
-<li>Sometimes things come up in life. Please reach out <em>ahead of time</em> if you have extenuating circumstances (including University-approved absences or illnesses) which would make it difficult for you to submit your work on time. Work which would be late for appropriate reasons will be given extensions and the late penalty will be waived.</li>
 </ul>
+<p>As described above, your lowest two labs and reading quizzes will be dropped. This is intended to accommodate events like minor illnesses, travel to a conference, and other circumstances that may cause you to miss a lab or quiz. If a major circumstance arises (e.g., a death in the family, a serious illness, etc.) that causes you to miss an extended period of time, please contact the instructor to discuss accommodations.</p>
 </section>
 </section>
 <section id="preliminary-schedule" class="level2">
 <h2 class="anchored" data-anchor-id="preliminary-schedule">Preliminary Schedule</h2>
-<table class="table">
+<p>The following schedule outlines our planned topics and readings for the semester. All assignments will be posted on Canvas.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Not all readings listed here will be assigned in full. Some may be assigned as optional reading and others may be assigned as excerpts.</p>
+</div>
+</div>
+</div>
+<table class="table-striped table-hover table">
+<caption></caption>
 <colgroup>
-<col style="width: 10%">
+<col style="width: 8%">
 <col style="width: 16%">
 <col style="width: 24%">
 <col style="width: 24%">
@@ -516,102 +524,123 @@ What If I’m Sick?
 </thead>
 <tbody>
 <tr class="odd">
-<td>Week 1</td>
+<td></td>
+<td><strong>Module 1:</strong></td>
+<td><strong>Introduction</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>1</td>
 <td>1/8, 1/10, 1/12</td>
 <td>Introduction to climate risk management</td>
-<td><span class="citation" data-cites="frank_newjersey:2022">Frank (<a href="#ref-frank_newjersey:2022" role="doc-biblioref">2022</a>)</span></td>
+<td><span class="citation" data-cites="frank_newjersey:2022">Frank (<a href="#ref-frank_newjersey:2022" role="doc-biblioref">2022</a>)</span>, <span class="citation" data-cites="loucks_planning:2017">Loucks (<a href="#ref-loucks_planning:2017" role="doc-biblioref">2017</a>)</span> Ch. 1</td>
 <td>Software installation</td>
 </tr>
-<tr class="even">
-<td>Week 2</td>
+<tr class="odd">
+<td>2</td>
 <td>1/17, 1/19</td>
 <td>Science of climate hazard</td>
-<td><span class="citation" data-cites="seneviratne_wg1ch11:2021">Seneviratne et al. (<a href="#ref-seneviratne_wg1ch11:2021" role="doc-biblioref">2021</a>)</span></td>
+<td><span class="citation" data-cites="seneviratne_wg1ch11:2021">Seneviratne et al. (<a href="#ref-seneviratne_wg1ch11:2021" role="doc-biblioref">2021</a>)</span>, <span class="citation" data-cites="lall_ncawater:2018">Lall et al. (<a href="#ref-lall_ncawater:2018" role="doc-biblioref">2018</a>)</span></td>
 <td>Julia basics</td>
 </tr>
-<tr class="odd">
-<td>Week 3</td>
+<tr class="even">
+<td>3</td>
 <td>1/22, 1/24, 1/26</td>
 <td>Vulnerability, exposure, and impacts</td>
-<td><span class="citation" data-cites="wing_vulnerability:2020">Wing et al. (<a href="#ref-wing_vulnerability:2020" role="doc-biblioref">2020</a>)</span></td>
-<td>Depth-damage functions</td>
+<td><span class="citation" data-cites="wing_vulnerability:2020">Wing et al. (<a href="#ref-wing_vulnerability:2020" role="doc-biblioref">2020</a>)</span>, <span class="citation" data-cites="bonnafous_waterrisk:2017">Bonnafous et al. (<a href="#ref-bonnafous_waterrisk:2017" role="doc-biblioref">2017</a>)</span></td>
+<td>DataFrames, Distributions</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>1/29, 1/31, 2/2</td>
+<td>Systems</td>
+<td><span class="citation" data-cites="reed_multisectordynamics:2022">Reed et al. (<a href="#ref-reed_multisectordynamics:2022" role="doc-biblioref">2022</a>)</span>,</td>
+<td><em>No lab (test 1)</em></td>
 </tr>
 <tr class="even">
-<td>Week 4</td>
-<td>1/29, 1/31, 2/2</td>
+<td></td>
+<td><strong>Module 2:</strong></td>
+<td><strong>Decision Analysis</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>2/5, 2/7, 2/8</td>
 <td>Cost-benefit analysis</td>
 <td><span class="citation" data-cites="arrow_discount:2013">Arrow et al. (<a href="#ref-arrow_discount:2013" role="doc-biblioref">2013</a>)</span></td>
-<td>The house elevation case study</td>
+<td>House Elevation Case Study</td>
 </tr>
-<tr class="odd">
-<td>Week 5</td>
-<td>2/5, 2/7, 2/8</td>
+<tr class="even">
+<td>6</td>
+<td>2/12, 2/14, 2/16</td>
 <td>Scenario analysis</td>
 <td><span class="citation" data-cites="bankes_exploratory:1993">Bankes (<a href="#ref-bankes_exploratory:1993" role="doc-biblioref">1993</a>)</span></td>
-<td>Sea-level rise</td>
-</tr>
-<tr class="even">
-<td>Week 6</td>
-<td>2/12, 2/14, 2/16</td>
-<td>Policy search and optimization</td>
-<td></td>
-<td>Optimal house elevation</td>
+<td>BRICK</td>
 </tr>
 <tr class="odd">
-<td>Week 7</td>
+<td>7</td>
 <td>2/19, 2/21, 2/23</td>
-<td>Multiobjective policy search</td>
-<td></td>
-<td>Pareto-optimal house elevation</td>
+<td>Policy search and optimization</td>
+<td><span class="citation" data-cites="vanberchum_coastal:2019">van Berchum et al. (<a href="#ref-vanberchum_coastal:2019" role="doc-biblioref">2019</a>)</span>, <span class="citation" data-cites="schwetschenau_optimizing:2023">Schwetschenau et al. (<a href="#ref-schwetschenau_optimizing:2023" role="doc-biblioref">2023</a>)</span></td>
+<td>Metaheuristics</td>
 </tr>
 <tr class="even">
-<td>Week 8</td>
+<td>8</td>
 <td>2/26, 2/28, 3/1</td>
-<td>Sequential decision problems</td>
-<td></td>
-<td>The lake problem</td>
+<td>Multiobjective policy search</td>
+<td><span class="citation" data-cites="zarekarizi_suboptimal:2020">Zarekarizi et al. (<a href="#ref-zarekarizi_suboptimal:2020" role="doc-biblioref">2020</a>)</span></td>
+<td>BlackBoxOptim</td>
 </tr>
 <tr class="odd">
-<td>Week 9</td>
+<td>9</td>
 <td>3/4, 3/6, 3/8</td>
+<td>Sequential decision problems</td>
+<td><span class="citation" data-cites="herman_control:2020">Herman et al. (<a href="#ref-herman_control:2020" role="doc-biblioref">2020</a>)</span>, <span class="citation" data-cites="quinn_dps:2017">Quinn et al. (<a href="#ref-quinn_dps:2017" role="doc-biblioref">2017</a>)</span>, <span class="citation" data-cites="fletcher_mombasa:2019">Fletcher et al. (<a href="#ref-fletcher_mombasa:2019" role="doc-biblioref">2019</a>)</span>, <span class="citation" data-cites="sutton_reinforcement:2018">Sutton &amp; Barto (<a href="#ref-sutton_reinforcement:2018" role="doc-biblioref">2018</a>)</span></td>
+<td>Case Study: The Parking Garage</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>3/18, 3/20, 3/22</td>
 <td>Deep uncertainty</td>
 <td><span class="citation" data-cites="schneider_scenarios:2002">Schneider (<a href="#ref-schneider_scenarios:2002" role="doc-biblioref">2002</a>)</span>, <span class="citation" data-cites="lempert_robust:2000">Lempert &amp; Schlesinger (<a href="#ref-lempert_robust:2000" role="doc-biblioref">2000</a>)</span>, <span class="citation" data-cites="oreskes_verification:1994">Oreskes et al. (<a href="#ref-oreskes_verification:1994" role="doc-biblioref">1994</a>)</span></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Week 10</td>
-<td>3/18, 3/20, 3/22</td>
-<td>Robustness</td>
-<td></td>
-<td></td>
+<td><em>No lab (test 2)</em></td>
 </tr>
 <tr class="odd">
-<td>Week 11</td>
-<td>3/25, 3/27, 3/29</td>
-<td>Options / flexibility</td>
-<td><span class="citation" data-cites="fletcher_mombasa2019">Fletcher et al. (<a href="#ref-fletcher_mombasa2019" role="doc-biblioref">2019</a>)</span></td>
-<td>The parking garage</td>
+<td></td>
+<td><strong>Module 3:</strong></td>
+<td><strong>Thinking Critically</strong></td>
+<td></td>
+<td></td>
 </tr>
 <tr class="even">
-<td>Week 12</td>
+<td>11</td>
+<td>3/25, 3/27, 3/29</td>
+<td>Robustness</td>
+<td><span class="citation" data-cites="herman_robustness:2015">Herman et al. (<a href="#ref-herman_robustness:2015" role="doc-biblioref">2015</a>)</span>, <span class="citation" data-cites="mcphail_robustness:2019">McPhail et al. (<a href="#ref-mcphail_robustness:2019" role="doc-biblioref">2019</a>)</span></td>
+<td>Case Study: The Lake Problem</td>
+</tr>
+<tr class="odd">
+<td>12</td>
 <td>4/1, 4/3, 4/5</td>
 <td>Equity and justice</td>
-<td><span class="citation" data-cites="pollack_equity:2023">Pollack et al. (<a href="#ref-pollack_equity:2023" role="doc-biblioref">2023</a>)</span></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Week 13</td>
-<td>4/10, 4/12</td>
-<td>Systemic Risk</td>
-<td><span class="citation" data-cites="thomson_systemic:2023">Thomson et al. (<a href="#ref-thomson_systemic:2023" role="doc-biblioref">2023</a>)</span>, <span class="citation" data-cites="condon_myopia:2021">Condon (<a href="#ref-condon_myopia:2021" role="doc-biblioref">2021</a>)</span></td>
-<td></td>
+<td><span class="citation" data-cites="pollack_equity:2023">Pollack et al. (<a href="#ref-pollack_equity:2023" role="doc-biblioref">2023</a>)</span>, <span class="citation" data-cites="fletcher_waterresourcesequity:2022">Fletcher et al. (<a href="#ref-fletcher_waterresourcesequity:2022" role="doc-biblioref">2022</a>)</span></td>
+<td><em>No lab (project workshop)</em></td>
 </tr>
 <tr class="even">
-<td>Week 14</td>
+<td>13</td>
+<td>4/10, 4/12</td>
+<td>Financial and systemic risks</td>
+<td><span class="citation" data-cites="thomson_systemic:2023">Thomson et al. (<a href="#ref-thomson_systemic:2023" role="doc-biblioref">2023</a>)</span>, <span class="citation" data-cites="condon_myopia:2021">Condon (<a href="#ref-condon_myopia:2021" role="doc-biblioref">2021</a>)</span></td>
+<td><em>No lab (project workshop)</em></td>
+</tr>
+<tr class="odd">
+<td>14</td>
 <td>4/15, 4/17, 4/19</td>
-<td>Reflections &amp; case studies</td>
-<td><span class="citation" data-cites="keller_management:2021">Keller et al. (<a href="#ref-keller_management:2021" role="doc-biblioref">2021</a>)</span></td>
-<td></td>
+<td>Reflections</td>
+<td><span class="citation" data-cites="keller_management:2021">Keller et al. (<a href="#ref-keller_management:2021" role="doc-biblioref">2021</a>)</span>, <span class="citation" data-cites="gilligan_beyondwickedness:2020">Gilligan &amp; Vandenbergh (<a href="#ref-gilligan_beyondwickedness:2020" role="doc-biblioref">2020</a>)</span></td>
+<td><em>No lab (test 3)</em></td>
 </tr>
 </tbody>
 </table>
@@ -627,20 +656,44 @@ Arrow, K., Cropper, M., Gollier, C., Groom, B., Heal, G., Newell, R., et al. (20
 <div id="ref-bankes_exploratory:1993" class="csl-entry" role="listitem">
 Bankes, S. (1993). Exploratory modeling for policy analysis. <em>Operations Research</em>, <em>41</em>(3), 435–449. <a href="https://doi.org/c7rgcr">https://doi.org/c7rgcr</a>
 </div>
+<div id="ref-bonnafous_waterrisk:2017" class="csl-entry" role="listitem">
+Bonnafous, L., Lall, U., &amp; Siegel, J. (2017). A water risk index for portfolio exposure to climatic extremes: Conceptualization and an application to the mining industry. <em>Hydrology and Earth System Sciences</em>, <em>21</em>(4), 2075–2106. <a href="https://doi.org/f96k67">https://doi.org/f96k67</a>
+</div>
 <div id="ref-condon_myopia:2021" class="csl-entry" role="listitem">
 Condon, M. (2021). Market myopia’s climate bubble. <a href="https://doi.org/10.2139/ssrn.3782675">https://doi.org/10.2139/ssrn.3782675</a>
 </div>
-<div id="ref-fletcher_mombasa2019" class="csl-entry" role="listitem">
+<div id="ref-fletcher_mombasa:2019" class="csl-entry" role="listitem">
 Fletcher, S., Lickley, M., &amp; Strzepek, K. (2019). Learning about climate change uncertainty enables flexible water infrastructure planning. <em>Nature Communications</em>, <em>10</em>(1), 1782. <a href="https://doi.org/10.1038/s41467-019-09677-x">https://doi.org/10.1038/s41467-019-09677-x</a>
+</div>
+<div id="ref-fletcher_waterresourcesequity:2022" class="csl-entry" role="listitem">
+Fletcher, S., Hadjimichael, A., Quinn, J., Osman, K., Giuliani, M., Gold, D., et al. (2022). Equity in <span>Water Resources Planning</span>: <span>A Path Forward</span> for <span>Decision Support Modelers</span>. <em>Journal of Water Resources Planning and Management</em>, <em>148</em>(7), 02522005. <a href="https://doi.org/10.1061/(ASCE)WR.1943-5452.0001573">https://doi.org/10.1061/(ASCE)WR.1943-5452.0001573</a>
 </div>
 <div id="ref-frank_newjersey:2022" class="csl-entry" role="listitem">
 Frank, T. (2022, August 22). Bold <span>New Jersey Shore Flood Rules Could Be Blueprint</span> for <span>Entire U</span>.<span>S</span>. <span>Coast</span>. <em>Scientific American</em>. Retrieved from <a href="https://www.scientificamerican.com/article/bold-new-jersey-shore-flood-rules-could-be-blueprint-for-entire-u-s-coast/">https://www.scientificamerican.com/article/bold-new-jersey-shore-flood-rules-could-be-blueprint-for-entire-u-s-coast/</a>
 </div>
+<div id="ref-gilligan_beyondwickedness:2020" class="csl-entry" role="listitem">
+Gilligan, J. M., &amp; Vandenbergh, M. P. (2020). Beyond wickedness: Managing complex systems and climate change. <em>Vanderbilt Law Review</em>, <em>73</em>, 1777–1810. Retrieved from <a href="https://wp0.vanderbilt.edu/lawreview/2020/12/beyond-wickedness-managing-complex-systems-and-climate-change/">https://wp0.vanderbilt.edu/lawreview/2020/12/beyond-wickedness-managing-complex-systems-and-climate-change/</a>
+</div>
+<div id="ref-herman_robustness:2015" class="csl-entry" role="listitem">
+Herman, J. D., Reed, P. M., Zeff, H. B., &amp; Characklis, G. W. (2015). How should robustness be defined for water systems planning under change? <em>Journal of Water Resources Planning and Management</em>, <em>141</em>(10), 04015012. <a href="https://doi.org/10.1061/(asce)wr.1943-5452.0000509">https://doi.org/10.1061/(asce)wr.1943-5452.0000509</a>
+</div>
+<div id="ref-herman_control:2020" class="csl-entry" role="listitem">
+Herman, J. D., Quinn, J. D., Steinschneider, S., Giuliani, M., &amp; Fletcher, S. (2020). Climate adaptation as a control problem: <span>Review</span> and perspectives on dynamic water resources planning under uncertainty. <em>Water Resources Research</em>, e24389. <a href="https://doi.org/10.1029/2019wr025502">https://doi.org/10.1029/2019wr025502</a>
+</div>
 <div id="ref-keller_management:2021" class="csl-entry" role="listitem">
 Keller, K., Helgeson, C., &amp; Srikrishnan, V. (2021). Climate risk management. <em>Annual Review of Earth and Planetary Sciences</em>, <em>49</em>(1), 95–116. <a href="https://doi.org/10.1146/annurev-earth-080320-055847">https://doi.org/10.1146/annurev-earth-080320-055847</a>
 </div>
+<div id="ref-lall_ncawater:2018" class="csl-entry" role="listitem">
+Lall, U., Johnson, T., Colohan, P., Aghakouchak, A., Arumugam, S., Brown, C., et al. (2018). Chapter 3: <span>Water</span>. In D. R. Reidmiller, D. R. Easterling, K. E. Kunkel, K. L. M. Lewis, T. K. Maycock, &amp; B. C. Stewart, <em>Impacts, <span>Risks</span>, and <span>Adaptation</span> in the <span>United States</span>: <span>The Fourth National Climate Assessment</span>, <span>Volume II</span></em>. <span>Washington, D.C.</span>: <span>U.S. Global Change Research Program</span>. <a href="https://doi.org/10.7930/NCA4.2018.CH3">https://doi.org/10.7930/NCA4.2018.CH3</a>
+</div>
 <div id="ref-lempert_robust:2000" class="csl-entry" role="listitem">
 Lempert, R. J., &amp; Schlesinger, M. E. (2000). Robust strategies for abating climate change. <em>Climatic Change</em>, <em>45</em>(3-4), 387–401. <a href="https://doi.org/10.1023/A:1005698407365">https://doi.org/10.1023/A:1005698407365</a>
+</div>
+<div id="ref-loucks_planning:2017" class="csl-entry" role="listitem">
+Loucks, D. P. (2017). <em>Water resource systems planning and management: An introduction to methods, models, and applications</em>. <span>Cham</span>: <span>Imprint: Springer</span>.
+</div>
+<div id="ref-mcphail_robustness:2019" class="csl-entry" role="listitem">
+McPhail, C., Maier, H. R., Kwakkel, J. H., Giuliani, M., Castelletti, A., &amp; Westra, S. (2019). Robustness metrics: How are they calculated, when should they be used and why do they give different results? <em>Earth’s Future</em>, 169–191. <a href="https://doi.org/10.1002/2017ef000649">https://doi.org/10.1002/2017ef000649</a>
 </div>
 <div id="ref-oreskes_verification:1994" class="csl-entry" role="listitem">
 Oreskes, N., Shrader-Frechette, K., &amp; Belitz, K. (1994). Verification, validation, and confirmation of numerical models in the <span>Earth</span> sciences. <em>Science</em>. <a href="https://doi.org/10.1126/science.263.5147.641">https://doi.org/10.1126/science.263.5147.641</a>
@@ -648,17 +701,35 @@ Oreskes, N., Shrader-Frechette, K., &amp; Belitz, K. (1994). Verification, valid
 <div id="ref-pollack_equity:2023" class="csl-entry" role="listitem">
 Pollack, A., Helgeson, C., Kousky, C., &amp; Keller, K. (2023, September 15). Transparency on underlying values is needed for useful equity measurements. <a href="https://doi.org/10.31219/osf.io/kvyxr">https://doi.org/10.31219/osf.io/kvyxr</a>
 </div>
+<div id="ref-quinn_dps:2017" class="csl-entry" role="listitem">
+Quinn, J. D., Reed, P. M., &amp; Keller, K. (2017). Direct policy search for robust multi-objective management of deeply uncertain socio-ecological tipping points. <em>Environmental Modelling &amp; Software</em>, <em>92</em>, 125–141. <a href="https://doi.org/10.1016/j.envsoft.2017.02.017">https://doi.org/10.1016/j.envsoft.2017.02.017</a>
+</div>
+<div id="ref-reed_multisectordynamics:2022" class="csl-entry" role="listitem">
+Reed, P. M., Hadjimichael, A., Moss, R. H., Brelsford, C., Burleyson, C. D., Cohen, S., et al. (2022). Multisector <span>Dynamics</span>: <span>Advancing</span> the <span>Science</span> of <span>Complex Adaptive Human-Earth Systems</span>. <em>Earth’s Future</em>, <em>10</em>(3), e2021EF002621. <a href="https://doi.org/10.1029/2021EF002621">https://doi.org/10.1029/2021EF002621</a>
+</div>
 <div id="ref-schneider_scenarios:2002" class="csl-entry" role="listitem">
 Schneider, S. H. (2002). Can we estimate the likelihood of climatic changes at 2100? <em>Climatic Change</em>, <em>52</em>(4), 441–451. https://doi.org/<a href="http://dx.doi.org/10.1023/A:1014276210717">http://dx.doi.org/10.1023/A:1014276210717</a>
+</div>
+<div id="ref-schwetschenau_optimizing:2023" class="csl-entry" role="listitem">
+Schwetschenau, S. E., Kovankaya, Y., Elliott, M. A., Allaire, M., White, K. D., &amp; Lall, U. (2023). Optimizing <span>Scale</span> for <span>Decentralized Wastewater Treatment</span>: <span>A Tool</span> to <span>Address Failing Wastewater Infrastructure</span> in the <span>United States</span>. <em>ACS ES&amp;T Engineering</em>, <em>3</em>(1), 1–14. <a href="https://doi.org/10.1021/acsestengg.2c00188">https://doi.org/10.1021/acsestengg.2c00188</a>
 </div>
 <div id="ref-seneviratne_wg1ch11:2021" class="csl-entry" role="listitem">
 Seneviratne, S. I., Zhang, X., Adnan, M., Badi, W., Dereczynski, C., Di Luca, A., et al. (2021). Weather and climate extreme events in a changing climate. In V. Masson-Delmotte, P. Zhai, A. Pirani, S. L. Connors, C. Péan, S. Berger, et al. (Eds.), <em>Climate change 2021: <span>The</span> physical science basis. <span>Contribution</span> of working group <span>I</span> to the sixth assessment report of the intergovernmental panel on climate change</em>. Book section, <span>Cambridge, UK and New York, NY, USA</span>: <span>Cambridge University Press</span>. <a href="https://doi.org/10.1017/9781009157896.013">https://doi.org/10.1017/9781009157896.013</a>
 </div>
+<div id="ref-sutton_reinforcement:2018" class="csl-entry" role="listitem">
+Sutton, R. S., &amp; Barto, A. G. (2018). <em>Reinforcement learning: An <span>Introduction</span></em> (Second Edition). <span>Cambridge, Massachusetts and London, England</span>: <span>MIT Press</span>.
+</div>
 <div id="ref-thomson_systemic:2023" class="csl-entry" role="listitem">
 Thomson, H., Zeff, H. B., Kleiman, R., Sebastian, A., &amp; Characklis, G. W. (2023). Systemic <span>Financial Risk Arising From Residential Flood Losses</span>. <em>Earth’s Future</em>, <em>11</em>(4), e2022EF003206. <a href="https://doi.org/10.1029/2022EF003206">https://doi.org/10.1029/2022EF003206</a>
 </div>
+<div id="ref-vanberchum_coastal:2019" class="csl-entry" role="listitem">
+van Berchum, E. C., Mobley, W., Jonkman, S. N., Timmermans, J. S., Kwakkel, J. H., &amp; Brody, S. D. (2019). Evaluation of flood risk reduction strategies through combinations of interventions. <em>Journal of Flood Risk Management</em>, <em>12</em>(S2), e12506. <a href="https://doi.org/10.1111/jfr3.12506">https://doi.org/10.1111/jfr3.12506</a>
+</div>
 <div id="ref-wing_vulnerability:2020" class="csl-entry" role="listitem">
 Wing, O. E. J., Pinter, N., Bates, P. D., &amp; Kousky, C. (2020). New insights into <span>US</span> flood vulnerability revealed from flood insurance big data. <em>Nature Communications</em>, <em>11</em>(1, 1), 1444. <a href="https://doi.org/10.1038/s41467-020-15264-2">https://doi.org/10.1038/s41467-020-15264-2</a>
+</div>
+<div id="ref-zarekarizi_suboptimal:2020" class="csl-entry" role="listitem">
+Zarekarizi, M., Srikrishnan, V., &amp; Keller, K. (2020). Neglecting uncertainties biases house-elevation decisions to manage riverine flood risks. <em>Nature Communications</em>, <em>11</em>(1, 1), 5361. <a href="https://doi.org/10.1038/s41467-020-19188-9">https://doi.org/10.1038/s41467-020-19188-9</a>
 </div>
 </div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
