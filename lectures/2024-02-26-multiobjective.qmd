@@ -1,8 +1,7 @@
 ---
-title: "Introduction to CEVE 421/521"
+title: "Multiobjective Policy Search and Optimization"
 subtitle: "Lecture"
-date: 2024-01-10
-week: 01
+date: 2024-02-26
 
 # do not edit anything below this line
 format:

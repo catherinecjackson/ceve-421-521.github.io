@@ -49,14 +49,8 @@ website:
         text: Lectures
       - href: labs.qmd
         text: Labs
-      - section: "Resources"
-        contents:
-          - href: resources/julia-basics.qmd
-            text: Julia Basics
-          - text: Recommended Links
-            href: resources/learn-more.qmd
-          - text: Typesetting Mathematics
-            href: resources/latex.qmd
+      - text: Resources
+        href: resources.qmd
 
 echo: true
 
