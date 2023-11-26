@@ -1,7 +1,7 @@
 ---
-title: "Nonstationary GEV"
+title: "Introduction to Climate Risk Management"
 subtitle: "Lecture"
-date: 2023-11-08
+date: 2024-01-08
 
 # metadata for the schedule page
 kind: "Lecture"
@@ -22,4 +22,10 @@ template-partials:
     - title-slide.html
 ---
 
-Template...
+This is a placeholder lecture file.
+
+## Lab 1
+
+For our first lab, we will be installing required software for the course.
+Please start working on this lab as soon as possible so that we can use Friday's lab session to troubleshoot any issues and review the material.
+Normally you will not need (or be able) to start labs ahead of time.

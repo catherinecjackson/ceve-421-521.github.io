@@ -7,8 +7,8 @@ website:
   page-navigation: true
   title: "{{< var course.number >}} - {{< var course.semester >}}"
   description: "Homepage for {{< var course.number >}}, {{< var course.title >}}, at Rice University, {{< var course.semester >}}."
-  site-url: https://ceve543.github.io/
-  repo-url: https://www.github.com/ceve543/ceve543.github.io
+  site-url: https://ceve-421-521.github.io/
+  repo-url: https://www.github.com/ceve-421-521/ceve-421-521.github.io
   repo-actions: [edit, issue]
   open-graph: true
 
@@ -37,7 +37,7 @@ website:
         href: "{{var course.github}}"
         text: "Github Repository"
       - icon: journal-check
-        href: https://canvas.rice.edu
+        href: "{{var course.canvas}}"
         text: "Canvas"
     collapse-level: 1
     contents:
@@ -45,15 +45,15 @@ website:
         text: Overview
       - href: syllabus.qmd
         text: Syllabus
-      - href: schedule.qmd
+      - href: lectures.qmd
         text: Lectures
+      - href: labs.qmd
+        text: Labs
       - section: "Resources"
         contents:
-          - text: Installation
-            href: resources/setup.qmd
           - href: resources/julia-basics.qmd
             text: Julia Basics
-          - text: Code Resources
+          - text: Recommended Links
             href: resources/learn-more.qmd
           - text: Typesetting Mathematics
             href: resources/latex.qmd
@@ -63,9 +63,7 @@ echo: true
 format:
   # customization for HTML documents (i.e., the website)
   html:
-    theme: 
-      [simplex, _assets/sass/theme.scss]
-    mainfont: "Atkinson Hyperlegible"
+    theme: spacelab #spacelab #simplex
     copy-code: true
     code-overflow: wrap
     toc: true
@@ -95,6 +93,7 @@ format:
     theme: _assets/sass/slides.scss
     menu:
         numbers: true
+    scrollable: true
     
     # code, links, and refs
     link-external-newwindow: true
@@ -103,7 +102,7 @@ format:
     
     # math and code
     html-math-method: mathjax
-    include-in-header: slides/mathjax-config.html
+    include-in-header: lectures/mathjax-config.html
     date-format: "ddd., MMM. D"
 
 # references

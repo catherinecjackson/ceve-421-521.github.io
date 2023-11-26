@@ -1,0 +1,27 @@
+[submodule "labs/lab-01"]
+	path = labs/lab-01
+	url = https://github.com/CEVE-421-521/lab-01.git
+[submodule "labs/lab-02"]
+	path = labs/lab-02
+	url = https://github.com/CEVE-421-521/lab-02.git
+[submodule "labs/lab-03"]
+	path = labs/lab-03
+	url = https://github.com/CEVE-421-521/lab-03.git
+[submodule "labs/lab-04"]
+	path = labs/lab-04
+	url = https://github.com/CEVE-421-521/lab-04.git
+[submodule "labs/lab-05"]
+	path = labs/lab-05
+	url = https://github.com/CEVE-421-521/lab-05.git
+[submodule "labs/lab-06"]
+	path = labs/lab-06
+	url = https://github.com/CEVE-421-521/lab-06.git
+[submodule "labs/lab-08"]
+	path = labs/lab-08
+	url = https://github.com/CEVE-421-521/lab-08.git
+[submodule "labs/lab-07"]
+	path = labs/lab-07
+	url = https://github.com/CEVE-421-521/lab-07.git
+[submodule "labs/lab-09"]
+	path = labs/lab-09
+	url = https://github.com/CEVE-421-521/lab-09.git
