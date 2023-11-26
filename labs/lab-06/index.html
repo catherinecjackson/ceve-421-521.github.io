@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="CEVE 421/521">
 
-<title>CEVE 421/521 - Spring 2024 - Recommended Links</title>
+<title>CEVE 421/521 - Spring 2024 - Lab 06: Policy Search</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +24,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../resources/latex.html" rel="next">
-<link href="../resources/julia-basics.qmd" rel="prev">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -73,8 +72,8 @@ window.MathJax = {
 </script>
 
 
-<meta property="og:title" content="CEVE 421/521 - Spring 2024 - Recommended Links">
-<meta property="og:description" content="">
+<meta property="og:title" content="CEVE 421/521 - Spring 2024 - Lab 06: Policy Search">
+<meta property="og:description" content="Metaheuristics and BlackBoxOptim">
 <meta property="og:site-name" content="{{< var course.number >}} - {{< var course.semester >}}">
 </head>
 
@@ -87,7 +86,9 @@ window.MathJax = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../resources/julia-basics.qmd">Resources</a></li><li class="breadcrumb-item"><a href="../resources/learn-more.html">Recommended Links</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      {{&lt; var course.number &gt;}}
+      </li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -101,14 +102,14 @@ window.MathJax = {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header sidebar-header-stacked">
-      <a href="../index.html" class="sidebar-logo-link">
-      <img src="../_assets/logos/Rice_Logo_280_Blue.svg" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <a href="../../index.html" class="sidebar-logo-link">
+      <img src="../../_assets/logos/Rice_Logo_280_Blue.svg" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
     <div class="sidebar-title mb-0 py-0">
-      <a href="../">CEVE 421/521</a> 
+      <a href="../../">CEVE 421/521</a> 
         <div class="sidebar-tools-main">
-    <a href="../{{var course.github}}" rel="" title="Github Repository" class="quarto-navigation-tool px-1" aria-label="Github Repository"><i class="bi bi-github"></i></a>
-    <a href="../{{var course.canvas}}" rel="" title="Canvas" class="quarto-navigation-tool px-1" aria-label="Canvas"><i class="bi bi-journal-check"></i></a>
+    <a href="../../{{var course.github}}" rel="" title="Github Repository" class="quarto-navigation-tool px-1" aria-label="Github Repository"><i class="bi bi-github"></i></a>
+    <a href="../../{{var course.canvas}}" rel="" title="Canvas" class="quarto-navigation-tool px-1" aria-label="Canvas"><i class="bi bi-journal-check"></i></a>
 </div>
     </div>
       </div>
@@ -121,57 +122,34 @@ window.MathJax = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Overview</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../syllabus.html" class="sidebar-item-text sidebar-link">
+  <a href="../../syllabus.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Syllabus</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lectures.html" class="sidebar-item-text sidebar-link">
+  <a href="../../lectures.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lectures</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../labs.html" class="sidebar-item-text sidebar-link">
+  <a href="../../labs.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Labs</span></a>
   </div>
 </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../resources.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Resources</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../resources/julia-basics.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Julia Basics</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../resources/learn-more.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Recommended Links</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../resources/latex.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Typesetting Mathematics</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
     </ul>
     </div>
 </nav>
@@ -182,28 +160,36 @@ window.MathJax = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#getting-help" id="toc-getting-help" class="nav-link active" data-scroll-target="#getting-help">Getting Help</a></li>
-  <li><a href="#julia" id="toc-julia" class="nav-link" data-scroll-target="#julia">Julia</a></li>
-  <li><a href="#plotting-with-makie" id="toc-plotting-with-makie" class="nav-link" data-scroll-target="#plotting-with-makie">Plotting with Makie</a></li>
-  <li><a href="#github-resources" id="toc-github-resources" class="nav-link" data-scroll-target="#github-resources">GitHub Resources</a></li>
-  <li><a href="#using-large-language-models-llms" id="toc-using-large-language-models-llms" class="nav-link" data-scroll-target="#using-large-language-models-llms">Using Large Language Models (LLMs)</a></li>
-  <li><a href="#typesetting-math" id="toc-typesetting-math" class="nav-link" data-scroll-target="#typesetting-math">Typesetting Math</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://www.github.com/ceve-421-521/ceve-421-521.github.io/edit/main/resources/learn-more.qmd" class="toc-action">Edit this page</a></p><p><a href="https://www.github.com/ceve-421-521/ceve-421-521.github.io/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://www.github.com/ceve-421-521/ceve-421-521.github.io/edit/main/labs/lab-06/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://www.github.com/ceve-421-521/ceve-421-521.github.io/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Recommended Links</h1>
+<h1 class="title">Lab 06: Policy Search</h1>
+<p class="subtitle lead">Metaheuristics and BlackBoxOptim</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>CEVE 421/521 </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">Fri., Feb.&nbsp;23</p>
+    </div>
+  </div>
   
     
   </div>
@@ -211,70 +197,9 @@ window.MathJax = {
 
 </header>
 
-<p>This page contains links to resources that may be helpful for the course. If you have a resource that you think would be helpful to others, please let me know and I will add it to the list.</p>
-<section id="getting-help" class="level2">
-<h2 class="anchored" data-anchor-id="getting-help">Getting Help</h2>
-<ul>
-<li>Check out the official documentation for Julia: <a href="https://docs.julialang.org/en/v1/">https://docs.julialang.org/en/v1/</a>.</li>
-<li><a href="https://stackoverflow.com">Stack Overflow</a> is a commonly-used resource for programming assistance.</li>
-<li>At a code prompt or in the REPL, you can always type <code>?functionname</code> to get help.</li>
-</ul>
-</section>
-<section id="julia" class="level2">
-<h2 class="anchored" data-anchor-id="julia">Julia</h2>
-<p>There are lots of great resources on programming and Julia. Here is a curated list of some particularly helpful tools.</p>
-<div class="callout callout-style-simple callout-note">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>Some of these tutorials provide their own instructions on how to install Julia. Please follow the instructions provided in this course!</p>
-</div>
-</div>
-</div>
-<ul>
-<li><a href="https://juliaacademy.com/p/julia-programming-for-nervous-beginners">Julia for Nervous Begineers</a>: A free course on JuliaAcademy for people who are hesitant but curious about learning to write code in Julia.</li>
-<li><a href="https://juliadocs.github.io/Julia-Cheat-Sheet/">FastTrack to Julia cheatsheet</a></li>
-<li><a href="https://github.com/sswatson/cheatsheets/blob/master/plotsjl-cheatsheet.pdf">Plotting cheatsheet</a></li>
-<li><a href="https://computationalthinking.mit.edu/Spring21/">Introduction to Computational Thinking</a>: a great Julia-based course at MIT covering applied mathematics and… computational thinking</li>
-<li><a href="https://www.youtube.com/playlist?list=PLCXbkShHt01seTlnlVg6O7f6jKGTguFi7">Comprehensive Julia Tutorials</a>: YouTube playlist covering a variety of Julia topics, starting with an introduciton to the language.## Comments Comments hide statements from the interpreter or compiler. It’s a good idea to liberally comment your code so readers (including yourself!) know why your code is structured and written the way it is. Single-line comments in Julia are preceded with a <code>#</code>. Multi-line comments are preceded with <code>#=</code> and ended with <code>=#</code></li>
-</ul>
-</section>
-<section id="plotting-with-makie" class="level2">
-<h2 class="anchored" data-anchor-id="plotting-with-makie">Plotting with Makie</h2>
-<ul>
-<li><a href="https://docs.makie.org/stable/tutorials/">Makie Tutorials</a></li>
-<li><a href="https://youtube.com/playlist?list=PLP8iPy9hna6TXEn99mhG5KaTgjsrCkDzQ&amp;feature=shared">MakieCon 2023 YouTube Channel</a></li>
-</ul>
-</section>
-<section id="github-resources" class="level2">
-<h2 class="anchored" data-anchor-id="github-resources">GitHub Resources</h2>
-<ul>
-<li><a href="https://www.theodinproject.com/lessons/foundations-git-basics">Git Basics</a> from The Odin Project.</li>
-<li><a href="https://learngitbranching.js.org/">Learn Git Branching</a>: An interactive, visual tutorial to how git works.</li>
-<li><a href="https://missing.csail.mit.edu/2020/version-control/">Version Control</a> from MIT’s “CS: Your Missing Semester” course.</li>
-<li><a href="https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV">Git and GitHub for Poets</a>: YouTube playlist covering the basics of git and GitHub.</li>
-</ul>
-</section>
-<section id="using-large-language-models-llms" class="level2">
-<h2 class="anchored" data-anchor-id="using-large-language-models-llms">Using Large Language Models (LLMs)</h2>
-<ul>
-<li><a href="https://github.com/features/copilot" target="_blank">GitHub Copilot</a> is an extension for VS Code that can provide suggestions for code completion and editing. It is <a href="https://techcommunity.microsoft.com/t5/educator-developer-blog/step-by-step-setting-up-github-student-and-github-copilot-as-an/ba-p/3736279" target="_blank">free</a> for students and educators.</li>
-<li><a href="https://statmodeling.stat.columbia.edu/2023/08/20/bob-carpenter-thinks-gpt-4-is-awesome/" target="_blank">Blog: “Bob Carpenter thinks GPT-4 is awesome”</a>: this post highlights how GPT-4 is able to write a program in Stan, a statistical programming language, and also the mistakes that it makes. Finding and correcting these mistakes requires knowing the Stan language and having a deep understanding of the statistical model, but someone with this expertise could potentially use GPT-4 to accelerate their coding workflow. The comments are also interesting and insightful.</li>
-<li><a href="https://www.aisnakeoil.com/" target="_blank">AI Snake Oil</a> is a blog that seeks to dispel hype, remove misconceptions, and clarify the limits of AI. The authors are in the Princeton University Department of Computer Science.</li>
-<li><a href="https://chat.openai.com/">ChatGPT</a> has both free and paid tiers and can be helpful with writing and interpreting code, though care is needed as described above</li>
-</ul>
-</section>
-<section id="typesetting-math" class="level2">
-<h2 class="anchored" data-anchor-id="typesetting-math">Typesetting Math</h2>
-<ul>
-<li><a href="http://chebe163.caltech.edu/2018w/handouts/intro_to_latex.html">Justin Bois’ tutorial</a>.</li>
-<li><a href="https://www.markdownguide.org/cheat-sheet/">Markdown Cheatsheet</a></li>
-<li><a href="https://ctan.math.washington.edu/tex-archive/info/undergradmath/undergradmath.pdf">LaTeX Cheatsheet</a></li>
-<li><a href="https://mathpix.com/snip">Mathpix Snpi</a> allows you to convert images of equations to LaTeX code (there is a free tier)</li>
-<li><a href="https://detexify.kirelabs.org/classify.html">Detexify</a> lets you draw a symbol and suggests the LaTeX code for the corresponding symbol</li>
-</ul>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>This is a placeholder.</p>
 
 
 </section>
@@ -578,18 +503,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../resources/julia-basics.qmd" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Julia Basics</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../resources/latex.html" class="pagination-link">
-        <span class="nav-page-text">Typesetting Mathematics</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

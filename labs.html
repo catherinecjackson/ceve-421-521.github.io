@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CEVE 421/521 - Spring 2024 - Recommended Links</title>
+<title>CEVE 421/521 - Spring 2024 - CEVE 421/521 Labs</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +23,28 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../resources/latex.html" rel="next">
-<link href="../resources/julia-basics.qmd" rel="prev">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./resources.html" rel="next">
+<link href="./lectures.html" rel="prev">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -63,6 +65,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <!-- MathJax 3 -->
 <script>
 window.MathJax = {
@@ -72,9 +103,10 @@ window.MathJax = {
   };
 </script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<meta property="og:title" content="CEVE 421/521 - Spring 2024 - Recommended Links">
-<meta property="og:description" content="">
+<meta property="og:title" content="CEVE 421/521 - Spring 2024 - CEVE 421/521 Labs">
 <meta property="og:site-name" content="{{< var course.number >}} - {{< var course.semester >}}">
 </head>
 
@@ -87,7 +119,7 @@ window.MathJax = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../resources/julia-basics.qmd">Resources</a></li><li class="breadcrumb-item"><a href="../resources/learn-more.html">Recommended Links</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./labs.html">Labs</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -101,14 +133,14 @@ window.MathJax = {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header sidebar-header-stacked">
-      <a href="../index.html" class="sidebar-logo-link">
-      <img src="../_assets/logos/Rice_Logo_280_Blue.svg" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./_assets/logos/Rice_Logo_280_Blue.svg" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
     <div class="sidebar-title mb-0 py-0">
-      <a href="../">CEVE 421/521</a> 
+      <a href="./">CEVE 421/521</a> 
         <div class="sidebar-tools-main">
-    <a href="../{{var course.github}}" rel="" title="Github Repository" class="quarto-navigation-tool px-1" aria-label="Github Repository"><i class="bi bi-github"></i></a>
-    <a href="../{{var course.canvas}}" rel="" title="Canvas" class="quarto-navigation-tool px-1" aria-label="Canvas"><i class="bi bi-journal-check"></i></a>
+    <a href="./{{var course.github}}" rel="" title="Github Repository" class="quarto-navigation-tool px-1" aria-label="Github Repository"><i class="bi bi-github"></i></a>
+    <a href="./{{var course.canvas}}" rel="" title="Canvas" class="quarto-navigation-tool px-1" aria-label="Canvas"><i class="bi bi-journal-check"></i></a>
 </div>
     </div>
       </div>
@@ -121,82 +153,48 @@ window.MathJax = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Overview</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../syllabus.html" class="sidebar-item-text sidebar-link">
+  <a href="./syllabus.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Syllabus</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lectures.html" class="sidebar-item-text sidebar-link">
+  <a href="./lectures.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lectures</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../labs.html" class="sidebar-item-text sidebar-link">
+  <a href="./labs.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Labs</span></a>
   </div>
 </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./resources.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Resources</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../resources/julia-basics.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Julia Basics</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../resources/learn-more.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Recommended Links</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../resources/latex.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Typesetting Mathematics</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
     </ul>
     </div>
 </nav>
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#getting-help" id="toc-getting-help" class="nav-link active" data-scroll-target="#getting-help">Getting Help</a></li>
-  <li><a href="#julia" id="toc-julia" class="nav-link" data-scroll-target="#julia">Julia</a></li>
-  <li><a href="#plotting-with-makie" id="toc-plotting-with-makie" class="nav-link" data-scroll-target="#plotting-with-makie">Plotting with Makie</a></li>
-  <li><a href="#github-resources" id="toc-github-resources" class="nav-link" data-scroll-target="#github-resources">GitHub Resources</a></li>
-  <li><a href="#using-large-language-models-llms" id="toc-using-large-language-models-llms" class="nav-link" data-scroll-target="#using-large-language-models-llms">Using Large Language Models (LLMs)</a></li>
-  <li><a href="#typesetting-math" id="toc-typesetting-math" class="nav-link" data-scroll-target="#typesetting-math">Typesetting Math</a></li>
-  </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://www.github.com/ceve-421-521/ceve-421-521.github.io/edit/main/resources/learn-more.qmd" class="toc-action">Edit this page</a></p><p><a href="https://www.github.com/ceve-421-521/ceve-421-521.github.io/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Recommended Links</h1>
+<h1 class="title">CEVE 421/521 Labs</h1>
 </div>
 
 
@@ -211,75 +209,164 @@ window.MathJax = {
 
 </header>
 
-<p>This page contains links to resources that may be helpful for the course. If you have a resource that you think would be helpful to others, please let me know and I will add it to the list.</p>
-<section id="getting-help" class="level2">
-<h2 class="anchored" data-anchor-id="getting-help">Getting Help</h2>
-<ul>
-<li>Check out the official documentation for Julia: <a href="https://docs.julialang.org/en/v1/">https://docs.julialang.org/en/v1/</a>.</li>
-<li><a href="https://stackoverflow.com">Stack Overflow</a> is a commonly-used resource for programming assistance.</li>
-<li>At a code prompt or in the REPL, you can always type <code>?functionname</code> to get help.</li>
-</ul>
-</section>
-<section id="julia" class="level2">
-<h2 class="anchored" data-anchor-id="julia">Julia</h2>
-<p>There are lots of great resources on programming and Julia. Here is a curated list of some particularly helpful tools.</p>
-<div class="callout callout-style-simple callout-note">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>Some of these tutorials provide their own instructions on how to install Julia. Please follow the instructions provided in this course!</p>
-</div>
-</div>
-</div>
-<ul>
-<li><a href="https://juliaacademy.com/p/julia-programming-for-nervous-beginners">Julia for Nervous Begineers</a>: A free course on JuliaAcademy for people who are hesitant but curious about learning to write code in Julia.</li>
-<li><a href="https://juliadocs.github.io/Julia-Cheat-Sheet/">FastTrack to Julia cheatsheet</a></li>
-<li><a href="https://github.com/sswatson/cheatsheets/blob/master/plotsjl-cheatsheet.pdf">Plotting cheatsheet</a></li>
-<li><a href="https://computationalthinking.mit.edu/Spring21/">Introduction to Computational Thinking</a>: a great Julia-based course at MIT covering applied mathematics and… computational thinking</li>
-<li><a href="https://www.youtube.com/playlist?list=PLCXbkShHt01seTlnlVg6O7f6jKGTguFi7">Comprehensive Julia Tutorials</a>: YouTube playlist covering a variety of Julia topics, starting with an introduciton to the language.## Comments Comments hide statements from the interpreter or compiler. It’s a good idea to liberally comment your code so readers (including yourself!) know why your code is structured and written the way it is. Single-line comments in Julia are preceded with a <code>#</code>. Multi-line comments are preceded with <code>#=</code> and ended with <code>=#</code></li>
-</ul>
-</section>
-<section id="plotting-with-makie" class="level2">
-<h2 class="anchored" data-anchor-id="plotting-with-makie">Plotting with Makie</h2>
-<ul>
-<li><a href="https://docs.makie.org/stable/tutorials/">Makie Tutorials</a></li>
-<li><a href="https://youtube.com/playlist?list=PLP8iPy9hna6TXEn99mhG5KaTgjsrCkDzQ&amp;feature=shared">MakieCon 2023 YouTube Channel</a></li>
-</ul>
-</section>
-<section id="github-resources" class="level2">
-<h2 class="anchored" data-anchor-id="github-resources">GitHub Resources</h2>
-<ul>
-<li><a href="https://www.theodinproject.com/lessons/foundations-git-basics">Git Basics</a> from The Odin Project.</li>
-<li><a href="https://learngitbranching.js.org/">Learn Git Branching</a>: An interactive, visual tutorial to how git works.</li>
-<li><a href="https://missing.csail.mit.edu/2020/version-control/">Version Control</a> from MIT’s “CS: Your Missing Semester” course.</li>
-<li><a href="https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV">Git and GitHub for Poets</a>: YouTube playlist covering the basics of git and GitHub.</li>
-</ul>
-</section>
-<section id="using-large-language-models-llms" class="level2">
-<h2 class="anchored" data-anchor-id="using-large-language-models-llms">Using Large Language Models (LLMs)</h2>
-<ul>
-<li><a href="https://github.com/features/copilot" target="_blank">GitHub Copilot</a> is an extension for VS Code that can provide suggestions for code completion and editing. It is <a href="https://techcommunity.microsoft.com/t5/educator-developer-blog/step-by-step-setting-up-github-student-and-github-copilot-as-an/ba-p/3736279" target="_blank">free</a> for students and educators.</li>
-<li><a href="https://statmodeling.stat.columbia.edu/2023/08/20/bob-carpenter-thinks-gpt-4-is-awesome/" target="_blank">Blog: “Bob Carpenter thinks GPT-4 is awesome”</a>: this post highlights how GPT-4 is able to write a program in Stan, a statistical programming language, and also the mistakes that it makes. Finding and correcting these mistakes requires knowing the Stan language and having a deep understanding of the statistical model, but someone with this expertise could potentially use GPT-4 to accelerate their coding workflow. The comments are also interesting and insightful.</li>
-<li><a href="https://www.aisnakeoil.com/" target="_blank">AI Snake Oil</a> is a blog that seeks to dispel hype, remove misconceptions, and clarify the limits of AI. The authors are in the Princeton University Department of Computer Science.</li>
-<li><a href="https://chat.openai.com/">ChatGPT</a> has both free and paid tiers and can be helpful with writing and interpreting code, though care is needed as described above</li>
-</ul>
-</section>
-<section id="typesetting-math" class="level2">
-<h2 class="anchored" data-anchor-id="typesetting-math">Typesetting Math</h2>
-<ul>
-<li><a href="http://chebe163.caltech.edu/2018w/handouts/intro_to_latex.html">Justin Bois’ tutorial</a>.</li>
-<li><a href="https://www.markdownguide.org/cheat-sheet/">Markdown Cheatsheet</a></li>
-<li><a href="https://ctan.math.washington.edu/tex-archive/info/undergradmath/undergradmath.pdf">LaTeX Cheatsheet</a></li>
-<li><a href="https://mathpix.com/snip">Mathpix Snpi</a> allows you to convert images of equations to LaTeX code (there is a free tier)</li>
-<li><a href="https://detexify.kirelabs.org/classify.html">Detexify</a> lets you draw a symbol and suggests the LaTeX code for the corresponding symbol</li>
-</ul>
 
 
-</section>
 
-</main> <!-- /main -->
+
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+         <option value="listing-title-sort" data-direction="asc">
+          Title
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+
+<table class="quarto-listing-table table table-striped table-hover">
+<thead>
+<tr>
+<th>
+<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
+</th>
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
+</th>
+<th>
+Key Concepts
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-listing-date-sort="1705039200000" data-listing-file-modified-sort="1701016759124" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-title-sort="Lab 01: Software Installation" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-date">Fri., Jan.&nbsp;12</span>
+</td>
+<td>
+<a href="./labs/lab-01/index.html" class="title listing-title">Lab 01: Software Installation</a>
+</td>
+<td>
+<span class="listing-subtitle">Julia, Quarto, GitHub</span>
+</td>
+</tr>
+<tr data-index="1" data-listing-date-sort="1705644000000" data-listing-file-modified-sort="1701015803128" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Lab 02: Julia Basics" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-date">Fri., Jan.&nbsp;19</span>
+</td>
+<td>
+<a href="./labs/lab-02/index.html" class="title listing-title">Lab 02: Julia Basics</a>
+</td>
+<td>
+<span class="listing-subtitle">Functions, Logic, and Packages</span>
+</td>
+</tr>
+<tr data-index="2" data-listing-date-sort="1706248800000" data-listing-file-modified-sort="1701015797410" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Lab 03: Depth-Damage Models" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-date">Fri., Jan.&nbsp;26</span>
+</td>
+<td>
+<a href="./labs/lab-03/index.html" class="title listing-title">Lab 03: Depth-Damage Models</a>
+</td>
+<td>
+<span class="listing-subtitle">DataFrames and Distributions</span>
+</td>
+</tr>
+<tr data-index="3" data-listing-date-sort="1707372000000" data-listing-file-modified-sort="1701015791234" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Lab 04: House Elevation Case Study" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-date">Thu., Feb.&nbsp;8</span>
+</td>
+<td>
+<a href="./labs/lab-04/index.html" class="title listing-title">Lab 04: House Elevation Case Study</a>
+</td>
+<td>
+<span class="listing-subtitle">DecisionProblems</span>
+</td>
+</tr>
+<tr data-index="4" data-listing-date-sort="1708063200000" data-listing-file-modified-sort="1701015787069" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Lab 05: Sea-Level Rise" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-date">Fri., Feb.&nbsp;16</span>
+</td>
+<td>
+<a href="./labs/lab-05/index.html" class="title listing-title">Lab 05: Sea-Level Rise</a>
+</td>
+<td>
+<span class="listing-subtitle">BRICK</span>
+</td>
+</tr>
+<tr data-index="5" data-listing-date-sort="1708668000000" data-listing-file-modified-sort="1701015782550" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Lab 06: Policy Search" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-date">Fri., Feb.&nbsp;23</span>
+</td>
+<td>
+<a href="./labs/lab-06/index.html" class="title listing-title">Lab 06: Policy Search</a>
+</td>
+<td>
+<span class="listing-subtitle">Metaheuristics and BlackBoxOptim</span>
+</td>
+</tr>
+<tr data-index="6" data-listing-date-sort="1709877600000" data-listing-file-modified-sort="1701016801761" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Lab 08: Parking Garage Case Study" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-date">Fri., Mar.&nbsp;8</span>
+</td>
+<td>
+<a href="./labs/lab-08/index.html" class="title listing-title">Lab 08: Parking Garage Case Study</a>
+</td>
+<td>
+<span class="listing-subtitle">Julia Basics</span>
+</td>
+</tr>
+<tr data-index="7" data-listing-date-sort="1709877600000" data-listing-file-modified-sort="1701016509717" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Lab 07: Multiobjective Optimization" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-date">Fri., Mar.&nbsp;8</span>
+</td>
+<td>
+<a href="./labs/lab-07/index.html" class="title listing-title">Lab 07: Multiobjective Optimization</a>
+</td>
+<td>
+<span class="listing-subtitle"></span>
+</td>
+</tr>
+<tr data-index="8" data-listing-date-sort="1711688400000" data-listing-file-modified-sort="1701016778203" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Lab 09: The Lake Problem" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-date">Fri., Mar.&nbsp;29</span>
+</td>
+<td>
+<a href="./labs/lab-09/index.html" class="title listing-title">Lab 09: The Lake Problem</a>
+</td>
+<td>
+<span class="listing-subtitle">Julia Basics</span>
+</td>
+</tr>
+</tbody>
+
+</table>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -580,13 +667,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../resources/julia-basics.qmd" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Julia Basics</span>
+      <a href="./lectures.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Lectures</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../resources/latex.html" class="pagination-link">
-        <span class="nav-page-text">Typesetting Mathematics</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./resources.html" class="pagination-link">
+        <span class="nav-page-text">Resources</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -594,7 +681,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">Content <i class="fa-solid fa-copyright" aria-label="copyright"></i> 2024 by <a href="https://jamesdossgollin.me">James Doss-Gollin</a>. All content licensed under a <i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> <i class="fa-brands fa-creative-commons-by" aria-label="creative-commons-by"></i> <i class="fa-brands fa-creative-commons-nc" aria-label="creative-commons-nc"></i> <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license (CC BY-NC-SA 4.0)</a></div>   
-    <div class="nav-footer-center"><strong>Page still under construction.</strong></div>
+    <div class="nav-footer-center"><strong>Page still under construction.</strong><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://www.github.com/ceve-421-521/ceve-421-521.github.io/edit/main/labs.qmd" class="toc-action">Edit this page</a></p><p><a href="https://www.github.com/ceve-421-521/ceve-421-521.github.io/issues/new" class="toc-action">Report an issue</a></p></div></div></div>
     <div class="nav-footer-right">Made with <a href="https://julialang.org">Julia</a> and <a href="https://quarto.org/">Quarto</a><br> <a href="https://www.github.com/ceve543/ceve543.github.io">View the source on <i class="fa-brands fa-github" aria-label="github"></i> GitHub</a></div>
   </div>
 </footer>

@@ -1,262 +1,38 @@
 [
   {
-    "objectID": "schedule.html",
-    "href": "schedule.html",
-    "title": "CEVE 421/521: Climate Risk Management",
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Helpful Resources",
     "section": "",
-    "text": "This page contains links to lectures and reading notes developed over this semester.\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nModule\n\n\nCategory\n\n\n\n\n\n\nMon., Jan. 8\n\n\nDemo Lecture\n\n\n3\n\n\nLecture\n\n\n\n\n\n\nNo matching items"
+    "text": "This page contains links to resources that may be helpful for the course. If you have a resource that you think would be helpful to others, please let me know and I will add it to the list."
   },
   {
-    "objectID": "resources/setup.html",
-    "href": "resources/setup.html",
-    "title": "Installing Software for the Course",
-    "section": "",
-    "text": "Getting set up for this course requires the following steps. If you are an experienced programmer, you are free to follow your own workflow to set up these tools. You will absolutely need Quarto, GitHub, and Julia. If you are not an experienced programmer, the following steps are not the only way to get these tools set up, but they are a very good way.\nIf you install course tools using steps other than the ones provided on this page, be aware that your instructors may be able to provide you with only limited support."
+    "objectID": "resources.html#julia",
+    "href": "resources.html#julia",
+    "title": "Helpful Resources",
+    "section": "Julia",
+    "text": "Julia\nThere are lots of great resources on programming and Julia. Here is a curated list of some particularly helpful tools.\n\n\n\n\n\n\nSome of these tutorials provide their own instructions on how to install Julia. Please follow the instructions provided in this course!\n\n\n\n\nJulia for Nervous Begineers: A free course on JuliaAcademy for people who are hesitant but curious about learning to write code in Julia.\nFastTrack to Julia cheatsheet\nPlotting cheatsheet\nIntroduction to Computational Thinking: a great Julia-based course at MIT covering applied mathematics and computational thinking\nComprehensive Julia Tutorials: YouTube playlist covering a variety of Julia topics, starting with an introduciton to the language.\n\n\nPlotting with Makie\n\nMakie Tutorials\nMakieCon 2023 YouTube Channel"
   },
   {
-    "objectID": "resources/setup.html#install-julia",
-    "href": "resources/setup.html#install-julia",
-    "title": "Installing Software for the Course",
-    "section": "Install Julia",
-    "text": "Install Julia\nThe best way to install Julia is through the juliaup tool, which will let you easily manage versions in the future and works seamlessly with VS Code. The instructions can be found at the JuliaUp GitHub repository, but we will summarize them here.\n\nInstalling Juliaup on Windows\nIf your computer uses Windows, you can install Juliaup from the Windows Store.\n\n\nInstalling Juliaup on MacOS\nIf you have a Mac, open a terminal (such as the Terminal app) and enter:\ncurl -fsSL https://install.julialang.org | sh\n\n\nInstalling Julia 1.9\nOnce you install Juliaup, install Julia version 1.9 by opening a terminal (in MacOS or Linux) or the command line (in Windows) and entering:\njulia add 1.9.4\njulia default 1.9.4\nThis will install Julia 1.9.4 and make it the default version, which should maximize package compatibility throughout this course. Going forward, if you want to add new versions or change the default, you can follow the Juliaup instructions."
+    "objectID": "resources.html#other-software-tools",
+    "href": "resources.html#other-software-tools",
+    "title": "Helpful Resources",
+    "section": "Other Software Tools",
+    "text": "Other Software Tools\n\nGit and GitHub\n\nGit Basics from The Odin Project.\nLearn Git Branching: An interactive, visual tutorial to how git works.\nVersion Control from MIT’s “CS: Your Missing Semester” course.\nGit and GitHub for Poets: YouTube playlist covering the basics of git and GitHub.\n\n\n\nTypesetting Math\n\nJustin Bois’ tutorial.\nMarkdown Cheatsheet\nLaTeX Cheatsheet\nMathpix Snpi allows you to convert images of equations to LaTeX code (there is a free tier)\nDetexify lets you draw a symbol and suggests the LaTeX code for the corresponding symbol"
   },
   {
-    "objectID": "resources/setup.html#install-and-set-up-vs-code",
-    "href": "resources/setup.html#install-and-set-up-vs-code",
-    "title": "Installing Software for the Course",
-    "section": "Install and Set Up VS Code",
-    "text": "Install and Set Up VS Code\nVS Code is as close to an officially supported editor for Julia as you can get. We will follow this guide for setting up VS Code with Julia.\n\nYou can skip this section if you are an experienced programmer and already have a preferred IDE. Your IDE will likely have instructions for Julia and QUarto setup.\n\n\nInstalling VS Code\nYou can download it here; open the downloaded file to install. Make sure to select the correct version for your operating system. If you have a recent Apple mac, make sure to check whether you have an Intel or Apple chip before choosing which version to download. You can also use homebrew or your preferred package manager to install VS Code.\n\n\nInstall the Julia Extension\n\nOpen VS Code.\nSelect View and click Extensions to open the Extension View.\nSearch for julia in the search box. Click the green install button.\nRestart VS Code once the installation is complete. It should automatically find your Julia installation; reach out if not.\n\nThe Julia VS Code extension offers you some nice features. You can start a REPL (an interactive Julia coding environment) by opening the “Command Palette” (View -&gt; Command Palette, or CTRL/CMD+SHIFT+P) and typing “REPL” to bring up “Julia: Start REPL”. You can also create .jl and .qmd files to write Julia code and execute line by line.\n\n\nMore Resources\nSee this tutorial for more information on using Julia."
+    "objectID": "resources.html#big-picture",
+    "href": "resources.html#big-picture",
+    "title": "Helpful Resources",
+    "section": "Big Picture",
+    "text": "Big Picture\n\nUsing Large Language Models (LLMs)\n\nGitHub Copilot is an extension for VS Code that can provide suggestions for code completion and editing. It is free for students and educators.\nBlog: “Bob Carpenter thinks GPT-4 is awesome”: this post highlights how GPT-4 is able to write a program in Stan, a statistical programming language, and also the mistakes that it makes. Finding and correcting these mistakes requires knowing the Stan language and having a deep understanding of the statistical model, but someone with this expertise could potentially use GPT-4 to accelerate their coding workflow. The comments are also interesting and insightful.\nAI Snake Oil is a blog that seeks to dispel hype, remove misconceptions, and clarify the limits of AI. The authors are in the Princeton University Department of Computer Science.\nChatGPT has both free and paid tiers and can be helpful with writing and interpreting code, though care is needed as described above"
   },
   {
-    "objectID": "resources/setup.html#set-up-github",
-    "href": "resources/setup.html#set-up-github",
-    "title": "Installing Software for the Course",
-    "section": "Set Up GitHub",
-    "text": "Set Up GitHub\n\nCreate GitHub Account\nIf you already have a GitHub account, you can use that for this course and do not need to create a new account. Otherwise, create an account. It doesn’t have to be linked to your Rice email or your NetID.\nFor labs and projects, you should use the GitHub Classroom link posted on Canvas to “accept” the assignment, which will give you your own GitHub repository for that assignment. The first time you click one of these links, you will need to link your place on the course roster with your GitHub account.\n\n\nGitHub Desktop (Optional)\nYou can do almost everything that you will need to do for this course with GitHub directly through VS Code. The GitHub desktop app is also great, or alternatively you may work directly through the terminal if you have prior experience.\n\n\nInstall Git\ngit is a version control software that powers GitHub under the hood (git is the version control software, GitHub is an online platform). Based on past experience with the course, you probably already have git installed. If you’re not sure if it’s installed, see instructions here.\n\n\nMore Resources\nSee GitHub official tutorials for more helpful resources and tutorials."
-  },
-  {
-    "objectID": "resources/setup.html#set-up-quarto",
-    "href": "resources/setup.html#set-up-quarto",
-    "title": "Installing Software for the Course",
-    "section": "Set up Quarto",
-    "text": "Set up Quarto\nQuarto combines the best of Jupyter notebooks and R Markdown to create a document format that is ideal for conducting and communicating data science. We will use Quarto to create and share our work in this course; this website is also built using Quarto.||\n\nInstall Quarto\nFollow the directions at https://quarto.org/docs/get-started/ to install Quarto. Be sure to ensure that you have the right version for your operating system.\n\n\nInstall the Quarto Extension for VS Code\nUnder “Step 2”, click on the VS Code icon.\n\n\nInstall Jupyter\nUnder the hood, Quarto uses Jupyter to run code. You don’t need to know how Jupyter works or worry about it, because it runs under the hood, but we will need to install it.\n\nIf you have Python installed\nIn your Terminal (open VS Code then open the terminal), run\npython3 -m pip install jupyter\nIf this throws an error, copy and paste the error onto Canvas\n\n\nIf you don’t have Python installed\n\nInstall Python\n\nWindows: see Microsoft instructions or Conda documentation\nMac/Linux: see Conda documentation\n\nFollow the instructions above to install Jupyter"
-  },
-  {
-    "objectID": "resources/setup.html#verify",
-    "href": "resources/setup.html#verify",
-    "title": "Installing Software for the Course",
-    "section": "Verify",
-    "text": "Verify\n\nLab 01 has a section that will help you verify that your setup is working.\nIf you have any trouble:\n\nOpen VS Code\nIn the Terminal, run quarto check\nTry to troubleshoot on your own; if you can’t, post the results of quarto check to Canvas"
-  },
-  {
-    "objectID": "resources/latex.html",
-    "href": "resources/latex.html",
-    "title": "Typesetting Mathematics",
-    "section": "",
-    "text": "In this tutorial, you will learn how to typeset mathematics and equations in Quarto notebooks using LaTeX."
-  },
-  {
-    "objectID": "resources/latex.html#overview",
-    "href": "resources/latex.html#overview",
-    "title": "Typesetting Mathematics",
-    "section": "",
-    "text": "In this tutorial, you will learn how to typeset mathematics and equations in Quarto notebooks using LaTeX."
-  },
-  {
-    "objectID": "resources/latex.html#further-resourcesw",
-    "href": "resources/latex.html#further-resourcesw",
-    "title": "Typesetting Mathematics",
-    "section": "Further Resourcesw",
-    "text": "Further Resourcesw\n\nMarkdown Cheatsheet\nLaTeX Cheatsheet\nMathpix Snpi allows you to convert images of equations to LaTeX code (there is a free tier)\nDetexify lets you draw a symbol and suggests the LaTeX code for the corresponding symbol\n\nThis tutorial was inspired and draws from Justin Bois’ tutorial."
-  },
-  {
-    "objectID": "resources/latex.html#inline-mathematics",
-    "href": "resources/latex.html#inline-mathematics",
-    "title": "Typesetting Mathematics",
-    "section": "Inline Mathematics",
-    "text": "Inline Mathematics\nTo include mathematical notation within text, enclose the LaTeX within dollar signs $. For example, to obtain the output\n\nthe objective function is \\(4x + 7x\\),\n\nyou would enter\n\nthe objective function is $4x + 7x$.\n\nYou can enter subscripts and superscripts with _ and ^, respectively; to get\n\nthe function is \\(f(x_i) = x_i^2\\),\n\ntype\n\nthe function is $f(x_i) = x_i^2$.\n\nIf you want multiple characters to be enclosed in a subscript or superscript, enclose them in braces {}:\n\n\\(e^{i \\pi} - 1 = 0\\) is produced by\n\n\n$e^{i \\pi} - 1 = 0$.\n\nTo get special characters like \\(\\pi\\) (or other Greek letters), precede their name (or sometimes a code) with a backslash: $\\pi$. There are a number of special characters like this, which you can find in cheatsheets like this one.\nBold characters, which you might use to denote vectors, can be rendered using \\mathbf:\n\n\\(\\mathbf{a} \\cdot \\mathbf{b} = \\sum_{i=1}^n a_i \\times b_i\\)\n\n\n$\\mathbf{a} \\cdot \\mathbf{b} = \\sum_{i=1}^n a_i \\times b_i$\n\nFractions can be displayed using \\frac{}{}, where the first bracket encloses the numerator and the second the denominator, as in\n\n\\(\\frac{1}{2}\\)\n\n\n$\\frac{1}{2}$"
-  },
-  {
-    "objectID": "resources/latex.html#displaying-equations",
-    "href": "resources/latex.html#displaying-equations",
-    "title": "Typesetting Mathematics",
-    "section": "Displaying Equations",
-    "text": "Displaying Equations\nTo place equations or other mathematics on their own line(s), enclose the entire block in two dollar signs $$. For example, the prior dot-product definition could be displayed as \\[\n\\mathbf{a} \\cdot \\mathbf{b} = \\sum_{i=1}^n a_i \\times b_i\n\\] using\n$$\n\\mathbf{a} \\cdot \\mathbf{b} = \\sum_{i=1}^n a_i \\times b_i\n$$\nDisplaying equations on their own line(s) can improve the spacing of symbols like sums (as above) or fractions: compare the inline\n\n\\(x &lt; \\frac{1}{2}\\)\n\nto \\[\nx &lt; \\frac{1}{2}.\n\\]\nTo display multiple related lines in a single block, there are two environments of note. The first will center all of the equations, and is obtained by enclosing the equations in \\begin{gather} and \\end{gather}. Each line should be separated with \\\\:\n\\[\n\\begin{gather}\nx_1 + x_2 \\leq 5 \\\\\ny \\leq \\frac{1}{2}.\n\\end{gather}\n\\]\n$$\n\\begin{gather}\nx_1 + x_2 \\leq 5 \\\\\ny \\leq \\frac{1}{2}.\n\\end{gather}\n$$\nThe second environment will let you align the equations as you wish instead of automatically centering them, and is used by enclosing the equations with \\begin{align} and \\end{align}, with an ampersand & in front of the characters which will be used on each line to align the equations:\n\\[\n\\begin{align}\nx_1 + x_2 &\\leq 5 \\\\\ny &\\leq \\frac{1}{2}.\n\\end{align}\n\\]\n$$\n\\begin{align}\nx_1 + x_2 &\\leq 5 \\\\\ny &\\leq \\frac{1}{2}.\n\\end{align}\n$$"
-  },
-  {
-    "objectID": "resources/latex.html#sizing-parentheses-or-brackets",
-    "href": "resources/latex.html#sizing-parentheses-or-brackets",
-    "title": "Typesetting Mathematics",
-    "section": "Sizing Parentheses or Brackets",
-    "text": "Sizing Parentheses or Brackets\nBy default, parentheses and brackets are sized for simple characters, but will look bad when used to surround fractions or sums, particularly when they are not used in-line: \\[\nx_n = (\\frac{1}{2})^n.\n\\] To make this look better, use \\left and \\right around the left and right parentheses or brackets: \\[\nx_n = \\left(\\frac{1}{2}\\right)^n\n\\]\n$$\nx_n = \\left(\\frac{1}{2}\\right)^n.\n$$\nThis is totally optional, but helps!"
-  },
-  {
-    "objectID": "resources/latex.html#using-latex-in-figures",
-    "href": "resources/latex.html#using-latex-in-figures",
-    "title": "Typesetting Mathematics",
-    "section": "Using LaTeX in Figures",
-    "text": "Using LaTeX in Figures\nYou may want to use LaTeX in figures, for example if your \\(x\\)-axis should have a title like \\(x\\). To do this, load the LaTeXStrings package and precede the relevant LaTeX-formatted string (within in-line dollar signs $) with L, as in:\n\nusing Plots\nusing LaTeXStrings\n\nx = (-2π):0.01:(2π)\nplot(x, exp.(sin.(x)); xlabel=L\"$x$\", ylabel=L\"$e^{\\sin(x)}$\", legend=false)"
-  },
-  {
-    "objectID": "resources/julia-basics.html",
-    "href": "resources/julia-basics.html",
-    "title": "Tutorial: Julia Basics",
-    "section": "",
-    "text": "This tutorial will give some examples of basic Julia commands and syntax."
-  },
-  {
-    "objectID": "resources/julia-basics.html#overview",
-    "href": "resources/julia-basics.html#overview",
-    "title": "Tutorial: Julia Basics",
-    "section": "",
-    "text": "This tutorial will give some examples of basic Julia commands and syntax."
-  },
-  {
-    "objectID": "resources/julia-basics.html#getting-help",
-    "href": "resources/julia-basics.html#getting-help",
-    "title": "Tutorial: Julia Basics",
-    "section": "Getting Help",
-    "text": "Getting Help\n\nCheck out the official documentation for Julia: https://docs.julialang.org/en/v1/.\nStack Overflow is a commonly-used resource for programming assistance.\nAt a code prompt or in the REPL, you can always type ?functionname to get help."
-  },
-  {
-    "objectID": "resources/julia-basics.html#further-resources",
-    "href": "resources/julia-basics.html#further-resources",
-    "title": "Tutorial: Julia Basics",
-    "section": "Further Resources",
-    "text": "Further Resources\nThere are lots of great resources on programming and Julia. Here is a curated list of some particularly helpful tools.\n\n\n\n\n\n\nNote\n\n\n\nSome of these tutorials provide their own instructions on how to install Julia. Please follow the instructions provided in this course\n\n\n\nJulia for Nervous Begineers: A free course on JuliaAcademy for people who are hesitant but curious about learning to write code in Julia.\nFastTrack to Julia cheatsheet\nPlotting cheatsheet\nIntroduction to Computational Thinking: a great Julia-based course at MIT covering applied mathematics and… computational thinking\nComprehensive Julia Tutorials: YouTube playlist covering a variety of Julia topics, starting with an introduciton to the language.## Comments Comments hide statements from the interpreter or compiler. It’s a good idea to liberally comment your code so readers (including yourself!) know why your code is structured and written the way it is. Single-line comments in Julia are preceded with a #. Multi-line comments are preceded with #= and ended with =#"
-  },
-  {
-    "objectID": "resources/julia-basics.html#suppressing-output",
-    "href": "resources/julia-basics.html#suppressing-output",
-    "title": "Tutorial: Julia Basics",
-    "section": "Suppressing Output",
-    "text": "Suppressing Output\nYou can suppress output using a semi-colon (;).\n\n4 + 8;\n\nThat didn’t show anything, as opposed to:\n\n4 + 8\n\n12"
-  },
-  {
-    "objectID": "resources/julia-basics.html#variables",
-    "href": "resources/julia-basics.html#variables",
-    "title": "Tutorial: Julia Basics",
-    "section": "Variables",
-    "text": "Variables\nVariables are names which correspond to some type of object. These names are bound to objects (and hence their values) using the = operator.\n\nx = 5\n\n5\n\n\nVariables can be manipulated with standard arithmetic operators.\n\n4 + x\n\n9\n\n\nAnother advantage of Julia is the ability to use Greek letters (or other Unicode characters) as variable names. For example, type a backslash followed by the name of the Greek letter (i.e. \\alpha) followed by TAB.\n\nα = 3\n\n3\n\n\nYou can also include subscripts or superscripts in variable names using \\_ and \\^, respectively, followed by TAB. If using a Greek letter followed by a sub- or super-script, make sure you TAB following the name of the letter before the sub- or super-script. Effectively, TAB after you finish typing the name of each \\character.\n\nβ₁ = 10 # The name of this variable was entered with \\beta + TAB + \\_1 + TAB\n\n10\n\n\nHowever, try not to overwrite predefined names! For example, you might not want to use π as a variable name…\n\nπ\n\nπ = 3.1415926535897...\n\n\nIn the grand scheme of things, overwriting π is not a huge deal unless you want to do some trigonometry. However, there are more important predefined functions and variables that you may want to be aware of. Always check that a variable or function name is not predefined!"
-  },
-  {
-    "objectID": "resources/julia-basics.html#data-types",
-    "href": "resources/julia-basics.html#data-types",
-    "title": "Tutorial: Julia Basics",
-    "section": "Data Types",
-    "text": "Data Types\nEach datum (importantly, not the variable which is bound to it) has a data type. Julia types are similar to C types, in that they require not only the type of data (Int, Float, String, etc), but also the precision (which is related to the amount of memory allocated to the variable). Issues with precision won’t be a big deal in this class, though they matter when you’re concerned about performance vs. decimal accuracy of code.\nYou can identify the type of a variable or expression with the typeof() function.\n\ntypeof(\"This is a string.\")\n\nString\n\n\n\ntypeof(x)\n\nInt64\n\n\n\nNumeric types\nA key distinction is between an integer type (or Int) and a floating-point number type (or float). Integers only hold whole numbers, while floating-point numbers correspond to numbers with fractional (or decimal) parts. For example, 9 is an integer, while 9.25 is a floating point number. The difference between the two has to do with the way the number is stored in memory. 9, an integer, is handled differently in memory than 9.0, which is a floating-point number, even though they’re mathematically the same value.\n\ntypeof(9)\n\nInt64\n\n\n\ntypeof(9.25)\n\nFloat64\n\n\nSometimes certain function specifications will require you to use a Float variable instead of an Int. One way to force an Int variable to be a Float is to add a decimal point at the end of the integer.\n\ntypeof(9.)\n\nFloat64\n\n\n\n\nStrings\nStrings hold characters, rather than numeric values. Even if a string contains what seems like a number, it is actually stored as the character representation of the digits. As a result, you cannot use arithmetic operators (for example) on this datum.\n\n\"5\" + 5\n\nLoadError: MethodError: no method matching +(::String, ::Int64)\n\n\u001b[0mClosest candidates are:\n\u001b[0m  +(::Any, ::Any, \u001b[91m::Any\u001b[39m, \u001b[91m::Any...\u001b[39m)\n\u001b[0m\u001b[90m   @\u001b[39m \u001b[90mBase\u001b[39m \u001b[90m\u001b[4moperators.jl:578\u001b[24m\u001b[39m\n\u001b[0m  +(\u001b[91m::T\u001b[39m, ::T) where T&lt;:Union{Int128, Int16, Int32, Int64, Int8, UInt128, UInt16, UInt32, UInt64, UInt8}\n\u001b[0m\u001b[90m   @\u001b[39m \u001b[90mBase\u001b[39m \u001b[90m\u001b[4mint.jl:87\u001b[24m\u001b[39m\n\u001b[0m  +(\u001b[91m::Rational\u001b[39m, ::Integer)\n\u001b[0m\u001b[90m   @\u001b[39m \u001b[90mBase\u001b[39m \u001b[90m\u001b[4mrational.jl:327\u001b[24m\u001b[39m\n\u001b[0m  ...\n\n\nHowever, you can try to tell Julia to interpret a string encoding a numeric character as a numeric value using the parse() function. This can also be used to encode a numeric data as a string.\n\nparse(Int64, \"5\") + 5\n\n10\n\n\nTwo strings can be concatenated using *:\n\n\"Hello\" * \" \" * \"there\"\n\n\"Hello there\"\n\n\n\n\nBooleans\nBoolean variables (or Bools) are logical variables, that can have true or false as values.\n\nb = true\n\ntrue\n\n\nNumerical comparisons, such as ==, !=, or &lt;, return a Bool.\n\nc = 9 &gt; 11\n\nfalse\n\n\nBools are important for logical flows, such as if-then-else blocks or certain types of loops."
-  },
-  {
-    "objectID": "resources/julia-basics.html#mathematical-operations",
-    "href": "resources/julia-basics.html#mathematical-operations",
-    "title": "Tutorial: Julia Basics",
-    "section": "Mathematical operations",
-    "text": "Mathematical operations\nAddition, subtraction, multiplication, and division work as you would expect. Just pay attention to types! The type of the output is influenced by the type of the inputs: adding or multiplying an Int by a Float will always result in a Float, even if the Float is mathematically an integer. Division is a little special: dividing an Int by another Int will still return a float, because Julia doesn’t know ahead of time if the denominator is a factor of the numerator.\n\n3 + 5\n\n8\n\n\n\n3 * 2\n\n6\n\n\n\n3 * 2.\n\n6.0\n\n\n\n6 - 2\n\n4\n\n\n\n9 / 3\n\n3.0\n\n\nRaising a base to an exponent uses ^, not **.\n\n3^2\n\n9\n\n\nJulia allows the use of updating operators to simplify updating a variable in place (in other words, using x += 5 instead of x = x + 5.\n\nBoolean algebra\nLogical operations can be used on variables of type Bool. Typical operators are && (and), || (or), and ! (not).\n\ntrue && true\n\ntrue\n\n\n\ntrue && false\n\nfalse\n\n\n\ntrue || false\n\ntrue\n\n\n\n!true\n\nfalse\n\n\nComparisons can be chained together.\n\n3 &lt; 4 || 8 == 12\n\ntrue\n\n\nWe didn’t do this above, since Julia doesn’t require it, but it’s easier to understand these types of compound expressions if you use parentheses to signal the order of operations. This helps with debugging!\n\n(3 &lt; 4) || (8 == 12)\n\ntrue"
-  },
-  {
-    "objectID": "resources/julia-basics.html#data-structures",
-    "href": "resources/julia-basics.html#data-structures",
-    "title": "Tutorial: Julia Basics",
-    "section": "Data Structures",
-    "text": "Data Structures\nData structures are containers which hold multiple values in a convenient fashion. Julia has several built-in data structures, and there are many extensions provided in additional packages.\n\nTuples\nTuples are collections of values. Julia will pay attention to the types of these values, but they can be mixed. Tuples are also immutable: their values cannot be changed once they are defined.\nTuples can be defined by just separating values with commas.\n\ntest_tuple = 4, 5, 6\n\n(4, 5, 6)\n\n\nTo access a value, use square brackets and the desired index. Note: Julia indexing starts at 1, not 0!\n\ntest_tuple[1]\n\n4\n\n\nAs mentioned above, tuples are immutable. What happens if we try to change the value of the first element of test_tuple?\n\ntest_tuple[1] = 5\n\nLoadError: MethodError: no method matching setindex!(::Tuple{Int64, Int64, Int64}, ::Int64, ::Int64)\n\n\nTuples also do not have to hold the same types of values.\n\ntest_tuple_2 = 4, 5., 'h'\ntypeof(test_tuple_2)\n\nTuple{Int64, Float64, Char}\n\n\nTuples can also be defined by enclosing the values in parentheses.\ntest_tuple_3 = (4, 5., 'h')\ntypeof(test_tuple_3)\n\n\nArrays\nArrays also hold multiple values, which can be accessed based on their index position. Arrays are commonly defined using square brackets.\n\ntest_array = [1, 4, 7, 8]\ntest_array[2]\n\n4\n\n\nUnlike tuples, arrays are mutable, and their contained values can be changed later.\n\ntest_array[1] = 6\ntest_array\n\n4-element Vector{Int64}:\n 6\n 4\n 7\n 8\n\n\nArrays also can hold multiple types. Unlike tuples, this causes the array to no longer care about types at all.\n\ntest_array_2 = [6, 5., 'h']\ntypeof(test_array_2)\n\n\nVector{Any} (alias for Array{Any, 1})\n\n\n\nCompare this with test_array:\n\ntypeof(test_array)\n\n\nVector{Int64} (alias for Array{Int64, 1})\n\n\n\n\n\nDictionaries\nInstead of using integer indices based on position, dictionaries are indexed by keys. They are specified by passing key-value pairs to the Dict() method.\n\ntest_dict = Dict(\"A\"=&gt;1, \"B\"=&gt;2)\ntest_dict[\"B\"]\n\n2\n\n\n\n\nComprehensions\nCreating a data structure with more than a handful of elements can be tedious to do by hand. If your desired array follows a certain pattern, you can create structures using a comprehension. Comprehensions iterate over some other data structure (such as an array) implicitly and populate the new data structure based on the specified instructions.\n\n[i^2 for i in 0:1:5]\n\n6-element Vector{Int64}:\n  0\n  1\n  4\n  9\n 16\n 25\n\n\nFor dictionaries, make sure that you also specify the keys.\n\nDict(string(i) =&gt; i^2 for i in 0:1:5)\n\nDict{String, Int64} with 6 entries:\n  \"4\" =&gt; 16\n  \"1\" =&gt; 1\n  \"5\" =&gt; 25\n  \"0\" =&gt; 0\n  \"2\" =&gt; 4\n  \"3\" =&gt; 9"
-  },
-  {
-    "objectID": "resources/julia-basics.html#functions",
-    "href": "resources/julia-basics.html#functions",
-    "title": "Tutorial: Julia Basics",
-    "section": "Functions",
-    "text": "Functions\nA function is an object which accepts a tuple of arguments and maps them to a return value. In Julia, functions are defined using the following syntax.\n\nfunction my_actual_function(x, y)\n    return x + y\nend\nmy_actual_function(3, 5)\n\n8\n\n\nFunctions in Julia do not require explicit use of a return statement. They will return the last expression evaluated in their definition. However, it’s good style to explicitly return function outputs. This improves readability and debugging, especially when functions can return multiple expressions based on logical control flows (if-then-else blocks).\nFunctions in Julia are objects, and can be treated like other objects. They can be assigned to new variables or passed as arguments to other functions.\n\ng = my_actual_function\ng(3, 5)\n\n8\n\n\n\nfunction function_of_functions(f, x, y)\n    return f(x, y)\nend\nfunction_of_functions(g, 3, 5)\n\n8\n\n\n\nShort and Anonymous Functions\nIn addition to the long form of the function definition shown above, simple functions can be specified in more compact forms when helpful.\nThis is the short form:\n\nh₁(x) = x^2 # make the subscript using \\_1 + &lt;TAB&gt;\nh₁(4)\n\n16\n\n\nThis is the anonymous form:\n\nx-&gt;sin(x)\n(x-&gt;sin(x))(π/4)\n\n0.7071067811865475\n\n\n\n\nMutating Functions\nThe convention in Julia is that functions should not modify (or mutate) their input data. The reason for this is to ensure that the data is preserved. Mutating functions are mainly appropriate for applications where performance needs to be optimized, and making a copy of the input data would be too memory-intensive.\nIf you do write a mutating function in Julia, the convention is to add a ! to its name, like my_mutating_function!(x).\n\n\nOptional arguments\nThere are two extremes with regard to function parameters which do not always need to be changed. The first is to hard-code them into the function body, which has a clear downside: when you do want to change them, the function needs to be edited directly. The other extreme is to treat them as regular arguments, passing them every time the function is called. This has the downside of potentially creating bloated function calls, particularly when there is a standard default value that makes sense for most function evaluations.\nMost modern languages, including Julia, allow an alternate solution, which is to make these arguments optional. This involves setting a default value, which is used unless the argument is explicitly defined in a function call.\n\nfunction setting_optional_arguments(x, y, c=0.5)\n    return c * (x + y)\nend\n\nsetting_optional_arguments (generic function with 2 methods)\n\n\nIf we want to stick with the fixed value \\(c=0.5\\), all we have to do is call setting_optional_arguments with the x and y arguments.\n\nsetting_optional_arguments(3, 5)\n\n4.0\n\n\nOtherwise, we can pass a new value for c.\n\nsetting_optional_arguments(3, 5, 2)\n\n16\n\n\n\n\nPassing data structures as arguments\nInstead of passing variables individually, it may make sense to pass a data structure, such as an array or a tuple, and then unpacking within the function definition. This is straightforward in long form: access the appropriate elements using their index.\nIn short or anonymous form, there is a trick which allows the use of readable variables within the function definition.\n\nh₂((x,y)) = x*y # enclose the input arguments in parentheses to tell Julia to expect and unpack a tuple\n\nh₂ (generic function with 1 method)\n\n\n\nh₂((2, 3)) # this works perfectly, as we passed in a tuple\n\n6\n\n\n\nh₂(2, 3) # this gives an error, as h₂ expects a single tuple, not two different numeric values\n\nLoadError: MethodError: no method matching h₂(::Int64, ::Int64)\n\n\u001b[0mClosest candidates are:\n\u001b[0m  h₂(::Any)\n\u001b[0m\u001b[90m   @\u001b[39m \u001b[32mMain\u001b[39m \u001b[90m\u001b[4mIn[50]:1\u001b[24m\u001b[39m\n\n\n\nh₂([3, 10]) # this also works with arrays instead of tuples\n\n30\n\n\n\n\nVectorized operations\nJulia uses dot syntax to vectorize an operation and apply it element-wise across an array.\nFor example, to calculate the square root of 3:\n\nsqrt(3)\n\n1.7320508075688772\n\n\nTo calculate the square roots of every integer between 1 and 5:\n\nsqrt.([1, 2, 3, 4, 5])\n\n5-element Vector{Float64}:\n 1.0\n 1.4142135623730951\n 1.7320508075688772\n 2.0\n 2.23606797749979\n\n\nThe same dot syntax is used for arithmetic operations over arrays, since these operations are really functions.\n\n[1, 2, 3, 4] .* 2\n\n4-element Vector{Int64}:\n 2\n 4\n 6\n 8\n\n\nVectorization can be faster and is more concise to write and read than applying the same function to multiple variables or objects explicitly, so take advantage!\n\n\nReturning multiple values\nYou can return multiple values by separating them with a comma. This implicitly causes the function to return a tuple of values.\n\nfunction return_multiple_values(x, y)\n    return x + y, x * y\nend\nreturn_multiple_values(3, 5)\n\n(8, 15)\n\n\nThese values can be unpacked into multiple variables.\n\nn, ν = return_multiple_values(3, 5)\nn\n\n8\n\n\n\nν\n\n15\n\n\n\n\nReturning nothing\nSometimes you don’t want a function to return any values at all. For example, you might want a function that only prints a string to the console.\n\nfunction print_some_string(x)\n    println(\"x: $x\")\n    return nothing\nend\nprint_some_string(42)\n\nx: 42"
-  },
-  {
-    "objectID": "resources/julia-basics.html#printing-text-output",
-    "href": "resources/julia-basics.html#printing-text-output",
-    "title": "Tutorial: Julia Basics",
-    "section": "Printing Text Output",
-    "text": "Printing Text Output\nThe Text() function returns its argument as a plain text string. Notice how this is different from evaluating a string!\n\nText(\"I'm printing a string.\")\n\nI'm printing a string.\n\n\nText() is used in this tutorial as it returns the string passed to it. To print directly to the console, use println().\n\nprintln(\"I'm writing a string to the console.\")\n\nI'm writing a string to the console.\n\n\n\nPrinting Variables In a String\nWhat if we want to include the value of a variable inside of a string? We do this using string interpolation, using $variablename inside of the string.\n\nbar = 42\nText(\"Now I'm printing a variable: $bar\")\n\nNow I'm printing a variable: 42"
-  },
-  {
-    "objectID": "resources/julia-basics.html#control-flows",
-    "href": "resources/julia-basics.html#control-flows",
-    "title": "Tutorial: Julia Basics",
-    "section": "Control Flows",
-    "text": "Control Flows\nOne of the tricky things about learning a new programming language can be getting used to the specifics of control flow syntax. These types of flows include conditional if-then-else statements or loops.\n\nConditional Blocks\nConditional blocks allow different pieces of code to be evaluated depending on the value of a boolean expression or variable. For example, if we wanted to compute the absolute value of a number, rather than using abs():\n\nfunction our_abs(x)\n    if x &gt;= 0\n        return x\n    else\n        return -x\n    end\nend\n\nour_abs (generic function with 1 method)\n\n\n\nour_abs(4)\n\n4\n\n\n\nour_abs(-4)\n\n4\n\n\nTo nest conditional statements, use elseif.\n\nfunction test_sign(x)\n    if x &gt; 0\n        return Text(\"x is positive.\")\n    elseif x &lt; 0\n        return Text(\"x is negative.\")\n    else\n        return Text(\"x is zero.\")\n    end\nend\n\ntest_sign (generic function with 1 method)\n\n\n\ntest_sign(-5)\n\nx is negative.\n\n\n\ntest_sign(0)\n\nx is zero.\n\n\n\n\nLoops\nLoops allow expressions to be evaluated repeatedly until they are terminated. The two main types of loops are while loops and for loops.\n\nWhile loops\nwhile loops continue to evaluate an expression so long as a specified boolean condition is true. This is useful when you don’t know how many iterations it will take for the desired goal to be reached.\n\nfunction compute_factorial(x)\n    factorial = 1\n    while (x &gt; 1)\n        factorial *= x\n        x -= 1\n    end\n    return factorial\nend\ncompute_factorial(5)\n\n120\n\n\n\nWhile loops can easily turn into infinite loops if the condition is never meaningfully updated. Be careful, and look there if your programs are getting stuck. Also, If the expression in a while loop is false when the loop is reached, the loop will never be evaluated.\n\n\n\nFor loops\nfor loops run for a finite number of iterations, based on some defined index variable.\n\nfunction add_some_numbers(x)\n    total_sum = 0 # initialize at zero since we're adding\n    for i in 1:x # the counter i is updated every iteration\n        total_sum += i\n    end\n    return total_sum\nend\nadd_some_numbers(4)\n\n10\n\n\nfor loops can also iterate over explicitly passed containers, rather than iterating over an incrementally-updated index sequence. Use the in keyword when defining the loop.\n\nfunction add_passed_numbers(set)\n    total_sum = 0\n    for i in set # this is the syntax we use when we want i to correspond to different container values\n        total_sum += i\n    end\n    return total_sum\nend\nadd_passed_numbers([1, 3, 5])\n\n9"
-  },
-  {
-    "objectID": "resources/julia-basics.html#linear-algebra",
-    "href": "resources/julia-basics.html#linear-algebra",
-    "title": "Tutorial: Julia Basics",
-    "section": "Linear algebra",
-    "text": "Linear algebra\nMatrices are defined in Julia as 2d arrays. Unlike basic arrays, matrices need to contain the same data type so Julia knows what operations are allowed. When defining a matrix, use semicolons to separate rows. Row elements should not be separated by commas.\n\ntest_matrix = [1 2 3; 4 5 6]\n\n2×3 Matrix{Int64}:\n 1  2  3\n 4  5  6\n\n\nYou can also specify matrices using spaces and newlines.\n\ntest_matrix_2 = [\n    1 2 3\n    4 5 6\n]\n\n2×3 Matrix{Int64}:\n 1  2  3\n 4  5  6\n\n\nFinally, matrices can be created using comprehensions by separating the inputs by a comma.\n\n[i*j for i in 1:1:5, j in 1:1:5]\n\n5×5 Matrix{Int64}:\n 1   2   3   4   5\n 2   4   6   8  10\n 3   6   9  12  15\n 4   8  12  16  20\n 5  10  15  20  25\n\n\nVectors are treated as 1d matrices.\n\ntest_row_vector = [1 2 3]\n\n1×3 Matrix{Int64}:\n 1  2  3\n\n\n\ntest_col_vector = [1; 2; 3]\n\n3-element Vector{Int64}:\n 1\n 2\n 3\n\n\nMany linear algebra operations on vectors and matrices can be loaded using the LinearAlgebra package."
-  },
-  {
-    "objectID": "resources/julia-basics.html#package-management",
-    "href": "resources/julia-basics.html#package-management",
-    "title": "Tutorial: Julia Basics",
-    "section": "Package management",
-    "text": "Package management\nSometimes you might need functionality that does not exist in base Julia. Julia handles packages using the Pkg package manager. After finding a package which has the functions that you need, you have two options:\n\nUse the package management prompt in the Julia REPL (the standard Julia interface; what you get when you type julia in your terminal). Enter this by typing ] at the standard green Julia prompt julia&gt;. This will become a blue pkg&gt;. You can then add new packages using add packagename.\nFrom the standard prompt, enter import Pkg; Pkg.add(packagename). The packagename package can then be used by adding using packagename to the start of the script."
-  },
-  {
-    "objectID": "resources/learn-more.html",
-    "href": "resources/learn-more.html",
-    "title": "Coding Resources",
-    "section": "",
-    "text": "Plots.jl useful tips\nPlots.jl examples\nPlot attributes\nAxis attributes\nColor names"
-  },
-  {
-    "objectID": "resources/learn-more.html#plots-in-julia",
-    "href": "resources/learn-more.html#plots-in-julia",
-    "title": "Coding Resources",
-    "section": "",
-    "text": "Plots.jl useful tips\nPlots.jl examples\nPlot attributes\nAxis attributes\nColor names"
-  },
-  {
-    "objectID": "resources/learn-more.html#github-resources",
-    "href": "resources/learn-more.html#github-resources",
-    "title": "Coding Resources",
-    "section": "GitHub Resources",
-    "text": "GitHub Resources\n\nGit Basics from The Odin Project.\nLearn Git Branching: An interactive, visual tutorial to how git works.\nVersion Control from MIT’s “CS: Your Missing Semester” course.\nGit and GitHub for Poets: YouTube playlist covering the basics of git and GitHub."
-  },
-  {
-    "objectID": "resources/learn-more.html#using-large-language-models-llms",
-    "href": "resources/learn-more.html#using-large-language-models-llms",
-    "title": "Coding Resources",
-    "section": "Using Large Language Models (LLMs)",
-    "text": "Using Large Language Models (LLMs)\n\nGitHub Copilot is an extension for VS Code that can provide suggestions for code completion and editing. It is free for students and educators.\nBlog: “Bob Carpenter thinks GPT-4 is awesome”: this post highlights how GPT-4 is able to write a program in Stan, a statistical programming language, and also the mistakes that it makes. Finding and correcting these mistakes requires knowing the Stan language and having a deep understanding of the statistical model, but someone with this expertise could potentially use GPT-4 to accelerate their coding workflow. The comments are also interesting and insightful.\nAI Snake Oil is a blog that seeks to dispel hype, remove misconceptions, and clarify the limits of AI. The authors are in the Princeton University Department of Computer Science.\nChatGPT has both free and paid tiers and can be helpful with writing and interpreting code, though care is needed as described above"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "CEVE 421/521: Climate Risk Management",
-    "section": "",
-    "text": "This is the course website for the Spring 2024 edition of CEVE 421/521, Climate Risk Management, taught at Rice University by James Doss-Gollin."
-  },
-  {
-    "objectID": "index.html#course-information",
-    "href": "index.html#course-information",
-    "title": "CEVE 421/521: Climate Risk Management",
-    "section": "Course Information",
-    "text": "Course Information\n\nDetails on the class and course policies are provided in the syllabus.\nTopics, slides, assignments, and other materials can be found in the schedule."
-  },
-  {
-    "objectID": "index.html#instructor",
-    "href": "index.html#instructor",
-    "title": "CEVE 421/521: Climate Risk Management",
-    "section": "Instructor",
-    "text": "Instructor\nDr. James Doss-Gollin is an assistant professor of Civil and Environmental Engineering at Rice University. His research integrates Earth science, data science, and decision science to address challenges in climate risk management, water resources, and energy system resilience. He also teaches CEVE 421/521 (Climate Risk Management)."
-  },
-  {
-    "objectID": "index.html#software-tools",
-    "href": "index.html#software-tools",
-    "title": "CEVE 421/521: Climate Risk Management",
-    "section": "Software Tools",
-    "text": "Software Tools\n\nThis course will use the Julia programming language. Julia is a modern, free, open source language designed for scientific computing.\nNo prior knowledge of Julia (or other programming languages) is required. We will cover all required material in labs.\nAssignments will be distributed using GitHub Classroom."
-  },
-  {
-    "objectID": "index.html#acknowledgements",
-    "href": "index.html#acknowledgements",
-    "title": "CEVE 421/521: Climate Risk Management",
-    "section": "Acknowledgements",
-    "text": "Acknowledgements\nThe layout for this site was inspired by and draws from Vivek Srikrishnan’s Environmental Systems Analysis course at Cornell, STA 210 at Duke University, and Andrew Heiss’s course materials at Georgia State."
+    "objectID": "lectures/2024-01-08-intro-class.html#lab-1",
+    "href": "lectures/2024-01-08-intro-class.html#lab-1",
+    "title": "Introduction to Climate Risk Management",
+    "section": "Lab 1",
+    "text": "Lab 1\nFor our first lab, we will be installing required software for the course. Please start working on this lab as soon as possible so that we can use Friday’s lab session to troubleshoot any issues and review the material. Normally you will not need (or be able) to start labs ahead of time."
   },
   {
     "objectID": "syllabus.html",
@@ -284,7 +60,7 @@
     "href": "syllabus.html#a-community-of-learning",
     "title": "Syllabus",
     "section": "A Community of Learning",
-    "text": "A Community of Learning\nRice’s core values are responsibility, integrity, community, and excellence. Our goal is to create a learning community aligned with these core values.\n\nCore Expectations\nCourse success involves a dual responsibility on the part of the instructor and the student.\n\n\nAs the instructor, my responsibility is to provide you with a structure and opportunity to learn. To this end, I commit to:\n\nprovide organized and focused lectures, in-class activities, and assignments;\nencourage students to regularly evaluate and provide feedback on the course;\nmanage the classroom atmosphere to promote learning;\nschedule sufficient out-of-class contact opportunities, such as office hours;\nallow adequate time for assignment completion;\nmake lecture materials, class policies, activities, and assignments accessible to students.\n\n\nStudents are responsible for their own learning in the course and should commit to:\n\nattending all lectures;\ndoing all required preparatory work before class;\nactively participating in online and in-class discussions;\nbeginning assignments and other work early; and\nattending office hours as needed.\n\n\n\n\n\n\n\n\n\nWhat If I’m Sick?\n\n\n\nPlease stay home if you’re feeling sick! This is beneficial for both for your own recovery and the health and safety of your classmates. We will also make any necessary arrangements for you to stay on top of the class material and if whatever is going on will negatively impact your grade, for example by causing you to be unable to submit an assignment on time.\n\n\n\n\nDiversity, Equity, and Inclusion\nRice is committed to building and maintaining an equitable and inclusive campus community. Diversity can refer to multiple ways that we identify ourselves, including but not limited to race, color, national origin, language, sex, disability, age, sexual orientation, gender identity, religion, creed, ancestry, belief, veteran status, or genetic information. Each of these diverse identities, along with many others not mentioned here, shape the perspectives our students, faculty, and staff bring to our campus. We, at Rice, will work to promote diversity, equity and inclusion not only because diversity fuels excellence and innovation, but because we want to pursue justice. We acknowledge our imperfections while we also fully commit to the work, inside and outside of our classrooms, of building and sustaining a campus community that increasingly embraces these core values.\nEach of us is responsible for creating a safer, more inclusive environment.\n\n\nAccommodation for Students with Disabilities\nIf you have a documented disability or other condition that may affect academic performance you should: 1) make sure this documentation is on file with the Disability Resource Center (Allen Center, Room 111 / adarice@rice.edu / x5841) to determine the accommodations you need; and 2) talk with me to discuss your accommodation needs.\n\n\nAccommodation for Scheduling Conflicts\nIf any of our class meetings conflict with your religious events, student athletics, or other non-negotiable scheduling conflict, please let me know ASAP so that we can make arrangements for you.\n\n\nMask Policies\nMasks are welcome but not required in the classroom. However, if a colleague (student, faculty, or staff) requests that others wear a mask, you are strongly encouraged to make them feel safe. Please do not ask someone making such a request to disclose their underlying medical condition. If for some reason you need your instructor or classmates to wear a mask, please let me know and I will communicate this to the class without disclosing your identity.\nThese policies may change over the course of the semester as the situation evolves."
+    "text": "A Community of Learning\nRice’s core values are responsibility, integrity, community, and excellence. Our goal is to create a learning community aligned with these core values.\n\nCore Expectations\nCourse success involves a dual responsibility on the part of the instructor and the student.\n\n\nAs the instructor, my responsibility is to provide you with a structure and opportunity to learn. To this end, I commit to:\n\nprovide organized and focused lectures, in-class activities, and assignments;\nencourage students to regularly evaluate and provide feedback on the course;\nmanage the classroom atmosphere to promote learning;\nschedule sufficient out-of-class contact opportunities, such as office hours;\nallow adequate time for assignment completion;\nmake lecture materials, class policies, activities, and assignments accessible to students.\n\n\n\n\nStudents are responsible for their own learning in the course and should commit to:\n\nattending all lectures;\ndoing all required preparatory work before class;\nactively participating in online and in-class discussions;\nbeginning assignments and other work early; and\nattending office hours as needed.\n\n\n\n\n\n\n\n\n\nWhat If I’m Sick?\n\n\n\nPlease stay home if you’re feeling sick! This is beneficial for both for your own recovery and the health and safety of your classmates. We will also make any necessary arrangements for you to stay on top of the class material and if whatever is going on will negatively impact your grade, for example by causing you to be unable to submit an assignment on time.\n\n\n\n\nDiversity, Equity, and Inclusion\nRice is committed to building and maintaining an equitable and inclusive campus community. Diversity can refer to multiple ways that we identify ourselves, including but not limited to race, color, national origin, language, sex, disability, age, sexual orientation, gender identity, religion, creed, ancestry, belief, veteran status, or genetic information. Each of these diverse identities, along with many others not mentioned here, shape the perspectives our students, faculty, and staff bring to our campus. We, at Rice, will work to promote diversity, equity and inclusion not only because diversity fuels excellence and innovation, but because we want to pursue justice. We acknowledge our imperfections while we also fully commit to the work, inside and outside of our classrooms, of building and sustaining a campus community that increasingly embraces these core values.\nEach of us is responsible for creating a safer, more inclusive environment.\n\n\nAccommodation for Students with Disabilities\nIf you have a documented disability or other condition that may affect academic performance you should: 1) make sure this documentation is on file with the Disability Resource Center (Allen Center, Room 111 / adarice@rice.edu / x5841) to determine the accommodations you need; and 2) talk with me to discuss your accommodation needs.\n\n\nAccommodation for Scheduling Conflicts\nIf any of our class meetings conflict with your religious events, student athletics, or other non-negotiable scheduling conflict, please let me know ASAP so that we can make arrangements for you.\n\n\nMask Policies\nMasks are welcome but not required in the classroom. However, if a colleague (student, faculty, or staff) requests that others wear a mask, you are strongly encouraged to make them feel safe. Please do not ask someone making such a request to disclose their underlying medical condition. If for some reason you need your instructor or classmates to wear a mask, please let me know and I will communicate this to the class without disclosing your identity.\nThese policies may change over the course of the semester as the situation evolves.\n\n\nGetting Help\nYou can ask questions through Canvas Discussions and Office Hours. We will make an effort to respond to all Canvas discussion questions within 24 hours, though this won’t always be possible (travel, weekends, etc.). Please do not use email for questions about course content or labs, since other students may have related questions. You should use email for questions about personal matters, such as scheduling conflicts, accommodations, etc."
   },
   {
     "objectID": "syllabus.html#academic-integrity",
@@ -305,6 +81,209 @@
     "href": "syllabus.html#preliminary-schedule",
     "title": "Syllabus",
     "section": "Preliminary Schedule",
-    "text": "Preliminary Schedule\nThe following schedule outlines our planned topics and readings for the semester. All assignments will be posted on Canvas.\n\n\n\n\n\n\nNot all readings listed here will be assigned in full. Some may be assigned as optional reading and others may be assigned as excerpts.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nCourse Dates\nTopic\nReading\nLab\n\n\n\n\n\nModule 1:\nIntroduction\n\n\n\n\n1\n1/8, 1/10, 1/12\nIntroduction to climate risk management\nFrank (2022), Loucks (2017) Ch. 1\nSoftware installation\n\n\n2\n1/17, 1/19\nScience of climate hazard\nSeneviratne et al. (2021), Lall et al. (2018)\nJulia basics\n\n\n3\n1/22, 1/24, 1/26\nVulnerability, exposure, and impacts\nWing et al. (2020), Bonnafous et al. (2017)\nDataFrames, Distributions\n\n\n4\n1/29, 1/31, 2/2\nSystems\nReed et al. (2022),\nNo lab (test 1)\n\n\n\nModule 2:\nDecision Analysis\n\n\n\n\n5\n2/5, 2/7, 2/8\nCost-benefit analysis\nArrow et al. (2013)\nHouse Elevation Case Study\n\n\n6\n2/12, 2/14, 2/16\nScenario analysis\nBankes (1993)\nBRICK\n\n\n7\n2/19, 2/21, 2/23\nPolicy search and optimization\nvan Berchum et al. (2019), Schwetschenau et al. (2023)\nMetaheuristics\n\n\n8\n2/26, 2/28, 3/1\nMultiobjective policy search\nZarekarizi et al. (2020)\nBlackBoxOptim\n\n\n9\n3/4, 3/6, 3/8\nSequential decision problems\nHerman et al. (2020), Quinn et al. (2017), Fletcher et al. (2019), Sutton & Barto (2018)\nCase Study: The Parking Garage\n\n\n10\n3/18, 3/20, 3/22\nDeep uncertainty\nSchneider (2002), Lempert & Schlesinger (2000), Oreskes et al. (1994)\nNo lab (test 2)\n\n\n\nModule 3:\nThinking Critically\n\n\n\n\n11\n3/25, 3/27, 3/29\nRobustness\nHerman et al. (2015), McPhail et al. (2019)\nCase Study: The Lake Problem\n\n\n12\n4/1, 4/3, 4/5\nEquity and justice\nPollack et al. (2023), Fletcher et al. (2022)\nNo lab (project workshop)\n\n\n13\n4/10, 4/12\nFinancial and systemic risks\nThomson et al. (2023), Condon (2021)\nNo lab (project workshop)\n\n\n14\n4/15, 4/17, 4/19\nReflections\nKeller et al. (2021), Gilligan & Vandenbergh (2020)\nNo lab (test 3)"
+    "text": "Preliminary Schedule\nThe following schedule outlines our planned topics and readings for the semester. All assignments will be posted on Canvas.\n\n\n\n\n\n\nNot all readings listed here will be assigned in full. Some may be assigned as optional reading and others may be assigned as excerpts.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nCourse Dates\nTopic\nReading\nLab\n\n\n\n\n\nModule 1:\nIntroduction\n\n\n\n\n1\n1/8, 1/10, 1/12\nIntroduction to climate risk management\nFrank (2022), Loucks (2017) Ch. 1\nSoftware installation\n\n\n2\n1/17, 1/19\nScience of climate hazard\nSeneviratne et al. (2021), Lall et al. (2018)\nJulia basics\n\n\n3\n1/22, 1/24, 1/26\nVulnerability, exposure, and impacts\nWing et al. (2020), Bonnafous et al. (2017)\nDataFrames, Distributions\n\n\n4\n1/29, 1/31, 2/2\nSystems\nReed et al. (2022),\nNo lab (test 1)\n\n\n\nModule 2:\nDecision Analysis\n\n\n\n\n5\n2/5, 2/7, 2/8\nCost-benefit analysis\nArrow et al. (2013)\nHouse Elevation Case Study\n\n\n6\n2/12, 2/14, 2/16\nScenario analysis\nBankes (1993)\nBRICK\n\n\n7\n2/19, 2/21, 2/23\nPolicy search and optimization\nvan Berchum et al. (2019), Schwetschenau et al. (2023)\nMetaheuristics\n\n\n8\n2/26, 2/28, 3/1\nMultiobjective policy search\nZarekarizi et al. (2020)\nBlackBoxOptim\n\n\n9\n3/4, 3/6, 3/8\nSequential decision problems\nHerman et al. (2020), Quinn et al. (2017), Fletcher et al. (2019), Sutton & Barto (2018)\nCase Study: The Parking Garage\n\n\n10\n3/18, 3/20, 3/22\nRobustness\nHerman et al. (2015), McPhail et al. (2019)\nCase Study: The Lake Problem\n\n\n\nModule 3:\nThinking Critically\n\n\n\n\n11\n3/25, 3/27, 3/29\nDeep uncertainty\nSchneider (2002), Lempert & Schlesinger (2000), Oreskes et al. (1994)\nNo lab (test 2)\n\n\n12\n4/1, 4/3, 4/5\nEquity and justice\nPollack et al. (2023), Fletcher et al. (2022)\nNo lab\n\n\n13\n4/10, 4/12\nFinancial and systemic risks\nThomson et al. (2023), Condon (2021)\nNo lab\n\n\n14\n4/15, 4/17, 4/19\nReflections\nKeller et al. (2021), Gilligan & Vandenbergh (2020)\nNo lab (test 3)"
+  },
+  {
+    "objectID": "syllabus.html#references",
+    "href": "syllabus.html#references",
+    "title": "Syllabus",
+    "section": "References",
+    "text": "References\n\n\nArrow, K., Cropper, M., Gollier, C., Groom, B., Heal, G., Newell, R., et al. (2013). Determining benefits and costs for future generations. Science, 341(6144), 349–350. https://doi.org/10.1126/science.1235665\n\n\nBankes, S. (1993). Exploratory modeling for policy analysis. Operations Research, 41(3), 435–449. https://doi.org/c7rgcr\n\n\nBonnafous, L., Lall, U., & Siegel, J. (2017). A water risk index for portfolio exposure to climatic extremes: Conceptualization and an application to the mining industry. Hydrology and Earth System Sciences, 21(4), 2075–2106. https://doi.org/f96k67\n\n\nCondon, M. (2021). Market myopia’s climate bubble. https://doi.org/10.2139/ssrn.3782675\n\n\nFletcher, S., Lickley, M., & Strzepek, K. (2019). Learning about climate change uncertainty enables flexible water infrastructure planning. Nature Communications, 10(1), 1782. https://doi.org/10.1038/s41467-019-09677-x\n\n\nFletcher, S., Hadjimichael, A., Quinn, J., Osman, K., Giuliani, M., Gold, D., et al. (2022). Equity in Water Resources Planning: A Path Forward for Decision Support Modelers. Journal of Water Resources Planning and Management, 148(7), 02522005. https://doi.org/10.1061/(ASCE)WR.1943-5452.0001573\n\n\nFrank, T. (2022, August 22). Bold New Jersey Shore Flood Rules Could Be Blueprint for Entire U.S. Coast. Scientific American. Retrieved from https://www.scientificamerican.com/article/bold-new-jersey-shore-flood-rules-could-be-blueprint-for-entire-u-s-coast/\n\n\nGilligan, J. M., & Vandenbergh, M. P. (2020). Beyond wickedness: Managing complex systems and climate change. Vanderbilt Law Review, 73, 1777–1810. Retrieved from https://wp0.vanderbilt.edu/lawreview/2020/12/beyond-wickedness-managing-complex-systems-and-climate-change/\n\n\nHerman, J. D., Reed, P. M., Zeff, H. B., & Characklis, G. W. (2015). How should robustness be defined for water systems planning under change? Journal of Water Resources Planning and Management, 141(10), 04015012. https://doi.org/10.1061/(asce)wr.1943-5452.0000509\n\n\nHerman, J. D., Quinn, J. D., Steinschneider, S., Giuliani, M., & Fletcher, S. (2020). Climate adaptation as a control problem: Review and perspectives on dynamic water resources planning under uncertainty. Water Resources Research, e24389. https://doi.org/10.1029/2019wr025502\n\n\nKeller, K., Helgeson, C., & Srikrishnan, V. (2021). Climate risk management. Annual Review of Earth and Planetary Sciences, 49(1), 95–116. https://doi.org/10.1146/annurev-earth-080320-055847\n\n\nLall, U., Johnson, T., Colohan, P., Aghakouchak, A., Arumugam, S., Brown, C., et al. (2018). Chapter 3: Water. In D. R. Reidmiller, D. R. Easterling, K. E. Kunkel, K. L. M. Lewis, T. K. Maycock, & B. C. Stewart, Impacts, Risks, and Adaptation in the United States: The Fourth National Climate Assessment, Volume II. Washington, D.C.: U.S. Global Change Research Program. https://doi.org/10.7930/NCA4.2018.CH3\n\n\nLempert, R. J., & Schlesinger, M. E. (2000). Robust strategies for abating climate change. Climatic Change, 45(3-4), 387–401. https://doi.org/10.1023/A:1005698407365\n\n\nLoucks, D. P. (2017). Water resource systems planning and management: An introduction to methods, models, and applications. Cham: Imprint: Springer.\n\n\nMcPhail, C., Maier, H. R., Kwakkel, J. H., Giuliani, M., Castelletti, A., & Westra, S. (2019). Robustness metrics: How are they calculated, when should they be used and why do they give different results? Earth’s Future, 169–191. https://doi.org/10.1002/2017ef000649\n\n\nOreskes, N., Shrader-Frechette, K., & Belitz, K. (1994). Verification, validation, and confirmation of numerical models in the Earth sciences. Science. https://doi.org/10.1126/science.263.5147.641\n\n\nPollack, A., Helgeson, C., Kousky, C., & Keller, K. (2023, September 15). Transparency on underlying values is needed for useful equity measurements. https://doi.org/10.31219/osf.io/kvyxr\n\n\nQuinn, J. D., Reed, P. M., & Keller, K. (2017). Direct policy search for robust multi-objective management of deeply uncertain socio-ecological tipping points. Environmental Modelling & Software, 92, 125–141. https://doi.org/10.1016/j.envsoft.2017.02.017\n\n\nReed, P. M., Hadjimichael, A., Moss, R. H., Brelsford, C., Burleyson, C. D., Cohen, S., et al. (2022). Multisector Dynamics: Advancing the Science of Complex Adaptive Human-Earth Systems. Earth’s Future, 10(3), e2021EF002621. https://doi.org/10.1029/2021EF002621\n\n\nSchneider, S. H. (2002). Can we estimate the likelihood of climatic changes at 2100? Climatic Change, 52(4), 441–451. https://doi.org/http://dx.doi.org/10.1023/A:1014276210717\n\n\nSchwetschenau, S. E., Kovankaya, Y., Elliott, M. A., Allaire, M., White, K. D., & Lall, U. (2023). Optimizing Scale for Decentralized Wastewater Treatment: A Tool to Address Failing Wastewater Infrastructure in the United States. ACS ES&T Engineering, 3(1), 1–14. https://doi.org/10.1021/acsestengg.2c00188\n\n\nSeneviratne, S. I., Zhang, X., Adnan, M., Badi, W., Dereczynski, C., Di Luca, A., et al. (2021). Weather and climate extreme events in a changing climate. In V. Masson-Delmotte, P. Zhai, A. Pirani, S. L. Connors, C. Péan, S. Berger, et al. (Eds.), Climate change 2021: The physical science basis. Contribution of working group I to the sixth assessment report of the intergovernmental panel on climate change. Book section, Cambridge, UK and New York, NY, USA: Cambridge University Press. https://doi.org/10.1017/9781009157896.013\n\n\nSutton, R. S., & Barto, A. G. (2018). Reinforcement learning: An Introduction (Second Edition). Cambridge, Massachusetts and London, England: MIT Press.\n\n\nThomson, H., Zeff, H. B., Kleiman, R., Sebastian, A., & Characklis, G. W. (2023). Systemic Financial Risk Arising From Residential Flood Losses. Earth’s Future, 11(4), e2022EF003206. https://doi.org/10.1029/2022EF003206\n\n\nvan Berchum, E. C., Mobley, W., Jonkman, S. N., Timmermans, J. S., Kwakkel, J. H., & Brody, S. D. (2019). Evaluation of flood risk reduction strategies through combinations of interventions. Journal of Flood Risk Management, 12(S2), e12506. https://doi.org/10.1111/jfr3.12506\n\n\nWing, O. E. J., Pinter, N., Bates, P. D., & Kousky, C. (2020). New insights into US flood vulnerability revealed from flood insurance big data. Nature Communications, 11(1, 1), 1444. https://doi.org/10.1038/s41467-020-15264-2\n\n\nZarekarizi, M., Srikrishnan, V., & Keller, K. (2020). Neglecting uncertainties biases house-elevation decisions to manage riverine flood risks. Nature Communications, 11(1, 1), 5361. https://doi.org/10.1038/s41467-020-19188-9"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "CEVE 421/521: Climate Risk Management",
+    "section": "",
+    "text": "This is the course website for the Spring 2024 edition of CEVE 421/521, Climate Risk Management, taught at Rice University by James Doss-Gollin."
+  },
+  {
+    "objectID": "index.html#course-information",
+    "href": "index.html#course-information",
+    "title": "CEVE 421/521: Climate Risk Management",
+    "section": "Course Information",
+    "text": "Course Information\nClimate variability and change pose threats to lives and livelihoods. These climate risks can be managed through the design and operation of infrastructure systems, as well as through disaster response and recovery. Decisions about how to develop and choose risk management strategies are often based on pure vibes, but occasionally rigorous quantitative analyses that make use of scientific information can inform them (we will focus on these cases). These analyses involve integrating knowledge from multiple disciplines to balance competing goals (objectives) under uncertainty.\nIn this course, you will learn climate science, uncertainty quantification, and decision analysis methods to support climate risk management. You will be assigned readings for every class that cover both methods and applications, and will work collaboratively to implement key concepts through programming problem sets. Active class participation is required. Methods covered include scenario analysis, exploratory modeling, cost-benefit analysis, single- and multi-objective policy search, reinforcement learning, deep uncertainty, robust decision making, and equitable decision making.\nFor additional information, see the syllabus."
+  },
+  {
+    "objectID": "index.html#instructor",
+    "href": "index.html#instructor",
+    "title": "CEVE 421/521: Climate Risk Management",
+    "section": "Instructor",
+    "text": "Instructor\nDr. James Doss-Gollin is an assistant professor of Civil and Environmental Engineering at Rice University. His research integrates Earth science, data science, and decision science to address challenges in climate risk management, water resources, and energy system resilience. He also teaches CEVE 543 (Data Science for Climate Hazards)."
+  },
+  {
+    "objectID": "index.html#software-tools",
+    "href": "index.html#software-tools",
+    "title": "CEVE 421/521: Climate Risk Management",
+    "section": "Software Tools",
+    "text": "Software Tools\n\nThis course will use the Julia programming language. Julia is a modern, free, open source language designed for scientific computing.\nNo prior knowledge of Julia is expected, but some exposure to programming is strongly encouraged.\nAssignments will be distributed using GitHub Classroom."
+  },
+  {
+    "objectID": "index.html#acknowledgements",
+    "href": "index.html#acknowledgements",
+    "title": "CEVE 421/521: Climate Risk Management",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\nThe layout for this site was inspired by and draws from Vivek Srikrishnan’s Environmental Systems Analysis course at Cornell, STA 210 at Duke University, and Andrew Heiss’s course materials at Georgia State. It builds heavily from my data science for climate hazard assessment course, CEVE 543."
+  },
+  {
+    "objectID": "labs/lab-05/index.html",
+    "href": "labs/lab-05/index.html",
+    "title": "Lab 05: Sea-Level Rise",
+    "section": "",
+    "text": "This is a placeholder."
+  },
+  {
+    "objectID": "labs/lab-05/index.html#overview",
+    "href": "labs/lab-05/index.html#overview",
+    "title": "Lab 05: Sea-Level Rise",
+    "section": "",
+    "text": "This is a placeholder."
+  },
+  {
+    "objectID": "labs/lab-03/index.html",
+    "href": "labs/lab-03/index.html",
+    "title": "Lab 03: Depth-Damage Models",
+    "section": "",
+    "text": "This is a placeholder."
+  },
+  {
+    "objectID": "labs/lab-03/index.html#overview",
+    "href": "labs/lab-03/index.html#overview",
+    "title": "Lab 03: Depth-Damage Models",
+    "section": "",
+    "text": "This is a placeholder."
+  },
+  {
+    "objectID": "labs/lab-06/index.html",
+    "href": "labs/lab-06/index.html",
+    "title": "Lab 06: Policy Search",
+    "section": "",
+    "text": "This is a placeholder."
+  },
+  {
+    "objectID": "labs/lab-06/index.html#overview",
+    "href": "labs/lab-06/index.html#overview",
+    "title": "Lab 06: Policy Search",
+    "section": "",
+    "text": "This is a placeholder."
+  },
+  {
+    "objectID": "labs/lab-07/index.html",
+    "href": "labs/lab-07/index.html",
+    "title": "Lab 07: Multiobjective Optimization",
+    "section": "",
+    "text": "This is a placeholder."
+  },
+  {
+    "objectID": "labs/lab-07/index.html#overview",
+    "href": "labs/lab-07/index.html#overview",
+    "title": "Lab 07: Multiobjective Optimization",
+    "section": "",
+    "text": "This is a placeholder."
+  },
+  {
+    "objectID": "labs/lab-09/index.html",
+    "href": "labs/lab-09/index.html",
+    "title": "Lab 09: The Lake Problem",
+    "section": "",
+    "text": "This is a placeholder."
+  },
+  {
+    "objectID": "labs/lab-09/index.html#overview",
+    "href": "labs/lab-09/index.html#overview",
+    "title": "Lab 09: The Lake Problem",
+    "section": "",
+    "text": "This is a placeholder."
+  },
+  {
+    "objectID": "labs/lab-01/index.html",
+    "href": "labs/lab-01/index.html",
+    "title": "Lab 01: Software Installation",
+    "section": "",
+    "text": "Labs are in-class exercises intended to get practice with coding or analysis workflows.\n\nInstructions available on website\nDownload ahead of time by using link from Canvas\nYou will have your own repository (more in a minute)\nTry to finish in class, but due in 1 week"
+  },
+  {
+    "objectID": "labs/lab-01/index.html#labs",
+    "href": "labs/lab-01/index.html#labs",
+    "title": "Lab 01: Software Installation",
+    "section": "",
+    "text": "Labs are in-class exercises intended to get practice with coding or analysis workflows.\n\nInstructions available on website\nDownload ahead of time by using link from Canvas\nYou will have your own repository (more in a minute)\nTry to finish in class, but due in 1 week"
+  },
+  {
+    "objectID": "labs/lab-01/index.html#toolkit-overview",
+    "href": "labs/lab-01/index.html#toolkit-overview",
+    "title": "Lab 01: Software Installation",
+    "section": "Toolkit: overview",
+    "text": "Toolkit: overview\nGetting set up for this course requires the following steps. If you are an experienced programmer, you are free to follow your own workflow to set up these tools. You will absolutely need Quarto, GitHub, and Julia. If you are not an experienced programmer, the following steps are not the only way to get these tools set up, but they are a very good way.\nIf you install course tools using steps other than the ones provided on this page, be aware that your instructors may be able to provide you with only limited support.\n\nJulia\nWe’re using the Julia programming language in this course. Julia is a fast, modern, open-source programming language designed for numerical and scientific computing.\nWe’re using it for a few key reasons. First, the syntax is human-readable and closely parallels math notation, which reduces the cognitive burden of translating between conceptual and computational models. Second, it’s fast, which means that Julia solves the “two language problem”: you don’t need to learn C or Fortran to dig under the hood and write fast code. Other great features include that it’s open-source, which makes it reproducible and shareable, and it has a fantastic package manager.\nThere are some great resources out there about why Julia is great. See posts by Julia Data Science or the Julia Creators (with followup).\n\n\nGitHub\ngit is a software tool for version control that keeps track of changes to files over time. GitHub is a website that hosts git repositories and provides a web interface for interacting with them.\nTo use GitHub, you’ll need a GitHub account. Code on GitHub is stored in repositories. A simple workflow is to clone a repository to your computer, make changes, commit them, then push your changes to GitHub.\nWe will also use GitHub classroom, which allows instructors to share templates and view your code.\n\n\nQuarto\nQuarto is a tool that allows you to combine text and code and create many types of output. For example, this website is made with Quarto! You will use Quarto to create reports for labs. This lets you keep everything in one place – no more running code, saving a figure to Downloads, copying into Word, then trying to remember where to paste the figure when you update the code.\n\n\nVS Code\nVS Code is a text editor. If you are an advanced user of another text editor, you can use that instead. However, VS Code is very nearly an officially supported IDE for Julia."
+  },
+  {
+    "objectID": "labs/lab-01/index.html#installing-software",
+    "href": "labs/lab-01/index.html#installing-software",
+    "title": "Lab 01: Software Installation",
+    "section": "Installing software",
+    "text": "Installing software\n\nInstall Julia\nThe best way to install Julia is through the juliaup tool, which will let you easily manage versions in the future and works seamlessly with VS Code. The instructions can be found at the JuliaUp GitHub repository, but we will summarize them here.\nIf your computer uses Windows, you can install Juliaup from the Windows Store.\nIf you have a Mac, open a terminal (such as the Terminal app) and enter:\ncurl -fsSL https://install.julialang.org | sh\nOnce you install Juliaup, install Julia version 1.9 by opening a terminal (in MacOS or Linux) or the command line (in Windows) and entering:\njulia add 1.9.4\njulia default 1.9.4\nThis will install Julia 1.9.4 and make it the default version, which should maximize package compatibility throughout this course. Going forward, if you want to add new versions or change the default, you can follow the Juliaup instructions.\n\n\nInstall VS Code\nVS Code is as close to an officially supported editor for Julia as you can get. We will follow this guide for setting up VS Code with Julia.\n\nYou can skip this section if you are an experienced programmer and already have a preferred IDE. Your IDE will likely have instructions for Julia and QUarto setup.\n\nYou can download it here; open the downloaded file to install. Make sure to select the correct version for your operating system. If you have a newish Apple mac (with M1, M2, or M3 chip), make sure to check whether you have an Intel or Apple chip before choosing which version to download. You can also use homebrew or your preferred package manager to install VS Code.\n\nVS Code Julia Extension\nLike many editors, VS Code is a modular system that can be extended with plugins. We will install the Julia extension, which will allow us to run Julia code and interact with the Julia REPL from within VS Code (we’ll add the Quarto extension later).\n\nOpen VS Code.\nSelect View and click Extensions to open the Extension View.\nSearch for julia in the search box. Click the green install button.\nRestart VS Code once the installation is complete. It should automatically find your Julia installation; reach out if not.\n\nThe Julia VS Code extension offers you some nice features. You can start a REPL (an interactive Julia coding environment) by opening the “Command Palette” (View -&gt; Command Palette, or CTRL/CMD+SHIFT+P) and typing “REPL” to bring up “Julia: Start REPL”. You can also create .jl and .qmd files to write Julia code and execute line by line.\n\n\n\nGitHub\nSee GitHub official tutorials for more helpful resources and tutorials.\n\nCreate GitHub Account\nIf you already have a GitHub account, you can use that for this course and do not need to create a new account. Otherwise, create an account. It doesn’t have to be linked to your Rice email or your NetID.\nFor labs and projects, you should use the GitHub Classroom link posted on Canvas to “accept” the assignment, which will give you your own GitHub repository for that assignment. The first time you click one of these links, you will need to link your place on the course roster with your GitHub account.\n\n\nGitHub Desktop (Optional)\nYou can do everything that you will need to do for this course with GitHub directly through VS Code. The GitHub desktop app is also great, or alternatively you may work directly through the terminal if you have prior experience.\n\n\nInstall Git\ngit is a version control software that powers GitHub under the hood (git is the version control software, GitHub is an online platform). Based on past experience with the course, you probably already have git installed! If you’re not sure if it’s installed, see instructions here.\n\n\n\nInstall Quarto\nQuarto combines the best of Jupyter notebooks and R Markdown to create a document format that is ideal for conducting and communicating data science. We will use Quarto to create and share our work in this course; this website is also built using Quarto.||\nFollow the documentation to install Quarto. Be sure to ensure that you have the right version for your operating system.\n\nInstall the Quarto Extension for VS Code\nUnder “Step 2”, click on the VS Code icon.\n\n\nInstall Jupyter\nUnder the hood, Quarto uses Jupyter to run code. You don’t need to know how Jupyter works or worry about it, because it runs under the hood, but we will need to install it. Jupyter is a Python package.\nIf you don’t have Python installed (if you’re not sure, you should install Miniconda below), you’ll need to install it. The best way, by far, is to install Miniconda (see Conda documentation).\nOnce you have Python installed, you can open your Terminal (open VS Code then open the terminal), then run\npython3 -m pip install jupyter\n\n\n\n\n\n\nBased on past experience, getting Jupyter installed and Quarto to find your Jupyter installation is the most common source of problems, especially on Windows machines. Please start this early so you have a full week to get help if you need it."
+  },
+  {
+    "objectID": "labs/lab-01/index.html#lab-instructions",
+    "href": "labs/lab-01/index.html#lab-instructions",
+    "title": "Lab 01: Software Installation",
+    "section": "Lab Instructions",
+    "text": "Lab Instructions\nOnce you have everything set up, your lab for the week will be to complete the following steps. These will ensure that your installation is working smoothly!\n\nFollow the link to lab 1 assignment from Canvas (it should start with classroom.github.com). You will get a message saying ” Your assignment repository has been created: …“. Click on the link to go to your repository.\nclone the repository for lab 01 (use the Github Classroom link from Canvas) to your computer. You can use VS Code functionality, GitHub Desktop, or your terminal.\nOpen the directory containing the repository in VS Code doing one of the following:\n\nFrom GitHub desktop: Repository &gt; Open in Visual Studio Code\nIn VS Code: File &gt; Open Folder...\n\nOpen the index.qmd file in VS Code and replace the author: CEVE 421/521 line with your name and netID\nOpen the JULIA Repl\n\nOpen the command palette (Ctrl+Shift+P on Windows/Linux, Cmd+Shift+P on Mac)\nStart typing “Julia: Start REPL”. It will auto-complete; select the command as it appears.\n\nSet up your project environment.\n\nIn the Julia REPL, type ] to enter the package manager. It should now show something like (lab-01) pkg&gt;.\nType instantiate and run it (Enter). This will install all the packages needed for this lab.\nType the backspace key to exit the package manager.\n\nEdit the index.qmd file to add your name and netID\nRender the document\n\nOpen the solutions.qmd file\nOpen the command palette and run “Quarto: Preview”. After some activity, a preview of the rendered document should open in VS Code. If you see something like Browse at http://localhost:4200/index.html you can open that link in your web browser to see the rendered document.\nCheck the box on line 46 or 47 of the solutions.qmd file to indicate that you were able to render the document. If you were unable to render the document, check the other box and seek help. Make sure the box check renders correctly in the preview.\nRender to PDF or Microsoft Word following the directions below.\n\nIf you’re still having trouble:\n\nTry running build IJulia in the Julia REPL’s Pkg mode (type ])\nCome to office hours\nPost on the Canvas discussion for Lab 1\n\ncommit and push your changes to GitHub\nSubmit your rendered .docx or .pdf file to Canvas\n\n\nRunning Code\nWe can use Quarto to run Julia code in-line\n\nprintln(\"I'm using Julia!\")\n\nI'm using Julia!\n\n\nWe can also load packages\n\nusing CairoMakie\nusing LaTeXStrings\n\nand use them to make plots\n\nf = Figure()\nax = Axis(f[1, 1]; title=L\"$y = \\sin(x)$\", xlabel=L\"$x$\", ylabel=L\"$y$\")\nx = range(0, 10; length=100)\ny = sin.(x)\nlines!(ax, x, y)\nf\n\n\n\n\n\n\nRendering the Document\nA Quarto document is a plain text file that uses a simple code language to embed text, math, code, and the code’s output. You can run the document line by line, or you can render to a variety of formats. This is helpful for sharing with others, or for creating a final document for yourself.\nWe will check our ability to\n\nPreview the document in HTML (a web-native format)\nRender the document to PDF or Microsoft Word (a portable, shareable, and printable format)\n\n\nHTML\nFirst, verify that you can preview the document in HTML:\n\nOpen the command palette (Cmd+Shift+P on macOS, Ctrl+Shift+P on Windows/Linux)\nType “Quarto: Preview”\n\n\n\nPDF\nYou can use Quarto to generate PDF documents. Follow the instructions on Quarto’s website to install the necessary software.\n\nTo instruct Quarto to render to PDF, you need to edit the document metadata. Specifically, uncomment the lines in the document metadata corresponding to the PDF format.\nOpen the command palette (Cmd+Shift+P on macOS, Ctrl+Shift+P on Windows/Linux)\nType “Quarto: Render”\n\n\n\nWord\nYou can also render the document to Microsoft Word. See the Quarto documentation.\n\nTo instruct Quarto to render to Word, you need to edit the document metadata. Specifically, uncomment the lines in the document metadata corresponding to the Word format.\nOpen the command palette (Cmd+Shift+P on macOS, Ctrl+Shift+P on Windows/Linux)\nType “Quarto: Render”"
+  },
+  {
+    "objectID": "labs/lab-08/index.html",
+    "href": "labs/lab-08/index.html",
+    "title": "Lab 08: Parking Garage Case Study",
+    "section": "",
+    "text": "This is a placeholder."
+  },
+  {
+    "objectID": "labs/lab-08/index.html#overview",
+    "href": "labs/lab-08/index.html#overview",
+    "title": "Lab 08: Parking Garage Case Study",
+    "section": "",
+    "text": "This is a placeholder."
+  },
+  {
+    "objectID": "labs/lab-04/index.html",
+    "href": "labs/lab-04/index.html",
+    "title": "Lab 04: House Elevation Case Study",
+    "section": "",
+    "text": "This is a placeholder."
+  },
+  {
+    "objectID": "labs/lab-04/index.html#overview",
+    "href": "labs/lab-04/index.html#overview",
+    "title": "Lab 04: House Elevation Case Study",
+    "section": "",
+    "text": "This is a placeholder."
+  },
+  {
+    "objectID": "labs/lab-02/index.html",
+    "href": "labs/lab-02/index.html",
+    "title": "Lab 02: Julia Basics",
+    "section": "",
+    "text": "This is a placeholder."
+  },
+  {
+    "objectID": "labs/lab-02/index.html#overview",
+    "href": "labs/lab-02/index.html#overview",
+    "title": "Lab 02: Julia Basics",
+    "section": "",
+    "text": "This is a placeholder."
+  },
+  {
+    "objectID": "labs.html",
+    "href": "labs.html",
+    "title": "CEVE 421/521 Labs",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nKey Concepts\n\n\n\n\n\n\nFri., Jan. 12\n\n\nLab 01: Software Installation\n\n\nJulia, Quarto, GitHub\n\n\n\n\nFri., Jan. 19\n\n\nLab 02: Julia Basics\n\n\nFunctions, Logic, and Packages\n\n\n\n\nFri., Jan. 26\n\n\nLab 03: Depth-Damage Models\n\n\nDataFrames and Distributions\n\n\n\n\nThu., Feb. 8\n\n\nLab 04: House Elevation Case Study\n\n\nDecisionProblems\n\n\n\n\nFri., Feb. 16\n\n\nLab 05: Sea-Level Rise\n\n\nBRICK\n\n\n\n\nFri., Feb. 23\n\n\nLab 06: Policy Search\n\n\nMetaheuristics and BlackBoxOptim\n\n\n\n\nFri., Mar. 8\n\n\nLab 08: Parking Garage Case Study\n\n\nJulia Basics\n\n\n\n\nFri., Mar. 8\n\n\nLab 07: Multiobjective Optimization\n\n\n\n\n\n\n\nFri., Mar. 29\n\n\nLab 09: The Lake Problem\n\n\nJulia Basics\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "lectures.html",
+    "href": "lectures.html",
+    "title": "CEVE 421/521 Lectures",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\n\n\n\n\nMon., Jan. 8\n\n\nIntroduction to Climate Risk Management\n\n\n\n\nWed., Jan. 10\n\n\nIntroduction to CEVE 421/521\n\n\n\n\nWed., Jan. 17\n\n\nThe science of climate hazard\n\n\n\n\nMon., Jan. 22\n\n\nVulnerability, exposure, and impacts\n\n\n\n\nMon., Jan. 29\n\n\nSystems Analysis\n\n\n\n\nMon., Feb. 5\n\n\nCost-Benefit Analysis\n\n\n\n\nMon., Feb. 12\n\n\nScenario Analysis\n\n\n\n\nMon., Feb. 19\n\n\nPolicy Search and Optimization\n\n\n\n\nMon., Feb. 26\n\n\nMultiobjective Policy Search and Optimization\n\n\n\n\nMon., Mar. 4\n\n\nSequential Decision Problems\n\n\n\n\nMon., Mar. 18\n\n\nRobustness\n\n\n\n\nMon., Mar. 25\n\n\nDeep Uncertainty\n\n\n\n\nMon., Apr. 1\n\n\nEquity and Justice\n\n\n\n\nWed., Apr. 10\n\n\nFinancial and Systemic Risks\n\n\n\n\nMon., Apr. 15\n\n\nReflections\n\n\n\n\n\n\nNo matching items"
   }
 ]

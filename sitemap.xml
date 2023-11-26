@@ -1,35 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://ceve-421-521.github.io/schedule.html</loc>
-    <lastmod>2023-11-25T21:48:13.476Z</lastmod>
+    <loc>https://ceve-421-521.github.io/resources.html</loc>
+    <lastmod>2023-11-26T17:03:10.359Z</lastmod>
   </url>
   <url>
-    <loc>https://ceve-421-521.github.io/slides/demo-slides.html</loc>
-    <lastmod>2023-11-25T21:48:07.424Z</lastmod>
+    <loc>https://ceve-421-521.github.io/lectures/2024-04-01-equity-justice.html</loc>
+    <lastmod>2023-11-26T17:03:09.623Z</lastmod>
   </url>
   <url>
-    <loc>https://ceve-421-521.github.io/resources/setup.html</loc>
-    <lastmod>2023-11-25T21:48:06.714Z</lastmod>
+    <loc>https://ceve-421-521.github.io/lectures/2024-02-26-multiobjective.html</loc>
+    <lastmod>2023-11-26T17:03:09.021Z</lastmod>
   </url>
   <url>
-    <loc>https://ceve-421-521.github.io/resources/latex.html</loc>
-    <lastmod>2023-11-25T21:48:05.578Z</lastmod>
+    <loc>https://ceve-421-521.github.io/lectures/2024-04-10-financial-systemic.html</loc>
+    <lastmod>2023-11-26T17:03:08.405Z</lastmod>
   </url>
   <url>
-    <loc>https://ceve-421-521.github.io/resources/julia-basics.html</loc>
-    <lastmod>2023-11-25T21:48:04.900Z</lastmod>
+    <loc>https://ceve-421-521.github.io/lectures/2024-03-18-robustness.html</loc>
+    <lastmod>2023-11-26T17:03:07.809Z</lastmod>
   </url>
   <url>
-    <loc>https://ceve-421-521.github.io/resources/learn-more.html</loc>
-    <lastmod>2023-11-25T21:48:05.962Z</lastmod>
+    <loc>https://ceve-421-521.github.io/lectures/2024-01-08-intro-class.html</loc>
+    <lastmod>2023-11-26T17:03:07.237Z</lastmod>
   </url>
   <url>
-    <loc>https://ceve-421-521.github.io/index.html</loc>
-    <lastmod>2023-11-25T21:48:07.084Z</lastmod>
+    <loc>https://ceve-421-521.github.io/lectures/2024-04-15-reflections.html</loc>
+    <lastmod>2023-11-26T17:03:06.662Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ceve-421-521.github.io/lectures/2024-01-22-vulnerability-exposure-impacts.html</loc>
+    <lastmod>2023-11-26T17:03:06.078Z</lastmod>
   </url>
   <url>
     <loc>https://ceve-421-521.github.io/syllabus.html</loc>
-    <lastmod>2023-11-25T21:48:13.101Z</lastmod>
+    <lastmod>2023-11-26T17:03:05.470Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ceve-421-521.github.io/index.html</loc>
+    <lastmod>2023-11-26T17:02:59.003Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ceve-421-521.github.io/labs/lab-05/index.html</loc>
+    <lastmod>2023-11-26T17:02:57.306Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ceve-421-521.github.io/labs/lab-03/index.html</loc>
+    <lastmod>2023-11-26T17:02:56.309Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ceve-421-521.github.io/labs/lab-06/index.html</loc>
+    <lastmod>2023-11-26T17:02:55.297Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ceve-421-521.github.io/labs/lab-07/index.html</loc>
+    <lastmod>2023-11-26T17:02:53.550Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ceve-421-521.github.io/labs/lab-09/index.html</loc>
+    <lastmod>2023-11-26T17:02:53.009Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ceve-421-521.github.io/labs/lab-01/index.html</loc>
+    <lastmod>2023-11-26T17:02:54.798Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ceve-421-521.github.io/labs/lab-08/index.html</loc>
+    <lastmod>2023-11-26T17:02:55.818Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ceve-421-521.github.io/labs/lab-04/index.html</loc>
+    <lastmod>2023-11-26T17:02:56.813Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ceve-421-521.github.io/labs/lab-02/index.html</loc>
+    <lastmod>2023-11-26T17:02:57.824Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ceve-421-521.github.io/labs.html</loc>
+    <lastmod>2023-11-26T17:02:58.615Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ceve-421-521.github.io/lectures.html</loc>
+    <lastmod>2023-11-26T17:02:59.482Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ceve-421-521.github.io/lectures/2024-02-05-bca.html</loc>
+    <lastmod>2023-11-26T17:03:05.768Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ceve-421-521.github.io/lectures/2024-02-19-policy-search.html</loc>
+    <lastmod>2023-11-26T17:03:06.382Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ceve-421-521.github.io/lectures/2024-01-29-systems.html</loc>
+    <lastmod>2023-11-26T17:03:06.945Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ceve-421-521.github.io/lectures/2024-01-17-climate-hazard.html</loc>
+    <lastmod>2023-11-26T17:03:07.531Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ceve-421-521.github.io/lectures/2024-03-04-sequential.html</loc>
+    <lastmod>2023-11-26T17:03:08.107Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ceve-421-521.github.io/lectures/2024-03-25-deep-uncertainty.html</loc>
+    <lastmod>2023-11-26T17:03:08.718Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ceve-421-521.github.io/lectures/2024-01-10-intro-topic.html</loc>
+    <lastmod>2023-11-26T17:03:09.317Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ceve-421-521.github.io/lectures/2024-02-12-scenario-analysis.html</loc>
+    <lastmod>2023-11-26T17:03:09.940Z</lastmod>
   </url>
 </urlset>
