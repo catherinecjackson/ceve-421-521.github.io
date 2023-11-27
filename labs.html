@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./resources.html" rel="next">
+<link href="./readings.html" rel="next">
 <link href="./lectures.html" rel="prev">
 <script src="site_libs/quarto-listing/list.min.js"></script>
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
@@ -75,7 +75,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-week','listing-title','listing-subtitle','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
       searchColumns: ["listing-date","listing-title","listing-author"],
     };
@@ -154,13 +154,19 @@ window.MathJax = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Overview</span></a>
+ <span class="menu-text">Home</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./syllabus.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Syllabus</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./schedule.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Full Schedule</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -173,6 +179,12 @@ window.MathJax = {
   <div class="sidebar-item-container"> 
   <a href="./labs.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Labs</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./readings.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Readings</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -241,21 +253,24 @@ window.MathJax = {
 <thead>
 <tr>
 <th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
+Week
 </th>
 <th>
 <a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
 </th>
 <th>
-Key Concepts
+Tools
+</th>
+<th>
+<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
 </th>
 </tr>
 </thead>
 <tbody class="list">
-<tr data-index="0" data-listing-date-sort="1705039200000" data-listing-file-modified-sort="1701016759124" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-title-sort="Lab 01: Software Installation" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="0" data-listing-date-sort="1705039200000" data-listing-file-modified-sort="1701091478339" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-title-sort="Lab 01: Software Installation" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Fri., Jan.&nbsp;12</span>
+<span class="listing-week">1</span>
 </td>
 <td>
 <a href="./labs/lab-01/index.html" class="title listing-title">Lab 01: Software Installation</a>
@@ -263,11 +278,14 @@ Key Concepts
 <td>
 <span class="listing-subtitle">Julia, Quarto, GitHub</span>
 </td>
+<td>
+<span class="listing-date">Fri., Jan.&nbsp;12</span>
+</td>
 </tr>
-<tr data-index="1" data-listing-date-sort="1705644000000" data-listing-file-modified-sort="1701015803128" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Lab 02: Julia Basics" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="1" data-listing-date-sort="1705644000000" data-listing-file-modified-sort="1701091474865" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Lab 02: Julia Basics" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Fri., Jan.&nbsp;19</span>
+<span class="listing-week">2</span>
 </td>
 <td>
 <a href="./labs/lab-02/index.html" class="title listing-title">Lab 02: Julia Basics</a>
@@ -275,11 +293,14 @@ Key Concepts
 <td>
 <span class="listing-subtitle">Functions, Logic, and Packages</span>
 </td>
+<td>
+<span class="listing-date">Fri., Jan.&nbsp;19</span>
+</td>
 </tr>
-<tr data-index="2" data-listing-date-sort="1706248800000" data-listing-file-modified-sort="1701015797410" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Lab 03: Depth-Damage Models" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="2" data-listing-date-sort="1706248800000" data-listing-file-modified-sort="1701091473211" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Lab 03: Depth-Damage Models" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Fri., Jan.&nbsp;26</span>
+<span class="listing-week">3</span>
 </td>
 <td>
 <a href="./labs/lab-03/index.html" class="title listing-title">Lab 03: Depth-Damage Models</a>
@@ -287,11 +308,14 @@ Key Concepts
 <td>
 <span class="listing-subtitle">DataFrames and Distributions</span>
 </td>
+<td>
+<span class="listing-date">Fri., Jan.&nbsp;26</span>
+</td>
 </tr>
-<tr data-index="3" data-listing-date-sort="1707372000000" data-listing-file-modified-sort="1701015791234" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Lab 04: House Elevation Case Study" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="3" data-listing-date-sort="1707372000000" data-listing-file-modified-sort="1701091471758" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Lab 04: House Elevation Case Study" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Thu., Feb.&nbsp;8</span>
+<span class="listing-week">5</span>
 </td>
 <td>
 <a href="./labs/lab-04/index.html" class="title listing-title">Lab 04: House Elevation Case Study</a>
@@ -299,11 +323,14 @@ Key Concepts
 <td>
 <span class="listing-subtitle">DecisionProblems</span>
 </td>
+<td>
+<span class="listing-date">Thu., Feb.&nbsp;8</span>
+</td>
 </tr>
-<tr data-index="4" data-listing-date-sort="1708063200000" data-listing-file-modified-sort="1701015787069" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Lab 05: Sea-Level Rise" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="4" data-listing-date-sort="1708063200000" data-listing-file-modified-sort="1701091470032" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Lab 05: Sea-Level Rise" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Fri., Feb.&nbsp;16</span>
+<span class="listing-week">6</span>
 </td>
 <td>
 <a href="./labs/lab-05/index.html" class="title listing-title">Lab 05: Sea-Level Rise</a>
@@ -311,11 +338,14 @@ Key Concepts
 <td>
 <span class="listing-subtitle">BRICK</span>
 </td>
+<td>
+<span class="listing-date">Fri., Feb.&nbsp;16</span>
+</td>
 </tr>
-<tr data-index="5" data-listing-date-sort="1708668000000" data-listing-file-modified-sort="1701015782550" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Lab 06: Policy Search" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="5" data-listing-date-sort="1708668000000" data-listing-file-modified-sort="1701091467646" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Lab 06: Policy Search" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Fri., Feb.&nbsp;23</span>
+<span class="listing-week">7</span>
 </td>
 <td>
 <a href="./labs/lab-06/index.html" class="title listing-title">Lab 06: Policy Search</a>
@@ -323,11 +353,14 @@ Key Concepts
 <td>
 <span class="listing-subtitle">Metaheuristics and BlackBoxOptim</span>
 </td>
+<td>
+<span class="listing-date">Fri., Feb.&nbsp;23</span>
+</td>
 </tr>
-<tr data-index="6" data-listing-date-sort="1709272800000" data-listing-file-modified-sort="1701019047607" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Lab 07: Multiobjective Optimization" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="6" data-listing-date-sort="1709272800000" data-listing-file-modified-sort="1701091465938" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Lab 07: Multiobjective Optimization" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Fri., Mar.&nbsp;1</span>
+<span class="listing-week">08</span>
 </td>
 <td>
 <a href="./labs/lab-07/index.html" class="title listing-title">Lab 07: Multiobjective Optimization</a>
@@ -335,29 +368,38 @@ Key Concepts
 <td>
 <span class="listing-subtitle"></span>
 </td>
+<td>
+<span class="listing-date">Fri., Mar.&nbsp;1</span>
+</td>
 </tr>
-<tr data-index="7" data-listing-date-sort="1709877600000" data-listing-file-modified-sort="1701016801761" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Lab 08: Parking Garage Case Study" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="7" data-listing-date-sort="1709877600000" data-listing-file-modified-sort="1701091463227" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Lab 08: Parking Garage Case Study" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Fri., Mar.&nbsp;8</span>
+<span class="listing-week">09</span>
 </td>
 <td>
 <a href="./labs/lab-08/index.html" class="title listing-title">Lab 08: Parking Garage Case Study</a>
 </td>
 <td>
-<span class="listing-subtitle">Julia Basics</span>
+<span class="listing-subtitle">Real Options</span>
+</td>
+<td>
+<span class="listing-date">Fri., Mar.&nbsp;8</span>
 </td>
 </tr>
-<tr data-index="8" data-listing-date-sort="1711688400000" data-listing-file-modified-sort="1701016778203" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Lab 09: The Lake Problem" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="8" data-listing-date-sort="1711688400000" data-listing-file-modified-sort="1701091459575" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Lab 09: The Lake Problem" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Fri., Mar.&nbsp;29</span>
+<span class="listing-week">11</span>
 </td>
 <td>
 <a href="./labs/lab-09/index.html" class="title listing-title">Lab 09: The Lake Problem</a>
 </td>
 <td>
-<span class="listing-subtitle">Julia Basics</span>
+<span class="listing-subtitle">DifferentialEquations</span>
+</td>
+<td>
+<span class="listing-date">Fri., Mar.&nbsp;29</span>
 </td>
 </tr>
 </tbody>
@@ -672,8 +714,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./resources.html" class="pagination-link">
-        <span class="nav-page-text">Resources</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./readings.html" class="pagination-link">
+        <span class="nav-page-text">Readings</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

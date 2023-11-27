@@ -1,38 +1,10 @@
 [
   {
-    "objectID": "resources.html",
-    "href": "resources.html",
-    "title": "Helpful Resources",
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "CEVE 421/521 Schedule",
     "section": "",
-    "text": "This page contains links to resources that may be helpful for the course. If you have a resource that you think would be helpful to others, please let me know and I will add it to the list."
-  },
-  {
-    "objectID": "resources.html#julia",
-    "href": "resources.html#julia",
-    "title": "Helpful Resources",
-    "section": "Julia",
-    "text": "Julia\nThere are lots of great resources on programming and Julia. Here is a curated list of some particularly helpful tools.\n\n\n\n\n\n\nSome of these tutorials provide their own instructions on how to install Julia. Please follow the instructions provided in this course!\n\n\n\n\nJulia for Nervous Begineers: A free course on JuliaAcademy for people who are hesitant but curious about learning to write code in Julia.\nFastTrack to Julia cheatsheet\nPlotting cheatsheet\nIntroduction to Computational Thinking: a great Julia-based course at MIT covering applied mathematics and computational thinking\nComprehensive Julia Tutorials: YouTube playlist covering a variety of Julia topics, starting with an introduciton to the language.\n\n\nPlotting with Makie\n\nMakie Tutorials\nMakieCon 2023 YouTube Channel"
-  },
-  {
-    "objectID": "resources.html#other-software-tools",
-    "href": "resources.html#other-software-tools",
-    "title": "Helpful Resources",
-    "section": "Other Software Tools",
-    "text": "Other Software Tools\n\nGit and GitHub\n\nGit Basics from The Odin Project.\nLearn Git Branching: An interactive, visual tutorial to how git works.\nVersion Control from MIT’s “CS: Your Missing Semester” course.\nGit and GitHub for Poets: YouTube playlist covering the basics of git and GitHub.\nGradescope and GitHub Classroom\n\n\n\nTypesetting Math\n\nJustin Bois’ tutorial.\nMarkdown Cheatsheet\nLaTeX Cheatsheet\nMathpix Snpi allows you to convert images of equations to LaTeX code (there is a free tier)\nDetexify lets you draw a symbol and suggests the LaTeX code for the corresponding symbol"
-  },
-  {
-    "objectID": "resources.html#big-picture",
-    "href": "resources.html#big-picture",
-    "title": "Helpful Resources",
-    "section": "Big Picture",
-    "text": "Big Picture\n\nUsing Large Language Models (LLMs)\n\nGitHub Copilot is an extension for VS Code that can provide suggestions for code completion and editing. It is free for students and educators.\nBlog: “Bob Carpenter thinks GPT-4 is awesome”: this post highlights how GPT-4 is able to write a program in Stan, a statistical programming language, and also the mistakes that it makes. Finding and correcting these mistakes requires knowing the Stan language and having a deep understanding of the statistical model, but someone with this expertise could potentially use GPT-4 to accelerate their coding workflow. The comments are also interesting and insightful.\nAI Snake Oil is a blog that seeks to dispel hype, remove misconceptions, and clarify the limits of AI. The authors are in the Princeton University Department of Computer Science.\nChatGPT has both free and paid tiers and can be helpful with writing and interpreting code, though care is needed as described above"
-  },
-  {
-    "objectID": "lectures/2024-01-08-intro-class.html#lab-1",
-    "href": "lectures/2024-01-08-intro-class.html#lab-1",
-    "title": "Introduction to Climate Risk Management",
-    "section": "Lab 1",
-    "text": "Lab 1\nFor our first lab, we will be installing required software for the course. Please start working on this lab as soon as possible so that we can use Friday’s lab session to troubleshoot any issues and review the material. Normally you will not need (or be able) to start labs ahead of time."
+    "text": "Reading\n\n\n\nA subset of readings listed here will likely be assigned. Check the page for each reading to see discussion questions.\n\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Topic\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nWeek\n\n\nTopic\n\n\nDate\n\n\nCategory\n\n\n\n\n\n\n1\n\n\nIntroduction to Climate Risk Management\n\n\nMon., Jan. 8\n\n\nLecture\n\n\n\n\n1\n\n\nWeek 1 readings\n\n\nWed., Jan. 10\n\n\nReading\n\n\n\n\n1\n\n\nLab 01: Software Installation\n\n\nFri., Jan. 12\n\n\nLab\n\n\n\n\n2\n\n\nThe Science of Climate Hazard\n\n\nWed., Jan. 17\n\n\nLecture\n\n\n\n\n2\n\n\nWeek 2 readings\n\n\nWed., Jan. 17\n\n\nReading\n\n\n\n\n2\n\n\nLab 02: Julia Basics\n\n\nFri., Jan. 19\n\n\nLab\n\n\n\n\n3\n\n\nVulnerability, Exposure, and Impacts\n\n\nMon., Jan. 22\n\n\nLecture\n\n\n\n\n3\n\n\nReadings for Week 3\n\n\nWed., Jan. 24\n\n\nReading\n\n\n\n\n3\n\n\nLab 03: Depth-Damage Models\n\n\nFri., Jan. 26\n\n\nLab\n\n\n\n\n4\n\n\nSystems Analysis\n\n\nMon., Jan. 29\n\n\nLecture\n\n\n\n\n4\n\n\nReadings for Week 4\n\n\nWed., Jan. 31\n\n\nReading\n\n\n\n\n4\n\n\nExam 1\n\n\nFri., Feb. 2\n\n\nExam\n\n\n\n\n5\n\n\nCost-Benefit Analysis\n\n\nMon., Feb. 5\n\n\nLecture\n\n\n\n\n5\n\n\nReadings for Week 5\n\n\nWed., Feb. 7\n\n\nReading\n\n\n\n\n5\n\n\nLab 04: House Elevation Case Study\n\n\nThu., Feb. 8\n\n\nLab\n\n\n\n\n6\n\n\nScenario Analysis\n\n\nMon., Feb. 12\n\n\nLecture\n\n\n\n\n6\n\n\nReadings for Week 6\n\n\nWed., Feb. 14\n\n\nReading\n\n\n\n\n6\n\n\nLab 05: Sea-Level Rise\n\n\nFri., Feb. 16\n\n\nLab\n\n\n\n\n7\n\n\nPolicy Search and Optimization\n\n\nMon., Feb. 19\n\n\nLecture\n\n\n\n\n7\n\n\nReadings for Week 7\n\n\nWed., Feb. 21\n\n\nReading\n\n\n\n\n7\n\n\nLab 06: Policy Search\n\n\nFri., Feb. 23\n\n\nLab\n\n\n\n\n8\n\n\nMultiobjective Policy Search and Optimization\n\n\nMon., Feb. 26\n\n\nLecture\n\n\n\n\n8\n\n\nReadings for Week 8\n\n\nWed., Feb. 28\n\n\nReading\n\n\n\n\n08\n\n\nLab 07: Multiobjective Optimization\n\n\nFri., Mar. 1\n\n\nLab\n\n\n\n\n9\n\n\nSequential Decision Problems\n\n\nMon., Mar. 4\n\n\nLecture\n\n\n\n\n9\n\n\nReadings for Week 9\n\n\nWed., Mar. 6\n\n\nReading\n\n\n\n\n09\n\n\nLab 08: Parking Garage Case Study\n\n\nFri., Mar. 8\n\n\nLab\n\n\n\n\n10\n\n\nRobustness\n\n\nMon., Mar. 18\n\n\nLecture\n\n\n\n\n10\n\n\nReadings for Week 10\n\n\nWed., Mar. 20\n\n\nReading\n\n\n\n\n10\n\n\nExam 2\n\n\nFri., Mar. 22\n\n\nExam\n\n\n\n\n11\n\n\nDeep Uncertainty\n\n\nMon., Mar. 25\n\n\nLecture\n\n\n\n\n11\n\n\nReadings for Week 11\n\n\nWed., Mar. 27\n\n\nReading\n\n\n\n\n11\n\n\nLab 09: The Lake Problem\n\n\nFri., Mar. 29\n\n\nLab\n\n\n\n\n12\n\n\nEquity and Justice\n\n\nMon., Apr. 1\n\n\nLecture\n\n\n\n\n12\n\n\nReadings for Week 12\n\n\nWed., Apr. 3\n\n\nReading\n\n\n\n\n13\n\n\nFinancial and Systemic Risks\n\n\nWed., Apr. 10\n\n\nLecture\n\n\n\n\n13\n\n\nReadings for Week 13\n\n\nWed., Apr. 10\n\n\nReading\n\n\n\n\n14\n\n\nReflections\n\n\nMon., Apr. 15\n\n\nLecture\n\n\n\n\n14\n\n\nReadings for Week 14\n\n\nWed., Apr. 17\n\n\nReading\n\n\n\n\n14\n\n\nExam 3\n\n\nFri., Apr. 19\n\n\nExam\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "syllabus.html",
@@ -81,7 +53,7 @@
     "href": "syllabus.html#preliminary-schedule",
     "title": "Syllabus",
     "section": "Preliminary Schedule",
-    "text": "Preliminary Schedule\nThe following schedule outlines our planned topics and readings for the semester. All assignments will be posted on Canvas.\n\n\n\n\n\n\nNot all readings listed here will be assigned in full. Some may be assigned as optional reading and others may be assigned as excerpts.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nCourse Dates\nTopic\nReading\nLab\n\n\n\n\n\nModule 1:\nIntroduction\n\n\n\n\n1\n1/8, 1/10, 1/12\nIntroduction to climate risk management\nFrank (2022), Loucks (2017) Ch. 1\nSoftware installation\n\n\n2\n1/17, 1/19\nScience of climate hazard\nSeneviratne et al. (2021), Lall et al. (2018)\nJulia basics\n\n\n3\n1/22, 1/24, 1/26\nVulnerability, exposure, and impacts\nWing et al. (2020), Bonnafous et al. (2017)\nDataFrames, Distributions\n\n\n4\n1/29, 1/31, 2/2\nSystems\nReed et al. (2022),\nNo lab (test 1)\n\n\n\nModule 2:\nDecision Analysis\n\n\n\n\n5\n2/5, 2/7, 2/8\nCost-benefit analysis\nArrow et al. (2013)\nHouse Elevation Case Study\n\n\n6\n2/12, 2/14, 2/16\nScenario analysis\nBankes (1993)\nBRICK\n\n\n7\n2/19, 2/21, 2/23\nPolicy search and optimization\nvan Berchum et al. (2019), Schwetschenau et al. (2023)\nMetaheuristics\n\n\n8\n2/26, 2/28, 3/1\nMultiobjective policy search\nZarekarizi et al. (2020)\nBlackBoxOptim\n\n\n9\n3/4, 3/6, 3/8\nSequential decision problems\nHerman et al. (2020), Quinn et al. (2017), Fletcher et al. (2019), Sutton & Barto (2018)\nCase Study: The Parking Garage\n\n\n10\n3/18, 3/20, 3/22\nRobustness\nHerman et al. (2015), McPhail et al. (2019)\nNo lab (test 2)\n\n\n\nModule 3:\nThinking Critically\n\n\n\n\n11\n3/25, 3/27, 3/29\nDeep uncertainty\nSchneider (2002), Lempert & Schlesinger (2000), Oreskes et al. (1994)\nCase Study: The Lake Problem\n\n\n12\n4/1, 4/3, 4/5\nEquity and justice\nPollack et al. (2023), Fletcher et al. (2022)\nNo lab\n\n\n13\n4/10, 4/12\nFinancial and systemic risks\nThomson et al. (2023), Condon (2021)\nNo lab\n\n\n14\n4/15, 4/17, 4/19\nReflections\nKeller et al. (2021), Gilligan & Vandenbergh (2020)\nNo lab (test 3)\n\n\n\nEvery week will be different, but the following is a typical schedule:\n\nMonday: lecture\nWednesday: guided discussion of reading in the context of lecture\nFriday: lab"
+    "text": "Preliminary Schedule\nThe following schedule outlines our planned topics and readings for the semester. In general, we will use Mondays for lecture, Wednesdays for group discussion centered on readings, and Fridays for computational labs.\nThis schedule is subject to change. Updated versions will be posted on the Schedule page of the course website.\n\n\n\n\n\n\nNot all readings listed here will be assigned in full. Some may be assigned as optional reading and others may be assigned as excerpts.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nCourse Dates\nTopic\nReading\nExam / Project\n\n\n\n\n\nModule 1:\nIntroduction\n\n\n\n\n1\n1/8, 1/10, 1/12\nIntroduction to climate risk management\nFrank (2022), Loucks (2017) Ch. 1\n\n\n\n2\n1/17, 1/19\nScience of climate hazard\nSeneviratne et al. (2021), Lall et al. (2018)\n\n\n\n3\n1/22, 1/24, 1/26\nVulnerability, exposure, and impacts\nWing et al. (2020), Bonnafous et al. (2017)\n\n\n\n4\n1/29, 1/31, 2/2\nSystems\nReed et al. (2022),\nExam 1\n\n\n\nModule 2:\nDecision Analysis\n\n\n\n\n5\n2/5, 2/7, 2/8\nCost-benefit analysis\nArrow et al. (2013)\n\n\n\n6\n2/12, 2/14, 2/16\nScenario analysis\nBankes (1993)\nFinal Project: Proposal\n\n\n7\n2/19, 2/21, 2/23\nPolicy search and optimization\nvan Berchum et al. (2019), Schwetschenau et al. (2023)\n\n\n\n8\n2/26, 2/28, 3/1\nMultiobjective policy search\nZarekarizi et al. (2020)\n\n\n\n9\n3/4, 3/6, 3/8\nSequential decision problems\nHerman et al. (2020), Quinn et al. (2017), Fletcher et al. (2019), Sutton & Barto (2018)\n\n\n\n10\n3/18, 3/20, 3/22\nRobustness\nHerman et al. (2015), McPhail et al. (2019)\nRevised Project Proposal; Exam 2\n\n\n\nModule 3:\nThinking Critically\n\n\n\n\n11\n3/25, 3/27, 3/29\nDeep uncertainty\nSchneider (2002), Lempert & Schlesinger (2000), Oreskes et al. (1994)\n\n\n\n12\n4/1, 4/3, 4/5\nEquity and justice\nPollack et al. (2023), Fletcher et al. (2022)\n\n\n\n13\n4/10, 4/12\nFinancial and systemic risks\nThomson et al. (2023), Condon (2021)\n\n\n\n14\n4/15, 4/17, 4/19\nReflections\nKeller et al. (2021), Gilligan & Vandenbergh (2020)\nDraft Project Writeup; Exam 3\n\n\n\n\nFinal Projects\n\n\n\n\n\nTBD\nduring final exam slot\n\nProject presentations\n\n\n\n4/30\n\n\nFinal write-up"
   },
   {
     "objectID": "syllabus.html#references",
@@ -91,107 +63,93 @@
     "text": "References\n\n\nArrow, K., Cropper, M., Gollier, C., Groom, B., Heal, G., Newell, R., et al. (2013). Determining benefits and costs for future generations. Science, 341(6144), 349–350. https://doi.org/10.1126/science.1235665\n\n\nBankes, S. (1993). Exploratory modeling for policy analysis. Operations Research, 41(3), 435–449. https://doi.org/c7rgcr\n\n\nBonnafous, L., Lall, U., & Siegel, J. (2017). A water risk index for portfolio exposure to climatic extremes: Conceptualization and an application to the mining industry. Hydrology and Earth System Sciences, 21(4), 2075–2106. https://doi.org/f96k67\n\n\nCondon, M. (2021). Market myopia’s climate bubble. https://doi.org/10.2139/ssrn.3782675\n\n\nFletcher, S., Lickley, M., & Strzepek, K. (2019). Learning about climate change uncertainty enables flexible water infrastructure planning. Nature Communications, 10(1), 1782. https://doi.org/10.1038/s41467-019-09677-x\n\n\nFletcher, S., Hadjimichael, A., Quinn, J., Osman, K., Giuliani, M., Gold, D., et al. (2022). Equity in Water Resources Planning: A Path Forward for Decision Support Modelers. Journal of Water Resources Planning and Management, 148(7), 02522005. https://doi.org/10.1061/(ASCE)WR.1943-5452.0001573\n\n\nFrank, T. (2022, August 22). Bold New Jersey Shore Flood Rules Could Be Blueprint for Entire U.S. Coast. Scientific American. Retrieved from https://www.scientificamerican.com/article/bold-new-jersey-shore-flood-rules-could-be-blueprint-for-entire-u-s-coast/\n\n\nGilligan, J. M., & Vandenbergh, M. P. (2020). Beyond wickedness: Managing complex systems and climate change. Vanderbilt Law Review, 73, 1777–1810. Retrieved from https://wp0.vanderbilt.edu/lawreview/2020/12/beyond-wickedness-managing-complex-systems-and-climate-change/\n\n\nHerman, J. D., Reed, P. M., Zeff, H. B., & Characklis, G. W. (2015). How should robustness be defined for water systems planning under change? Journal of Water Resources Planning and Management, 141(10), 04015012. https://doi.org/10.1061/(asce)wr.1943-5452.0000509\n\n\nHerman, J. D., Quinn, J. D., Steinschneider, S., Giuliani, M., & Fletcher, S. (2020). Climate adaptation as a control problem: Review and perspectives on dynamic water resources planning under uncertainty. Water Resources Research, e24389. https://doi.org/10.1029/2019wr025502\n\n\nKeller, K., Helgeson, C., & Srikrishnan, V. (2021). Climate risk management. Annual Review of Earth and Planetary Sciences, 49(1), 95–116. https://doi.org/10.1146/annurev-earth-080320-055847\n\n\nLall, U., Johnson, T., Colohan, P., Aghakouchak, A., Arumugam, S., Brown, C., et al. (2018). Chapter 3: Water. In D. R. Reidmiller, D. R. Easterling, K. E. Kunkel, K. L. M. Lewis, T. K. Maycock, & B. C. Stewart, Impacts, Risks, and Adaptation in the United States: The Fourth National Climate Assessment, Volume II. Washington, D.C.: U.S. Global Change Research Program. https://doi.org/10.7930/NCA4.2018.CH3\n\n\nLempert, R. J., & Schlesinger, M. E. (2000). Robust strategies for abating climate change. Climatic Change, 45(3-4), 387–401. https://doi.org/10.1023/A:1005698407365\n\n\nLoucks, D. P. (2017). Water resource systems planning and management: An introduction to methods, models, and applications. Cham: Imprint: Springer.\n\n\nMcPhail, C., Maier, H. R., Kwakkel, J. H., Giuliani, M., Castelletti, A., & Westra, S. (2019). Robustness metrics: How are they calculated, when should they be used and why do they give different results? Earth’s Future, 169–191. https://doi.org/10.1002/2017ef000649\n\n\nOreskes, N., Shrader-Frechette, K., & Belitz, K. (1994). Verification, validation, and confirmation of numerical models in the Earth sciences. Science. https://doi.org/10.1126/science.263.5147.641\n\n\nPollack, A., Helgeson, C., Kousky, C., & Keller, K. (2023, September 15). Transparency on underlying values is needed for useful equity measurements. https://doi.org/10.31219/osf.io/kvyxr\n\n\nQuinn, J. D., Reed, P. M., & Keller, K. (2017). Direct policy search for robust multi-objective management of deeply uncertain socio-ecological tipping points. Environmental Modelling & Software, 92, 125–141. https://doi.org/10.1016/j.envsoft.2017.02.017\n\n\nReed, P. M., Hadjimichael, A., Moss, R. H., Brelsford, C., Burleyson, C. D., Cohen, S., et al. (2022). Multisector Dynamics: Advancing the Science of Complex Adaptive Human-Earth Systems. Earth’s Future, 10(3), e2021EF002621. https://doi.org/10.1029/2021EF002621\n\n\nSchneider, S. H. (2002). Can we estimate the likelihood of climatic changes at 2100? Climatic Change, 52(4), 441–451. https://doi.org/http://dx.doi.org/10.1023/A:1014276210717\n\n\nSchwetschenau, S. E., Kovankaya, Y., Elliott, M. A., Allaire, M., White, K. D., & Lall, U. (2023). Optimizing Scale for Decentralized Wastewater Treatment: A Tool to Address Failing Wastewater Infrastructure in the United States. ACS ES&T Engineering, 3(1), 1–14. https://doi.org/10.1021/acsestengg.2c00188\n\n\nSeneviratne, S. I., Zhang, X., Adnan, M., Badi, W., Dereczynski, C., Di Luca, A., et al. (2021). Weather and climate extreme events in a changing climate. In V. Masson-Delmotte, P. Zhai, A. Pirani, S. L. Connors, C. Péan, S. Berger, et al. (Eds.), Climate change 2021: The physical science basis. Contribution of working group I to the sixth assessment report of the intergovernmental panel on climate change. Book section, Cambridge, UK and New York, NY, USA: Cambridge University Press. https://doi.org/10.1017/9781009157896.013\n\n\nSutton, R. S., & Barto, A. G. (2018). Reinforcement learning: An Introduction (Second Edition). Cambridge, Massachusetts and London, England: MIT Press.\n\n\nThomson, H., Zeff, H. B., Kleiman, R., Sebastian, A., & Characklis, G. W. (2023). Systemic Financial Risk Arising From Residential Flood Losses. Earth’s Future, 11(4), e2022EF003206. https://doi.org/10.1029/2022EF003206\n\n\nvan Berchum, E. C., Mobley, W., Jonkman, S. N., Timmermans, J. S., Kwakkel, J. H., & Brody, S. D. (2019). Evaluation of flood risk reduction strategies through combinations of interventions. Journal of Flood Risk Management, 12(S2), e12506. https://doi.org/10.1111/jfr3.12506\n\n\nWing, O. E. J., Pinter, N., Bates, P. D., & Kousky, C. (2020). New insights into US flood vulnerability revealed from flood insurance big data. Nature Communications, 11(1, 1), 1444. https://doi.org/10.1038/s41467-020-15264-2\n\n\nZarekarizi, M., Srikrishnan, V., & Keller, K. (2020). Neglecting uncertainties biases house-elevation decisions to manage riverine flood risks. Nature Communications, 11(1, 1), 5361. https://doi.org/10.1038/s41467-020-19188-9"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "CEVE 421/521: Climate Risk Management",
+    "objectID": "readings/week-07-reading.html",
+    "href": "readings/week-07-reading.html",
+    "title": "Readings for Week 7",
     "section": "",
-    "text": "This is the course website for the Spring 2024 edition of CEVE 421/521, Climate Risk Management, taught at Rice University by James Doss-Gollin."
+    "text": "Discussion questions will be posted here.\n\n\n\nAssigned reading will be drawn from:\n\nvan Berchum et al. (2019)\nSchwetschenau et al. (2023)\n\n\n\n\n\nReferences\n\nSchwetschenau, S. E., Kovankaya, Y., Elliott, M. A., Allaire, M., White, K. D., & Lall, U. (2023). Optimizing Scale for Decentralized Wastewater Treatment: A Tool to Address Failing Wastewater Infrastructure in the United States. ACS ES&T Engineering, 3(1), 1–14. https://doi.org/10.1021/acsestengg.2c00188\n\n\nvan Berchum, E. C., Mobley, W., Jonkman, S. N., Timmermans, J. S., Kwakkel, J. H., & Brody, S. D. (2019). Evaluation of flood risk reduction strategies through combinations of interventions. Journal of Flood Risk Management, 12(S2), e12506. https://doi.org/10.1111/jfr3.12506"
   },
   {
-    "objectID": "index.html#course-information",
-    "href": "index.html#course-information",
-    "title": "CEVE 421/521: Climate Risk Management",
-    "section": "Course Information",
-    "text": "Course Information\nClimate variability and change pose threats to lives and livelihoods. These climate risks can be managed through the design and operation of infrastructure systems, as well as through disaster response and recovery. Decisions about how to develop and choose risk management strategies are often based on pure vibes, but occasionally rigorous quantitative analyses that make use of scientific information can inform them (we will focus on these cases). These analyses involve integrating knowledge from multiple disciplines to balance competing goals (objectives) under uncertainty.\nIn this course, you will learn climate science, uncertainty quantification, and decision analysis methods to support climate risk management. You will be assigned readings for every class that cover both methods and applications, and will work collaboratively to implement key concepts through programming problem sets. Active class participation is required. Methods covered include scenario analysis, exploratory modeling, cost-benefit analysis, single- and multi-objective policy search, reinforcement learning, deep uncertainty, robust decision making, and equitable decision making.\nFor additional information, see the syllabus."
-  },
-  {
-    "objectID": "index.html#instructor",
-    "href": "index.html#instructor",
-    "title": "CEVE 421/521: Climate Risk Management",
-    "section": "Instructor",
-    "text": "Instructor\nDr. James Doss-Gollin is an assistant professor of Civil and Environmental Engineering at Rice University. His research integrates Earth science, data science, and decision science to address challenges in climate risk management, water resources, and energy system resilience. He also teaches CEVE 543 (Data Science for Climate Hazards)."
-  },
-  {
-    "objectID": "index.html#software-tools",
-    "href": "index.html#software-tools",
-    "title": "CEVE 421/521: Climate Risk Management",
-    "section": "Software Tools",
-    "text": "Software Tools\n\nThis course will use the Julia programming language. Julia is a modern, free, open source language designed for scientific computing.\nNo prior knowledge of Julia is expected, but some exposure to programming is strongly encouraged.\nAssignments will be distributed using GitHub Classroom."
-  },
-  {
-    "objectID": "index.html#acknowledgements",
-    "href": "index.html#acknowledgements",
-    "title": "CEVE 421/521: Climate Risk Management",
-    "section": "Acknowledgements",
-    "text": "Acknowledgements\nThe layout for this site was inspired by and draws from Vivek Srikrishnan’s Environmental Systems Analysis course at Cornell, STA 210 at Duke University, and Andrew Heiss’s course materials at Georgia State. It builds heavily from my data science for climate hazard assessment course, CEVE 543."
-  },
-  {
-    "objectID": "labs/lab-05/index.html",
-    "href": "labs/lab-05/index.html",
-    "title": "Lab 05: Sea-Level Rise",
+    "objectID": "readings/week-14-reading.html",
+    "href": "readings/week-14-reading.html",
+    "title": "Readings for Week 14",
     "section": "",
-    "text": "This is a placeholder."
+    "text": "Discussion questions will be posted here.\n\n\n\nAssigned reading will be drawn from:\n\nKeller et al. (2021)\nGilligan & Vandenbergh (2020)\n\n\n\n\n\nReferences\n\nGilligan, J. M., & Vandenbergh, M. P. (2020). Beyond wickedness: Managing complex systems and climate change. Vanderbilt Law Review, 73, 1777–1810. Retrieved from https://wp0.vanderbilt.edu/lawreview/2020/12/beyond-wickedness-managing-complex-systems-and-climate-change/\n\n\nKeller, K., Helgeson, C., & Srikrishnan, V. (2021). Climate risk management. Annual Review of Earth and Planetary Sciences, 49(1), 95–116. https://doi.org/10.1146/annurev-earth-080320-055847"
   },
   {
-    "objectID": "labs/lab-05/index.html#overview",
-    "href": "labs/lab-05/index.html#overview",
-    "title": "Lab 05: Sea-Level Rise",
+    "objectID": "readings/week-01-reading.html",
+    "href": "readings/week-01-reading.html",
+    "title": "Week 1 readings",
     "section": "",
-    "text": "This is a placeholder."
+    "text": "Discussion questions will be posted here.\n\n\n\nAssigned reading will be drawn from:\n\nFrank (2022)\nLoucks (2017) Ch. 1\n\n\n\n\n\nReferences\n\nFrank, T. (2022, August 22). Bold New Jersey Shore Flood Rules Could Be Blueprint for Entire U.S. Coast. Scientific American. Retrieved from https://www.scientificamerican.com/article/bold-new-jersey-shore-flood-rules-could-be-blueprint-for-entire-u-s-coast/\n\n\nLoucks, D. P. (2017). Water resource systems planning and management: An introduction to methods, models, and applications. Cham: Imprint: Springer."
   },
   {
-    "objectID": "labs/lab-03/index.html",
-    "href": "labs/lab-03/index.html",
-    "title": "Lab 03: Depth-Damage Models",
+    "objectID": "readings/week-11-reading.html",
+    "href": "readings/week-11-reading.html",
+    "title": "Readings for Week 11",
     "section": "",
-    "text": "This is a placeholder."
+    "text": "Discussion questions will be posted here.\n\n\n\nAssigned reading will be drawn from:\n\nSchneider (2002)\nLempert & Schlesinger (2000)\nOreskes et al. (1994)\n\n\n\n\n\nReferences\n\nLempert, R. J., & Schlesinger, M. E. (2000). Robust strategies for abating climate change. Climatic Change, 45(3-4), 387–401. https://doi.org/10.1023/A:1005698407365\n\n\nOreskes, N., Shrader-Frechette, K., & Belitz, K. (1994). Verification, validation, and confirmation of numerical models in the Earth sciences. Science. https://doi.org/10.1126/science.263.5147.641\n\n\nSchneider, S. H. (2002). Can we estimate the likelihood of climatic changes at 2100? Climatic Change, 52(4), 441–451. https://doi.org/http://dx.doi.org/10.1023/A:1014276210717"
   },
   {
-    "objectID": "labs/lab-03/index.html#overview",
-    "href": "labs/lab-03/index.html#overview",
-    "title": "Lab 03: Depth-Damage Models",
+    "objectID": "readings/week-06-reading.html",
+    "href": "readings/week-06-reading.html",
+    "title": "Readings for Week 6",
+    "section": "",
+    "text": "Discussion questions will be posted here.\n\n\n\nAssigned reading will be drawn from:\n\nBankes (1993)\n\n\n\n\n\nReferences\n\nBankes, S. (1993). Exploratory modeling for policy analysis. Operations Research, 41(3), 435–449. https://doi.org/c7rgcr"
+  },
+  {
+    "objectID": "readings/week-10-reading.html",
+    "href": "readings/week-10-reading.html",
+    "title": "Readings for Week 10",
+    "section": "",
+    "text": "Discussion questions will be posted here.\n\n\n\nAssigned reading will be drawn from:\n\nHerman et al. (2015)\nMcPhail et al. (2019)\n\n\n\n\n\nReferences\n\nHerman, J. D., Reed, P. M., Zeff, H. B., & Characklis, G. W. (2015). How should robustness be defined for water systems planning under change? Journal of Water Resources Planning and Management, 141(10), 04015012. https://doi.org/10.1061/(asce)wr.1943-5452.0000509\n\n\nMcPhail, C., Maier, H. R., Kwakkel, J. H., Giuliani, M., Castelletti, A., & Westra, S. (2019). Robustness metrics: How are they calculated, when should they be used and why do they give different results? Earth’s Future, 169–191. https://doi.org/10.1002/2017ef000649"
+  },
+  {
+    "objectID": "readings/week-09-reading.html",
+    "href": "readings/week-09-reading.html",
+    "title": "Readings for Week 9",
+    "section": "",
+    "text": "Discussion questions will be posted here.\n\n\n\nAssigned reading will be drawn from:\n\nHerman et al. (2020)\nQuinn et al. (2017)\nFletcher et al. (2019)\nSutton & Barto (2018)\n\n\n\n\n\nReferences\n\nFletcher, S., Lickley, M., & Strzepek, K. (2019). Learning about climate change uncertainty enables flexible water infrastructure planning. Nature Communications, 10(1), 1782. https://doi.org/10.1038/s41467-019-09677-x\n\n\nHerman, J. D., Quinn, J. D., Steinschneider, S., Giuliani, M., & Fletcher, S. (2020). Climate adaptation as a control problem: Review and perspectives on dynamic water resources planning under uncertainty. Water Resources Research, e24389. https://doi.org/10.1029/2019wr025502\n\n\nQuinn, J. D., Reed, P. M., & Keller, K. (2017). Direct policy search for robust multi-objective management of deeply uncertain socio-ecological tipping points. Environmental Modelling & Software, 92, 125–141. https://doi.org/10.1016/j.envsoft.2017.02.017\n\n\nSutton, R. S., & Barto, A. G. (2018). Reinforcement learning: An Introduction (Second Edition). Cambridge, Massachusetts and London, England: MIT Press."
+  },
+  {
+    "objectID": "labs/lab-02/index.html",
+    "href": "labs/lab-02/index.html",
+    "title": "Lab 02: Julia Basics",
     "section": "",
     "text": "This is a placeholder."
   },
   {
-    "objectID": "labs/lab-06/index.html",
-    "href": "labs/lab-06/index.html",
-    "title": "Lab 06: Policy Search",
+    "objectID": "labs/lab-02/index.html#overview",
+    "href": "labs/lab-02/index.html#overview",
+    "title": "Lab 02: Julia Basics",
     "section": "",
     "text": "This is a placeholder."
   },
   {
-    "objectID": "labs/lab-06/index.html#overview",
-    "href": "labs/lab-06/index.html#overview",
-    "title": "Lab 06: Policy Search",
+    "objectID": "labs/lab-04/index.html",
+    "href": "labs/lab-04/index.html",
+    "title": "Lab 04: House Elevation Case Study",
     "section": "",
     "text": "This is a placeholder."
   },
   {
-    "objectID": "labs/lab-07/index.html",
-    "href": "labs/lab-07/index.html",
-    "title": "Lab 07: Multiobjective Optimization",
+    "objectID": "labs/lab-04/index.html#overview",
+    "href": "labs/lab-04/index.html#overview",
+    "title": "Lab 04: House Elevation Case Study",
     "section": "",
     "text": "This is a placeholder."
   },
   {
-    "objectID": "labs/lab-07/index.html#overview",
-    "href": "labs/lab-07/index.html#overview",
-    "title": "Lab 07: Multiobjective Optimization",
+    "objectID": "labs/lab-08/index.html",
+    "href": "labs/lab-08/index.html",
+    "title": "Lab 08: Parking Garage Case Study",
     "section": "",
     "text": "This is a placeholder."
   },
   {
-    "objectID": "labs/lab-09/index.html",
-    "href": "labs/lab-09/index.html",
-    "title": "Lab 09: The Lake Problem",
-    "section": "",
-    "text": "This is a placeholder."
-  },
-  {
-    "objectID": "labs/lab-09/index.html#overview",
-    "href": "labs/lab-09/index.html#overview",
-    "title": "Lab 09: The Lake Problem",
+    "objectID": "labs/lab-08/index.html#overview",
+    "href": "labs/lab-08/index.html#overview",
+    "title": "Lab 08: Parking Garage Case Study",
     "section": "",
     "text": "This is a placeholder."
   },
@@ -231,59 +189,192 @@
     "text": "Lab Instructions\nOnce you have everything set up, your lab for the week will be to complete the following steps. These will ensure that your installation is working smoothly!\n\nFollow the link to lab 1 assignment from Canvas (it should start with classroom.github.com). You will get a message saying ” Your assignment repository has been created: …“. Click on the link to go to your repository.\nclone the repository for lab 01 (use the Github Classroom link from Canvas) to your computer. You can use VS Code functionality, GitHub Desktop, or your terminal.\nOpen the directory containing the repository in VS Code doing one of the following:\n\nFrom GitHub desktop: Repository &gt; Open in Visual Studio Code\nIn VS Code: File &gt; Open Folder...\n\nOpen the index.qmd file in VS Code and replace the author: CEVE 421/521 line with your name and netID\nOpen the JULIA Repl\n\nOpen the command palette (Ctrl+Shift+P on Windows/Linux, Cmd+Shift+P on Mac)\nStart typing “Julia: Start REPL”. It will auto-complete; select the command as it appears.\n\nSet up your project environment.\n\nIn the Julia REPL, type ] to enter the package manager. It should now show something like (lab-01) pkg&gt;.\nType instantiate and run it (Enter). This will install all the packages needed for this lab.\nType the backspace key to exit the package manager.\n\nEdit the index.qmd file to add your name and netID\nRender the document\n\nOpen the solutions.qmd file\nOpen the command palette and run “Quarto: Preview”. After some activity, a preview of the rendered document should open in VS Code. If you see something like Browse at http://localhost:4200/index.html you can open that link in your web browser to see the rendered document.\nCheck the box on line 46 or 47 of the solutions.qmd file to indicate that you were able to render the document. If you were unable to render the document, check the other box and seek help. Make sure the box check renders correctly in the preview.\nRender to PDF or Microsoft Word following the directions below.\n\nIf you’re still having trouble:\n\nTry running build IJulia in the Julia REPL’s Pkg mode (type ])\nCome to office hours\nPost on the Canvas discussion for Lab 1\n\ncommit and push your changes to GitHub\nSubmit your rendered .docx or .pdf file to Canvas\n\n\nRunning Code\nWe can use Quarto to run Julia code in-line\n\nprintln(\"I'm using Julia!\")\n\nI'm using Julia!\n\n\nWe can also load packages\n\nusing CairoMakie\nusing LaTeXStrings\n\nand use them to make plots\n\nf = Figure()\nax = Axis(f[1, 1]; title=L\"$y = \\sin(x)$\", xlabel=L\"$x$\", ylabel=L\"$y$\")\nx = range(0, 10; length=100)\ny = sin.(x)\nlines!(ax, x, y)\nf\n\n\n\n\n\n\nRendering the Document\nA Quarto document is a plain text file that uses a simple code language to embed text, math, code, and the code’s output. You can run the document line by line, or you can render to a variety of formats. This is helpful for sharing with others, or for creating a final document for yourself.\nWe will check our ability to\n\nPreview the document in HTML (a web-native format)\nRender the document to PDF or Microsoft Word (a portable, shareable, and printable format)\n\n\nHTML\nFirst, verify that you can preview the document in HTML:\n\nOpen the command palette (Cmd+Shift+P on macOS, Ctrl+Shift+P on Windows/Linux)\nType “Quarto: Preview”\n\n\n\nPDF\nYou can use Quarto to generate PDF documents. Follow the instructions on Quarto’s website to install the necessary software.\n\nTo instruct Quarto to render to PDF, you need to edit the document metadata. Specifically, uncomment the lines in the document metadata corresponding to the PDF format.\nOpen the command palette (Cmd+Shift+P on macOS, Ctrl+Shift+P on Windows/Linux)\nType “Quarto: Render”\n\n\n\nWord\nYou can also render the document to Microsoft Word. See the Quarto documentation.\n\nTo instruct Quarto to render to Word, you need to edit the document metadata. Specifically, uncomment the lines in the document metadata corresponding to the Word format.\nOpen the command palette (Cmd+Shift+P on macOS, Ctrl+Shift+P on Windows/Linux)\nType “Quarto: Render”"
   },
   {
-    "objectID": "labs/lab-08/index.html",
-    "href": "labs/lab-08/index.html",
-    "title": "Lab 08: Parking Garage Case Study",
+    "objectID": "labs/lab-09/index.html",
+    "href": "labs/lab-09/index.html",
+    "title": "Lab 09: The Lake Problem",
     "section": "",
     "text": "This is a placeholder."
   },
   {
-    "objectID": "labs/lab-08/index.html#overview",
-    "href": "labs/lab-08/index.html#overview",
-    "title": "Lab 08: Parking Garage Case Study",
+    "objectID": "labs/lab-09/index.html#overview",
+    "href": "labs/lab-09/index.html#overview",
+    "title": "Lab 09: The Lake Problem",
     "section": "",
     "text": "This is a placeholder."
   },
   {
-    "objectID": "labs/lab-04/index.html",
-    "href": "labs/lab-04/index.html",
-    "title": "Lab 04: House Elevation Case Study",
+    "objectID": "labs/lab-07/index.html",
+    "href": "labs/lab-07/index.html",
+    "title": "Lab 07: Multiobjective Optimization",
     "section": "",
     "text": "This is a placeholder."
   },
   {
-    "objectID": "labs/lab-04/index.html#overview",
-    "href": "labs/lab-04/index.html#overview",
-    "title": "Lab 04: House Elevation Case Study",
+    "objectID": "labs/lab-07/index.html#overview",
+    "href": "labs/lab-07/index.html#overview",
+    "title": "Lab 07: Multiobjective Optimization",
     "section": "",
     "text": "This is a placeholder."
   },
   {
-    "objectID": "labs/lab-02/index.html",
-    "href": "labs/lab-02/index.html",
-    "title": "Lab 02: Julia Basics",
+    "objectID": "labs/lab-06/index.html",
+    "href": "labs/lab-06/index.html",
+    "title": "Lab 06: Policy Search",
     "section": "",
     "text": "This is a placeholder."
   },
   {
-    "objectID": "labs/lab-02/index.html#overview",
-    "href": "labs/lab-02/index.html#overview",
-    "title": "Lab 02: Julia Basics",
+    "objectID": "labs/lab-06/index.html#overview",
+    "href": "labs/lab-06/index.html#overview",
+    "title": "Lab 06: Policy Search",
     "section": "",
     "text": "This is a placeholder."
   },
   {
-    "objectID": "labs.html",
-    "href": "labs.html",
-    "title": "CEVE 421/521 Labs",
+    "objectID": "labs/lab-03/index.html",
+    "href": "labs/lab-03/index.html",
+    "title": "Lab 03: Depth-Damage Models",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nKey Concepts\n\n\n\n\n\n\nFri., Jan. 12\n\n\nLab 01: Software Installation\n\n\nJulia, Quarto, GitHub\n\n\n\n\nFri., Jan. 19\n\n\nLab 02: Julia Basics\n\n\nFunctions, Logic, and Packages\n\n\n\n\nFri., Jan. 26\n\n\nLab 03: Depth-Damage Models\n\n\nDataFrames and Distributions\n\n\n\n\nThu., Feb. 8\n\n\nLab 04: House Elevation Case Study\n\n\nDecisionProblems\n\n\n\n\nFri., Feb. 16\n\n\nLab 05: Sea-Level Rise\n\n\nBRICK\n\n\n\n\nFri., Feb. 23\n\n\nLab 06: Policy Search\n\n\nMetaheuristics and BlackBoxOptim\n\n\n\n\nFri., Mar. 1\n\n\nLab 07: Multiobjective Optimization\n\n\n\n\n\n\n\nFri., Mar. 8\n\n\nLab 08: Parking Garage Case Study\n\n\nJulia Basics\n\n\n\n\nFri., Mar. 29\n\n\nLab 09: The Lake Problem\n\n\nJulia Basics\n\n\n\n\n\n\nNo matching items"
+    "text": "This is a placeholder."
   },
   {
-    "objectID": "lectures.html",
-    "href": "lectures.html",
-    "title": "CEVE 421/521 Lectures",
+    "objectID": "labs/lab-03/index.html#overview",
+    "href": "labs/lab-03/index.html#overview",
+    "title": "Lab 03: Depth-Damage Models",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\n\n\n\n\nMon., Jan. 8\n\n\nIntroduction to Climate Risk Management\n\n\n\n\nWed., Jan. 10\n\n\nIntroduction to CEVE 421/521\n\n\n\n\nWed., Jan. 17\n\n\nThe science of climate hazard\n\n\n\n\nMon., Jan. 22\n\n\nVulnerability, exposure, and impacts\n\n\n\n\nMon., Jan. 29\n\n\nSystems Analysis\n\n\n\n\nMon., Feb. 5\n\n\nCost-Benefit Analysis\n\n\n\n\nMon., Feb. 12\n\n\nScenario Analysis\n\n\n\n\nMon., Feb. 19\n\n\nPolicy Search and Optimization\n\n\n\n\nMon., Feb. 26\n\n\nMultiobjective Policy Search and Optimization\n\n\n\n\nMon., Mar. 4\n\n\nSequential Decision Problems\n\n\n\n\nMon., Mar. 18\n\n\nRobustness\n\n\n\n\nMon., Mar. 25\n\n\nDeep Uncertainty\n\n\n\n\nMon., Apr. 1\n\n\nEquity and Justice\n\n\n\n\nWed., Apr. 10\n\n\nFinancial and Systemic Risks\n\n\n\n\nMon., Apr. 15\n\n\nReflections\n\n\n\n\n\n\nNo matching items"
+    "text": "This is a placeholder."
+  },
+  {
+    "objectID": "labs/lab-05/index.html",
+    "href": "labs/lab-05/index.html",
+    "title": "Lab 05: Sea-Level Rise",
+    "section": "",
+    "text": "This is a placeholder."
+  },
+  {
+    "objectID": "labs/lab-05/index.html#overview",
+    "href": "labs/lab-05/index.html#overview",
+    "title": "Lab 05: Sea-Level Rise",
+    "section": "",
+    "text": "This is a placeholder."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "CEVE 421/521: Climate Risk Management",
+    "section": "",
+    "text": "This is the course website for the Spring 2024 edition of CEVE 421/521, Climate Risk Management, taught at Rice University by James Doss-Gollin."
+  },
+  {
+    "objectID": "index.html#course-information",
+    "href": "index.html#course-information",
+    "title": "CEVE 421/521: Climate Risk Management",
+    "section": "Course Information",
+    "text": "Course Information\nClimate variability and change pose threats to lives and livelihoods. These climate risks can be managed through the design and operation of infrastructure systems, as well as through disaster response and recovery. Decisions about how to develop and choose risk management strategies are often based on pure vibes, but occasionally rigorous quantitative analyses that make use of scientific information can inform them (we will focus on these cases). These analyses involve integrating knowledge from multiple disciplines to balance competing goals (objectives) under uncertainty.\nIn this course, you will learn climate science, uncertainty quantification, and decision analysis methods to support climate risk management. You will be assigned readings for every class that cover both methods and applications, and will work collaboratively to implement key concepts through programming problem sets. Active class participation is required. Methods covered include scenario analysis, exploratory modeling, cost-benefit analysis, single- and multi-objective policy search, reinforcement learning, deep uncertainty, robust decision making, and equitable decision making.\nFor additional information, see the syllabus."
+  },
+  {
+    "objectID": "index.html#instructor",
+    "href": "index.html#instructor",
+    "title": "CEVE 421/521: Climate Risk Management",
+    "section": "Instructor",
+    "text": "Instructor\nDr. James Doss-Gollin is an assistant professor of Civil and Environmental Engineering at Rice University. His research integrates Earth science, data science, and decision science to address challenges in climate risk management, water resources, and energy system resilience. He also teaches CEVE 543 (Data Science for Climate Hazards)."
+  },
+  {
+    "objectID": "index.html#software-tools",
+    "href": "index.html#software-tools",
+    "title": "CEVE 421/521: Climate Risk Management",
+    "section": "Software Tools",
+    "text": "Software Tools\n\nThis course will use the Julia programming language. Julia is a modern, free, open source language designed for scientific computing.\nNo prior knowledge of Julia is expected, but some exposure to programming is strongly encouraged.\nAssignments will be distributed using GitHub Classroom."
+  },
+  {
+    "objectID": "index.html#acknowledgements",
+    "href": "index.html#acknowledgements",
+    "title": "CEVE 421/521: Climate Risk Management",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\nThe layout for this site was inspired by and draws from Vivek Srikrishnan’s Environmental Systems Analysis course at Cornell, STA 210 at Duke University, and Andrew Heiss’s course materials at Georgia State. It builds heavily from my data science for climate hazard assessment course, CEVE 543."
+  },
+  {
+    "objectID": "readings/week-05-reading.html",
+    "href": "readings/week-05-reading.html",
+    "title": "Readings for Week 5",
+    "section": "",
+    "text": "Discussion questions will be posted here.\n\n\n\nAssigned reading will be drawn from:\n\nArrow et al. (2013)\n\n\n\n\n\nReferences\n\nArrow, K., Cropper, M., Gollier, C., Groom, B., Heal, G., Newell, R., et al. (2013). Determining benefits and costs for future generations. Science, 341(6144), 349–350. https://doi.org/10.1126/science.1235665"
+  },
+  {
+    "objectID": "readings/week-13-reading.html",
+    "href": "readings/week-13-reading.html",
+    "title": "Readings for Week 13",
+    "section": "",
+    "text": "Discussion questions will be posted here.\n\n\n\nAssigned reading will be drawn from:\n\nThomson et al. (2023)\nCondon (2021)\n\n\n\n\n\nReferences\n\nCondon, M. (2021). Market myopia’s climate bubble. https://doi.org/10.2139/ssrn.3782675\n\n\nThomson, H., Zeff, H. B., Kleiman, R., Sebastian, A., & Characklis, G. W. (2023). Systemic Financial Risk Arising From Residential Flood Losses. Earth’s Future, 11(4), e2022EF003206. https://doi.org/10.1029/2022EF003206"
+  },
+  {
+    "objectID": "readings/week-03-reading.html",
+    "href": "readings/week-03-reading.html",
+    "title": "Readings for Week 3",
+    "section": "",
+    "text": "Discussion questions will be posted here.\n\n\n\nAssigned reading will be drawn from:\n\nWing et al. (2020)\nBonnafous et al. (2017)\n\n\n\n\n\nReferences\n\nBonnafous, L., Lall, U., & Siegel, J. (2017). A water risk index for portfolio exposure to climatic extremes: Conceptualization and an application to the mining industry. Hydrology and Earth System Sciences, 21(4), 2075–2106. https://doi.org/f96k67\n\n\nWing, O. E. J., Pinter, N., Bates, P. D., & Kousky, C. (2020). New insights into US flood vulnerability revealed from flood insurance big data. Nature Communications, 11(1, 1), 1444. https://doi.org/10.1038/s41467-020-15264-2"
+  },
+  {
+    "objectID": "readings/week-04-reading.html",
+    "href": "readings/week-04-reading.html",
+    "title": "Readings for Week 4",
+    "section": "",
+    "text": "Discussion questions will be posted here.\n\n\n\nAssigned reading will be drawn from:\n\nReed et al. (2022)\n\n\n\n\n\nReferences\n\nReed, P. M., Hadjimichael, A., Moss, R. H., Brelsford, C., Burleyson, C. D., Cohen, S., et al. (2022). Multisector Dynamics: Advancing the Science of Complex Adaptive Human-Earth Systems. Earth’s Future, 10(3), e2021EF002621. https://doi.org/10.1029/2021EF002621"
+  },
+  {
+    "objectID": "readings/week-08-reading.html",
+    "href": "readings/week-08-reading.html",
+    "title": "Readings for Week 8",
+    "section": "",
+    "text": "Discussion questions will be posted here.\n\n\n\nAssigned reading will be drawn from:\n\nZarekarizi et al. (2020)\n\n\n\n\n\nReferences\n\nZarekarizi, M., Srikrishnan, V., & Keller, K. (2020). Neglecting uncertainties biases house-elevation decisions to manage riverine flood risks. Nature Communications, 11(1, 1), 5361. https://doi.org/10.1038/s41467-020-19188-9"
+  },
+  {
+    "objectID": "readings/week-02-reading.html",
+    "href": "readings/week-02-reading.html",
+    "title": "Week 2 readings",
+    "section": "",
+    "text": "Discussion questions will be posted here.\n\n\n\nAssigned reading will be drawn from:\n\nSeneviratne et al. (2021)\nLall et al. (2018)\n\n\n\n\n\nReferences\n\nLall, U., Johnson, T., Colohan, P., Aghakouchak, A., Arumugam, S., Brown, C., et al. (2018). Chapter 3: Water. In D. R. Reidmiller, D. R. Easterling, K. E. Kunkel, K. L. M. Lewis, T. K. Maycock, & B. C. Stewart, Impacts, Risks, and Adaptation in the United States: The Fourth National Climate Assessment, Volume II. Washington, D.C.: U.S. Global Change Research Program. https://doi.org/10.7930/NCA4.2018.CH3\n\n\nSeneviratne, S. I., Zhang, X., Adnan, M., Badi, W., Dereczynski, C., Di Luca, A., et al. (2021). Weather and climate extreme events in a changing climate. In V. Masson-Delmotte, P. Zhai, A. Pirani, S. L. Connors, C. Péan, S. Berger, et al. (Eds.), Climate change 2021: The physical science basis. Contribution of working group I to the sixth assessment report of the intergovernmental panel on climate change. Book section, Cambridge, UK and New York, NY, USA: Cambridge University Press. https://doi.org/10.1017/9781009157896.013"
+  },
+  {
+    "objectID": "readings/week-12-reading.html",
+    "href": "readings/week-12-reading.html",
+    "title": "Readings for Week 12",
+    "section": "",
+    "text": "Discussion questions will be posted here.\n\n\n\nAssigned reading will be drawn from:\n\nPollack et al. (2023)\nFletcher et al. (2022)\n\n\n\n\n\nReferences\n\nFletcher, S., Hadjimichael, A., Quinn, J., Osman, K., Giuliani, M., Gold, D., et al. (2022). Equity in Water Resources Planning: A Path Forward for Decision Support Modelers. Journal of Water Resources Planning and Management, 148(7), 02522005. https://doi.org/10.1061/(ASCE)WR.1943-5452.0001573\n\n\nPollack, A., Helgeson, C., Kousky, C., & Keller, K. (2023, September 15). Transparency on underlying values is needed for useful equity measurements. https://doi.org/10.31219/osf.io/kvyxr"
+  },
+  {
+    "objectID": "lectures/01-intro-class-topic.html#lab-1",
+    "href": "lectures/01-intro-class-topic.html#lab-1",
+    "title": "Introduction to Climate Risk Management",
+    "section": "Lab 1",
+    "text": "Lab 1\nFor our first lab, we will be installing required software for the course. Please start working on this lab as soon as possible so that we can use Friday’s lab session to troubleshoot any issues and review the material. Normally you will not need (or be able) to start labs ahead of time."
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Helpful Resources",
+    "section": "",
+    "text": "This page contains links to resources that may be helpful for the course. If you have a resource that you think would be helpful to others, please let me know and I will add it to the list."
+  },
+  {
+    "objectID": "resources.html#julia",
+    "href": "resources.html#julia",
+    "title": "Helpful Resources",
+    "section": "Julia",
+    "text": "Julia\nThere are lots of great resources on programming and Julia. Here is a curated list of some particularly helpful tools.\n\n\n\n\n\n\nSome of these tutorials provide their own instructions on how to install Julia. Please follow the instructions provided in this course!\n\n\n\n\nJulia for Nervous Begineers: A free course on JuliaAcademy for people who are hesitant but curious about learning to write code in Julia.\nFastTrack to Julia cheatsheet\nPlotting cheatsheet\nIntroduction to Computational Thinking: a great Julia-based course at MIT covering applied mathematics and computational thinking\nComprehensive Julia Tutorials: YouTube playlist covering a variety of Julia topics, starting with an introduciton to the language.\n\n\nPlotting with Makie\n\nMakie Tutorials\nMakieCon 2023 YouTube Channel"
+  },
+  {
+    "objectID": "resources.html#other-software-tools",
+    "href": "resources.html#other-software-tools",
+    "title": "Helpful Resources",
+    "section": "Other Software Tools",
+    "text": "Other Software Tools\n\nGit and GitHub\n\nGit Basics from The Odin Project.\nLearn Git Branching: An interactive, visual tutorial to how git works.\nVersion Control from MIT’s “CS: Your Missing Semester” course.\nGit and GitHub for Poets: YouTube playlist covering the basics of git and GitHub.\nGradescope and GitHub Classroom\n\n\n\nTypesetting Math\n\nJustin Bois’ tutorial.\nMarkdown Cheatsheet\nLaTeX Cheatsheet\nMathpix Snpi allows you to convert images of equations to LaTeX code (there is a free tier)\nDetexify lets you draw a symbol and suggests the LaTeX code for the corresponding symbol"
+  },
+  {
+    "objectID": "resources.html#big-picture",
+    "href": "resources.html#big-picture",
+    "title": "Helpful Resources",
+    "section": "Big Picture",
+    "text": "Big Picture\n\nUsing Large Language Models (LLMs)\n\nGitHub Copilot is an extension for VS Code that can provide suggestions for code completion and editing. It is free for students and educators.\nBlog: “Bob Carpenter thinks GPT-4 is awesome”: this post highlights how GPT-4 is able to write a program in Stan, a statistical programming language, and also the mistakes that it makes. Finding and correcting these mistakes requires knowing the Stan language and having a deep understanding of the statistical model, but someone with this expertise could potentially use GPT-4 to accelerate their coding workflow. The comments are also interesting and insightful.\nAI Snake Oil is a blog that seeks to dispel hype, remove misconceptions, and clarify the limits of AI. The authors are in the Princeton University Department of Computer Science.\nChatGPT has both free and paid tiers and can be helpful with writing and interpreting code, though care is needed as described above"
   }
 ]
