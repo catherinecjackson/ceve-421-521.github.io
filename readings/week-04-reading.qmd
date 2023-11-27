@@ -1,0 +1,16 @@
+---
+title: Readings for Week 4
+date: 2024-01-31
+week: 4
+
+categories: [Reading]
+format: html
+---
+
+::: {.callout-tip}
+Discussion questions will be posted here.
+:::
+
+Assigned reading will be drawn from:
+
+- @reed_multisectordynamics:2022

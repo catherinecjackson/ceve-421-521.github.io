@@ -42,13 +42,11 @@ website:
     collapse-level: 1
     contents:
       - href: index.qmd
-        text: Overview
+        text: Home
       - href: syllabus.qmd
         text: Syllabus
-      - href: lectures.qmd
-        text: Lectures
-      - href: labs.qmd
-        text: Labs
+      - text: Schedule
+        href: schedule.qmd
       - text: Resources
         href: resources.qmd
 

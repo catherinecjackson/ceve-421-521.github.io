@@ -1,0 +1,17 @@
+---
+title: Week 2 readings
+date: 2024-01-17
+week: 2
+
+categories: [Reading]
+format: html
+---
+
+::: {.callout-tip}
+Discussion questions will be posted here.
+:::
+
+Assigned reading will be drawn from:
+
+- @seneviratne_wg1ch11:2021
+- @lall_ncawater:2018

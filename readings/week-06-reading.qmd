@@ -1,0 +1,16 @@
+---
+title: Readings for Week 6
+date: 2024-02-14
+week: 6
+
+categories: [Reading]
+format: html
+---
+
+::: {.callout-tip}
+Discussion questions will be posted here.
+:::
+
+Assigned reading will be drawn from:
+
+- @bankes_exploratory:1993

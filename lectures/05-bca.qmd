@@ -1,12 +1,14 @@
 ---
-title: "Deep Uncertainty"
+title: "Cost-Benefit Analysis"
 subtitle: "Lecture"
-date: 2024-03-25
+date: 2024-02-05
+week: 5
+
+categories: 
+  - Lecture
 
 # do not edit anything below this line
-format:
-    revealjs:
-        scrollable: true
+format: revealjs
 
 author: "{{< var instructor.name >}}!"
 course: "{{< var course.number >}}, {{< var course.title >}}"

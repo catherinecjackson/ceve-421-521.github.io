@@ -1,0 +1,8 @@
+---
+title: Exam 1
+date: 2024-02-02
+week: 4
+
+categories: [Exam]
+format: html
+---

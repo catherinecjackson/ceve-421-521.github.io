@@ -1,0 +1,17 @@
+---
+title: Readings for Week 7
+date: 2024-02-21
+week: 7
+
+categories: [Reading]
+format: html
+---
+
+::: {.callout-tip}
+Discussion questions will be posted here.
+:::
+
+Assigned reading will be drawn from:
+
+- @vanberchum_coastal:2019
+- @schwetschenau_optimizing:2023

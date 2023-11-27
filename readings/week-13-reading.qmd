@@ -1,0 +1,17 @@
+---
+title: Readings for Week 13
+date: 2024-04-10
+week: 13
+
+categories: [Reading]
+format: html
+---
+
+::: {.callout-tip}
+Discussion questions will be posted here.
+:::
+
+Assigned reading will be drawn from:
+
+- @thomson_systemic:2023
+- @condon_myopia:2021

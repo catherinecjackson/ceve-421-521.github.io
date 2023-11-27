@@ -1,0 +1,16 @@
+---
+title: Readings for Week 5
+date: 2024-02-07
+week: 5
+
+categories: [Reading]
+format: html
+---
+
+::: {.callout-tip}
+Discussion questions will be posted here.
+:::
+
+Assigned reading will be drawn from:
+
+- @arrow_discount:2013

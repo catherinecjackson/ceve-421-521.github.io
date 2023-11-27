@@ -1,0 +1,17 @@
+---
+title: Readings for Week 10
+date: 2024-03-20
+week: 10
+
+categories: [Reading]
+format: html
+---
+
+::: {.callout-tip}
+Discussion questions will be posted here.
+:::
+
+Assigned reading will be drawn from:
+
+- @herman_robustness:2015
+- @mcphail_robustness:2019

@@ -1,0 +1,19 @@
+---
+title: Readings for Week 9
+date: 2024-03-06
+week: 9
+
+categories: [Reading]
+format: html
+---
+
+::: {.callout-tip}
+Discussion questions will be posted here.
+:::
+
+Assigned reading will be drawn from:
+
+- @herman_control:2020
+- @quinn_dps:2017
+- @fletcher_mombasa:2019
+- @sutton_reinforcement:2018

@@ -1,12 +1,14 @@
 ---
-title: "Sequential Decision Problems"
+title: "The Science of Climate Hazard"
 subtitle: "Lecture"
-date: 2024-03-04
+date: 2024-01-17
+week: 2
+
+categories: 
+  - Lecture
 
 # do not edit anything below this line
-format:
-    revealjs:
-        scrollable: true
+format: revealjs
 
 author: "{{< var instructor.name >}}!"
 course: "{{< var course.number >}}, {{< var course.title >}}"

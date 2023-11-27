@@ -1,12 +1,14 @@
 ---
-title: "Financial and Systemic Risks"
+title: "Policy Search and Optimization"
 subtitle: "Lecture"
-date: 2024-04-10
+date: 2024-02-19
+week: 7
+
+categories: 
+  - Lecture
 
 # do not edit anything below this line
-format:
-    revealjs:
-        scrollable: true
+format: revealjs
 
 author: "{{< var instructor.name >}}!"
 course: "{{< var course.number >}}, {{< var course.title >}}"

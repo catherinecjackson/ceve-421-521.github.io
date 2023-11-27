@@ -206,7 +206,7 @@ In particular:
 - One of the best applications of LLMs is to write code. This can help accelerate your workflow, especially when you are learning new syntax. However, LLMs can make bad decisions about how to structure your code, can introduce bugs, and can mislead you about what your code is doing. You are responsible for understanding and debugging your code, and for ensuring that it does what you intend it to do.
 - LLMs should not be used to generate text that you submit as your own work. If you are assigned a writing assignment, the point is to stimulate your thought process, and you short-cut this if you ask a LLM to generate the response for you. This leads to shallow thinking! However, you *may* use tools including LLMs (but also Grammarly, spell-check, etc.) to help you edit your writing. This can sometimes be a fine line; it's always better to ask if you're not sure, and to disclose your use of these tools in your submission
 
-The [resources page](resources/learn-more.qmd) has links to helpful ideas about LLMs and how to use them.
+The [resources page](resources.qmd) has links to helpful ideas about LLMs and how to use them.
 
 ### Policy on Web Posting of Course Materials
 
@@ -254,8 +254,11 @@ Tests are designed to be straightforward and will cover key ideas from reading, 
 We will build a case study related to house elevation over the course of the semester through weekly labs.
 Answers will be posted for each lab, so mistakes made in one lab do not pass to the next.
 
-For a final project, you will be asked to incorporate at least two approaches from the course into the case study.
+For a final project, you will be asked to incorporate additional concept(s) from the course into the case study.
 For example, you might improve the representation of additional sources of uncertainty, use a more sophisticated optimization algorithm, or change the objectives of the optimization problem.
+
+Students enrolled in the 421 section (i.e., undergraduates) may work in groups of 2-3 on the final project.
+Students enrolled in the 521 section (i.e., graduate students) must work individually.
 
 ### Reading Discussion
 
@@ -270,8 +273,8 @@ If you choose to present a paper, you will be graded on the same scale as the 52
 
 ### Late Work Policy
 
-- Late projects will be subjected to a 10% penalty per day. Specifically, your grade will be multiplied $0.9^d$ where $d$ is the number of days late.
-- Late labs will not be accepted, because we will discuss solutions in class.
+Late projects will be subjected to a 10% penalty per day. Specifically, your grade will be multiplied $0.9^d$ where $d$ is the number of days late.
+Late labs will not be accepted so that solutions can be posted promptly.
 
 As described above, your lowest two labs and reading quizzes will be dropped.
 This is intended to accommodate events like minor illnesses, travel to a conference, and other circumstances that may cause you to miss a lab or quiz.
@@ -280,32 +283,39 @@ If a major circumstance arises (e.g., a death in the family, a serious illness, 
 ## Preliminary Schedule
 
 The following schedule outlines our planned topics and readings for the semester.
-All assignments will be posted on Canvas.
+In general, we will use Mondays for lecture, Wednesdays for group discussion centered on readings, and Fridays for computational labs.
+
+This schedule is subject to change.
+Updated versions will be posted on [the Schedule page](./schedule.qmd) of the course website.
 
 ::: {.callout-note}
 Not all readings listed here will be assigned in full.
 Some may be assigned as optional reading and others may be assigned as excerpts.
 :::
 
-| Week    | Course Dates                    | Topic | Reading | Lab |
+
+| Week    | Course Dates                    | Topic | Reading | Exam / Project |
 | -------- | --------------- | ---------------------- | ---------------------- | ---------------------- |
 | | **Module 1:** | **Introduction** | | |
-|  1  | 1/8, 1/10, 1/12 | Introduction to climate risk management | @frank_newjersey:2022, @loucks_planning:2017 Ch. 1 | Software installation |
-|  2  | 1/17, 1/19 | Science of climate hazard | @seneviratne_wg1ch11:2021, @lall_ncawater:2018 | Julia basics  |
-|  3  | 1/22, 1/24, 1/26 | Vulnerability, exposure, and impacts | @wing_vulnerability:2020, @bonnafous_waterrisk:2017 | DataFrames, Distributions |
-|  4  | 1/29, 1/31, 2/2  | Systems | @reed_multisectordynamics:2022,  | *No lab (test 1)* | 
+|  1  | 1/8, 1/10, 1/12 | Introduction to climate risk management | @frank_newjersey:2022, @loucks_planning:2017 Ch. 1 | |
+|  2  | 1/17, 1/19 | Science of climate hazard | @seneviratne_wg1ch11:2021, @lall_ncawater:2018 |  |
+|  3  | 1/22, 1/24, 1/26 | Vulnerability, exposure, and impacts | @wing_vulnerability:2020, @bonnafous_waterrisk:2017 | |
+|  4  | 1/29, 1/31, 2/2  | Systems | @reed_multisectordynamics:2022,  | Exam 1 | 
 | | **Module 2:** | **Decision Analysis** | | |
-|  5  | 2/5, 2/7, 2/8 | Cost-benefit analysis | @arrow_discount:2013 | House Elevation Case Study |
-|  6  | 2/12, 2/14, 2/16 | Scenario analysis | @bankes_exploratory:1993 | BRICK |
-|  7  | 2/19, 2/21, 2/23 | Policy search and optimization | @vanberchum_coastal:2019, @schwetschenau_optimizing:2023 | Metaheuristics |
-|  8  | 2/26, 2/28, 3/1 | Multiobjective policy search | @zarekarizi_suboptimal:2020 | BlackBoxOptim | 
-|  9  | 3/4, 3/6, 3/8 | Sequential decision problems | @herman_control:2020, @quinn_dps:2017, @fletcher_mombasa:2019, @sutton_reinforcement:2018 | Case Study: The Parking Garage |
-|  10 | 3/18, 3/20, 3/22 | Robustness | @herman_robustness:2015, @mcphail_robustness:2019 |  Case Study: The Lake Problem |
+|  5  | 2/5, 2/7, 2/8 | Cost-benefit analysis | @arrow_discount:2013 | |
+|  6  | 2/12, 2/14, 2/16 | Scenario analysis | @bankes_exploratory:1993 | Final Project: Proposal |
+|  7  | 2/19, 2/21, 2/23 | Policy search and optimization | @vanberchum_coastal:2019, @schwetschenau_optimizing:2023 | |
+|  8  | 2/26, 2/28, 3/1 | Multiobjective policy search | @zarekarizi_suboptimal:2020 | | 
+|  9  | 3/4, 3/6, 3/8 | Sequential decision problems | @herman_control:2020, @quinn_dps:2017, @fletcher_mombasa:2019, @sutton_reinforcement:2018 | |
+|  10 | 3/18, 3/20, 3/22 | Robustness | @herman_robustness:2015, @mcphail_robustness:2019 | Revised Project Proposal; Exam 2 |
 | | **Module 3:** | **Thinking Critically** | | |
-|  11 | 3/25, 3/27, 3/29 | Deep uncertainty | @schneider_scenarios:2002, @lempert_robust:2000, @oreskes_verification:1994 | *No lab (test 2)* |
-|  12 | 4/1, 4/3, 4/5 | Equity and justice | @pollack_equity:2023, @fletcher_waterresourcesequity:2022 | *No lab* |
-|  13 | 4/10, 4/12 | Financial and systemic risks | @thomson_systemic:2023, @condon_myopia:2021 | *No lab* |
-|  14 | 4/15, 4/17, 4/19 | Reflections | @keller_management:2021, @gilligan_beyondwickedness:2020 | *No lab (test 3)* |
+|  11 | 3/25, 3/27, 3/29 | Deep uncertainty | @schneider_scenarios:2002, @lempert_robust:2000, @oreskes_verification:1994 | |
+|  12 | 4/1, 4/3, 4/5 | Equity and justice | @pollack_equity:2023, @fletcher_waterresourcesequity:2022 | |
+|  13 | 4/10, 4/12 | Financial and systemic risks | @thomson_systemic:2023, @condon_myopia:2021 | |
+|  14 | 4/15, 4/17, 4/19 | Reflections | @keller_management:2021, @gilligan_beyondwickedness:2020 | Draft Project Writeup; Exam 3 |
+| | | **Final Projects** | | |
+|  | TBD | *during final exam slot* | | Project presentations |
+|  | 4/30 | | | Final write-up |
 
 : {.striped .hover}
 

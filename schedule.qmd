@@ -1,0 +1,31 @@
+---
+title: "{{< var course.number >}} Schedule"
+format: html
+listing:
+  type: table
+  contents:
+    - "lectures/*.qmd"
+    - "labs/*/index.qmd"
+    - "readings/*.qmd"
+    - "assignments/*.qmd"
+  sort:
+    - "date"
+    - "title"
+  table-striped: true
+  table-hover: true
+  categories: numbered
+  fields: [week, title, date, categories]
+  field-display-names: 
+    week: "Week"
+    title: "Topic"
+    date: "Date"
+    categories: "Category"
+  page-size: 100
+---
+
+::: {.callout-note}
+## Reading
+
+A subset of readings listed here will likely be assigned.
+Check the page for each reading to see discussion questions.
+:::

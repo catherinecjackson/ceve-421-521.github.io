@@ -1,0 +1,18 @@
+---
+title: Readings for Week 3
+date: 2024-01-24
+week: 3
+readings: ["@wing_vulnerability:2020", "@bonnafous_waterrisk:2017"]
+
+categories: [Reading]
+format: html
+---
+
+::: {.callout-tip}
+Discussion questions will be posted here.
+:::
+
+Assigned reading will be drawn from:
+
+- @wing_vulnerability:2020
+- @bonnafous_waterrisk:2017

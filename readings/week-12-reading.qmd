@@ -1,0 +1,17 @@
+---
+title: Readings for Week 12
+date: 2024-04-03
+week: 12
+
+categories: [Reading]
+format: html
+---
+
+::: {.callout-tip}
+Discussion questions will be posted here.
+:::
+
+Assigned reading will be drawn from:
+
+- @pollack_equity:2023
+- @fletcher_waterresourcesequity:2022

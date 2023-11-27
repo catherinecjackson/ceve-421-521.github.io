@@ -1,13 +1,14 @@
 ---
-title: "Systems Analysis"
+title: "Equity and Justice"
 subtitle: "Lecture"
-date: 2024-01-29 
-week: 04
+date: 2024-04-01
+week: 12
+
+categories: 
+  - Lecture
 
 # do not edit anything below this line
-format:
-    revealjs:
-        scrollable: true
+format: revealjs
 
 author: "{{< var instructor.name >}}!"
 course: "{{< var course.number >}}, {{< var course.title >}}"

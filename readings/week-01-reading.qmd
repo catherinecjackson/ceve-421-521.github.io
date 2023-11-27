@@ -1,0 +1,17 @@
+---
+title: Week 1 readings
+date: 2024-01-10
+week: 1
+
+categories: [Reading]
+format: html
+---
+
+::: {.callout-tip}
+Discussion questions will be posted here.
+:::
+
+Assigned reading will be drawn from:
+
+- @frank_newjersey:2022
+- @loucks_planning:2017 Ch. 1

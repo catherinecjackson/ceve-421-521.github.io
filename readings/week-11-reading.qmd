@@ -1,0 +1,18 @@
+---
+title: Readings for Week 11
+date: 2024-03-27
+week: 11
+
+categories: [Reading]
+format: html
+---
+
+::: {.callout-tip}
+Discussion questions will be posted here.
+:::
+
+Assigned reading will be drawn from:
+
+- @schneider_scenarios:2002
+- @lempert_robust:2000
+- @oreskes_verification:1994

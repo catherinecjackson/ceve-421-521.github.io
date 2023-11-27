@@ -1,12 +1,14 @@
 ---
-title: "Robustness"
+title: "Scenario Analysis"
 subtitle: "Lecture"
-date: 2024-03-18
+date: 2024-02-12
+week: 6
+
+categories: 
+  - Lecture
 
 # do not edit anything below this line
-format:
-    revealjs:
-        scrollable: true
+format: revealjs
 
 author: "{{< var instructor.name >}}!"
 course: "{{< var course.number >}}, {{< var course.title >}}"

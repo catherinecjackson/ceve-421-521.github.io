@@ -1,12 +1,14 @@
 ---
-title: "Reflections"
+title: "Sequential Decision Problems"
 subtitle: "Lecture"
-date: 2024-04-15
+date: 2024-03-04
+week: 9
+
+categories: 
+  - Lecture
 
 # do not edit anything below this line
-format:
-    revealjs:
-        scrollable: true
+format: revealjs
 
 author: "{{< var instructor.name >}}!"
 course: "{{< var course.number >}}, {{< var course.title >}}"
