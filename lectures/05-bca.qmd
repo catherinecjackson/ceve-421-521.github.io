@@ -18,3 +18,10 @@ template-partials:
 ---
 
 This is a placeholder.
+
+## Math text
+
+Here I'm just testing the math rendering
+$$
+\mathbb{E}\left[f(x | \theta) \right] \neq f \left( \mathbb{E}\left[x \right] \right)
+$$

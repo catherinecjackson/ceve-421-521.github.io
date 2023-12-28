@@ -222,8 +222,9 @@ Your final grade will be calculated as follow:
 | Reading quizzes | 10 | 10 |
 | Labs | 10 | 10 |
 | Tests | 40 | 30 |
-| Project | 40 | 40 |
+| Project | 30 | 30 |
 | Reading Discussion | 0 | 10 |
+| Reading Notes | 10 | 10 |
 
 
 ### Reading Quizzes
@@ -257,19 +258,30 @@ Answers will be posted for each lab, so mistakes made in one lab do not pass to 
 For a final project, you will be asked to incorporate additional concept(s) from the course into the case study.
 For example, you might improve the representation of additional sources of uncertainty, use a more sophisticated optimization algorithm, or change the objectives of the optimization problem.
 
-Students enrolled in the 421 section (i.e., undergraduates) may work in groups of 2-3 on the final project.
+Students enrolled in the 421 section (i.e., undergraduates) may work in small groups.
 Students enrolled in the 521 section (i.e., graduate students) must work individually.
 
 ### Reading Discussion
 
 All students enrolled in the 521 section (i.e., graduate students) will present one of the papers assigned to the class and lead a discussion.
-This discussion should take 30-50 minutes.
+
+- This discussion should take 30-50 minutes.
+- You should sign up for a time by the second week of class.
+- You should meet with your instructor at least one week before your presentation to discuss the reading and your discussion plan.
+
 You will be graded on the quality of your presentation, the depth of your understanding of the reading, and your ability to lead a discussion.
-You should sign up for a time by the second week of class.
-You should meet with your instructor at least one week before your presentation to discuss the reading and your discussion plan.
 
 Students enrolled in the 421 section may choose to present a paper alone or in a group.
 If you choose to present a paper, you will be graded on the same scale as the 521 students.
+
+### Reading Notes
+
+All students will act as "note-taker" for an in-class reading discussion.
+The note-taker will be responsible for taking notes on the discussion (following up from the recording as necessary), then adding them to the course website (through a Pull Request; guidance will be provided).
+These notes should summarize, rather than transcribe, the discussion, and identify key insights, questions, disagreements, and points of confusion.
+
+You should sign up for a time by the second week of class.
+Groups may be permitted depending on enrollment.
 
 ### Late Work Policy
 

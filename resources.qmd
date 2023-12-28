@@ -16,11 +16,16 @@ Some of these tutorials provide their own instructions on how to install Julia.
 Please follow the instructions provided in this course!
 :::
 
+### Getting Started
+
 * [Julia for Nervous Begineers](https://juliaacademy.com/p/julia-programming-for-nervous-beginners): A free course on JuliaAcademy for people who are hesitant but curious about learning to write code in Julia. 
 * [FastTrack to Julia cheatsheet](https://juliadocs.github.io/Julia-Cheat-Sheet/)
-* [Plotting cheatsheet](https://github.com/sswatson/cheatsheets/blob/master/plotsjl-cheatsheet.pdf)
-* [Introduction to Computational Thinking](https://computationalthinking.mit.edu/Spring21/): a great Julia-based course at MIT covering applied mathematics and computational thinking
 * [Comprehensive Julia Tutorials](https://www.youtube.com/playlist?list=PLCXbkShHt01seTlnlVg6O7f6jKGTguFi7): YouTube playlist covering a variety of Julia topics, starting with an introduciton to the language.
+* [Matlab-Python-Julia Cheatsheet](https://cheatsheets.quantecon.org/)
+
+### Digging Deeper
+
+* [Introduction to Computational Thinking](https://computationalthinking.mit.edu/Spring21/): a great Julia-based course at MIT covering applied mathematics and computational thinking
 
 ### Plotting with Makie
 
@@ -35,7 +40,13 @@ Please follow the instructions provided in this course!
 * [Learn Git Branching](https://learngitbranching.js.org/): An interactive, visual tutorial to how git works.
 * [Version Control](https://missing.csail.mit.edu/2020/version-control/) from MIT's "CS: Your Missing Semester" course.
 * [Git and GitHub for Poets](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV): YouTube playlist covering the basics of git and GitHub.
-* [Gradescope and GitHub Classroom](https://hmc-cs-131-spring2020.github.io/howtos/assignments.html)
+* [Version Control with Git](https://swcarpentry.github.io/git-novice/) course from Software Carpentry
+
+
+### Zotero
+
+* [Zotero and Citation Management](https://fondrenlearning.blogs.rice.edu/zotero/) by Fondren library
+* [Zotero Quick Start Guide](https://www.zotero.org/support/quick_start_guide)
 
 ### Typesetting Math
 

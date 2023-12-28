@@ -64,6 +64,7 @@ format:
     reference-location: document
     citations-hover: true
     code-annotations: hover
+    code-line-numbers: true
     html-math-method: mathjax
     include-in-header: mathjax-config.html
     date-format: "ddd., MMM. D"
@@ -102,7 +103,7 @@ bibliography: references.bib
 csl: _assets/references/american-geophysical-union.csl
 
 # code to use
-jupyter: julia-1.9
+jupyter: julia-1.10
 
 # execution options
 execute:
