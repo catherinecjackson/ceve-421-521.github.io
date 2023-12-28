@@ -8,7 +8,7 @@
 
 <meta name="author" content="CEVE 421/521">
 
-<title>CEVE 421/521 - Spring 2024 - Lab 01: Software Installation</title>
+<title>CEVE 421/521 - Spring 2024 - Lab 1: Software Installation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -106,7 +106,7 @@ window.MathJax = {
 </script>
 
 
-<meta property="og:title" content="CEVE 421/521 - Spring 2024 - Lab 01: Software Installation">
+<meta property="og:title" content="CEVE 421/521 - Spring 2024 - Lab 1: Software Installation">
 <meta property="og:description" content="Julia, Quarto, GitHub">
 <meta property="og:image" content="https://ceve-421-521.github.io/labs/lab-01/index_files/figure-html/cell-4-output-1.svg">
 <meta property="og:site-name" content="{{< var course.number >}} - {{< var course.semester >}}">
@@ -202,6 +202,7 @@ window.MathJax = {
   <li><a href="#install-julia" id="toc-install-julia" class="nav-link" data-scroll-target="#install-julia">Install Julia</a></li>
   <li><a href="#install-vs-code" id="toc-install-vs-code" class="nav-link" data-scroll-target="#install-vs-code">Install VS Code</a></li>
   <li><a href="#github-1" id="toc-github-1" class="nav-link" data-scroll-target="#github-1">GitHub</a></li>
+  <li><a href="#github-copilot-optional" id="toc-github-copilot-optional" class="nav-link" data-scroll-target="#github-copilot-optional">GitHub Copilot (Optional)</a></li>
   <li><a href="#install-quarto" id="toc-install-quarto" class="nav-link" data-scroll-target="#install-quarto">Install Quarto</a></li>
   </ul></li>
   <li><a href="#lab-instructions" id="toc-lab-instructions" class="nav-link" data-scroll-target="#lab-instructions">Lab Instructions</a>
@@ -210,14 +211,14 @@ window.MathJax = {
   <li><a href="#rendering-the-document" id="toc-rendering-the-document" class="nav-link" data-scroll-target="#rendering-the-document">Rendering the Document</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://www.github.com/ceve-421-521/ceve-421-521.github.io/edit/main/labs/lab-01/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://www.github.com/ceve-421-521/ceve-421-521.github.io/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://www.github.com/ceve-421-521/ceve-421-521.github.io/edit/main/labs/lab-01/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://www.github.com/ceve-421-521/ceve-421-521.github.io/issues/new" class="toc-action">Report an issue</a></p></div></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li><li><a href="index.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lab 01: Software Installation</h1>
+<h1 class="title">Lab 1: Software Installation</h1>
 <p class="subtitle lead">Julia, Quarto, GitHub</p>
   <div class="quarto-categories">
     <div class="quarto-category">Lab</div>
@@ -289,23 +290,23 @@ window.MathJax = {
 <h3 class="anchored" data-anchor-id="install-julia">Install Julia</h3>
 <p>The best way to install Julia is through the <code>juliaup</code> tool, which will let you easily manage versions in the future and works seamlessly with VS Code. The instructions can be found at the <a href="https://github.com/JuliaLang/juliaup">JuliaUp GitHub repository</a>, but we will summarize them here.</p>
 <p>If your computer uses Windows, you can install Juliaup <a href="https://www.microsoft.com/store/apps/9NJNWW8PVKMN">from the Windows Store</a>.</p>
-<p>If you have a Mac, open a terminal (such as the Terminal app) and enter:</p>
-<pre class="shell"><code>curl -fsSL https://install.julialang.org | sh</code></pre>
+<p>If you have a Mac (or are using Linux), open a terminal (such as the Terminal app) and enter:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource shell number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a href="#cb1-1"></a>curl -fsSL https://install.julialang.org | sh</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Once you install Juliaup, install Julia version 1.9 by opening a terminal (in MacOS or Linux) or the command line (in Windows) and entering:</p>
-<pre class="shell"><code>julia add 1.9.4
-julia default 1.9.4</code></pre>
-<p>This will install Julia 1.9.4 and make it the default version, which should maximize package compatibility throughout this course. Going forward, if you want to add new versions or change the default, you can <a href="https://github.com/JuliaLang/juliaup#using-juliaup">follow the Juliaup instructions</a>.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource shell number-lines code-with-copy"><code class="sourceCode"><span id="cb2-1"><a href="#cb2-1"></a>julia add 1.10</span>
+<span id="cb2-2"><a href="#cb2-2"></a>julia default 1.10</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This will install Julia 1.10 and make it the default version, which should maximize package compatibility throughout this course. Going forward, if you want to add new versions or change the default, you can <a href="https://github.com/JuliaLang/juliaup#using-juliaup">follow the Juliaup instructions</a>.</p>
 </section>
 <section id="install-vs-code" class="level3">
 <h3 class="anchored" data-anchor-id="install-vs-code">Install VS Code</h3>
 <p>VS Code is as close to an officially supported editor for Julia as you can get. We will follow <a href="https://www.julia-vscode.org/docs/dev/gettingstarted/">this guide for setting up VS Code with Julia</a>.</p>
 <div class="callout-info">
-<p>You can skip this section if you are an experienced programmer and already have a preferred IDE. Your IDE will likely have instructions for Julia and QUarto setup.</p>
+<p>You can skip this section if you are an experienced programmer and already have a preferred IDE. Your IDE will likely have instructions for Julia and Quarto setup.</p>
 </div>
-<p>You can download it <a href="https://code.visualstudio.com/download">here</a>; open the downloaded file to install. Make sure to select the correct version for your operating system. If you have a newish Apple mac (with M1, M2, or M3 chip), make sure to check whether you have an Intel or Apple chip before choosing which version to download. You can also use homebrew or your preferred package manager to install VS Code.</p>
+<p>You can download VS Code <a href="https://code.visualstudio.com/download">here</a>; open the downloaded file to install. Make sure to select the correct version for your operating system. If you have a newish Apple mac (with M1, M2, or M3 chip), make sure to check whether you have an Intel or Apple chip before choosing which version to download. You can also use homebrew or your preferred package manager to install VS Code.</p>
 <section id="vs-code-julia-extension" class="level4">
 <h4 class="anchored" data-anchor-id="vs-code-julia-extension">VS Code Julia Extension</h4>
-<p>Like many editors, VS Code is a modular system that can be extended with plugins. We will install the Julia extension, which will allow us to run Julia code and interact with the Julia REPL from within VS Code (we’ll add the Quarto extension later).</p>
+<p>Like many IDEs, VS Code is a modular system that can be extended with plugins. We will install the Julia extension, which will allow us to run Julia code and interact with the Julia REPL from within VS Code (we’ll add the Quarto extension later).</p>
 <ol type="1">
 <li>Open VS Code.</li>
 <li>Select View and click Extensions to open the Extension View.</li>
@@ -327,6 +328,10 @@ julia default 1.9.4</code></pre>
 <h4 class="anchored" data-anchor-id="github-desktop-optional">GitHub Desktop (Optional)</h4>
 <p>You can do everything that you will need to do for this course with GitHub directly through VS Code. The GitHub <a href="https://desktop.github.com/">desktop app</a> is also great, or alternatively you may work directly through the terminal if you have prior experience.</p>
 </section>
+</section>
+<section id="github-copilot-optional" class="level3">
+<h3 class="anchored" data-anchor-id="github-copilot-optional">GitHub Copilot (Optional)</h3>
+<p>GitHub Copilot is an AI-powered tool that helps you write code. You can install it following instructions <a href="https://github.com/features/copilot">here</a> As described in the <a href="https://docs.github.com/en/copilot/quickstart">quickstart guide</a>, Copilot is free for students. Be sure to review the policy on AI language models in the <a href="../../syllabus.html">syllabus</a>!</p>
 <section id="install-git" class="level4">
 <h4 class="anchored" data-anchor-id="install-git">Install Git</h4>
 <p><code>git</code> is a version control software that powers GitHub under the hood (<code>git</code> is the version control software, GitHub is an online platform). Based on past experience with the course, <em>you probably already have <code>git</code> installed!</em> If you’re not sure if it’s installed, see instructions <a href="https://github.com/git-guides/install-git">here</a>.</p>
@@ -345,7 +350,7 @@ julia default 1.9.4</code></pre>
 <p>Under the hood, Quarto uses Jupyter to run code. You don’t need to know how Jupyter works or worry about it, because it runs under the hood, but we will need to install it. Jupyter is a Python package.</p>
 <p>If you don’t have Python installed (if you’re not sure, you should install Miniconda below), you’ll need to install it. The best way, by far, is to install Miniconda (see <a href="https://docs.conda.io/en/latest/miniconda.html">Conda</a> documentation).</p>
 <p>Once you have Python installed, you can open your <a href="https://code.visualstudio.com/docs/terminal/basics">Terminal</a> (open VS Code then open the terminal), then run</p>
-<pre class="shell"><code>python3 -m pip install jupyter</code></pre>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource shell number-lines code-with-copy"><code class="sourceCode"><span id="cb3-1"><a href="#cb3-1"></a>python3 -m pip install jupyter</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="callout callout-style-simple callout-important">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
@@ -403,25 +408,25 @@ julia default 1.9.4</code></pre>
 <h3 class="anchored" data-anchor-id="running-code">Running Code</h3>
 <p>We can use Quarto to run Julia code in-line</p>
 <div class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">println</span>(<span class="st">"I'm using Julia!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb4-1"><a href="#cb4-1"></a><span class="fu">println</span>(<span class="st">"I'm using Julia!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>I'm using Julia!</code></pre>
 </div>
 </div>
 <p>We can also load packages</p>
 <div class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">using</span> <span class="bu">CairoMakie</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="im">using</span> <span class="bu">LaTeXStrings</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb6-1"><a href="#cb6-1"></a><span class="im">using</span> <span class="bu">CairoMakie</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a><span class="im">using</span> <span class="bu">LaTeXStrings</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>and use them to make plots</p>
 <div class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>f <span class="op">=</span> <span class="fu">Figure</span>()</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> <span class="fu">Axis</span>(f[<span class="fl">1</span>, <span class="fl">1</span>]; title<span class="op">=</span>L<span class="st">"</span><span class="sc">$</span>y<span class="st"> = \sin(x)</span><span class="sc">$</span><span class="st">", </span>xlabel<span class="st">=L"</span><span class="op">$</span>x<span class="op">$</span><span class="st">", ylabel=L"</span><span class="op">$</span>y<span class="op">$</span><span class="st">")</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="fu">range</span>(<span class="fl">0</span>, <span class="fl">10</span>; length<span class="op">=</span><span class="fl">100</span>)</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="fu">sin</span>.(x)</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="fu">lines!</span>(ax, x, y)</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>f</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="32">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb7-1"><a href="#cb7-1"></a>f <span class="op">=</span> <span class="fu">Figure</span>()</span>
+<span id="cb7-2"><a href="#cb7-2"></a>ax <span class="op">=</span> <span class="fu">Axis</span>(f[<span class="fl">1</span>, <span class="fl">1</span>]; title<span class="op">=</span>L<span class="st">"</span><span class="sc">$</span>y<span class="st"> = \sin(x)</span><span class="sc">$</span><span class="st">", </span>xlabel<span class="st">=L"</span><span class="op">$</span>x<span class="op">$</span><span class="st">", ylabel=L"</span><span class="op">$</span>y<span class="op">$</span><span class="st">")</span></span>
+<span id="cb7-3"><a href="#cb7-3"></a>x <span class="op">=</span> <span class="fu">range</span>(<span class="fl">0</span>, <span class="fl">10</span>; length<span class="op">=</span><span class="fl">100</span>)</span>
+<span id="cb7-4"><a href="#cb7-4"></a>y <span class="op">=</span> <span class="fu">sin</span>.(x)</span>
+<span id="cb7-5"><a href="#cb7-5"></a><span class="fu">lines!</span>(ax, x, y)</span>
+<span id="cb7-6"><a href="#cb7-6"></a>f</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="4">
 <p><img src="index_files/figure-html/cell-4-output-1.svg" class="img-fluid"></p>
 </div>
 </div>
