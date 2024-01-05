@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Climate Risk Management"
+title: "Welcome to CEVE 421/521!"
 subtitle: "Lecture"
 date: 2024-01-08
 week: 1
@@ -17,10 +17,245 @@ template-partials:
     - title-slide.html
 ---
 
-This is a placeholder lecture file.
+## Welcome
+
+## Meet the professor
+
+::: {.columns}
+::: {.column width="40%"}
+
+![Dr. James Doss-Gollin](../_assets/img/jdossgollin.jpeg)
+
+:::
+::: {.column width="60%"}
+- Assistant Professor of Civil and Environmental Engineering
+- [dossgollin-lab.github.io](https://dossgollin-lab.github.io)
+- [jdossgollin@rice.edu](mailto:jdossgollin@rice.edu)
+- Office hours by apopintment (or come chat after class)
+:::
+:::
+
+## Your turn
+
+1. Name / what you prefer to be called
+1. Year
+1. Major / research topic / field of study
+1. One thing you want to learn from this class
+
+# What is climate risk management?
+
+## Climate
+
+::: {.columns}
+::: {.column width="40%"}
+> The slowly varying aspects of the atmosphere–hydrosphere–land surface system.
+
+[AMS Glossary of Meteorology](https://glossary.ametsoc.org/wiki/Climate)
+:::
+::: {.column width="60%"}
+![[USGS Water Cycle](https://www.usgs.gov/special-topics/water-science-school/science/water-cycle-diagrams)](../_assets/img/usgs-water-cycle.png)
+:::
+:::
+
+## Climate Risk
+
+![[IPCC SROCC](https://www.ipcc.ch/srocc/chapter/technical-summary/ts-0-introduction/ipcc-srocc-ts_4/)](../_assets/img/IPCC-SROCC-TS_4.jpg)
+
+## Climate Risk Management
+
+::: {.callout-tip}
+## Your turn!
+
+What climate risks have you heard of?
+:::
+
+## Climate Risk Management
+
+::: {.callout-tip}
+## Your turn!
+
+What climate risk management strategies have you heard of?
+:::
+
+::: {.fragment}
+Non-exhaustive examples:
+
+- Financial instruments (e.g., insurance)
+- Floodproof buildings
+- Zoning codes
+- Major infrastructure
+- Improve emergency planning
+:::
+
+# About the course
+
+## Course goals
+
+Climate risk management is a very broad field.
+We will _survey_ how it is implemented in different fields and we will develop a _deep understanding_ of how to develop and assess proposed climate risk management strategies.
+
+## The syllabus is online!
+
+- Course website: [https://ceve-421-521.github.io/](https://ceve-421-521.github.io/)
+- Syllabus: [https://ceve-421-521.github.io/syllabus/](https://ceve-421-521.github.io/syllabus/)
+- Read it! (and confirm on Canvas)
+- Questions? Ask now or later!
+
+## Course organization
+
+1. Introduction
+1. Science of climate hazard
+1. Vulnerability, exposure, and impacts
+1. Systems
+1. Cost-benefit analysis
+1. Scenario analysis
+1. Policy search and optimization
+1. Multiobjective policy search
+1. Sequential decision problems
+1. Robustness
+1. Deep uncertainty
+1. Equity and justice
+1. Financial and systemic risks
+1. Reflections
+
+## Class structure
+
+### Mondays
+
+- Lecture
+- Take notes and ask questions
+- Slides posted ahead of time on website
+
+## Class structure
+
+### Wednesdays
+
+- Short and easy reading quiz to start
+- Student-led reading discussion
+- Do the reading and participate in the discussion (including to ask questions!)
+
+## Class structure
+
+### Fridays
+
+- Lab.
+- Make significant progress in class.
+- Due at the start of next lab.
+
+## Grading
+
+- Weekly reading quizzes (10%)
+- Labs (10%)
+- Tests (40%)
+- Project (30%)
+- Reading notes (10%)
+- 521 only: reading discussion (10% from tests)
+
+## Acommodations
+
+- If you have a documented disability, please discuss your needs with me
+- If you have scheduling conflicts, please let me know as early as possible
+- If you need others to wear a mask for your safety, please let me know
+
+## Academic integrity
+
+- AI/ML resource policy in the syllabus
+- Rice Honor Code
+- If in doubt, ask!
+
+## A community of learning
+
+- We all benefit from a diverse, safe, welcoming, and inclusive environment
+- Analysis is not value neutral -- we will discuss how to think critically about the assumptions and values underlying our work, and their implications
+- Assume good faith of others and engage in good faith yourself
+
+# Software tools
+
+## Tool overview
+
+In this class, we will use
+
+1. Julia
+1. GitHub
+1. Quarto
+1. VS Code (suggested)
+
+## Why Julia?
+
+::::: {.incremental}
+:::: {.columns}
+
+::: {.column width=50%}
+- Syntax
+    - Readable to computers and humans
+    - Closely parallels math notation
+- Designed for numerical and scientific computing
+:::
+
+::: {.column width=50%}
+- Fast! 
+    - "Two language problem"
+    - All you need is Julia
+- Open source
+:::
+::::
+:::::
+
+## Julia example
+
+A (naive) implementation of the Fibonacci sequence:
+
+```{julia}
+#| echo: true
+function fib(n)
+    if n < 2
+        return n
+    else
+        return fib(n - 1) + fib(n - 2)
+    end
+end
+fib(10)
+```
+
+## GitHub
+
+::: {.incremental}
+1. You need a GitHub account
+1. Code is stored in "repositories"
+1. `clone` a repository to your computer
+1. Make changes and `commit` them
+1. `push` your changes to GitHub
+1. Using GitHub classroom, instructors can view your code
+:::
+
+## Quarto
+
+Quarto is a tool that allows you to combine text and code and create many types of output
+
+- This website is made with Quarto
+- You will use Quarto to create reports for labs
+    - Everything in one place
+    - No running code, save a figure to `Downloads`, copy into Word, then update your code and try to remember where to paste it
+- Reproducible
+
+## VS Code
+
+1. VS Code is a text editor
+    1. If you are an advanced user of another text editor, you can use that instead, but I recommend VS Code
+1. VS Code can work as a Julia IDE
+
+# Logistics
+
+## Reading
+
+For Wednesday:
+
+- Three news articles on flood risk management
+- Come prepared for a discussion on Wednesday
+- Reading quiz should be very easy if you do the reading
 
 ## Lab 1
 
-For our first lab, we will be installing required software for the course.
-Please start working on this lab as soon as possible so that we can use Friday's lab session to troubleshoot any issues and review the material.
-Normally you will not need (or be able) to start labs ahead of time.
+- Generally no advance preparation needed
+- For our first lab, we will be installing required software for the course.
+- Please start working on this lab as soon as possible so that we can use Friday's lab session to troubleshoot any issues and review the material.

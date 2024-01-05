@@ -7,11 +7,15 @@ categories: [Reading]
 format: html
 ---
 
-::: {.callout-tip}
-Discussion questions will be posted here.
-:::
-
-Assigned reading will be drawn from:
+Please read the following news articles:
 
 - @frank_newjersey:2022
-- @loucks_planning:2017 Ch. 1
+- @sommer_rainfall:2022
+
+You are encouraged, though not required, to use Zotero to store your readings.
+You can save news articles using the browser extension for your browser of choice.
+If you save the news article as a PDF (go to "print" and then choose "save as PDF") you can link the PDF to your library and your annotations will be saved.
+
+There are other great tools, including [Randrop.io](https://raindrop.io) and [hypothes.is](https://hypothes.is/).
+Figure out what works for you!
+

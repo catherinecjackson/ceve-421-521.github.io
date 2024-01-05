@@ -5,7 +5,7 @@ project:
 
 website:
   page-navigation: true
-  title: "{{< var course.number >}} - {{< var course.semester >}}"
+  title: "CEVE 421/521 -- Spring 2024"
   description: "Homepage for {{< var course.number >}}, {{< var course.title >}}, at Rice University, {{< var course.semester >}}."
   site-url: https://ceve-421-521.github.io/
   repo-url: https://www.github.com/ceve-421-521/ceve-421-521.github.io
@@ -30,7 +30,7 @@ website:
     style: docked
     align: center
     logo: _assets/logos/Rice_Logo_280_Blue.svg
-    title: "{{< var course.number >}}"
+    title: "CEVE 421/521"
     search: true
     tools: 
       - icon: github
@@ -83,7 +83,7 @@ format:
     transition: none
     toc: false
     history: false
-    theme: _assets/sass/slides.scss
+    #theme: _assets/sass/slides-1.scss
     menu:
         numbers: true
     scrollable: true
