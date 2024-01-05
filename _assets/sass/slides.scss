@@ -1,213 +1,199 @@
+// mostly from https://github.com/jimjam-slam/talk-runapp-quarto-2022/tree/main
+// original: (MIT License)
+
 /*-- scss:defaults --*/
 
-// fonts
-@import 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap';
-@import 'https://kit.fontawesome.com/d16123e5b5.css';
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Inter:wght@400;700;900&display=swap');
 
-// Julia Mono: https://juliamono.netlify.app/faq/
-@font-face {
-    font-family: JuliaMono-Light;
-    src: url("https://cdn.jsdelivr.net/gh/cormullion/juliamono/webfonts/JuliaMono-Light.woff2");
-}
+$font-family-sans-serif: "Inter", sans-serif !default;
+$font-family-monospace: "Fira Mono", monospace !default;
 
-$font-family-sans-serif: "Atkinson Hyperlegible", sans-serif;
+// Theme colors
+// https://brand.rice.edu/university-colors
+$rice-blue: #00205B;
+$rice-gray: #7C7E7F;
 
-$presentation-font-size-root: 40px;
+// Extended palette
+// https://brand.rice.edu/extended-palette
+$light-blue-gray: #ADC7DC;
+$light-gray: #E0E2E6;
+$bright-blue: #9FDDF9;
+$medium-blue: #4D9AD4;
+$rich-blue: #0A509E;
+$midnight-blue: #13133E;
+$dark-gray: #44474F;
+$dark-blue-gray: #303B61;
 
-// headings
-$presentation-heading-color: #00205B !important;
+// Campus-inspired palette
+// https://brand.rice.edu/campus-inspired-palette
+$warm-yellow: #E9A139;
+$brick-red: #C04829;
+$burgundy: #68132E;
+$shadow-purple: #362E52;
+$leaf-emerald: #005B50;
+$tree-green: #00432C;
+$grass-green: #359245;
+$bright-green: #A5C151;
 
-// colors
-$body-color: #44474f;
+
+$body-bg: white;
+$body-color: $rice-blue;
+$headings-color: $grass-green !default; // because we're texturing them
+$link-color: $midnight-blue;
 
 /*-- scss:rules --*/
 
-details>summary {
-    font-size: 0.75em;
+.boxcol {
+    background-color: #000000cc;
+    color: white;
+    padding: 30px;
 }
 
-h2 {
-    border-bottom: 2px solid #b31b1b;
-    margin-bottom: 0.5em !important;
+.reveal {
+    section {
+
+        h2,
+        h3 {
+            color: $grass-green;
+            text-transform: uppercase;
+            margin-bottom: 0.5em;
+        }
+
+        h2 {
+            font-size: 52px;
+        }
+
+        h3 {
+            font-size: 44px;
+        }
+
+        h4,
+        h5,
+        h6 {
+            color: $grass-green;
+            font-weight: normal;
+        }
+
+        h4 {
+            font-size: 52px;
+        }
+
+        h5 {
+            font-size: 44px;
+        }
+
+        h6 {
+            font-size: 36px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+
+            // other headers
+            &.text-brick-red {
+                color: $brick-red
+            }
+
+            &.text-light-gray {
+                color: $light-gray
+            }
+
+            &.text-rice-gray {
+                color: $rice-gray
+            }
+
+            &.text-midnight-blue {
+                color: $midnight-blue
+            }
+
+            &.text-grass-green {
+                color: $grass-green
+            }
+
+            &.text-warm-yellow {
+                color: $warm-yellow
+            }
+
+            &.text-black-white {
+                background: linear-gradient(45deg, #333, #ccc);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+            }
+
+        }
+    }
+
+    // weird that they're inline-block by default?
+    ol,
+    ul {
+        display: block;
+        padding-left: 1em;
+    }
+
+    // override reveal.js progress colours (naughty!)
+    .progress {
+        color: transparent !important;
+
+        span {
+            background: linear-gradient(45deg, red, gold);
+        }
+    }
+
+    .slide-menu-button a {
+        color: #000000aa;
+    }
 }
 
-h3 {
-    margin-bottom: 10px !important;
+
+.hl {
+    padding-inline: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    //margin-inline: 1rem;
+    background: #99999966;
+
+    &-grass-green {
+        background: $grass-green;
+    }
+
+    &-brick-red {
+        background: $brick-red;
+    }
+
+    &-rice-blue {
+        background: $rice-blue;
+    }
+
+    &-warm-yellow {
+        background: $warm-yellow;
+    }
+
+    &-light-gray {
+        background: $light-gray;
+    }
+
 }
 
-.small {
-    font-size: 0.75em;
+.reveal .footer {
+    color: $rice-gray;
 }
 
-.author {
-    font-size: 0.9em;
-    color: #7C7E7F;
-    letter-spacing: 0.025em;
-    padding-bottom: 0.02em;
-    display: block;
+.reveal .caption {
+    font-size: 24px;
+    color: $rice-gray;
 }
 
-#title-slide .date {
-    font-size: 1.5em;
-    color: #ADC7DC;
-    display: inline;
-    font-variant: small-caps;
-    text-align: center;
-    width: 48%;
-    float: right;
-    padding-top: 0em;
-    margin-top: 0em;
+.reveal .figcaption {
+    font-size: 24px;
+    color: $rice-gray;
 }
 
-#title-slide .subtitle {
-    font-size: 1.5em;
-    color: #ADC7DC;
-    display: inline;
-    font-variant: small-caps;
-    text-align: center;
-    width: 48%;
-    float: left;
-    padding-top: 0em;
-    margin-top: 0em;
-}
-
-.footer {
-    font-size: 0.5em !important;
-}
-
-#TOC a {
-    font-size: 1.2em;
-}
-
-#TOC ul {
-    line-height: 2em;
-}
-
-ol ol {
-    list-style-type: lower-roman;
-}
-
-ul ul {
-    list-style-type: square;
-}
-
-a {
-    font-color: #006699;
-    text-decoration: none;
-}
-
-.reveal p {
-    margin-top: 1em;
-}
-
-.reveal p {
-    margin-bottom: 1em;
-}
-
-.reveal .quote {
-    color: #555555;
-    font-size: 0.9em;
-}
-
-.reveal .quote blockquote {
-    border: none;
-    margin: 2px 1em;
-    padding: 0px 1em;
-    font-style: italic;
-}
-
-.reveal .quote .cite {
-    text-align: right;
-    font-variant: small-caps;
-    border-left: 0;
-}
-
-.h3 {
-    margin-top: 1em;
-}
-
-strong {
-    color: #EF4035;
-}
-
-.slide-number {
-    font-size: 0.5em !important;
-    color: #073949 !important;
-}
-
-.reveal th,
-td,
-table {
-    padding: 5px;
-    border: 2px solid black !important;
-}
-
-.reveal table {
-    border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.reveal tr:nth-child(even) {
-    background-color: #f7f7f7;
-}
-
-.reveal th {
-    color: #EF4035;
-    font-weight: bold;
-    font-size: 0.9em;
-}
-
-.reveal td {
-    font-size: 0.9em;
-}
-
-.reveal figcaption {
-    text-align: center;
-    font-style: italic;
-    font-size: smaller;
-}
-
-.cell-output {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.reveal .caption p {
-    font-size: 0.5em;
-    color: #222222;
-    font-style: italic;
-    font-family: $font-family-sans-serif;
-    padding-top: 1px;
-    margin-top: 0;
-    display: block;
-    text-align: center;
-}
-
-.small-math .math.display {
-    font-size: 90% !important;
-}
-
-.math.display .MathJax {
-    font-size: 100% !important;
-}
-
-// Julia Mono: https://juliamono.netlify.app/faq/
-pre {
-    font-family: JuliaMono-Light;
-    font-size: 0.9em;
-}
-
-code {
-    font-family: JuliaMono-Light;
-    font-size: 0.9em;
-}
-
-// https://stackoverflow.com/questions/76990335/how-to-set-the-code-annotation-size-in-quarto-html-revealjs-documents/76990684#76990684
-.reveal dl.code-annotation-container-grid {
-    font-size: 20px;
-}
-
-.reveal dl.code-annotation-container-grid dt {
-    margin-top: 0.4rem;
+.reveal .bigcaption {
+    font-size: 36px;
+    color: $rice-gray;
 }

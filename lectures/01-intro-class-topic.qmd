@@ -53,15 +53,15 @@ template-partials:
 [AMS Glossary of Meteorology](https://glossary.ametsoc.org/wiki/Climate)
 :::
 ::: {.column width="60%"}
-![[USGS Water Cycle](https://www.usgs.gov/special-topics/water-science-school/science/water-cycle-diagrams)](../_assets/img/usgs-water-cycle.png)
+![[{{< fa camera-retro >}}: USGS Water Cycle](https://www.usgs.gov/special-topics/water-science-school/science/water-cycle-diagrams)](../_assets/img/usgs-water-cycle.png)
 :::
 :::
 
 ## Climate Risk
 
-![[IPCC SROCC](https://www.ipcc.ch/srocc/chapter/technical-summary/ts-0-introduction/ipcc-srocc-ts_4/)](../_assets/img/IPCC-SROCC-TS_4.jpg)
+![[{{< fa camera-retro >}}: IPCC SROCC](https://www.ipcc.ch/srocc/chapter/technical-summary/ts-0-introduction/ipcc-srocc-ts_4/)](../_assets/img/IPCC-SROCC-TS_4.jpg)
 
-## Climate Risk Management
+## Climate Risk
 
 ::: {.callout-tip}
 ## Your turn!
@@ -87,12 +87,76 @@ Non-exhaustive examples:
 - Improve emergency planning
 :::
 
+# Example decisions
+
+##
+### Update land use / zoning regulations?
+
+::: {.columns}
+::: {.column width="35%"}
+::: {.caption}
+{{< fa camera-retro >}}: @satija_boomtown:2016
+:::
+:::
+::: {.column width="65%"}
+![](../_assets/img/boomtown.png)
+:::
+:::
+
+##
+### How to size stormwater infrastructure?
+
+::: {.columns}
+::: {.column width="25%"}
+::: {.caption}
+{{< fa camera-retro >}}: Doss-Gollin
+:::
+:::
+::: {.column width="75%"}
+![](../_assets/img/doss-gollin-buffalo-drainage.jpeg)
+:::
+:::
+
+##
+### How high to elevate a house for proactive flood protection?
+
+::: {.columns}
+::: {.column width="35%"}
+::: {.caption}
+{{< fa camera-retro >}}: Allison Lee / [Houston Public Media](https://www.houstonpublicmedia.org/articles/news/2017/10/06/240934/many-houstonians-seek-home-elevation-after-repetitive-flooding/)
+:::
+:::
+::: {.column width="65%"}
+![](../_assets/img/lee-meyerland-elevation.jpg)
+:::
+:::
+
+
+##
+
+### Require weatherization of privately owned electricity infrastructure?
+::: {.columns}
+::: {.column width="30%"}
+
+::: {.caption}
+{{< fa camera-retro >}}: [Jonathan Cutrer](https://www.flickr.com/photos/joncutrer/50975248406) / Flickr.
+:::
+:::
+::: {.column width="70%"}
+![](../_assets/img/cutrer-uri.jpg)
+:::
+:::
+
 # About the course
 
 ## Course goals
 
 Climate risk management is a very broad field.
-We will _survey_ how it is implemented in different fields and we will develop a _deep understanding_ of how to develop and assess proposed climate risk management strategies.
+We will:
+
+1. **Survey** how it is implemented in different fields
+1. Develop a **deep understanding** of how to assess proposed climate risk strategies
+1. **Apply** these methods to a real-world problem
 
 ## The syllabus is online!
 
@@ -102,16 +166,22 @@ We will _survey_ how it is implemented in different fields and we will develop a
 - Questions? Ask now or later!
 
 ## Course organization
-
+### Module 1: introduction
 1. Introduction
 1. Science of climate hazard
 1. Vulnerability, exposure, and impacts
 1. Systems
+
+## Course organization
+### Module 2: decision analysis
 1. Cost-benefit analysis
 1. Scenario analysis
 1. Policy search and optimization
 1. Multiobjective policy search
 1. Sequential decision problems
+
+## Course organization
+### Module 3: thinking critically
 1. Robustness
 1. Deep uncertainty
 1. Equity and justice
@@ -168,6 +238,22 @@ We will _survey_ how it is implemented in different fields and we will develop a
 - We all benefit from a diverse, safe, welcoming, and inclusive environment
 - Analysis is not value neutral -- we will discuss how to think critically about the assumptions and values underlying our work, and their implications
 - Assume good faith of others and engage in good faith yourself
+
+## Pre-requisites
+
+We will use quantitative language and ideas to frame ideas.
+The only formal pre-requisite is a first course in probability / statistics
+
+Exposure to some of the following will be helpful:
+
+- Engineering economics
+- Programming
+- Climate science
+- Engineering design
+
+::: {.callout-important}
+If you're not sure whether you should take the class, come talk to me!
+:::
 
 # Software tools
 
@@ -243,6 +329,10 @@ Quarto is a tool that allows you to combine text and code and create many types 
 1. VS Code is a text editor
     1. If you are an advanced user of another text editor, you can use that instead, but I recommend VS Code
 1. VS Code can work as a Julia IDE
+
+## Resources
+
+See the [resources page](../resources.qmd) for links to tutorials and other resources!
 
 # Logistics
 

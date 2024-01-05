@@ -71,10 +71,13 @@ format:
   
   # customization for RevealJS (i.e., the slides)
   revealjs:
+
+    theme: _assets/sass/slides.scss
     
     # page numbering
     slide-number: c/t
     show-slide-number: all
+    hash-type: number
 
     # page layout and transition
     center-title-slide: true
@@ -83,7 +86,6 @@ format:
     transition: none
     toc: false
     history: false
-    #theme: _assets/sass/slides-1.scss
     menu:
         numbers: true
     scrollable: true
