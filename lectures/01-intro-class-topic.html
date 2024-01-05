@@ -8,7 +8,9 @@
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-contrib/reveal-auto-agenda-0.0.3/reveal-auto-agenda.css" rel="stylesheet"><meta charset="utf-8">
+<link href="../site_libs/quarto-contrib/reveal-auto-agenda-0.0.3/reveal-auto-agenda.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.3.450">
 
   <meta name="author" content="Dr.&nbsp;James Doss-Gollin!">
@@ -95,7 +97,26 @@
     code span.va { color: #111111; } /* Variable */
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -401,16 +422,16 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="center">
+<section class="quarto-title-block center">
     <h1 class="title">Welcome to CEVE 421/521!</h1>
   <hr>
 <p class="subtitle">Lecture</p>
 <p class="date">Mon., Jan.&nbsp;8</p>
 </section>
-<section id="welcome" class="slide level2">
+<section class="slide level2">
 <h2>Welcome</h2>
 </section>
-<section id="meet-the-professor" class="slide level2">
+<section class="slide level2">
 <h2>Meet the professor</h2>
 <div class="columns">
 <div class="column" style="width:40%;">
@@ -430,7 +451,7 @@
 </div>
 </div>
 </section>
-<section id="your-turn" class="slide level2">
+<section class="slide level2">
 <h2>Your turn</h2>
 <ol type="1">
 <li>Name / what you prefer to be called</li>
@@ -440,7 +461,7 @@
 </ol>
 </section>
 <section>
-<section id="what-is-climate-risk-management" class="title-slide slide level1 agenda-slide center">
+<section class="title-slide slide level1 agenda-slide center">
 <h1>What is climate risk management?</h1>
 <div class="agenda-heading">
 <p>Today</p>
@@ -449,6 +470,9 @@
 <ol>
 <li><div class="agenda-active">
 <p>What is climate risk management?</p>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active">
+<p>Example decisions</p>
 </div></li>
 <li><div class="agenda-inactive agenda-post-active">
 <p>About the course</p>
@@ -462,7 +486,7 @@
 </ol>
 </div>
 </section>
-<section id="climate" class="slide level2">
+<section class="slide level2">
 <h2>Climate</h2>
 <div class="columns">
 <div class="column" style="width:40%;">
@@ -474,18 +498,18 @@
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="../_assets/img/usgs-water-cycle.png"></p>
-<figcaption><a href="https://www.usgs.gov/special-topics/water-science-school/science/water-cycle-diagrams">USGS Water Cycle</a></figcaption>
+<figcaption><a href="https://www.usgs.gov/special-topics/water-science-school/science/water-cycle-diagrams"><i class="fa-solid fa-camera-retro" aria-label="camera-retro"></i>: USGS Water Cycle</a></figcaption>
 </figure>
 </div>
 </div>
 </div>
 </section>
-<section id="climate-risk" class="slide level2">
+<section class="slide level2">
 <h2>Climate Risk</h2>
 
-<img data-src="../_assets/img/IPCC-SROCC-TS_4.jpg" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://www.ipcc.ch/srocc/chapter/technical-summary/ts-0-introduction/ipcc-srocc-ts_4/">IPCC SROCC</a></p></section>
-<section id="climate-risk-management" class="slide level2">
-<h2>Climate Risk Management</h2>
+<img data-src="../_assets/img/IPCC-SROCC-TS_4.jpg" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://www.ipcc.ch/srocc/chapter/technical-summary/ts-0-introduction/ipcc-srocc-ts_4/"><i class="fa-solid fa-camera-retro" aria-label="camera-retro"></i>: IPCC SROCC</a></p></section>
+<section class="slide level2">
+<h2>Climate Risk</h2>
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -500,7 +524,7 @@
 </div>
 </div>
 </section>
-<section id="climate-risk-management-1" class="slide level2">
+<section class="slide level2">
 <h2>Climate Risk Management</h2>
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
@@ -527,7 +551,85 @@
 </div>
 </section></section>
 <section>
-<section id="about-the-course" class="title-slide slide level1 agenda-slide center">
+<section class="title-slide slide level1 agenda-slide center">
+<h1>Example decisions</h1>
+<div class="agenda-heading">
+<p>Today</p>
+</div>
+<div class="agenda">
+<ol>
+<li><div class="agenda-inactive agenda-pre-active">
+<p>What is climate risk management?</p>
+</div></li>
+<li><div class="agenda-active">
+<p>Example decisions</p>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active">
+<p>About the course</p>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active">
+<p>Software tools</p>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active">
+<p>Logistics</p>
+</div></li>
+</ol>
+</div>
+</section>
+<section class="slide level2">
+<h2></h2>
+<h3>Update land use / zoning regulations?</h3>
+<div class="columns">
+<div class="column" style="width:35%;">
+<div class="caption">
+<p><i class="fa-solid fa-camera-retro" aria-label="camera-retro"></i>: <span class="citation" data-cites="satija_boomtown:2016">Satija et al. (<a href="#/references" role="doc-biblioref" onclick="">2016</a>)</span></p>
+</div>
+</div><div class="column" style="width:65%;">
+<p><img data-src="../_assets/img/boomtown.png"></p>
+</div>
+</div>
+</section>
+<section class="slide level2">
+<h2></h2>
+<h3>How to size stormwater infrastructure?</h3>
+<div class="columns">
+<div class="column" style="width:25%;">
+<div class="caption">
+<p><i class="fa-solid fa-camera-retro" aria-label="camera-retro"></i>: Doss-Gollin</p>
+</div>
+</div><div class="column" style="width:75%;">
+<p><img data-src="../_assets/img/doss-gollin-buffalo-drainage.jpeg"></p>
+</div>
+</div>
+</section>
+<section class="slide level2">
+<h2></h2>
+<h3>How high to elevate a house for proactive flood protection?</h3>
+<div class="columns">
+<div class="column" style="width:35%;">
+<div class="caption">
+<p><i class="fa-solid fa-camera-retro" aria-label="camera-retro"></i>: Allison Lee / <a href="https://www.houstonpublicmedia.org/articles/news/2017/10/06/240934/many-houstonians-seek-home-elevation-after-repetitive-flooding/">Houston Public Media</a></p>
+</div>
+</div><div class="column" style="width:65%;">
+<p><img data-src="../_assets/img/lee-meyerland-elevation.jpg"></p>
+</div>
+</div>
+</section>
+<section class="slide level2">
+<h2></h2>
+<h3>Require weatherization of privately owned electricity infrastructure?</h3>
+<div class="columns">
+<div class="column" style="width:30%;">
+<div class="caption">
+<p><i class="fa-solid fa-camera-retro" aria-label="camera-retro"></i>: <a href="https://www.flickr.com/photos/joncutrer/50975248406">Jonathan Cutrer</a> / Flickr.</p>
+</div>
+</div><div class="column" style="width:70%;">
+<p><img data-src="../_assets/img/cutrer-uri.jpg"></p>
+</div>
+</div>
+</section></section>
+<section>
+<section class="title-slide slide level1 agenda-slide center">
 <h1>About the course</h1>
 <div class="agenda-heading">
 <p>Today</p>
@@ -536,6 +638,9 @@
 <ol>
 <li><div class="agenda-inactive agenda-pre-active">
 <p>What is climate risk management?</p>
+</div></li>
+<li><div class="agenda-inactive agenda-pre-active">
+<p>Example decisions</p>
 </div></li>
 <li><div class="agenda-active">
 <p>About the course</p>
@@ -549,11 +654,16 @@
 </ol>
 </div>
 </section>
-<section id="course-goals" class="slide level2">
+<section class="slide level2">
 <h2>Course goals</h2>
-<p>Climate risk management is a very broad field. We will <em>survey</em> how it is implemented in different fields and we will develop a <em>deep understanding</em> of how to develop and assess proposed climate risk management strategies.</p>
+<p>Climate risk management is a very broad field. We will:</p>
+<ol type="1">
+<li><strong>Survey</strong> how it is implemented in different fields</li>
+<li>Develop a <strong>deep understanding</strong> of how to assess proposed climate risk strategies</li>
+<li><strong>Apply</strong> these methods to a real-world problem</li>
+</ol>
 </section>
-<section id="the-syllabus-is-online" class="slide level2">
+<section class="slide level2">
 <h2>The syllabus is online!</h2>
 <ul>
 <li>Course website: <a href="https://ceve-421-521.github.io/">https://ceve-421-521.github.io/</a></li>
@@ -562,18 +672,31 @@
 <li>Questions? Ask now or later!</li>
 </ul>
 </section>
-<section id="course-organization" class="slide level2">
+<section class="slide level2">
 <h2>Course organization</h2>
+<h3>Module 1: introduction</h3>
 <ol type="1">
 <li>Introduction</li>
 <li>Science of climate hazard</li>
 <li>Vulnerability, exposure, and impacts</li>
 <li>Systems</li>
+</ol>
+</section>
+<section class="slide level2">
+<h2>Course organization</h2>
+<h3>Module 2: decision analysis</h3>
+<ol type="1">
 <li>Cost-benefit analysis</li>
 <li>Scenario analysis</li>
 <li>Policy search and optimization</li>
 <li>Multiobjective policy search</li>
 <li>Sequential decision problems</li>
+</ol>
+</section>
+<section class="slide level2">
+<h2>Course organization</h2>
+<h3>Module 3: thinking critically</h3>
+<ol type="1">
 <li>Robustness</li>
 <li>Deep uncertainty</li>
 <li>Equity and justice</li>
@@ -581,34 +704,34 @@
 <li>Reflections</li>
 </ol>
 </section>
-<section id="class-structure" class="slide level2">
+<section class="slide level2">
 <h2>Class structure</h2>
-<h3 id="mondays">Mondays</h3>
+<h3>Mondays</h3>
 <ul>
 <li>Lecture</li>
 <li>Take notes and ask questions</li>
 <li>Slides posted ahead of time on website</li>
 </ul>
 </section>
-<section id="class-structure-1" class="slide level2">
+<section class="slide level2">
 <h2>Class structure</h2>
-<h3 id="wednesdays">Wednesdays</h3>
+<h3>Wednesdays</h3>
 <ul>
 <li>Short and easy reading quiz to start</li>
 <li>Student-led reading discussion</li>
 <li>Do the reading and participate in the discussion (including to ask questions!)</li>
 </ul>
 </section>
-<section id="class-structure-2" class="slide level2">
+<section class="slide level2">
 <h2>Class structure</h2>
-<h3 id="fridays">Fridays</h3>
+<h3>Fridays</h3>
 <ul>
 <li>Lab.</li>
 <li>Make significant progress in class.</li>
 <li>Due at the start of next lab.</li>
 </ul>
 </section>
-<section id="grading" class="slide level2">
+<section class="slide level2">
 <h2>Grading</h2>
 <ul>
 <li>Weekly reading quizzes (10%)</li>
@@ -619,7 +742,7 @@
 <li>521 only: reading discussion (10% from tests)</li>
 </ul>
 </section>
-<section id="acommodations" class="slide level2">
+<section class="slide level2">
 <h2>Acommodations</h2>
 <ul>
 <li>If you have a documented disability, please discuss your needs with me</li>
@@ -627,7 +750,7 @@
 <li>If you need others to wear a mask for your safety, please let me know</li>
 </ul>
 </section>
-<section id="academic-integrity" class="slide level2">
+<section class="slide level2">
 <h2>Academic integrity</h2>
 <ul>
 <li>AI/ML resource policy in the syllabus</li>
@@ -635,16 +758,40 @@
 <li>If in doubt, ask!</li>
 </ul>
 </section>
-<section id="a-community-of-learning" class="slide level2">
+<section class="slide level2">
 <h2>A community of learning</h2>
 <ul>
 <li>We all benefit from a diverse, safe, welcoming, and inclusive environment</li>
 <li>Analysis is not value neutral – we will discuss how to think critically about the assumptions and values underlying our work, and their implications</li>
 <li>Assume good faith of others and engage in good faith yourself</li>
 </ul>
+</section>
+<section class="slide level2">
+<h2>Pre-requisites</h2>
+<p>We will use quantitative language and ideas to frame ideas. The only formal pre-requisite is a first course in probability / statistics</p>
+<p>Exposure to some of the following will be helpful:</p>
+<ul>
+<li>Engineering economics</li>
+<li>Programming</li>
+<li>Climate science</li>
+<li>Engineering design</li>
+</ul>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Important</strong></p>
+</div>
+<div class="callout-content">
+<p>If you’re not sure whether you should take the class, come talk to me!</p>
+</div>
+</div>
+</div>
 </section></section>
 <section>
-<section id="software-tools" class="title-slide slide level1 agenda-slide center">
+<section class="title-slide slide level1 agenda-slide center">
 <h1>Software tools</h1>
 <div class="agenda-heading">
 <p>Today</p>
@@ -653,6 +800,9 @@
 <ol>
 <li><div class="agenda-inactive agenda-pre-active">
 <p>What is climate risk management?</p>
+</div></li>
+<li><div class="agenda-inactive agenda-pre-active">
+<p>Example decisions</p>
 </div></li>
 <li><div class="agenda-inactive agenda-pre-active">
 <p>About the course</p>
@@ -666,7 +816,7 @@
 </ol>
 </div>
 </section>
-<section id="tool-overview" class="slide level2">
+<section class="slide level2">
 <h2>Tool overview</h2>
 <p>In this class, we will use</p>
 <ol type="1">
@@ -676,7 +826,7 @@
 <li>VS Code (suggested)</li>
 </ol>
 </section>
-<section id="why-julia" class="slide level2">
+<section class="slide level2">
 <h2>Why Julia?</h2>
 <div>
 <div class="columns">
@@ -702,7 +852,7 @@
 </div>
 </div>
 </section>
-<section id="julia-example" class="slide level2">
+<section class="slide level2">
 <h2>Julia example</h2>
 <p>A (naive) implementation of the Fibonacci sequence:</p>
 <div class="cell" data-execution_count="2">
@@ -719,7 +869,7 @@
 </div>
 </div>
 </section>
-<section id="github" class="slide level2">
+<section class="slide level2">
 <h2>GitHub</h2>
 <div>
 <ol type="1">
@@ -732,7 +882,7 @@
 </ol>
 </div>
 </section>
-<section id="quarto" class="slide level2">
+<section class="slide level2">
 <h2>Quarto</h2>
 <p>Quarto is a tool that allows you to combine text and code and create many types of output</p>
 <ul>
@@ -745,7 +895,7 @@
 <li>Reproducible</li>
 </ul>
 </section>
-<section id="vs-code" class="slide level2">
+<section class="slide level2">
 <h2>VS Code</h2>
 <ol type="1">
 <li>VS Code is a text editor
@@ -754,9 +904,13 @@
 </ol></li>
 <li>VS Code can work as a Julia IDE</li>
 </ol>
+</section>
+<section class="slide level2">
+<h2>Resources</h2>
+<p>See the <a href="../resources.qmd">resources page</a> for links to tutorials and other resources!</p>
 </section></section>
 <section>
-<section id="logistics" class="title-slide slide level1 agenda-slide center">
+<section class="title-slide slide level1 agenda-slide center">
 <h1>Logistics</h1>
 <div class="agenda-heading">
 <p>Today</p>
@@ -765,6 +919,9 @@
 <ol>
 <li><div class="agenda-inactive agenda-pre-active">
 <p>What is climate risk management?</p>
+</div></li>
+<li><div class="agenda-inactive agenda-pre-active">
+<p>Example decisions</p>
 </div></li>
 <li><div class="agenda-inactive agenda-pre-active">
 <p>About the course</p>
@@ -778,7 +935,7 @@
 </ol>
 </div>
 </section>
-<section id="reading" class="slide level2">
+<section class="slide level2">
 <h2>Reading</h2>
 <p>For Wednesday:</p>
 <ul>
@@ -787,7 +944,7 @@
 <li>Reading quiz should be very easy if you do the reading</li>
 </ul>
 </section>
-<section id="lab-1" class="slide level2">
+<section class="slide level2 smaller scrollable" id="references">
 <h2>Lab 1</h2>
 <ul>
 <li>Generally no advance preparation needed</li>
@@ -797,6 +954,11 @@
 
 <div class="footer footer-default">
 
+</div>
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list">
+<div id="ref-satija_boomtown:2016" class="csl-entry" role="listitem">
+Satija, N., Collier, K., &amp; Shaw, A. (2016, December 7). Boomtown, flood town. <em>ProPublica: Hell and High Water</em>. Retrieved from <a href="https://projects.propublica.org/houston-cypress/">https://projects.propublica.org/houston-cypress/</a>
+</div>
 </div>
 </section></section>
     </div>
