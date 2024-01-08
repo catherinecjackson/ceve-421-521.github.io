@@ -89,6 +89,7 @@ format:
     menu:
         numbers: true
     scrollable: true
+    preview-links: auto
     
     # code, links, and refs
     link-external-newwindow: true

@@ -17,8 +17,6 @@ template-partials:
     - title-slide.html
 ---
 
-## Welcome
-
 ## Meet the professor
 
 ::: {.columns}
@@ -78,13 +76,13 @@ What climate risk management strategies have you heard of?
 :::
 
 ::: {.fragment}
-Non-exhaustive examples:
-
+::: {.incremental}
 - Financial instruments (e.g., insurance)
 - Floodproof buildings
 - Zoning codes
 - Major infrastructure
 - Improve emergency planning
+:::
 :::
 
 # Example decisions
@@ -194,7 +192,8 @@ We will:
 
 - Lecture
 - Take notes and ask questions
-- Slides posted ahead of time on website
+- Slides posted by Sunday night (or earlier, though minor changes Monday morning possible)
+- To print, follow the official [Quarto instructions](https://quarto.org/docs/presentations/revealjs/presenting.html#print-to-pdf))
 
 ## Class structure
 
@@ -212,25 +211,18 @@ We will:
 - Make significant progress in class.
 - Due at the start of next lab.
 
-## Grading
-
-- Weekly reading quizzes (10%)
-- Labs (10%)
-- Tests (40%)
-- Project (30%)
-- Reading notes (10%)
-- 521 only: reading discussion (10% from tests)
-
 ## Acommodations
 
-- If you have a documented disability, please discuss your needs with me
-- If you have scheduling conflicts, please let me know as early as possible
-- If you need others to wear a mask for your safety, please let me know
+If you have a documented disability, scheduling conflicts, or otherwise need accommodations, please let me know as soon as possible
+
+Viruses are circulating and everyone's immune system is different.
+If you need others to wear a mask to protect you, please let me know -- no health disclosures needed.
 
 ## Academic integrity
 
 - AI/ML resource policy in the syllabus
 - Rice Honor Code
+- See some [examples](https://viveks.me/climate-risk-analysis/lecture-notes/01-overview/index.html#26) from Vivek Srikrishnan (Cornell) and Tony Wong (RIT)
 - If in doubt, ask!
 
 ## A community of learning
@@ -254,6 +246,48 @@ Exposure to some of the following will be helpful:
 ::: {.callout-important}
 If you're not sure whether you should take the class, come talk to me!
 :::
+
+## Grading
+### Weekly readinhg quizzes (10%)
+
+- Designed to be easy if you do the reading
+- 5 minutes at the start of discussion days
+- Will drop the lowest two
+
+## Grading
+### Labs (10%)
+
+- Graded for completion only:
+    - 3: complete
+    - 2: missing important parts
+    - 1: barely tried
+    - 0: nothing
+- Solutions will be posted. **You are responsible** for going through solutions.
+
+## Grading
+### Tests
+
+- In-class examps
+- I'll try to make them straightforward!
+
+## Grading
+### Project (30%)
+
+- Labs will build on each other to create a final project
+- Your task is to add something new to the project
+- Present during final exam block
+
+## Grading
+### Reading discussion (10%, 521 only)
+
+521 students will lead one reading discussion.
+Contact me to schedule!
+
+### Reading notes (10%)
+
+- Everyone will take notes once during the semester on a reading discussion.
+- I will share sign-up info.
+- Groups allowed as needed.
 
 # Software tools
 
@@ -305,14 +339,12 @@ fib(10)
 
 ## GitHub
 
-::: {.incremental}
 1. You need a GitHub account
 1. Code is stored in "repositories"
 1. `clone` a repository to your computer
 1. Make changes and `commit` them
 1. `push` your changes to GitHub
 1. Using GitHub classroom, instructors can view your code
-:::
 
 ## Quarto
 
@@ -349,3 +381,8 @@ For Wednesday:
 - Generally no advance preparation needed
 - For our first lab, we will be installing required software for the course.
 - Please start working on this lab as soon as possible so that we can use Friday's lab session to troubleshoot any issues and review the material.
+
+## References
+
+::: {#refs}
+:::
