@@ -429,9 +429,6 @@
 <p class="date">Mon., Jan.&nbsp;8</p>
 </section>
 <section class="slide level2">
-<h2>Welcome</h2>
-</section>
-<section class="slide level2">
 <h2>Meet the professor</h2>
 <div class="columns">
 <div class="column" style="width:40%;">
@@ -540,14 +537,15 @@
 </div>
 </div>
 <div class="fragment">
-<p>Non-exhaustive examples:</p>
+<div>
 <ul>
-<li>Financial instruments (e.g., insurance)</li>
-<li>Floodproof buildings</li>
-<li>Zoning codes</li>
-<li>Major infrastructure</li>
-<li>Improve emergency planning</li>
+<li class="fragment">Financial instruments (e.g., insurance)</li>
+<li class="fragment">Floodproof buildings</li>
+<li class="fragment">Zoning codes</li>
+<li class="fragment">Major infrastructure</li>
+<li class="fragment">Improve emergency planning</li>
 </ul>
+</div>
 </div>
 </section></section>
 <section>
@@ -710,7 +708,8 @@
 <ul>
 <li>Lecture</li>
 <li>Take notes and ask questions</li>
-<li>Slides posted ahead of time on website</li>
+<li>Slides posted by Sunday night (or earlier, though minor changes Monday morning possible)</li>
+<li>To print, follow the official <a href="https://quarto.org/docs/presentations/revealjs/presenting.html#print-to-pdf">Quarto instructions</a>)</li>
 </ul>
 </section>
 <section class="slide level2">
@@ -732,29 +731,16 @@
 </ul>
 </section>
 <section class="slide level2">
-<h2>Grading</h2>
-<ul>
-<li>Weekly reading quizzes (10%)</li>
-<li>Labs (10%)</li>
-<li>Tests (40%)</li>
-<li>Project (30%)</li>
-<li>Reading notes (10%)</li>
-<li>521 only: reading discussion (10% from tests)</li>
-</ul>
-</section>
-<section class="slide level2">
 <h2>Acommodations</h2>
-<ul>
-<li>If you have a documented disability, please discuss your needs with me</li>
-<li>If you have scheduling conflicts, please let me know as early as possible</li>
-<li>If you need others to wear a mask for your safety, please let me know</li>
-</ul>
+<p>If you have a documented disability, scheduling conflicts, or otherwise need accommodations, please let me know as soon as possible</p>
+<p>Viruses are circulating and everyone’s immune system is different. If you need others to wear a mask to protect you, please let me know – no health disclosures needed.</p>
 </section>
 <section class="slide level2">
 <h2>Academic integrity</h2>
 <ul>
 <li>AI/ML resource policy in the syllabus</li>
 <li>Rice Honor Code</li>
+<li>See some <a href="https://viveks.me/climate-risk-analysis/lecture-notes/01-overview/index.html#26">examples</a> from Vivek Srikrishnan (Cornell) and Tony Wong (RIT)</li>
 <li>If in doubt, ask!</li>
 </ul>
 </section>
@@ -789,6 +775,57 @@
 </div>
 </div>
 </div>
+</section>
+<section class="slide level2">
+<h2>Grading</h2>
+<h3>Weekly readinhg quizzes (10%)</h3>
+<ul>
+<li>Designed to be easy if you do the reading</li>
+<li>5 minutes at the start of discussion days</li>
+<li>Will drop the lowest two</li>
+</ul>
+</section>
+<section class="slide level2">
+<h2>Grading</h2>
+<h3>Labs (10%)</h3>
+<ul>
+<li>Graded for completion only:
+<ul>
+<li>3: complete</li>
+<li>2: missing important parts</li>
+<li>1: barely tried</li>
+<li>0: nothing</li>
+</ul></li>
+<li>Solutions will be posted. <strong>You are responsible</strong> for going through solutions.</li>
+</ul>
+</section>
+<section class="slide level2">
+<h2>Grading</h2>
+<h3>Tests</h3>
+<ul>
+<li>In-class examps</li>
+<li>I’ll try to make them straightforward!</li>
+</ul>
+</section>
+<section class="slide level2">
+<h2>Grading</h2>
+<h3>Project (30%)</h3>
+<ul>
+<li>Labs will build on each other to create a final project</li>
+<li>Your task is to add something new to the project</li>
+<li>Present during final exam block</li>
+</ul>
+</section>
+<section class="slide level2">
+<h2>Grading</h2>
+<h3>Reading discussion (10%, 521 only)</h3>
+<p>521 students will lead one reading discussion. Contact me to schedule!</p>
+<h3>Reading notes (10%)</h3>
+<ul>
+<li>Everyone will take notes once during the semester on a reading discussion.</li>
+<li>I will share sign-up info.</li>
+<li>Groups allowed as needed.</li>
+</ul>
 </section></section>
 <section>
 <section class="title-slide slide level1 agenda-slide center">
@@ -871,16 +908,14 @@
 </section>
 <section class="slide level2">
 <h2>GitHub</h2>
-<div>
 <ol type="1">
-<li class="fragment">You need a GitHub account</li>
-<li class="fragment">Code is stored in “repositories”</li>
-<li class="fragment"><code>clone</code> a repository to your computer</li>
-<li class="fragment">Make changes and <code>commit</code> them</li>
-<li class="fragment"><code>push</code> your changes to GitHub</li>
-<li class="fragment">Using GitHub classroom, instructors can view your code</li>
+<li>You need a GitHub account</li>
+<li>Code is stored in “repositories”</li>
+<li><code>clone</code> a repository to your computer</li>
+<li>Make changes and <code>commit</code> them</li>
+<li><code>push</code> your changes to GitHub</li>
+<li>Using GitHub classroom, instructors can view your code</li>
 </ol>
-</div>
 </section>
 <section class="slide level2">
 <h2>Quarto</h2>
@@ -989,7 +1024,7 @@ Satija, N., Collier, K., &amp; Shaw, A. (2016, December 7). Boomtown, flood town
       // https://revealjs.com/config/
       Reveal.initialize({
 'controlsAuto': true,
-'previewLinksAuto': false,
+'previewLinksAuto': true,
 'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
