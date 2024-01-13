@@ -7,11 +7,27 @@ categories: [Reading]
 format: html
 ---
 
+## Assigned readings
+
 ::: {.callout-tip}
-Discussion questions will be posted here.
+As before, you are encouraged to use Zotero to manage your references (Zotero has great tools for highlighting and annotating PDFs, among other cool features. It's also open source so your annotations aren't locked into a proprietary system).
 :::
 
-Assigned reading will be drawn from:
+- @seneviratne_wg1ch11:2021:
+    - Read the Executive Summary
+    - Read the Introduction (section 11.1)
+    - Read the Data and Methods (section 11.2)
+    - Read one additional subsection (11.3, 11.4, ..., or 11.8)
+- Read all of @lall_ncawater:2018 (pp. 147-157)
 
-- @seneviratne_wg1ch11:2021
-- @lall_ncawater:2018
+- As you're reading along, please post any questions you have (clarification, topics you didn't follow, etc.) to [Canvas discussions](https://canvas.rice.edu/courses/65985/discussion_topics/364512).
+- Prepare a two minute summary of key points from the "one additional subsection" that you read from @seneviratne_wg1ch11:2021. Be prepared to share your summary with the class.
+- Be prepared to answer basic questions from the readings (focus on the executive summaries)
+
+## Discussion questions
+
+- Think about one impact of climate change you were surprised to learn about and one hazard that is less of a concern than you thought it was.
+- What are some of the challenges of using climate models to predict future climate? What are some of the challenges of using climate models to predict future impacts of climate change?
+- What are some of the challenges of using observations to understand future climate? What are some of the challenges of using observations to understand future impacts of climate change?
+
+## References
