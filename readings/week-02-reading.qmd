@@ -18,8 +18,8 @@ As before, you are encouraged to use Zotero to manage your references (Zotero ha
     - Read the Introduction (section 11.1)
     - Read the Data and Methods (section 11.2)
     - Read one additional subsection (11.3, 11.4, ..., or 11.8)
+    - If you're adding this to Zotero, you may find the [IPCC-Bibtex](https://github.com/openclimatedata/ipcc-bibtex/) project helpful.
 - Read all of @lall_ncawater:2018 (pp. 147-157)
-
 - As you're reading along, please post any questions you have (clarification, topics you didn't follow, etc.) to [Canvas discussions](https://canvas.rice.edu/courses/65985/discussion_topics/364512).
 - Prepare a two minute summary of key points from the "one additional subsection" that you read from @seneviratne_wg1ch11:2021. Be prepared to share your summary with the class.
 - Be prepared to answer basic questions from the readings (focus on the executive summaries)
@@ -28,6 +28,6 @@ As before, you are encouraged to use Zotero to manage your references (Zotero ha
 
 - Think about one impact of climate change you were surprised to learn about and one hazard that is less of a concern than you thought it was.
 - What are some of the challenges of using climate models to predict future climate? What are some of the challenges of using climate models to predict future impacts of climate change?
-- What are some of the challenges of using observations to understand future climate? What are some of the challenges of using observations to understand future impacts of climate change?
+- What are some of the challenges of using observations to understand future climate? What are some of the challenges of using models to understand future impacts of climate change?
 
 ## References

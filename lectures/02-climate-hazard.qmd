@@ -17,4 +17,76 @@ template-partials:
     - title-slide.html
 ---
 
-This is a placeholder.
+## Today
+
+- Logistics
+- Clarifying questions
+- Discussion questions
+- Wrapup
+
+## Logistics {.scrollable}
+
+::: {.incremental}
+1. **Syllabus / lab 0:** sorry for the double assignment (but free points to you)
+1. **Lab 1:** about half of you have turned in; looks like the Python problems less severe than anticipated 😄; let's troubleshoot after class (email if that doesn't work for you)
+1. **Signup:** see [Google Sheet](https://docs.google.com/spreadsheets/d/1BfmwCmo63Vh9b3QDuAkpq4Jo_uRSGbKKQqWEDx_kfkw/edit?usp=sharing) to sign up as note taker (421 + 521) and discussion leader (521 only)
+1. **Next week:** I'll post readings by Friday.
+1. **Good question:** readings on the syllabus are suggestions -- go with what's on the "Redings" page of the website.
+:::
+
+## Extra credit opportunity
+
+ I make lots of mistakes!
+ If you find one:
+ 
+ 1. Create an Issue on the [course repository](https://github.com/CEVE-421-521/ceve-421-521.github.io/) (1 "EC point")
+ 1. Find the line of code that needs to be fixed and use the permalink function (1 point)
+ 1. Submit a pull request that fixes it (1 point).
+ 
+ Anything as small as a typo counts, bonus points for bigger mistakes.
+ At the end of the semester, we'll scale the EC points so that you get up to 5 "class" points.
+
+## Clarifying questions
+
+We read @seneviratne_wg1ch11:2021 and @lall_ncawater:2018.
+What terms or concepts were confusing to you?
+
+::: {.callout-tip}
+Please use Canvas discussions (e.g., "Week 2 Reading Discussion") to ask questions about readings.
+If you give me heads up, I have a better chance of giving you a satisfactory answer 😉
+:::
+
+## Discussion questions
+### Two minutes each
+
+Prepare a two minute summary of key points from the "one additional subsection" that you read from @seneviratne_wg1ch11:2021.
+
+## Discussion questions
+### Not a concern
+
+Think about one impact of climate change you were surprised to learn about and one hazard that is less of a concern than you thought it was.
+
+## Discussion questions
+### Challenges
+
+What are some of the challenges of using climate models to predict future climate?
+What are some of the challenges of using climate models to predict future impacts of climate change?
+
+## Discussion questions
+### Observations and models
+
+What are some of the challenges of using observations to understand future climate?
+What are some of the challenges of using ~~observations~~models to understand future impacts of climate change?
+
+## Discussion questions
+### Some additional questions
+
+- Your questions?
+- How were did the focus areas of @seneviratne_wg1ch11:2021 and @lall_ncawater:2018 differ?
+- What is the difference between **climate risks** and **climate change risks**?
+- How should we plan for climate change impacts that are highly uncertain?
+
+## References
+
+::: {#refs}
+:::
