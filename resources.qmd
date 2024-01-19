@@ -53,7 +53,7 @@ Please follow the instructions provided in this course!
 * [Justin Bois' tutorial](http://chebe163.caltech.edu/2018w/handouts/intro_to_latex.html).
 * [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/)
 * [LaTeX Cheatsheet](https://ctan.math.washington.edu/tex-archive/info/undergradmath/undergradmath.pdf)
-* [Mathpix Snpi](https://mathpix.com/snip) allows you to convert images of equations to LaTeX code (there is a free tier)
+* [Mathpix Snip](https://mathpix.com/snip) allows you to convert images of equations to LaTeX code (there is a free tier)
 * [Detexify](https://detexify.kirelabs.org/classify.html) lets you draw a symbol and suggests the LaTeX code for the corresponding symbol 
 
 ## Big Picture
