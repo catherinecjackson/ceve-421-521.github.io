@@ -8,11 +8,15 @@ categories: [Reading]
 format: html
 ---
 
-::: {.callout-tip}
-Discussion questions will be posted here.
-:::
+Please read @wing_vulnerability:2020 for Wednesday's class.
+As you read, please post any clarifying questions you have to Canvas.
 
-Assigned reading will be drawn from:
+This paper analyzes insurance claims data to evaluate and explore "depth-damage" curves.
+Please consider the following questions as you read:
 
-- @wing_vulnerability:2020
-- @bonnafous_waterrisk:2017
+- What is the difference between a probabilistic and deterministic depth-damage curve? What are practical advantages of a probabilistic depth-damage curve?
+- If you were predicting flood damages for a structure, what information besides flood depth might be useful?
+- What might explain the regional patterns of depth-damage curves in the paper?
+- What are some problems with using insurance claims data to develop or validate depth-damage curves?
+
+Please also prepare a discussion question for class based on this paper.
