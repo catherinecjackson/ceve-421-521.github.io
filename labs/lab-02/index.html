@@ -460,15 +460,15 @@ f(2.1)</code></pre>
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-11" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-annotation="1" data-code-cell="annotated-cell-11" data-code-lines="1">We define a variable called <code>fname</code> that stores the path to our data file. The <code>data</code> folder is in the same directory as this notebook.</span>
+<span data-code-cell="annotated-cell-11" data-code-lines="1" data-code-annotation="1">We define a variable called <code>fname</code> that stores the path to our data file. The <code>data</code> folder is in the same directory as this notebook.</span>
 </dd>
 <dt data-target-cell="annotated-cell-11" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-annotation="2" data-code-cell="annotated-cell-11" data-code-lines="2">We use the <code>CSV.read</code> function to read in the data. The first argument is the filename, and the second argument tells Julia to convert the data to a <code>DataFrame</code>. We store it as a variable called <code>df</code>.</span>
+<span data-code-cell="annotated-cell-11" data-code-lines="2" data-code-annotation="2">We use the <code>CSV.read</code> function to read in the data. The first argument is the filename, and the second argument tells Julia to convert the data to a <code>DataFrame</code>. We store it as a variable called <code>df</code>.</span>
 </dd>
 <dt data-target-cell="annotated-cell-11" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-annotation="3" data-code-cell="annotated-cell-11" data-code-lines="3">We use the <code>first</code> function to show the first 5 rows of the DataFrame.</span>
+<span data-code-cell="annotated-cell-11" data-code-lines="3" data-code-annotation="3">We use the <code>first</code> function to show the first 5 rows of the DataFrame.</span>
 </dd>
 </dl>
 </div>
@@ -549,11 +549,11 @@ f(2.1)</code></pre>
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-12" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-annotation="1" data-code-cell="annotated-cell-12" data-code-lines="1">This is a string that tells Julia how the dates are formatted. For example, <code>1928-01-01 00:00</code>. See the <a href="https://docs.julialang.org/en/v1/stdlib/Dates/#Base.Dates.DateFormat">documentation</a> for more information.</span>
+<span data-code-cell="annotated-cell-12" data-code-lines="1" data-code-annotation="1">This is a string that tells Julia how the dates are formatted. For example, <code>1928-01-01 00:00</code>. See the <a href="https://docs.julialang.org/en/v1/stdlib/Dates/#Base.Dates.DateFormat">documentation</a> for more information.</span>
 </dd>
 <dt data-target-cell="annotated-cell-12" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-annotation="2" data-code-cell="annotated-cell-12" data-code-lines="2"><code>dateformat</code> is a <em>keyword argument</em> while <code>date_format</code> is a variable whose value is <code>"yyyy-mm-dd HH:MM"</code>. We could equivalently write <code>dateformat="yyyy-mm-dd HH:MM"</code>.</span>
+<span data-code-cell="annotated-cell-12" data-code-lines="2" data-code-annotation="2"><code>dateformat</code> is a <em>keyword argument</em> while <code>date_format</code> is a variable whose value is <code>"yyyy-mm-dd HH:MM"</code>. We could equivalently write <code>dateformat="yyyy-mm-dd HH:MM"</code>.</span>
 </dd>
 </dl>
 </div>
@@ -616,7 +616,7 @@ f(2.1)</code></pre>
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-13" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-annotation="1" data-code-cell="annotated-cell-13" data-code-lines="1">We select the column with water levels using its name. The <code>!</code> means “all rows”. Thus, <code>df[!, " Water Level"]</code> is a vector of all the water levels stored. <code>*=</code> means to multiply in place. For example, if <code>x=2</code> then <code>x *= 2</code> is equivalent to <code>x = x * 2</code>. <code>.*=</code> is a vector syntax, meaning do the multiplication to each element of the vector individually. <code>1u"m"</code> is a <code>Unitful</code> object that represents 1 meter. We multiply the water levels by this to convert them to meters.</span>
+<span data-code-cell="annotated-cell-13" data-code-lines="1" data-code-annotation="1">We select the column with water levels using its name. The <code>!</code> means “all rows”. Thus, <code>df[!, " Water Level"]</code> is a vector of all the water levels stored. <code>*=</code> means to multiply in place. For example, if <code>x=2</code> then <code>x *= 2</code> is equivalent to <code>x = x * 2</code>. <code>.*=</code> is a vector syntax, meaning do the multiplication to each element of the vector individually. <code>1u"m"</code> is a <code>Unitful</code> object that represents 1 meter. We multiply the water levels by this to convert them to meters.</span>
 </dd>
 </dl>
 </div>
@@ -681,7 +681,7 @@ f(2.1)</code></pre>
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-14" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-annotation="1" data-code-cell="annotated-cell-14" data-code-lines="1">The <code>$</code> is needed here because the right hand side is a string, not a <code>Symbol</code>.</span>
+<span data-code-cell="annotated-cell-14" data-code-lines="1" data-code-annotation="1">The <code>$</code> is needed here because the right hand side is a string, not a <code>Symbol</code>.</span>
 </dd>
 </dl>
 </div>
@@ -797,11 +797,11 @@ f(2.1)</code></pre>
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-17" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-annotation="1" data-code-cell="annotated-cell-17" data-code-lines="1">This creates a <code>DateTime</code> object for the start of October 1928 at 0 hours. Defining it clearly here aids readability.</span>
+<span data-code-cell="annotated-cell-17" data-code-lines="1" data-code-annotation="1">This creates a <code>DateTime</code> object for the start of October 1928 at 0 hours. Defining it clearly here aids readability.</span>
 </dd>
 <dt data-target-cell="annotated-cell-17" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-annotation="2" data-code-cell="annotated-cell-17" data-code-lines="3">This selects all the rows where the <code>:datetime</code> column is between <code>t_start</code> and <code>t_end</code>. The <code>.</code> syntax is called <em>dot broadcasting</em> and is a way to apply a function to each element of a vector.</span>
+<span data-code-cell="annotated-cell-17" data-code-lines="3" data-code-annotation="2">This selects all the rows where the <code>:datetime</code> column is between <code>t_start</code> and <code>t_end</code>. The <code>.</code> syntax is called <em>dot broadcasting</em> and is a way to apply a function to each element of a vector.</span>
 </dd>
 </dl>
 </div>
@@ -906,19 +906,19 @@ f(2.1)</code></pre>
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-19" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-annotation="1" data-code-cell="annotated-cell-19" data-code-lines="1">This creates a new column called <code>:month</code> that is the month of each observation.</span>
+<span data-code-cell="annotated-cell-19" data-code-lines="1" data-code-annotation="1">This creates a new column called <code>:month</code> that is the month of each observation.</span>
 </dd>
 <dt data-target-cell="annotated-cell-19" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-annotation="2" data-code-cell="annotated-cell-19" data-code-lines="2">This will discard any rows in <code>df</code> that have a missing value of <code>:lsl</code>. This is necessary because the <code>mean</code> function will return <code>missing</code> if any of the values are missing.</span>
+<span data-code-cell="annotated-cell-19" data-code-lines="2" data-code-annotation="2">This will discard any rows in <code>df</code> that have a missing value of <code>:lsl</code>. This is necessary because the <code>mean</code> function will return <code>missing</code> if any of the values are missing.</span>
 </dd>
 <dt data-target-cell="annotated-cell-19" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-annotation="3" data-code-cell="annotated-cell-19" data-code-lines="3">This creates a <code>GroupedDataFrame</code> object that contains all the data grouped by month.</span>
+<span data-code-cell="annotated-cell-19" data-code-lines="3" data-code-annotation="3">This creates a <code>GroupedDataFrame</code> object that contains all the data grouped by month.</span>
 </dd>
 <dt data-target-cell="annotated-cell-19" data-target-annotation="4">4</dt>
 <dd>
-<span data-code-annotation="4" data-code-cell="annotated-cell-19" data-code-lines="4">This takes the grouped data and calculates the mean of the <code>:lsl</code> column for each month. The general syntax is <code>combine(grouped_df, :column =&gt; function)</code>.</span>
+<span data-code-cell="annotated-cell-19" data-code-lines="4" data-code-annotation="4">This takes the grouped data and calculates the mean of the <code>:lsl</code> column for each month. The general syntax is <code>combine(grouped_df, :column =&gt; function)</code>.</span>
 </dd>
 </dl>
 </div>
@@ -938,15 +938,15 @@ f(2.1)</code></pre>
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-20" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-annotation="1" data-code-cell="annotated-cell-20" data-code-lines="2">We can use <code>df.colname</code> instead of <code>df[!, :colname]</code>. The latter is more robust but the former is easier to type.</span>
+<span data-code-cell="annotated-cell-20" data-code-lines="2" data-code-annotation="1">We can use <code>df.colname</code> instead of <code>df[!, :colname]</code>. The latter is more robust but the former is easier to type.</span>
 </dd>
 <dt data-target-cell="annotated-cell-20" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-annotation="2" data-code-cell="annotated-cell-20" data-code-lines="4">Setting <code>xticks</code> will set the x-axis ticks to the values in the vector. We can use this to make sure the x-axis ticks are labeled with the months.</span>
+<span data-code-cell="annotated-cell-20" data-code-lines="4" data-code-annotation="2">Setting <code>xticks</code> will set the x-axis ticks to the values in the vector. We can use this to make sure the x-axis ticks are labeled with the months.</span>
 </dd>
 <dt data-target-cell="annotated-cell-20" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-annotation="3" data-code-cell="annotated-cell-20" data-code-lines="7">We can set the line width to make the plot easier to read.</span>
+<span data-code-cell="annotated-cell-20" data-code-lines="7" data-code-annotation="3">We can set the line width to make the plot easier to read.</span>
 </dd>
 </dl>
 </div>
