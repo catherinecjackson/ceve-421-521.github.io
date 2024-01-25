@@ -1,0 +1,8 @@
+name: ceve421521
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - jupyter
+  - jupyter-cache
