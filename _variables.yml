@@ -21,7 +21,7 @@ course:
   url: "https://ceve-421-521.github.io/"
   copyright_year: "2024"
   institution: "Rice University"
-  canvas: https://canvas.rice.edu/courses/65985
+  canvas_id: 65985
 
 university:
   name: Rice University
