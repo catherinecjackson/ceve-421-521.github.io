@@ -17,4 +17,17 @@ template-partials:
     - title-slide.html
 ---
 
-This is a placeholder.
+## {.smaller}
+
+I was asked to share the following with you:
+
+:::: {.columns}
+::: {.column width="65%"}
+> We are looking for people who are concerned by the state of the environment and who want to do something about it. Our yearlong program has prepared recent college graduates for 30 years to launch a career in environmental organizing and advocacy by providing hands-on experience running campaigns with groups like the Wilderness Society, Endangered Species Coalition, Mighty Earth and more. We then connect our graduates to jobs in the environmental and social change movement.
+
+Contact Amelia Farrell 410-934-9033 [amelia@greencorps.org](mailto:amelia@greencorps.org)
+:::
+::: {.column width="35%"}
+![](../_assets/img/gc-coffee-chat-2024.jpg)
+:::
+::::
