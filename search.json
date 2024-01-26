@@ -188,58 +188,23 @@
     "text": "This is a placeholder."
   },
   {
-    "objectID": "labs/lab-03/index.html",
-    "href": "labs/lab-03/index.html",
+    "objectID": "labs/lab-03/template.html",
+    "href": "labs/lab-03/template.html",
     "title": "Lab 3: Depth-Damage Models",
     "section": "",
-    "text": "This is a placeholder."
+    "text": "using CSV\nusing DataFrames\nusing DataFramesMeta\nusing Distributions\nusing Interpolations\nusing Plots\nusing StatsPlots\nusing Unitful\n\nPlots.default(; margin=6Plots.mm)\n\n\nSite information\n\n\nDepth-Damage\n\n\nExpected annual damages\n\n\nDiscussion"
   },
   {
-    "objectID": "labs/lab-03/index.html#overview",
-    "href": "labs/lab-03/index.html#overview",
-    "title": "Lab 3: Depth-Damage Models",
+    "objectID": "labs/lab-08/index.html",
+    "href": "labs/lab-08/index.html",
+    "title": "Lab 8: Parking Garage Case Study",
     "section": "",
     "text": "This is a placeholder."
   },
   {
-    "objectID": "labs/lab-06/index.html",
-    "href": "labs/lab-06/index.html",
-    "title": "Lab 6: Policy Search",
-    "section": "",
-    "text": "This is a placeholder."
-  },
-  {
-    "objectID": "labs/lab-06/index.html#overview",
-    "href": "labs/lab-06/index.html#overview",
-    "title": "Lab 6: Policy Search",
-    "section": "",
-    "text": "This is a placeholder."
-  },
-  {
-    "objectID": "labs/lab-07/index.html",
-    "href": "labs/lab-07/index.html",
-    "title": "Lab 7: Multiobjective Optimization",
-    "section": "",
-    "text": "This is a placeholder."
-  },
-  {
-    "objectID": "labs/lab-07/index.html#overview",
-    "href": "labs/lab-07/index.html#overview",
-    "title": "Lab 7: Multiobjective Optimization",
-    "section": "",
-    "text": "This is a placeholder."
-  },
-  {
-    "objectID": "labs/lab-09/index.html",
-    "href": "labs/lab-09/index.html",
-    "title": "Lab 9: The Lake Problem",
-    "section": "",
-    "text": "This is a placeholder."
-  },
-  {
-    "objectID": "labs/lab-09/index.html#overview",
-    "href": "labs/lab-09/index.html#overview",
-    "title": "Lab 9: The Lake Problem",
+    "objectID": "labs/lab-08/index.html#overview",
+    "href": "labs/lab-08/index.html#overview",
+    "title": "Lab 8: Parking Garage Case Study",
     "section": "",
     "text": "This is a placeholder."
   },
@@ -279,18 +244,95 @@
     "text": "Lab Instructions\nOnce you have everything set up, your lab for the week will be to complete the following steps. These will ensure that your installation is working smoothly!\n\nFollow the link to lab 1 assignment from Canvas (it should start with classroom.github.com). You will get a message saying ” Your assignment repository has been created: …“. Click on the link to go to your repository.\nclone the repository for lab 01 (use the Github Classroom link from Canvas) to your computer. You can use VS Code functionality, GitHub Desktop, or your terminal.\nOpen the directory containing the repository in VS Code doing one of the following:\n\nFrom GitHub desktop: Repository &gt; Open in Visual Studio Code\nIn VS Code: File &gt; Open Folder...\n\nOpen the index.qmd file in VS Code and replace the author: CEVE 421/521 line with your name and netID\nOpen the JULIA Repl\n\nOpen the command palette (Ctrl+Shift+P on Windows/Linux, Cmd+Shift+P on Mac)\nStart typing “Julia: Start REPL”. It will auto-complete; select the command as it appears.\n\nSet up your project environment.\n\nIn the Julia REPL, type ] to enter the package manager. It should now show something like (lab-01) pkg&gt;.\nType instantiate and run it (Enter). This will install all the packages needed for this lab.\nType the backspace key to exit the package manager.\n\nEdit the index.qmd file to add your name and netID\nRender the document\n\nOpen the index.qmd file\nOpen the command palette and run “Quarto: Preview”. After some activity, a preview of the rendered document should open in VS Code. If you see something like Browse at http://localhost:4200/index.html you can open that link in your web browser to see the rendered document.\nRender to PDF or Microsoft Word following the directions below.\n\nIf you’re still having trouble:\n\nTry running build IJulia in the Julia REPL’s Pkg mode (type ])\nCome to office hours\nPost on the Canvas discussion for Lab 1\n\ncommit and push your changes to GitHub\nSubmit your rendered .docx or .pdf file to Canvas\n\n\nRunning Code\nWe can use Quarto to run Julia code in-line\n\nprintln(\"I'm using Julia!\")\n\nI'm using Julia!\n\n\nWe can also load packages\n\nusing CairoMakie\nusing LaTeXStrings\n\nand use them to make plots\n\nf = Figure()\nax = Axis(f[1, 1]; title=L\"$y = \\sin(x)$\", xlabel=L\"$x$\", ylabel=L\"$y$\")\nx = range(0, 10; length=100)\ny = sin.(x)\nlines!(ax, x, y)\nf\n\n\n\n\n\n\n\n\n\n\nRendering the Document\nA Quarto document is a plain text file that uses a simple code language to embed text, math, code, and the code’s output. You can run the document line by line, or you can render to a variety of formats. This is helpful for sharing with others, or for creating a final document for yourself.\nWe will check our ability to\n\nPreview the document in HTML (a web-native format)\nRender the document to PDF or Microsoft Word (a portable, shareable, and printable format)\n\n\nHTML\nFirst, verify that you can preview the document in HTML:\n\nOpen the command palette (Cmd+Shift+P on macOS, Ctrl+Shift+P on Windows/Linux)\nType “Quarto: Preview”\n\n\n\nPDF\nYou can use Quarto to generate PDF documents. Follow the instructions on Quarto’s website to install the necessary software.\n\nTo instruct Quarto to render to PDF, you need to edit the document metadata. Specifically, uncomment the lines in the document metadata corresponding to the PDF format.\nOpen the command palette (Cmd+Shift+P on macOS, Ctrl+Shift+P on Windows/Linux)\nType “Quarto: Render”\n\n\n\nWord\nYou can also render the document to Microsoft Word. See the Quarto documentation.\n\nTo instruct Quarto to render to Word, you need to edit the document metadata. Specifically, uncomment the lines in the document metadata corresponding to the Word format.\nOpen the command palette (Cmd+Shift+P on macOS, Ctrl+Shift+P on Windows/Linux)\nType “Quarto: Render”"
   },
   {
-    "objectID": "labs/lab-08/index.html",
-    "href": "labs/lab-08/index.html",
-    "title": "Lab 8: Parking Garage Case Study",
+    "objectID": "labs/lab-09/index.html",
+    "href": "labs/lab-09/index.html",
+    "title": "Lab 9: The Lake Problem",
     "section": "",
     "text": "This is a placeholder."
   },
   {
-    "objectID": "labs/lab-08/index.html#overview",
-    "href": "labs/lab-08/index.html#overview",
-    "title": "Lab 8: Parking Garage Case Study",
+    "objectID": "labs/lab-09/index.html#overview",
+    "href": "labs/lab-09/index.html#overview",
+    "title": "Lab 9: The Lake Problem",
     "section": "",
     "text": "This is a placeholder."
+  },
+  {
+    "objectID": "labs/lab-07/index.html",
+    "href": "labs/lab-07/index.html",
+    "title": "Lab 7: Multiobjective Optimization",
+    "section": "",
+    "text": "This is a placeholder."
+  },
+  {
+    "objectID": "labs/lab-07/index.html#overview",
+    "href": "labs/lab-07/index.html#overview",
+    "title": "Lab 7: Multiobjective Optimization",
+    "section": "",
+    "text": "This is a placeholder."
+  },
+  {
+    "objectID": "labs/lab-06/index.html",
+    "href": "labs/lab-06/index.html",
+    "title": "Lab 6: Policy Search",
+    "section": "",
+    "text": "This is a placeholder."
+  },
+  {
+    "objectID": "labs/lab-06/index.html#overview",
+    "href": "labs/lab-06/index.html#overview",
+    "title": "Lab 6: Policy Search",
+    "section": "",
+    "text": "This is a placeholder."
+  },
+  {
+    "objectID": "labs/lab-03/index.html",
+    "href": "labs/lab-03/index.html",
+    "title": "Lab 3: Depth-Damage Models",
+    "section": "",
+    "text": "Today, we’re going to be working with depth-damage functions. This will give us practice:\n\nworking with and manipulating tabular data\nwriting functions\n\nIn addition, the depth-damage function you choose / build will be a building block for your final project.\n\n\nAs before:\n\nClone the repository for this lab to your computer and open it in VS Code.\nIn the Julia REPL, activate and then instantiate the project environment.\nCheck that you can preview the project by running quarto preview template.qmd in the terminal (not Julia REPL). If that doesn’t work, open the Julia REPL, enter package mode with ], and run build IJulia.\nIf that doesn’t work, ask for help! The way VS Code looks for Python on your computer can be weird and counterintuitive.\n\n\n\n\nAs usual, we load all required packages at the top of the notebook, in one place.\n\nusing CSV\nusing DataFrames\nusing DataFramesMeta\nusing Distributions\nusing Interpolations\nusing Plots\nusing StatsPlots\nusing Unitful\n\n1Plots.default(; margin=6Plots.mm)\n\n\n1\n\nThis updates the default margin in our plots so that axis labels don’t get cut off."
+  },
+  {
+    "objectID": "labs/lab-03/index.html#setup",
+    "href": "labs/lab-03/index.html#setup",
+    "title": "Lab 3: Depth-Damage Models",
+    "section": "",
+    "text": "As before:\n\nClone the repository for this lab to your computer and open it in VS Code.\nIn the Julia REPL, activate and then instantiate the project environment.\nCheck that you can preview the project by running quarto preview template.qmd in the terminal (not Julia REPL). If that doesn’t work, open the Julia REPL, enter package mode with ], and run build IJulia.\nIf that doesn’t work, ask for help! The way VS Code looks for Python on your computer can be weird and counterintuitive."
+  },
+  {
+    "objectID": "labs/lab-03/index.html#load-packages",
+    "href": "labs/lab-03/index.html#load-packages",
+    "title": "Lab 3: Depth-Damage Models",
+    "section": "",
+    "text": "As usual, we load all required packages at the top of the notebook, in one place.\n\nusing CSV\nusing DataFrames\nusing DataFramesMeta\nusing Distributions\nusing Interpolations\nusing Plots\nusing StatsPlots\nusing Unitful\n\n1Plots.default(; margin=6Plots.mm)\n\n\n1\n\nThis updates the default margin in our plots so that axis labels don’t get cut off."
+  },
+  {
+    "objectID": "labs/lab-03/index.html#parsing",
+    "href": "labs/lab-03/index.html#parsing",
+    "title": "Lab 3: Depth-Damage Models",
+    "section": "Parsing",
+    "text": "Parsing\nWe’d like to be able to use the depth-damage functions in this file. However, the depths are stored in a somewhat annoying format (e.g., “ft04m” means -4 feet). To make life simple, I’ve created some functionality in the depthdamage.jl file that you can use. We can load it as follows:\n\ninclude(\"depthdamage.jl\")\n\nDepthDamageData\n\n\nThe main thing that we’ll use is called DepthDamageData. This is a data structure or type that stores the depth-damage data, as well as any relevant metadata. If you’ve created a class in a language like C++ or Python, it’s the same idea. I’ve also defined a constructor that takes in the row of a DataFrame and creates a DepthDamageData object, to make life easy.\nI’ll show you how to do this for an illustrative depth-damage function from the New Orleans USACE.\n\ndemo_row = @rsubset(\n    haz_fl_dept, :Description == \"one story, Contents, fresh water, short duration\"\n)[\n    1, :,\n]\ndd = DepthDamageData(demo_row)\n\nDepthDamageData(Quantity{Float64, 𝐋, Unitful.FreeUnits{(ft,), 𝐋, nothing}}[-4.0 ft, -3.0 ft, -2.0 ft, -1.0 ft, 0.0 ft, 1.0 ft, 2.0 ft, 3.0 ft, 4.0 ft, 5.0 ft  …  15.0 ft, 16.0 ft, 17.0 ft, 18.0 ft, 19.0 ft, 20.0 ft, 21.0 ft, 22.0 ft, 23.0 ft, 24.0 ft], [0.0, 0.0, 0.0, 0.0, 0.0, 42.0, 63.0, 82.0, 85.0, 91.0  …  91.0, 91.0, 91.0, 91.0, 91.0, 91.0, 91.0, 91.0, 91.0, 91.0], String7(\"RES1\"), \"57\", String31(\"USACE - New Orleans\"), \"one story, Contents, fresh water, short duration\", \"missing\")\n\n\nThis prints out a bunch of data. We can see that it has the following fields, which should broadly match with our DataFrame:\n\nfieldnames(typeof(dd))\n\n(:depths, :damages, :occupancy, :dmg_fn_id, :source, :description, :comment)"
+  },
+  {
+    "objectID": "labs/lab-03/index.html#plotting",
+    "href": "labs/lab-03/index.html#plotting",
+    "title": "Lab 3: Depth-Damage Models",
+    "section": "Plotting",
+    "text": "Plotting\nNow that we’ve created a DepthDamageData object, we can plot it. When we plot things with units, the Unitful package (as long as we are using it) knows how to handle them.\n\nscatter(\n    dd.depths,\n    dd.damages;\n    xlabel=\"Flood Depth at House\",\n    ylabel=\"Damage (%)\",\n    label=\"$(dd.description) ($(dd.source))\",\n    legend=:bottomright,\n    size=(700, 500),\n)"
+  },
+  {
+    "objectID": "labs/lab-03/index.html#interpolating",
+    "href": "labs/lab-03/index.html#interpolating",
+    "title": "Lab 3: Depth-Damage Models",
+    "section": "Interpolating",
+    "text": "Interpolating\nThis is great. However, what if we want to estimate damage between the points? We need a way to interpolate. We can do this using the Interpolations package!\n\n1itp = let\n2    depth_ft = ustrip.(u\"ft\", dd.depths)\n    damage_frac = dd.damages\n    Interpolations.LinearInterpolation(\n        depth_ft,\n        damage_frac;\n3        extrapolation_bc=Interpolations.Flat(),\n    )\nend\n\n\n1\n\nI really like these let...end blocks and use them quite a bit. The main thing to know is that all the variables defined inside the let block are only available inside the let block. Once we get to the end of the block, they vanish! This keeps us from defining tons of variables that get in each others’ way.\n\n2\n\nThe Interpolations package doesn’t take units on its input, so we convert the input (which can be of any length unit) to feet before passing it in. If our depths are in meters or millimeters, it won’t be a problem – the ustrip function will convert to feet and then turn them into scalars.\n\n3\n\nInterpolations requires us to specify how to extrapolate. We choose Flat(), meaning that anything below the lowest value in the table will be assumed to have the same damage as the lowest value in the table and anything above the highest value in the table will be assumed to have the same damage as the highest value in the table.\n\n\n\n\nNow we can use this interpolation function to estimate damage at any depth.\n\nlet\n1    dmg_fn(x) = itp(ustrip.(u\"ft\", x))\n2    dmg_fn.([3.1u\"ft\", 2.2u\"m\", 91.4u\"inch\"])\nend\n\n\n1\n\nConvert the input to feet\n\n2\n\nEstimate damage at 3.1 feet, 2.2 meters, and 91.4 inches\n\n\n\n\n3-element Vector{Float64}:\n 82.30000000000001\n 91.0\n 91.0"
+  },
+  {
+    "objectID": "labs/lab-03/index.html#packaging",
+    "href": "labs/lab-03/index.html#packaging",
+    "title": "Lab 3: Depth-Damage Models",
+    "section": "Packaging",
+    "text": "Packaging\nTo make life simple, we can define a function that takes in some depths and some damages and returns a function that can be used to estimate damage at any depth.\n\nfunction get_depth_damage_function(\n    depth_train::Vector{&lt;:T}, dmg_train::Vector{&lt;:AbstractFloat}\n) where {T&lt;:Unitful.Length}\n\n    # interpolate\n    depth_ft = ustrip.(u\"ft\", depth_train)\n    interp_fn = Interpolations.LinearInterpolation(\n1        depth_ft,\n        dmg_train;\n2        extrapolation_bc=Interpolations.Flat(),\n    )\n\n    damage_fn = function (depth::T2) where {T2&lt;:Unitful.Length}\n3        return interp_fn(ustrip.(u\"ft\", depth))\n    end\n4    return damage_fn\nend\n\n\n1\n\nThe Interpolations package doesn’t take units on its input, so we convert the input (which can be of any length) to feet before passing it in. If our depths are in meters or millimeters, it won’t be a problem – the ustrip function will convert to feet and then turn them into scalars.\n\n2\n\nInterpolations requires us to specify how to extrapolate. We choose Flat(), meaning that anything below the lowest value in the table will be assumed to have the same damage as the lowest value in the table and anything above the highest value in the table will be assumed to have the same damage as the highest value in the table.\n\n3\n\nThis is a bit confusing. We are defining a function, inside of a function.\n\n4\n\nWe return the function that we just defined. So when we call this function, we get a function – we in turn need to call that function on something else.\n\n\n\n\nget_depth_damage_function (generic function with 1 method)\n\n\n\ndamage_fn = get_depth_damage_function(dd.depths, dd.damages)\n\n#16 (generic function with 1 method)\n\n\nNow damage_fn is a function. It takes in a depth, with some type of length unit defined using Unitful, and returns the damage in percent. We can use this to plot a depth-damage curve:\n\np = let\n1    depths = uconvert.(u\"ft\", (-7.0u\"ft\"):(1.0u\"inch\"):(30.0u\"ft\"))\n2    damages = damage_fn.(depths)\n    scatter(\n        depths,\n        damages;\n        xlabel=\"Flood Depth\",\n        ylabel=\"Damage (%)\",\n        label=\"$(dd.description) ($(dd.source))\",\n        legend=:bottomright,\n        size=(800, 400),\n        linewidth=2,\n    )\nend\np\n\n\n1\n\nWe create a vector of depths from -7 feet to 30 feet, in 1 inch increments. We use uconvert to convert the units to feet (by default, Unitful converts to meters when we add together length units).\n\n2\n\nOur damage_fn is defined to take in a single scalar. To make predictions about a Vector of depths, we use . to broadcast the function over the vector.\n\n\n\n\n\n\n\n  \n    \n  \n\n\n\n  \n    \n  \n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOf course, if we use plot instead of scatter, then we get a line plot which is automatically smooth."
   },
   {
     "objectID": "labs/lab-04/index.html",
