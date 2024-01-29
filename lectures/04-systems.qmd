@@ -1,5 +1,5 @@
 ---
-title: "Systems Analysis"
+title: "Climate Risks to Complex Sytems"
 subtitle: "Lecture"
 date: 2024-01-29 
 week: 4
@@ -17,6 +17,16 @@ template-partials:
     - title-slide.html
 ---
 
+```{julia}
+#| output: false
+#| echo: false
+
+using Distributions
+using LaTeXStrings
+using Plots
+using StatsPlots
+```
+
 ## {.smaller}
 
 I was asked to share the following with you:
@@ -31,3 +41,331 @@ Contact Amelia Farrell 410-934-9033 [amelia@greencorps.org](mailto:amelia@greenc
 ![](../_assets/img/gc-coffee-chat-2024.jpg)
 :::
 ::::
+
+## Today
+
+Moving forward, we'll focus largely on decision frameworks for analyzing climate risks.
+We'll generally use *simple systems* for interpretability!
+However, many of the same principles apply to *complex systems*.
+
+Today, we'll look at climate risks to complex systems through a case studies.
+On Wednesday, we'll read @reed_multisectordynamics:2022 to ground ourselves in the bigger picture.
+
+# 2021 Texas Freeze
+
+## Cascading failures
+### Interconnected and interdependent infrastructure systems
+
+::: {#fig-uri-impact layout-ncol="4"
+
+![](../_assets/img/uri_nakamura_getty_2.jpg){height=200px}
+
+![](../_assets/img/uri_landis_ap.jpg){height=200px}
+
+![](../_assets/img/uri_odessa_ap.jpg){height=200px}
+
+![](../_assets/img/uri_jdg_1.jpeg){height=200px}
+
+📷: Nakamura / Getty Images; Landis / AP; Odessa / AP; JDG.
+:::
+
+## Skillful weather forecasts
+
+::: {#fig-uri-scw-forecast}
+![](../_assets/img/uri_scw_forecast.jpeg)
+
+[spacecityweather.com/](https://spacecityweather.com/)
+:::
+
+## {data-menu-title="What went wrong?"}
+
+::: {#fig-bartholomew}
+![](../_assets/img/2021-txtreme/bartholomew-ercot-feb21.jpg)
+
+📷: [Bryan Bartholomew on Twitter](https://twitter.com/BPBartholomew/status/1364446059028750337?t=IAu8YojnayntjUwrIqrtAg).
+:::
+
+## {data-menu-title="ERCOT temperatures" .scrollable}
+
+::::: {.columns}
+:::: {.column width="50%"}
+### Were these temperatures unprecedented?
+
+1. Use observations only
+1. Look globally and regionally
+1. Past temperatures were lower / comparable
+
+::: {.fragment style="margin-top:2em"}
+How else can we explore hazard?
+:::
+::::
+:::: {.column width="50%"}
+::: {#fig-ercot-temperature}
+![](../_assets/img/2021-txtreme/historic_events_era5.jpg)
+
+@doss-gollin_txtreme:2021
+:::
+::::
+:::::
+
+## Quick aside: ERA5 reanalysis
+
+::::: {.columns}
+:::: {.column width="50%"}
+::: {.incremental}
+1. We want data on past weather
+1. Observations are unevenly distributed, and come with errors
+1. Reanalysis: fills in gaps in observational record, in a way that is consistent in time / physical laws
+1. ERA5: a premier reanalysis product
+:::
+::::
+:::: {.column width="50%"}
+::: {#fig-era5-reanalysis .fragment}
+![](https://www.ecmwf.int/sites/default/files/Fact-sheet-reanalysis-Fig-1-v2-690x460px_6.jpg)
+
+A schematic of the ERA5 reanalysis process
+:::
+::::
+:::::
+
+# Demand for heating
+
+---
+
+::::: {.columns}
+:::: {.column width="60%"}
+::: {#fig-2a .fragment}
+![](../_assets/img/2021-txtreme/2a.jpg)
+
+Fig 2a of @doss-gollin_txtreme:2021
+:::
+::::
+:::: {.column width="40%"}
+**Inferred demand for heating**
+
+1. For each grid cell and each hour, calculate the difference between observed temperature and "comfortable" temperature
+1. Take average, weighting by population
+::::
+:::::
+
+---
+What is the **return period** of temperatures observed during the 2021 Texas freeze as a function of the defined **duration** of the event?
+
+::: {#fig-2b}
+![](../_assets/img/2021-txtreme/2b.jpg)
+
+Fig 2b of @doss-gollin_txtreme:2021
+:::
+
+## Some pitfalls
+
+1. The past (1950-2022) may not be a good guide to the future
+1. Temperature is not the only factor that influences demand for heating
+
+::: {.fragment}
+@lee_ercot:2022 addresses (1) by using a large climate ensemble to explore the distribution of extreme temperatures and (2) by modeling demand as a function of temperature.
+:::
+
+## CESM-LE
+
+::: {.incremental}
+1. CESM (Community Earth System Model) is one of many widely-used models of global climate
+    - "GCM" or "ESM"
+1. Uses historical forcing with no data assimilation
+    - Thus, "April 11, 1982" in the MODEL will NOT look like "April 11, 1982" in OBSERVATIONS
+    - It WILL look like a sample from the distribution of possible weather in mid-Aprils in the 1980s
+1. Large ensemble: characterizing distributions needs large $N$ 
+:::
+
+## Bias correction
+
+1. Recall: ESMs don't assimilate observations, In general, they will be biased in the distribution of some variable(s).
+1. Many methods"
+    1. Offset (LD 22)
+    1. QQ Mapping
+    1. And more complex stuff
+1. Many pitfalls!
+
+---
+
+```{julia}
+#| code-fold: true
+d1 = Normal(3, 1.5)
+d2 = Normal(2.5, 1.5)
+plot(d1, label="True", xlabel=L"$x$", ylabel=L"$p(x)$", legend=:topleft, title="Different Mean, Same Variance")
+plot!(d2, label="Model")
+```
+
+---
+
+```{julia}
+#| code-fold: true
+d1 = Normal(3, 1.5)
+d2 = Normal(2.5, 1.8)
+plot(d1, label="True", xlabel=L"$x$", ylabel=L"$p(x)$", legend=:topleft, title="Different Mean, Different Variance")
+plot!(d2, label="Model")
+```
+
+---
+
+```{julia}
+#| code-fold: true
+d1 = LogNormal(1, 0.5)
+d2 = Normal(mean(d1), std(d1))
+plot(d1, label="True", xlabel=L"$x$", ylabel=L"$p(x)$", legend=:topleft, title="Same Mean and Variance, Different Distribution")
+plot!(d2, label="Model")
+```
+
+## CESM-LE Temperatures
+
+::::: {.columns}
+:::: {.column width="50%"}
+::: {.incremental}
+1. Hottest (coldest) extremes in CESM-LE are hotter (colder) than observations
+1. Summer $T$ maxima smoother than winter minima
+1. 1-day more extreme than 5-day (duh?)
+1. Temps observed in Feb 2021 not that unusual given CESM-LE simulations
+:::
+::::
+:::: {.column width="50%"}
+::: {#fig-lee-1}
+![](../_assets/img/lee_ercot_2022_fig1.png)
+
+@lee_ercot:2022
+:::
+::::
+:::::
+
+## demand $|$ temperature
+
+::: {#fig-lee-2}
+![](../_assets/img/lee_ercot_2022_fig2.jpg)
+
+@lee_ercot:2022
+:::
+
+## Conclusions
+
+::: {#fig-lee-5}
+![](../_assets/img/lee_ercot_2022_fig5.jpg)
+
+@lee_ercot:2022
+:::
+
+## Trends in total heating and cooling
+
+::: {#fig-amonkar-2}
+![](../_assets/img/amonkar_heatingcooling_2023_fig2.jpg)
+
+@amonkar_heatingcooling:2023
+:::
+
+## Trends in peak heating and cooling
+
+::: {#fig-amonkar-5}
+![](../_assets/img/amonkar_heatingcooling_2023_fig5.jpg)
+
+@amonkar_heatingcooling:2023
+:::
+
+# Electricity supply
+
+## Key points
+
+@busby_cascadingrisks:2021:
+
+::: {.incremental}
+1. Gas production dropped ~50% 
+1. Outages: 30GW of electricity
+1. Inadequate winterization of electricity and gas systems
+1. Financial repercussions
+1. Primary culprit for outages was problems in electricity production from natural gas
+:::
+
+## All major fuel sources underperformed
+
+::: {#fig-ercot-fuel}
+![](../_assets/img/busby_cascadkingrisks_2021_tab1.png)
+
+@busby_cascadingrisks:2021
+:::
+
+## Who lost power?
+
+::: {#fig-ercot-fuel}
+![](../_assets/img/busby_cascadkingrisks_2021_fig4.png)
+
+@busby_cascadingrisks:2021
+:::
+
+## Cascading risks (view thread!)
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">First, here&#39;s the natural gas supply chain. The parts that failed were in 3 areas:<br><br>1) oil &amp; gas wells<br>2) Gathering lines<br>3) Equipment malfunction at power plants<br>4) Outage cut power to compressor stations that moved gas<br><br>+Other long-term issues like limited storage in TX. 2/ <a href="https://t.co/EBAmKfxJOk">pic.twitter.com/EBAmKfxJOk</a></p>&mdash; Arvind P. Ravikumar (@arvindpawan1) <a href="https://twitter.com/arvindpawan1/status/1363254757423513603?ref_src=twsrc%5Etfw">February 20, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+## So what?
+
+::: {.incremental}
+1. If we wanted to model the natural gas ➡️ electricity supply chain, we would need to know (at minimum!): 
+    1. Locations of all wells, separators, gathering lines, compressors, power stations
+    1. Weatherization / vulnerability to cold of all
+    1. This is very hard!
+1. Climate risk to complex systems is hard!
+1. Hence, attempts at standardized design rules / standards
+:::
+
+# Wrapup
+
+## Policy recommendations
+
+@busby_cascadingrisks:2021, @doss-gollin_txtreme:2021:
+
+1. Regulation and price incentives
+1. Plan for winter peaks, not summer ones!
+1. Weatherization
+1. Demand response
+1. Regional transmission
+
+::: {.fragment}
+Grid resilience in an electrified, renewable-powered world is possible but non-trivial to ensure
+:::
+
+## Summary
+
+::::: {.columns}
+:::: {.column width="50%"}
+::: {.incremental}
+#### 2021 Texas Cold Snap
+
+1. Cold temperatures: demand for heating 📈
+1. Cold temperatures: supply of electricity 📉
+    1. Complex supply chain!
+1. Joint effects: cascading failures
+:::
+::::
+:::: {.column width="50%"}
+#### How to analyze?
+
+1. Observations/reanalysis: not very many extremes
+1. ESMs: bigger sample size, but biased
+    - Many pitfalls to bias correction
+1. Fragility of individual components ➡️ interdependence ➡️ system performance
+::::
+:::::
+
+## Climate risks to electricity systems
+
+See @doss-gollin_review:2023 for a review:
+
+1. Outages from severe weather
+1. At long time scales, technological and demopgrahic drivers of demand dominate
+1. At shorter time scales, interannual variability critically important
+
+## Exam Friday
+
+1. Wednesday: half of class time for review session
+1. To study: review slides and readings (Julia code will **not** be on the exam)
+1. Focus on key concepts and ideas
+
+## References 
+::: {#refs}
+:::
