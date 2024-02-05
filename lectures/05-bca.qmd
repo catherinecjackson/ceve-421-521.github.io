@@ -8,20 +8,172 @@ categories:
   - Lecture
 
 # do not edit anything below this line
-format: revealjs
+format:
+  html: default
+  pdf:
+    documentclass: article
+    fontsize: 11pt
+    geometry:
+      - margin=1in  
+    include-in-header:
+      text: |
+        \renewcommand\toprule[2]\relax
+        \renewcommand\bottomrule[2]\relax
+    title: "{{< var course.number >}} ({{< var course.title >}}) Syllabus"
+    subtitle: "{{< var course.semester >}}"
 
-author: "{{< var instructor.name >}}!"
+author: "{{< var instructor.name >}}"
 course: "{{< var course.number >}}, {{< var course.title >}}"
 institution: "{{< var course.institution >}}}"
-template-partials:
-    - title-slide.html
 ---
 
-This is a placeholder.
+## Motivation
 
-## Math text
+We often want a quantitative way to compare two or more decisions.
+Hence, cost-benefit analysis.
 
-Here I'm just testing the math rendering
+It's a simple idea.
+For a given "decision" (being deliberately vague about what we mean by this), we need some function that tells us how good or bad the decision is.
+Then, we can compare the goodness of different decisions.
+
+::: {.callout-tip}
+As a motivating example, consider that we are have been asked to help a homeowner decide whether to elevate their home by 5ft to protect against future flooding, or whether to leave it as-is.
+:::
+
+::: {#fig-floodproofing}
+![](../_assets/img/lee-meyerland-elevation.jpg)
+
+Floodproofing in Houston, TX ([Houston Public Media](https://www.houstonpublicmedia.org/articles/news/2017/10/06/240934/many-houstonians-seek-home-elevation-after-repetitive-flooding/))
+:::
+
+## Quantifying costs and benefits
+
+We want to pick the decision that maximizes the "goodness" of the decision.
+We'll call this a "utility" function, but could also use "objective function", "loss function", "damage function", etc.
+Let's give this some formal notation:
 $$
-\mathbb{E}\left[f(x | \theta) \right] \neq f \left( \mathbb{E}\left[x \right] \right)
+u(a, \mathbf{s}): \mathcal{A} \times \mathcal{S} \to \mathbb{R}
 $$
+where $u$ is the utility function, $a \in \mathcal{A}$ is the decision, and $\mathbf{s} \in \mathcal{S}$ is the state of the world.
+
+- We'll use "state of the world" as a deliberately vague term that we will use to describe all the uncertainties we want to think about when making a decision.
+- You can remember that $a$ is the decision because it's the first letter of "action".
+
+Often, utility is measured in money.
+This is not because money is the only thing that matters, but because it is a common unit of account that allows us to compare different things.
+However, utility can be measured in other units as well -- it only requires that we put all the costs and benefits into a common unit.
+
+::: {.callout-tip}
+In our house elevation example, we might consider the following costs and benefits: up-front cost of elevating; cost of flood insurance; change in property value; and cost of damages not covered by flood insurance.
+These might be well-described in monetary terms.
+However, putting a value on the peace of mind from not having to worry about future flooding, or the reduced risk of death, is trickier.
+:::
+
+### Dealing with time
+
+A key feature of nearly all climate adaptation problems is that costs and benefits are spread out over time.
+How should we weigh costs and benefits that occur at different times?
+
+::: {.callout-tip}
+For example, the up-front cost of elevating a house is a cost that occurs now, while the benefits of reduced flood risk occur in the future.
+:::
+
+The most common way to deal with this is to use net present value (NPV).
+The idea is to **discount** future costs and benefits to the present day.
+If our discount rate is $\gamma = 2\% = 0.02$, then we care about a dollar of benefits in one year the same as we care about 98 cents today.
+More generally, if we have a discount rate of $\gamma$ then a dollar of benefits in $t$ years is worth $(1 - \gamma) ^ t$ today.
+
+The net present value of a decision is the sum of the present values of all costs and benefits:
+$$
+NPV = \sum_{t=0}^T (1 - \gamma)^t u(a, \mathbf{s}_t)
+$$
+where $T$ is the time horizon of the decision.
+Note that we write $\mathbf{s}_t$ to indicate that the state of the world might have time-dependent variables.
+
+### Cost-benefit analysis in the real world
+
+Cost-benefit analysis is everywhere!
+Companies use it to decide whether to invest in new products or technologies, governments use it to decide whether to build new infrastructure or regulate pollution, and much more!
+
+A standard approach is:
+
+1. Come up with a state of the world $\mathbf{s}$ that represents your uncertainties.
+2. Write down a utility function $u(a, \mathbf{s})$ that represents your preferences.
+3. Choose a discount rate $\gamma$
+4. Calculate the net present value of each decision
+5. Pick the decision with the highest net present value
+
+## Handling uncertainty
+
+Bayesian decision theory is a mathematical formalization of a simple concept: decision that gives us the best utility **on average** (i.e., in expectation):
+
+$$
+a^* = \arg \max_a \mathbb{E}_\mathbf{s} \left[ u(a, \mathbf{s}) \right]
+$$
+where $a \in \mathcal{A}$ is the decision, $\mathbf{s} \in \mathcal{S}$ is the **state of the world**, and $u: \mathcal{A} \times \mathcal{S} \to \mathbb{R}$ is a utility function.
+"State of the world" is another deliberately vague term that we will use to describe all the uncertainties we want to think about when making a decision.
+
+::: {.callout-tip}
+For our house elevation problem, a very simple framing would consider the state of the world to be the time series of future flood levels.
+A more complex framing might also consider the depth-damage function for the house, the cost of elevating the house, the cost of rebuilding a house over time, etc. etc.
+:::
+
+Recall the definition of expected value:
+$$
+\mathbb{E}_\mathbf{s} \left[ u(a, \mathbf{s}) \right] = \int p(\mathbf{s}) u(a, \mathbf{s}) d\mathbf{s}
+$$
+which requires a probability distribution over states of the world.
+So applying this theory requires a "subjective" [@savage:1954] or "personal" probability distribution over states of the world and a utility function.
+
+## Reflection
+
+### Critiques and limitations
+
+- Simple idea:
+  - Add up all the costs
+  - Add up all the benefits
+- Sometimes it's hard to combine different things that we care about into a single number!
+  - Cost and safety
+  - Impacts on different groups of people
+  - We will revisit this in the context of multi-criteria decision analysis.
+- In practice, this often leads us to care only about costs and benefits that are easy to quantify / monetize
+  - Value of ecosystems?
+- The limitations of discounting are especially relevant for some types of climate adaptation decisions
+  - We will revisit this on Wednesday
+- We often deal with "deep" uncertainties for which it's hard to come up with a probability distribution
+  - We will revisit this much later in the semester
+- Is Bayesian decision theory a good model of how people actually make decisions?
+  - This framework was largely formalized by @savage:1954, who postulated that people often behave as though maximizing expected utility
+  - @ellsberg_ambiguity:1961 and others: this is not how people really make decisions!
+  - Our goal is to **support** decision-making, not **predict** how people will actually make decisions. So the fact that this is not how people actually make decisions is not a problem for us.
+  - That said: when our predictions of "what is rational" diverge from what people actually do, we should be curious about why instead of assuming they are stupid!
+
+### A defense
+
+Cost-benefit analysis is still useful when applied thoughtfully.
+
+- It forces us to be explicit about our assumptions
+  - What we care about and how we are measuring it
+  - What we are ignoring
+  - How we think about uncertainty
+- Allows an apples-to-apples comparison of different decisions
+
+Ultimately, cost-benefit analysis is a great decision-support tool, but it is not a decision-making tool.
+When applied well, it's an iterative process through which we repeatedly refine our understanding of the decision problem.
+When applied poorly, it's a black-box process that spits out a number that is used to justify a decision that was already made.
+
+## Next steps
+
+### Wednesday
+
+Digging a bit deeper:
+
+- Discount rates for problems with long time horizons [@arrow_discount:2013]
+- Applications of cost-benefit analysis
+  - Social cost of carbon
+  - Army Corps of Engineers projects
+  - EPA regulations
+
+### Friday
+
+Lab: implementing a simple cost-benefit analysis for house elevation.
