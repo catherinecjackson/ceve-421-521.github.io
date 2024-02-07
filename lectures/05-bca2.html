@@ -8,7 +8,7 @@
 
 <meta name="author" content="Dr.&nbsp;James Doss-Gollin">
 
-<title>CEVE 421/521 – Spring 2024 - Cost-Benefit Analysis</title>
+<title>CEVE 421/521 – Spring 2024 - Cost-Benefit Analysis II</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -128,7 +128,7 @@ window.Quarto = {
 };
 </script>
 
-<meta property="og:title" content="CEVE 421/521 – Spring 2024 - Cost-Benefit Analysis">
+<meta property="og:title" content="CEVE 421/521 – Spring 2024 - Cost-Benefit Analysis II">
 <meta property="og:description" content="Lecture">
 <meta property="og:site_name" content="CEVE 421/521 -- Spring 2024">
 </head>
@@ -145,32 +145,22 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#motivation" id="toc-motivation" class="nav-link active" data-scroll-target="#motivation">Motivation</a></li>
-  <li><a href="#quantifying-costs-and-benefits" id="toc-quantifying-costs-and-benefits" class="nav-link" data-scroll-target="#quantifying-costs-and-benefits">Quantifying costs and benefits</a>
+  <li><a href="#recap-from-monday" id="toc-recap-from-monday" class="nav-link active" data-scroll-target="#recap-from-monday">Recap from Monday</a></li>
+  <li><a href="#problems-with-discounting" id="toc-problems-with-discounting" class="nav-link" data-scroll-target="#problems-with-discounting">Problems with discounting</a>
   <ul class="collapse">
-  <li><a href="#dealing-with-time" id="toc-dealing-with-time" class="nav-link" data-scroll-target="#dealing-with-time">Dealing with time</a></li>
-  <li><a href="#cost-benefit-analysis-in-the-real-world" id="toc-cost-benefit-analysis-in-the-real-world" class="nav-link" data-scroll-target="#cost-benefit-analysis-in-the-real-world">Cost-benefit analysis in the real world</a></li>
+  <li><a href="#proposed-solutions" id="toc-proposed-solutions" class="nav-link" data-scroll-target="#proposed-solutions">Proposed solutions</a></li>
   </ul></li>
-  <li><a href="#handling-uncertainty" id="toc-handling-uncertainty" class="nav-link" data-scroll-target="#handling-uncertainty">Handling uncertainty</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a>
-  <ul class="collapse">
-  <li><a href="#critiques-and-limitations" id="toc-critiques-and-limitations" class="nav-link" data-scroll-target="#critiques-and-limitations">Critiques and limitations</a></li>
-  <li><a href="#a-defense" id="toc-a-defense" class="nav-link" data-scroll-target="#a-defense">A defense</a></li>
-  </ul></li>
-  <li><a href="#next-steps" id="toc-next-steps" class="nav-link" data-scroll-target="#next-steps">Next steps</a>
-  <ul class="collapse">
-  <li><a href="#wednesday" id="toc-wednesday" class="nav-link" data-scroll-target="#wednesday">Wednesday</a></li>
-  <li><a href="#thursday" id="toc-thursday" class="nav-link" data-scroll-target="#thursday">Thursday</a></li>
-  </ul></li>
+  <li><a href="#cost-benefit-analysis-in-the-wild" id="toc-cost-benefit-analysis-in-the-wild" class="nav-link" data-scroll-target="#cost-benefit-analysis-in-the-wild">Cost-benefit analysis in the wild</a></li>
+  <li><a href="#key-points" id="toc-key-points" class="nav-link" data-scroll-target="#key-points">Key points</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://www.github.com/ceve-421-521/ceve-421-521.github.io/edit/main/lectures/05-bca.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://www.github.com/ceve-421-521/ceve-421-521.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="05-bca.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://www.github.com/ceve-421-521/ceve-421-521.github.io/edit/main/lectures/05-bca2.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://www.github.com/ceve-421-521/ceve-421-521.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="05-bca2.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Cost-Benefit Analysis</h1>
+<h1 class="title">Cost-Benefit Analysis II</h1>
 <p class="subtitle lead">Lecture</p>
   <div class="quarto-categories">
     <div class="quarto-category">Lecture</div>
@@ -191,7 +181,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">Mon., Feb.&nbsp;5</p>
+      <p class="date">Wed., Feb.&nbsp;7</p>
     </div>
   </div>
   
@@ -203,187 +193,123 @@ window.Quarto = {
 </header>
 
 
-<section id="motivation" class="level1">
-<h1>Motivation</h1>
-<p>We often want a quantitative way to compare two or more decisions. Hence, cost-benefit analysis.</p>
-<p>It’s a simple idea. For a given “decision” (being deliberately vague about what we mean by this), we need some function that tells us how good or bad the decision is. Then, we can compare the goodness of different decisions.</p>
-<div class="callout callout-style-simple callout-tip">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>As a motivating example, consider that we are have been asked to help a homeowner decide whether to elevate their home by 5ft to protect against future flooding, or whether to leave it as-is.</p>
-</div>
-</div>
-</div>
-<div id="fig-floodproofing" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-floodproofing-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../_assets/img/lee-meyerland-elevation.jpg" class="img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-floodproofing-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Floodproofing in Houston, TX (<a href="https://www.houstonpublicmedia.org/articles/news/2017/10/06/240934/many-houstonians-seek-home-elevation-after-repetitive-flooding/">Houston Public Media</a>)
-</figcaption>
+<section id="recap-from-monday" class="level1">
+<h1>Recap from <a href="../lectures/05-bca.html">Monday</a></h1>
+<p>Here’s a brief recap, with a few additional points.</p>
+<ol type="1">
+<li>Defining “goodness” of different outcomes
+<ol type="1">
+<li>We need a utility / objective / loss function to compare different outcomes: <span class="math inline">\(u(a, \mathbf{s}): \mathcal{A} \times \mathcal{S} \to \mathbb{R}\)</span> where <span class="math inline">\(\mathcal{A}\)</span> is the set of actions and <span class="math inline">\(\mathcal{S}\)</span> is the set of states of the world.</li>
+<li>Mathematically and practically, we can define “goodness” however we want! We are free to choose our <strong>metric</strong> of goodness to compare different decisions.</li>
+<li>Utility: “rational” people make decisions as though maximizing some internal, invisible utility function. This leads to useful insights from the field of economics.
+<ul>
+<li>Key insight: decreasing marginal utility. When you have a lot of most things, getting a little bit more is not as valuable as when you have very little of it. For example, $1,000 is worth a lot more to a poor person than to a rich person. 100 gallons of water are more valuable to someone who walks 5 miles a day carrying water than to someone who has a tap in their kitchen.</li>
+<li>We should be skeptical of utility as a framework for predicting human behavior, but that’s not necessarily our goal.</li>
+</ul></li>
+<li>Social welfare: even if you believe everyone has a utility function, it turns out that there’s not a a single “right” way to combine many peoples’ utility functions into a single number describing social welfare.</li>
+<li>Cash flow: often, we put things into dollar terms. This is not because we think money is the most important thing. Instead, we can look at <strong>opportunity costs</strong> to try to put dollar values on things that are hard to value. For example, if we can protect one square mile of pristine wetland for $1 million, then arguably we shouldn’t spend more than that to protect another square mile of wetland. (But are they really substitutes?)</li>
+<li>Discounted cash flow: a dollar today is worth more than a dollar tomorrow. To compute the <strong>net present value (NPV)</strong> of a future cost or benefit, we discount it to the present using a discount rate <span class="math inline">\(\gamma\)</span>. If we define <span class="math inline">\(\gamma = 2\%\)</span> then a dollar in 10 years is worth <span class="math inline">\((1 - \gamma)^{10} =  \$0.82\)</span> today.</li>
+</ol></li>
+<li>Cost-benefit analysis under uncertainty
+<ol type="1">
+<li>Many analyses in the real world choose a single “best guess” or “representative” state of the world (often referred to as scenario or similar). For example, for analyzing the costs and benefits of expanding a water resource system, a hypothetical water utility in Houston might use:
+<ul>
+<li>projections of future population / demand from a regional water plan</li>
+<li>a single projected climate scenario</li>
+<li>a single assumed set of regulations on water quality</li>
+<li>current prices of building / operating water infrastructure</li>
+</ul></li>
+<li>However, many decisions that perform well under one scenario perform poorly under another. For example, a water utility might choose to build a new reservoir to meet future demand, but if the future is drier than expected, the reservoir might not fill up. Or, if the future is wetter than expected, the reservoir might fill up too much and flood people’s homes. (This will be a theme of the course!)</li>
+<li>A <strong>better</strong> approach is to allow uncertainty by computing <strong>expected</strong> utility / objective / loss / metrics. This is a weighted average of the utility under different states of the world, where the weights are the probabilities of those states of the world.
+<ol type="1">
+<li><span class="math inline">\(\mathbb{E}_\mathbf{s} \left[ u(a, \mathbf{s}) \right] = \int p(\mathbf{s}) u(a, \mathbf{s}) d\mathbf{s}\)</span> where <span class="math inline">\(p(\mathbf{s})\)</span> is the probability density of SOW <span class="math inline">\(\mathbf{s}\)</span>.</li>
+<li>This requires defining a probability distribution over states of the world.</li>
+</ol></li>
+</ol></li>
+</ol>
+</section>
+<section id="problems-with-discounting" class="level1">
+<h1>Problems with discounting</h1>
+<p>There are lots of critiques of cost-benefit analysis, both as commonly practiced and in theory. We’ll address many of them over the course of the semester! Today, we’ll focus on discounting. <span class="citation" data-cites="arrow_discount:2013">Arrow et al. (<a href="#ref-arrow_discount:2013" role="doc-biblioref">2013</a>)</span> is an excellent review!</p>
+<ol type="1">
+<li>“The rate at which future benefits and costs are discounted relative to current values often determines whether a project passes the <em>benefit-cost test</em>. This is especially true of projects with long time horizons, such as those to reduce greenhouse gas emissions.”</li>
+<li>Two rationales for discounting future benefits:
+<ol type="1">
+<li>Consumption rate of discount: “we place a lower value on the consumption of future generations, because we assume that future generations will be wealthier than we are and that the utility people receive from an extra dollar of consumption declines as their level of consumption increases.” (3% often used.)</li>
+<li>Investment approach: long as the rate of return to investment is positive, we need to invest less than a dollar today to obtain a dollar of benefits in the future. (7% often used).</li>
+<li>These are very imperfect assumptions!</li>
+</ol></li>
+</ol>
+<p><span class="citation" data-cites="weitzman_stern:2007">Weitzman (<a href="#ref-weitzman_stern:2007" role="doc-biblioref">2007</a>)</span>:</p>
+<ol type="1">
+<li>The discount rate we choose is all important</li>
+<li>We are a lot less sure about core elements of discounting for climate change than we commonly acknowledge because critical puzzles, projections, and ambiguities are yet unresolved</li>
+<li>Future growth rates are uncertain – for example, in a world with catastrophic climate change, future generations are unlikely to be richer!</li>
+</ol>
+<p>A simple way to understand these problems is that if you use a large discount rate, your model will always tell you that you to do things like burning more fossil fuels whose consequences are rather distant. However, the consequences of doing this at scale violate the key justificatinos for discounting future benefits!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../_assets/img/new-yorker-shareholders.jpg" class="img-fluid figure-img"></p>
+<figcaption>New Yorker</figcaption>
 </figure>
 </div>
-</section>
-<section id="quantifying-costs-and-benefits" class="level1">
-<h1>Quantifying costs and benefits</h1>
-<p>We want to pick the decision that maximizes the “goodness” of the decision. We’ll call this a “utility” function, but could also use “objective function”, “loss function”, “damage function”, etc. Let’s give this some formal notation: <span class="math display">\[
-u(a, \mathbf{s}): \mathcal{A} \times \mathcal{S} \to \mathbb{R}
-\]</span> where <span class="math inline">\(u\)</span> is the utility function, <span class="math inline">\(a \in \mathcal{A}\)</span> is the decision, and <span class="math inline">\(\mathbf{s} \in \mathcal{S}\)</span> is the state of the world.</p>
-<ul>
-<li>We’ll use “state of the world” as a deliberately vague term that we will use to describe all the uncertainties we want to think about when making a decision.</li>
-<li>You can remember that <span class="math inline">\(a\)</span> is the decision because it’s the first letter of “action”.</li>
-</ul>
-<p>Often, utility is measured in money. This is not because money is the only thing that matters, but because it is a common unit of account that allows us to compare different things. However, utility can be measured in other units as well – it only requires that we put all the costs and benefits into a common unit.</p>
-<div class="callout callout-style-simple callout-tip">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>In our house elevation example, we might consider the following costs and benefits: up-front cost of elevating; cost of flood insurance; change in property value; and cost of damages not covered by flood insurance. These might be well-described in monetary terms. However, putting a value on the peace of mind from not having to worry about future flooding, or the reduced risk of death, is trickier.</p>
-</div>
-</div>
-</div>
-<section id="dealing-with-time" class="level2">
-<h2 class="anchored" data-anchor-id="dealing-with-time">Dealing with time</h2>
-<p>A key feature of nearly all climate adaptation problems is that costs and benefits are spread out over time. How should we weigh costs and benefits that occur at different times?</p>
-<div class="callout callout-style-simple callout-tip">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>For example, the up-front cost of elevating a house is a cost that occurs now, while the benefits of reduced flood risk occur in the future.</p>
-</div>
-</div>
-</div>
-<p>The most common way to deal with this is to use net present value (NPV). The idea is to <strong>discount</strong> future costs and benefits to the present day. If our discount rate is <span class="math inline">\(\gamma = 2\% = 0.02\)</span>, then we care about a dollar of benefits in one year the same as we care about 98 cents today. More generally, if we have a discount rate of <span class="math inline">\(\gamma\)</span> then a dollar of benefits in <span class="math inline">\(t\)</span> years is worth <span class="math inline">\((1 - \gamma) ^ t\)</span> today.</p>
-<p>The net present value of a decision is the sum of the present values of all costs and benefits: <span class="math display">\[
-NPV = \sum_{t=0}^T (1 - \gamma)^t u(a, \mathbf{s}_t)
-\]</span> where <span class="math inline">\(T\)</span> is the time horizon of the decision. Note that we write <span class="math inline">\(\mathbf{s}_t\)</span> to indicate that the state of the world might have time-dependent variables.</p>
-</section>
-<section id="cost-benefit-analysis-in-the-real-world" class="level2">
-<h2 class="anchored" data-anchor-id="cost-benefit-analysis-in-the-real-world">Cost-benefit analysis in the real world</h2>
-<p>Cost-benefit analysis is everywhere! Companies use it to decide whether to invest in new products or technologies, governments use it to decide whether to build new infrastructure or regulate pollution, and much more!</p>
-<p>A standard approach is:</p>
+<section id="proposed-solutions" class="level2">
+<h2 class="anchored" data-anchor-id="proposed-solutions">Proposed solutions</h2>
 <ol type="1">
-<li>Come up with a state of the world <span class="math inline">\(\mathbf{s}\)</span> that represents your uncertainties.</li>
-<li>Write down a utility function <span class="math inline">\(u(a, \mathbf{s})\)</span> that represents your preferences.</li>
-<li>Choose a discount rate <span class="math inline">\(\gamma\)</span></li>
-<li>Calculate the net present value of each decision</li>
-<li>Pick the decision with the highest net present value</li>
+<li>Use a very low discount rate
+<ol type="1">
+<li>This places more weight on outcomes far in the future</li>
+<li>However, this can also lead to irrational conclusions. For example,</li>
+</ol></li>
+<li>Uncertain discount rate
+<ol type="1">
+<li>“Using an investment- or a consumption-based approach will require human judgment about the appropriate models to use to capture uncertainty about future discount rates” <span class="citation" data-cites="arrow_discount:2013">(<a href="#ref-arrow_discount:2013" role="doc-biblioref">Arrow et al., 2013</a>)</span></li>
+<li>This is equivalent to declining discount rate – as you go farther out, your NPV is dominated by the lower discount rates.</li>
+<li>You still need to</li>
+</ol></li>
 </ol>
 </section>
 </section>
-<section id="handling-uncertainty" class="level1">
-<h1>Handling uncertainty</h1>
-<p>Bayesian decision theory is a mathematical formalization of a simple concept: decision that gives us the best utility <strong>on average</strong> (i.e., in expectation):</p>
-<p><span class="math display">\[
-a^* = \arg \max_a \mathbb{E}_\mathbf{s} \left[ u(a, \mathbf{s}) \right]
-\]</span> where <span class="math inline">\(a \in \mathcal{A}\)</span> is the decision, <span class="math inline">\(\mathbf{s} \in \mathcal{S}\)</span> is the <strong>state of the world</strong>, and <span class="math inline">\(u: \mathcal{A} \times \mathcal{S} \to \mathbb{R}\)</span> is a utility function. “State of the world” is another deliberately vague term that we will use to describe all the uncertainties we want to think about when making a decision.</p>
-<div class="callout callout-style-simple callout-tip">
+<section id="cost-benefit-analysis-in-the-wild" class="level1">
+<h1>Cost-benefit analysis in the wild</h1>
+<ol type="1">
+<li><a href="https://www.epa.gov/economic-and-cost-analysis-air-pollution-regulations">EPA Guidance</a> considers negative impacts of regulation on the economy, but also the positive impacts of cleaner air on human health and the environment.</li>
+<li><a href="https://www.twdb.texas.gov/flood/planning/planningdocu/2023/doc/BCA%20Input%20Tool%20Instructions_April2022.pdf">TWDB slideshow</a> on cost-benefit analysis for flood planning in Texas.</li>
+<li><a href="https://www.asafm.army.mil/Portals/72/Documents/Offices/CE/US%20Army%20Cost%20Benefit%20Analysis.pdf">USACE cost-benefit guide</a></li>
+<li><a href="https://blogs.worldbank.org/governance/using-zero-discount-rate-could-help-choose-better-projects-and-help-get-net-zero-carbon">Blog post</a> arguing for World Bank to use a zero discount rate</li>
+<li>White House <a href="https://www.whitehouse.gov/wp-content/uploads/2023/11/CircularA-94.pdf">Circular A-94</a> dated November 9, 2023, provides an excellent summary of how the federal government is trying to improve cost-benefit analysis as a tool for decision-making.</li>
+</ol>
+</section>
+<section id="key-points" class="level1">
+<h1>Key points</h1>
+<ol type="1">
+<li>We need a way to compare different decisions. If we’re going to use a single number, we need to think hard about what that is!</li>
+<li>NPV cost-benefit analysis is the most commonly used approach. You should recognize it and know its (many) limitations!</li>
+</ol>
+<div class="callout callout-style-simple callout-important">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>For our house elevation problem, a very simple framing would consider the state of the world to be the time series of future flood levels. A more complex framing might also consider the depth-damage function for the house, the cost of elevating the house, the cost of rebuilding a house over time, etc. etc.</p>
+<p>Every analysis makes subjective choices about how to define and model the problem. That’s OK! However, reasonable people will often disagree. Making assumptions and framings transparent, and understanding their grounding and limitations, is thus critical. This will be a recurring theme of the class!</p>
 </div>
 </div>
 </div>
-<p>Recall the definition of expected value: <span class="math display">\[
-\mathbb{E}_\mathbf{s} \left[ u(a, \mathbf{s}) \right] = \int p(\mathbf{s}) u(a, \mathbf{s}) d\mathbf{s}
-\]</span> which requires a probability distribution over states of the world. So applying this theory requires a “subjective” <span class="citation" data-cites="savage:1954">(<a href="#ref-savage:1954" role="doc-biblioref">Savage, 1954</a>)</span> or “personal” probability distribution over states of the world and a utility function.</p>
-</section>
-<section id="reflection" class="level1">
-<h1>Reflection</h1>
-<section id="critiques-and-limitations" class="level2">
-<h2 class="anchored" data-anchor-id="critiques-and-limitations">Critiques and limitations</h2>
-<ul>
-<li>Simple idea:
-<ul>
-<li>Add up all the costs</li>
-<li>Add up all the benefits</li>
-</ul></li>
-<li>Sometimes it’s hard to combine different things that we care about into a single number!
-<ul>
-<li>Cost and safety</li>
-<li>Impacts on different groups of people</li>
-<li>We will revisit this in the context of multi-criteria decision analysis.</li>
-</ul></li>
-<li>In practice, this often leads us to care only about costs and benefits that are easy to quantify / monetize
-<ul>
-<li>Value of ecosystems?</li>
-</ul></li>
-<li>The limitations of discounting are especially relevant for some types of climate adaptation decisions
-<ul>
-<li>We will revisit this on Wednesday</li>
-</ul></li>
-<li>We often deal with “deep” uncertainties for which it’s hard to come up with a probability distribution
-<ul>
-<li>We will revisit this much later in the semester</li>
-</ul></li>
-<li>Is Bayesian decision theory a good model of how people actually make decisions?
-<ul>
-<li>This framework was largely formalized by <span class="citation" data-cites="savage:1954">Savage (<a href="#ref-savage:1954" role="doc-biblioref">1954</a>)</span>, who postulated that people often behave as though maximizing expected utility</li>
-<li><span class="citation" data-cites="ellsberg_ambiguity:1961">Ellsberg (<a href="#ref-ellsberg_ambiguity:1961" role="doc-biblioref">1961</a>)</span> and others: this is not how people really make decisions!</li>
-<li>Our goal is to <strong>support</strong> decision-making, not <strong>predict</strong> how people will actually make decisions. So the fact that this is not how people actually make decisions is not a problem for us.</li>
-<li>That said: when our predictions of “what is rational” diverge from what people actually do, we should be curious about why instead of assuming they are stupid!</li>
-</ul></li>
-</ul>
-</section>
-<section id="a-defense" class="level2">
-<h2 class="anchored" data-anchor-id="a-defense">A defense</h2>
-<p>Cost-benefit analysis is still useful when applied thoughtfully.</p>
-<ul>
-<li>It forces us to be explicit about our assumptions
-<ul>
-<li>What we care about and how we are measuring it</li>
-<li>What we are ignoring</li>
-<li>How we think about uncertainty</li>
-</ul></li>
-<li>Allows an apples-to-apples comparison of different decisions</li>
-</ul>
-<p>Ultimately, cost-benefit analysis is a great decision-support tool, but it is not a decision-making tool. When applied well, it’s an iterative process through which we repeatedly refine our understanding of the decision problem. When applied poorly, it’s a black-box process that spits out a number that is used to justify a decision that was already made.</p>
-</section>
-</section>
-<section id="next-steps" class="level1">
-<h1>Next steps</h1>
-<section id="wednesday" class="level2">
-<h2 class="anchored" data-anchor-id="wednesday">Wednesday</h2>
-<p>Digging a bit deeper:</p>
-<ul>
-<li>Discount rates for problems with long time horizons <span class="citation" data-cites="arrow_discount:2013">(<a href="#ref-arrow_discount:2013" role="doc-biblioref">Arrow et al., 2013</a>)</span></li>
-<li>Applications of cost-benefit analysis
-<ul>
-<li>Social cost of carbon</li>
-<li>Army Corps of Engineers projects</li>
-<li>EPA regulations</li>
-</ul></li>
-</ul>
-</section>
-<section id="thursday" class="level2">
-<h2 class="anchored" data-anchor-id="thursday">Thursday</h2>
-<p>Lab: implementing a simple cost-benefit analysis for house elevation.</p>
+<ol start="3" type="1">
+<li>Cost-benefit analysis <strong>should</strong> be viewed as a way to explore how different assumptions lead to different conclusions, not a top-down way to make decisions. More on this <a href="../lectures/06-scenario-analysis.html">next week</a>.</li>
+</ol>
 
 
 
-</section>
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
 <div id="ref-arrow_discount:2013" class="csl-entry" role="listitem">
 Arrow, K., Cropper, M., Gollier, C., Groom, B., Heal, G., Newell, R., et al. (2013). Determining benefits and costs for future generations. <em>Science</em>, <em>341</em>(6144), 349–350. <a href="https://doi.org/10.1126/science.1235665">https://doi.org/10.1126/science.1235665</a>
 </div>
-<div id="ref-ellsberg_ambiguity:1961" class="csl-entry" role="listitem">
-Ellsberg, D. (1961). Risk, ambiguity, and the <span>Savage</span> axioms. <em>The Quarterly Journal of Economics</em>, <em>75</em>(4), 643–669. <a href="https://doi.org/10.2307/1884324">https://doi.org/10.2307/1884324</a>
-</div>
-<div id="ref-savage:1954" class="csl-entry" role="listitem">
-Savage, L. J. (1954). <em>Foundations of statistics.</em> <span>New York</span>: <span>Wiley</span>.
+<div id="ref-weitzman_stern:2007" class="csl-entry" role="listitem">
+Weitzman, M. L. (2007). A review of the <span>Stern</span> review on the economics of climate change. <em>Journal of Economic Literature</em>, <em>45</em>(3), 703–724. <a href="https://doi.org/10.1257/jel.45.3.703">https://doi.org/10.1257/jel.45.3.703</a>
 </div>
 </div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -820,7 +746,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
 <p><strong>Page still under construction.</strong></p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://www.github.com/ceve-421-521/ceve-421-521.github.io/edit/main/lectures/05-bca.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://www.github.com/ceve-421-521/ceve-421-521.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://www.github.com/ceve-421-521/ceve-421-521.github.io/edit/main/lectures/05-bca2.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://www.github.com/ceve-421-521/ceve-421-521.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Made with <a href="https://julialang.org">Julia</a> and <a href="https://quarto.org/">Quarto</a><br> <a href="https://www.github.com/ceve543/ceve543.github.io">View the source on <i class="fa-brands fa-github" aria-label="github"></i> GitHub</a></p>
 </div>
