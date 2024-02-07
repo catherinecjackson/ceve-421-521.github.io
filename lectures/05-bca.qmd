@@ -27,7 +27,7 @@ course: "{{< var course.number >}}, {{< var course.title >}}"
 institution: "{{< var course.institution >}}}"
 ---
 
-## Motivation
+# Motivation
 
 We often want a quantitative way to compare two or more decisions.
 Hence, cost-benefit analysis.
@@ -46,7 +46,7 @@ As a motivating example, consider that we are have been asked to help a homeowne
 Floodproofing in Houston, TX ([Houston Public Media](https://www.houstonpublicmedia.org/articles/news/2017/10/06/240934/many-houstonians-seek-home-elevation-after-repetitive-flooding/))
 :::
 
-## Quantifying costs and benefits
+# Quantifying costs and benefits
 
 We want to pick the decision that maximizes the "goodness" of the decision.
 We'll call this a "utility" function, but could also use "objective function", "loss function", "damage function", etc.
@@ -69,7 +69,7 @@ These might be well-described in monetary terms.
 However, putting a value on the peace of mind from not having to worry about future flooding, or the reduced risk of death, is trickier.
 :::
 
-### Dealing with time
+## Dealing with time
 
 A key feature of nearly all climate adaptation problems is that costs and benefits are spread out over time.
 How should we weigh costs and benefits that occur at different times?
@@ -90,7 +90,7 @@ $$
 where $T$ is the time horizon of the decision.
 Note that we write $\mathbf{s}_t$ to indicate that the state of the world might have time-dependent variables.
 
-### Cost-benefit analysis in the real world
+## Cost-benefit analysis in the real world
 
 Cost-benefit analysis is everywhere!
 Companies use it to decide whether to invest in new products or technologies, governments use it to decide whether to build new infrastructure or regulate pollution, and much more!
@@ -103,7 +103,7 @@ A standard approach is:
 4. Calculate the net present value of each decision
 5. Pick the decision with the highest net present value
 
-## Handling uncertainty
+# Handling uncertainty
 
 Bayesian decision theory is a mathematical formalization of a simple concept: decision that gives us the best utility **on average** (i.e., in expectation):
 
@@ -125,9 +125,9 @@ $$
 which requires a probability distribution over states of the world.
 So applying this theory requires a "subjective" [@savage:1954] or "personal" probability distribution over states of the world and a utility function.
 
-## Reflection
+# Reflection
 
-### Critiques and limitations
+## Critiques and limitations
 
 - Simple idea:
   - Add up all the costs
@@ -148,7 +148,7 @@ So applying this theory requires a "subjective" [@savage:1954] or "personal" pro
   - Our goal is to **support** decision-making, not **predict** how people will actually make decisions. So the fact that this is not how people actually make decisions is not a problem for us.
   - That said: when our predictions of "what is rational" diverge from what people actually do, we should be curious about why instead of assuming they are stupid!
 
-### A defense
+## A defense
 
 Cost-benefit analysis is still useful when applied thoughtfully.
 
@@ -162,9 +162,9 @@ Ultimately, cost-benefit analysis is a great decision-support tool, but it is no
 When applied well, it's an iterative process through which we repeatedly refine our understanding of the decision problem.
 When applied poorly, it's a black-box process that spits out a number that is used to justify a decision that was already made.
 
-## Next steps
+# Next steps
 
-### Wednesday
+## Wednesday
 
 Digging a bit deeper:
 
@@ -174,6 +174,6 @@ Digging a bit deeper:
   - Army Corps of Engineers projects
   - EPA regulations
 
-### Friday
+## Thursday
 
 Lab: implementing a simple cost-benefit analysis for house elevation.
