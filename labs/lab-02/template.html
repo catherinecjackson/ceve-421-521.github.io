@@ -178,7 +178,7 @@ window.MathJax = {
 <section id="first-steps" class="level2">
 <h2 class="anchored" data-anchor-id="first-steps">First steps</h2>
 <p>We start by loading the packages we will use in this lab</p>
-<div class="cell" data-execution_count="2">
+<div id="2f39520e" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">using</span> <span class="bu">CSV</span></span>
 <span id="cb1-2"><a href="#cb1-2"></a><span class="im">using</span> <span class="bu">DataFrames</span></span>
 <span id="cb1-3"><a href="#cb1-3"></a><span class="im">using</span> <span class="bu">DataFramesMeta</span></span>
@@ -193,7 +193,7 @@ window.MathJax = {
 <h2 class="anchored" data-anchor-id="defining-a-function">Defining a function</h2>
 <p>In <a href="../../labs/lab-02/index.html"><code>index.qmd</code></a>, we read in a CSV file from scratch. However, we’d like to repeat this process for each year of data, and to do it in a consistent way so that we can read in the data for all available years into a single file. To do this, we’ll write a <em>function</em> that we can use to read in the data for any year. Specifically, our function will take in the year as an argument, and return a <code>DataFrame</code> with the data for that year.</p>
 <p>Before we do that, let’s define a function that will return the filename for a given year. It’s often valuable to stack several functions together.</p>
-<div class="cell" data-execution_count="3">
+<div id="0ec5cfb5" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">get_fname</span>(year<span class="op">::</span><span class="dt">Int</span>) <span class="op">=</span> <span class="st">"data/tidesandcurrents-8638610-</span><span class="sc">$</span>(year)<span class="st">-NAVD-GMT-metric.csv"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Now we’re ready to define our function:</p>

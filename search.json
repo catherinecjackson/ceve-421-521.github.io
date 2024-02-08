@@ -419,16 +419,86 @@
   {
     "objectID": "labs/lab-04/index.html",
     "href": "labs/lab-04/index.html",
-    "title": "Lab 4: House Elevation Case Study",
+    "title": "Lab 4: House Elevation NPV Analysis",
     "section": "",
-    "text": "This is a placeholder."
+    "text": "Today we’re going to explore net present value (NPV) analysis in the context of a semi-realistic case study of house elevation.\nIn the previous lab, you developed a depth-damage relationship for a coastal structure and assessed how you might adjust the probability distribution of flooding at a nearby gauge to account for the structure’s height relative to the gauge. Today, you’ll use the same structure to compare the costs and benefits of elevating the structure to reduce the risk of flooding."
   },
   {
-    "objectID": "labs/lab-04/index.html#overview",
-    "href": "labs/lab-04/index.html#overview",
-    "title": "Lab 4: House Elevation Case Study",
-    "section": "",
-    "text": "This is a placeholder."
+    "objectID": "labs/lab-04/index.html#setup",
+    "href": "labs/lab-04/index.html#setup",
+    "title": "Lab 4: House Elevation NPV Analysis",
+    "section": "Setup",
+    "text": "Setup\nAs always:\n\nClone the lab repository to your computer\nOpen the lab repository in VS Code\nOpen the Julia REPL and activate, then instantiate, the lab environment\nMake sure you can render: quarto render template.qmd in the terminal.\n\nIf you run into issues, try running ] build IJulia in the Julia REPL (] enters the package manager).\nIf you still have issues, try opening up blankfile.py. That should trigger VS Code to give you the option to install the Python extension, which you should do. Then you should be able to open a menu in the bottom right of your screen to select which Python installation you want VS Code to use.\n\n\nWe begin by loading our packages\n\nusing CSV\nusing DataFrames\nusing DataFramesMeta\nusing Distributions\nusing Interpolations\nusing Plots\nusing StatsPlots\nusing Unitful\n\nPlots.default(; margin=6Plots.mm)\n\nWe also leverage functions defined in another file, as before\n\ninclude(\"depthdamage.jl\")"
+  },
+  {
+    "objectID": "labs/lab-04/index.html#adding-some-math-in",
+    "href": "labs/lab-04/index.html#adding-some-math-in",
+    "title": "Lab 4: House Elevation NPV Analysis",
+    "section": "Adding some math in",
+    "text": "Adding some math in\nWe have been using the following notation. In each time step, we calculate \\(u_t(a, \\mathbf{s})\\), where \\(a\\) is the action (in this case, how high we choose to elevate), and \\(\\mathbf{s}\\) is the “state of the world.” As noted above, \\(u_t(a, \\mathbf{s}) = -c_\\textrm{constr}(a) - \\mathbb{E}[c_\\textrm{damage}(a, \\mathbf{s})]\\), where \\(c_\\textrm{constr}(a)\\) is the cost of elevating the house and \\(c_\\textrm{damage}(a, \\mathbf{s})\\) is the expected cost of flooding in state \\(\\mathbf{s}\\) after taking action \\(a\\).\nFor now, let’s define our “state of the world” to have two pieces of information: the probability distribution of flooding, expressed as a Generalized Extreme Value distribution, and the discount rate. For now, we’ll treat the depth-damage function and the cost of elevating the house as fixed, although we could consider uncertainty.\nNow let’s build some of these steps out with some code."
+  },
+  {
+    "objectID": "labs/lab-04/index.html#depth-damage-function",
+    "href": "labs/lab-04/index.html#depth-damage-function",
+    "title": "Lab 4: House Elevation NPV Analysis",
+    "section": "Depth-damage function",
+    "text": "Depth-damage function\nIn the previous lab, we used existing data to build a depth-data function. Remember that the depth here is relative to the house, not to the gauge.\n\nhaz_fl_dept = CSV.read(\"data/haz_fl_dept.csv\", DataFrame) # read in the file\ndesc = \"one story, Contents, fresh water, short duration\"\nrow = @rsubset(haz_fl_dept, :Description == desc)[1, :] # select the row I want\ndd = DepthDamageData(row) # extract the depth-damage data\ndamage_fn = get_depth_damage_function(dd.depths, dd.damages) # get the depth-damage function\n\n#13 (generic function with 1 method)\n\n\nWe can plot this as before\n\n\nCode\np = let\n    depths = uconvert.(u\"ft\", (-7.0u\"ft\"):(1.0u\"inch\"):(30.0u\"ft\"))\n    damages = damage_fn.(depths)\n    scatter(\n        depths,\n        damages;\n        xlabel=\"Flood Depth\",\n        ylabel=\"Damage (%)\",\n        label=\"$(dd.description) ($(dd.source))\",\n        legend=:bottomright,\n        size=(800, 400),\n        linewidth=2,\n    )\nend\np"
+  },
+  {
+    "objectID": "labs/lab-04/index.html#annual-expected-flood-damages",
+    "href": "labs/lab-04/index.html#annual-expected-flood-damages",
+    "title": "Lab 4: House Elevation NPV Analysis",
+    "section": "Annual expected flood damages",
+    "text": "Annual expected flood damages\nAs discussed above, today we’ll focus on calculating the annual expected cost of flooding. In the previous lab, we used a Monte Carlo approach to estimate the expected cost of flooding. We’ll repeat that today. Recall that your offset will be different!\n\ngauge_dist = GeneralizedExtremeValue(5, 1, 0.1) # hypothetical gauge distribution\noffset = 7.5 # hypothetical height from house to gauge\nhouse_dist = GeneralizedExtremeValue(gauge_dist.μ - offset, gauge_dist.σ, gauge_dist.ξ)\n\n1samples = rand(house_dist, 100_000) .* 1u\"ft\"\n2damages = damage_fn.(samples)\n3expected_damages_pct = mean(damages)\n\n\n1\n\nDraw 100,000 samples from the distribution of flood heights at the house and add units of feet.\n\n2\n\nCalculate the damages for each sample using our function.\n\n3\n\nCalculate the expected damages as the mean of the damages. This is the Monte Carlo strategy \\(\\int p(x) f(x) dx \\approx \\frac{1}{N} \\sum_{i=1}^N f(x)\\) which requires \\(x_i \\sim p(x)\\).\n\n\n\n\n4.206083434187441\n\n\n\n\n\n\n\n\nThere’s no magic reason why we need to use 100,000 samples. Although this runs extremely fast, you could use fewer samples if you wanted to. A good way to check that you have enough samples is to re-run the experiment a few different times, and then to make sure that your expected damages don’t change much from run to run. Even with 100,000 samples, I see a change of about 0.2% from run to run.\n\n\n\nThe damages we have calculated are expressed as a percentage of the value of the house (structure and contents, not land). To convert this to a dollar value, we need to know the value of the house. This is of course tricky to estimate, but let’s use an example value. For your analysis, use Zillow or Redfin or similar to get a sense of the value of a house in the area you’re considering. Make some assumption about the fraction of the value that corresponds to the house structure relative to the land.\n\nhouse_structure_value = 250_000\nexpected_damages_usd = house_structure_value * expected_damages_pct / 100\n\n10515.208585468603\n\n\nWe can treat this as the expected cost of flooding for this model."
+  },
+  {
+    "objectID": "labs/lab-04/index.html#cost-of-elevating",
+    "href": "labs/lab-04/index.html#cost-of-elevating",
+    "title": "Lab 4: House Elevation NPV Analysis",
+    "section": "Cost of elevating",
+    "text": "Cost of elevating\nNext, we have the cost of elevating. We’ll use equations I’ve used before Doss-Gollin & Keller (2023). Essentially, we have a piecewise linear function that depends on the area of the house and how height we elevate.\n\nhouse_area = 1000u\"ft^2\"\n\nTo get the cost function, we use the get_elevation_cost_function() function, which is defined in the depthdamage.jl file. This function fits an interpolator to the data, which we want because we don’t want to have to re-fit the interpolator every time we want to calculate the cost of elevating the house.\n\nelevation_cost = get_elevation_cost_function() # gives us a fitted interpolator\n\nelevation_cost (generic function with 1 method)\n\n\nWe can visualize this function as follows\n\n\nCode\nheights = uconvert.(u\"ft\", (0u\"ft\"):(1u\"inch\"):(10u\"ft\")) # some heights we will consider\nplot(\n    heights,\n    elevation_cost.(heights, house_area);\n    xlabel=\"How High to Elevate\",\n    ylabel=\"Cost (USD)\",\n    label=\"$(house_area)\",\n    tiitle=\"Cost of Elevating a House\",\n)\n\n\n\n\n\n  \n    \n  \n\n\n\n  \n    \n  \n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOf course, this simple approach is masking lots of important characteristics of each house and region that affect how expensive it might be to elevate."
+  },
+  {
+    "objectID": "labs/lab-04/index.html#npv-analysis",
+    "href": "labs/lab-04/index.html#npv-analysis",
+    "title": "Lab 4: House Elevation NPV Analysis",
+    "section": "NPV analysis",
+    "text": "NPV analysis\nWe can use the functions above to calculate the NPV of elevating the house for a single year. However, if we are evaluating the house over a \\(T\\) year design window (recall: cost-benefit analysis needs a specific time horizon over which costs and benefits are computed) then we need to discount the costs and benefits to the present. We do this as \\[\n\\mathrm{NPV} = \\sum_{i=1}^T u_t(a, \\mathbf{s}) (1 - r) ^ {i-1}\n\\]\nLet’s say we have a 10 year design window and a discount rate of 5%. Let’s say we elevate zero feet. In that case, the cost of elevating is zero, and the expected cost of flooding is expected_damages_usd every year (neglecting any sea-level rise). Then we can calculate the NPV as follows.\nThen we can calculate the NPV as follows:\n\nannual_damages = [expected_damages_usd for _ in 1:10] # annual expected damages\ndiscount_rate = 0.05\nnpv = sum(annual_damages .* (1 - discount_rate) .^ (0:9))\n\n84387.29563104014\n\n\nanother, more concise, way to write this is\n\nnpv2 = sum([expected_damages_usd * (1 - discount_rate)^(i - 1) for i in 1:10])\n\n84387.29563104014\n\n\nboth are equivalent; you can use the one you prefer."
+  },
+  {
+    "objectID": "labs/lab-04/index.html#single-year-function",
+    "href": "labs/lab-04/index.html#single-year-function",
+    "title": "Lab 4: House Elevation NPV Analysis",
+    "section": "Single Year Function",
+    "text": "Single Year Function\nFirst, we’re going to write a function that tells us our costs and benefits in a single year. The information we’ll need for that year is:\n\nThe distribution of of flooding at the house\nThe depth-damage function (as in percentage terms)\nThe cost of elevating the house (and the house area)\nThe house value\nHow high we elevated the house in that year.\n\nThis will look something like this\nfunction single_year_cost_benefit(flood_dist, damage_fn, elevation_cost, house_area, house_value, Δh)\n    \n    # calculate the expected damages\n    c_dmg = ...\n\n    # calculate the cost of elevating\n    c_constr = ...\n\n    # return the total cost and benefit\n    return -c_constr - c_dmg\nend"
+  },
+  {
+    "objectID": "labs/lab-04/index.html#npv-function",
+    "href": "labs/lab-04/index.html#npv-function",
+    "title": "Lab 4: House Elevation NPV Analysis",
+    "section": "NPV Function",
+    "text": "NPV Function\nNext, we need to write a function that calculates the NPV over a \\(T\\) year design window. This function will take in all the information needed for the single_year_cost_benefit function, as well as the number of years T and the discount rate. Then, it will call the single_year_cost_benefit function for each year, and discount the costs and benefits to the present. Be sure to set \\(\\Delta h\\) to zero feet (you’ll get an error without units) for every year after the first!\nfunction npv_cost_benefit(flood_dist, damage_fn, elevation_cost, house_area, house_value, Δh, T, discount_rate)\n    # calculate the costs and benefits for each year, and then discount\n    # see above!\n    return npv\nend"
+  },
+  {
+    "objectID": "labs/lab-04/index.html#one-sow-several-actions",
+    "href": "labs/lab-04/index.html#one-sow-several-actions",
+    "title": "Lab 4: House Elevation NPV Analysis",
+    "section": "One SOW, several actions",
+    "text": "One SOW, several actions\nFirst, let’s calculate the NPV for a single state of the world and two actions. Now that you have the npv_cost_benefit function, this should be straightforward. Guess how high you might want to elevate the house, and then calculate the NPV for that action.\nCompare your elevation to zero feet, and explore a few other elevations. What do you notice?"
+  },
+  {
+    "objectID": "labs/lab-04/index.html#sensitivity-test",
+    "href": "labs/lab-04/index.html#sensitivity-test",
+    "title": "Lab 4: House Elevation NPV Analysis",
+    "section": "Sensitivity test",
+    "text": "Sensitivity test\nNow let’s perform a simple sensitivity test. Let’s assume that the discount rate is uncertain, as we explored in class. Use a Monte Carlo approach to estimate the expected NPV for a range of discount rates. As an example, you could use Normal(4, 2), which has a mean of 4 and a standard deviation of 2."
+  },
+  {
+    "objectID": "labs/lab-04/index.html#discussion",
+    "href": "labs/lab-04/index.html#discussion",
+    "title": "Lab 4: House Elevation NPV Analysis",
+    "section": "Discussion",
+    "text": "Discussion\n\nWhat do you notice about the NPV for different actions?\nWhat do you notice about the sensitivity test?\nWhat are some limitations of this analysis?\n\nWhat things are missing from this analysis that you think are important?\nHow might they affect the results?\nWhat are some ways you might address these limitations?"
   },
   {
     "objectID": "labs/lab-05/index.html",

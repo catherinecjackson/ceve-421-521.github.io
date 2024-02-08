@@ -374,7 +374,7 @@ f(2.1)</code></pre>
 <span id="cb8-3"><a href="#cb8-3"></a><span class="in">f(2.1)</span></span>
 <span id="cb8-4"><a href="#cb8-4"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>which yields</p>
-<div id="073ac9c7" class="cell" data-execution_count="1">
+<div id="073ac9c7" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb9-1"><a href="#cb9-1"></a><span class="fu">f</span>(x) <span class="op">=</span> <span class="fl">1.25</span> <span class="op">*</span> <span class="fu">sin</span>(<span class="fl">2</span>π <span class="op">*</span> x <span class="op">/</span> <span class="fl">1.5</span> <span class="op">+</span> <span class="fl">0.5</span>) <span class="op">+</span> <span class="fl">0.25</span></span>
 <span id="cb9-2"><a href="#cb9-2"></a><span class="fu">f</span>(<span class="fl">2.1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="2">
@@ -399,7 +399,7 @@ f(2.1)</code></pre>
 <li>Solve an optimization problem to identify which versions of which packages (including dependencies, and their dependencies, and so on) are compatible with each other</li>
 <li>Download the packages and compile them (this may take a few minutes)</li>
 </ol>
-<div id="72c56202" class="cell" data-execution_count="2">
+<div id="72c56202" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb11-1"><a href="#cb11-1"></a><span class="im">using</span> <span class="bu">CSV</span></span>
 <span id="cb11-2"><a href="#cb11-2"></a><span class="im">using</span> <span class="bu">DataFrames</span></span>
 <span id="cb11-3"><a href="#cb11-3"></a><span class="im">using</span> <span class="bu">DataFramesMeta</span></span>
@@ -423,7 +423,7 @@ f(2.1)</code></pre>
 </div>
 </div>
 </div>
-<div id="8684628c" class="cell" data-execution_count="3">
+<div id="8684628c" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="annotated-cell-11"><pre class="sourceCode numberSource julia code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode julia"><button class="code-annotation-anchor" data-target-cell="annotated-cell-11" data-target-annotation="1">1</button><span id="annotated-cell-11-1" class="code-annotation-target"><a href="#annotated-cell-11-1"></a>fname <span class="op">=</span> <span class="st">"data/tidesandcurrents-8638610-1928-NAVD-GMT-metric.csv"</span></span>
 <button class="code-annotation-anchor" data-target-cell="annotated-cell-11" data-target-annotation="2">2</button><span id="annotated-cell-11-2" class="code-annotation-target"><a href="#annotated-cell-11-2"></a>df <span class="op">=</span> CSV.<span class="fu">read</span>(fname, DataFrame)</span>
 <button class="code-annotation-anchor" data-target-cell="annotated-cell-11" data-target-annotation="3">3</button><span id="annotated-cell-11-3" class="code-annotation-target"><a href="#annotated-cell-11-3"></a><span class="fu">first</span>(df, <span class="fl">5</span>)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -512,7 +512,7 @@ f(2.1)</code></pre>
 </div>
 <p>This data comes from the NOAA Tides and Currents website, specifically for a station at Sewells Point, VA for the year 1928. NAVD refers to the North American Vertical Datum, which is a reference point for measuring sea level, and GMT refers to Greenwich Mean Time, which is the time zone used in the data (rather than local time).</p>
 <p>We can see that our DataFrame has five columns, the first of which is “Date Time”. However, the “Date Time” column is being parsed as a <code>string</code>. We want it to be a <code>DateTime</code> object from the <code>Dates</code> package. To do that, we need to tell Julia how the dates are formatted. We could then manually convert, but <code>CSV.read</code> has a kewyord argument that we can use</p>
-<div id="de5f8176" class="cell" data-execution_count="4">
+<div id="de5f8176" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="annotated-cell-12"><pre class="sourceCode numberSource julia code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode julia"><button class="code-annotation-anchor" data-target-cell="annotated-cell-12" data-target-annotation="1">1</button><span id="annotated-cell-12-1" class="code-annotation-target"><a href="#annotated-cell-12-1"></a>date_format <span class="op">=</span> <span class="st">"yyyy-mm-dd HH:MM"</span></span>
 <button class="code-annotation-anchor" data-target-cell="annotated-cell-12" data-target-annotation="2">2</button><span id="annotated-cell-12-2" class="code-annotation-target"><a href="#annotated-cell-12-2"></a>df <span class="op">=</span> CSV.<span class="fu">read</span>(fname, DataFrame; dateformat<span class="op">=</span>date_format)</span>
 <span id="annotated-cell-12-3"><a href="#annotated-cell-12-3"></a><span class="fu">first</span>(df, <span class="fl">3</span>)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -580,7 +580,7 @@ f(2.1)</code></pre>
 </div>
 </div>
 <p>The next column is “Water Level”, which is the height of the water above the reference point (NAVD) in meters. We can see that this is being parsed as a float, which is what we want 👍. However, you have to <em>know</em> that the data is in meters rather than inches or feet or something else. To explicitly add information about the units, we can use the <code>Unitful</code> package.</p>
-<div id="5584a54c" class="cell" data-execution_count="5">
+<div id="5584a54c" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="annotated-cell-13"><pre class="sourceCode numberSource julia code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode julia"><button class="code-annotation-anchor" data-target-cell="annotated-cell-13" data-target-annotation="1">1</button><span id="annotated-cell-13-1" class="code-annotation-target"><a href="#annotated-cell-13-1"></a>df[!, <span class="st">" Water Level"</span>] <span class="op">.*=</span> <span class="fl">1</span>u<span class="st">"m"</span></span>
 <span id="annotated-cell-13-2"><a href="#annotated-cell-13-2"></a><span class="fu">first</span>(df, <span class="fl">3</span>)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-annotation">
@@ -646,7 +646,7 @@ f(2.1)</code></pre>
 <section id="subsetting-and-renaming" class="level2">
 <h2 class="anchored" data-anchor-id="subsetting-and-renaming">Subsetting and renaming</h2>
 <p>We want to only keep the first two (for more on the other three, see <a href="https://api.tidesandcurrents.noaa.gov/api/prod/responseHelp.html">here</a>). We can also rename the columns to make them easier to work with (spaces in variable names are annoying). To do this, we use the <code>@rename</code> function:</p>
-<div id="383c6be3" class="cell" data-execution_count="6">
+<div id="383c6be3" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="annotated-cell-14"><pre class="sourceCode numberSource julia code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode julia"><button class="code-annotation-anchor" data-target-cell="annotated-cell-14" data-target-annotation="1">1</button><span id="annotated-cell-14-1" class="code-annotation-target"><a href="#annotated-cell-14-1"></a>df <span class="op">=</span> <span class="pp">@rename</span>(df, <span class="op">:</span>datetime <span class="op">=</span> <span class="op">$</span><span class="st">"Date Time"</span>, <span class="op">:</span>lsl <span class="op">=</span> <span class="op">$</span><span class="st">" Water Level"</span>);</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
@@ -658,7 +658,7 @@ f(2.1)</code></pre>
 </div>
 </div>
 <p>Then, we can use the <code>@select</code> function to select the columns we want. Notice how the first argument to <code>select</code> is the <code>DataFrame</code> and the subsequent arguments are column names. Notice also that our column names were strings (<code>"Date Time"</code>), but we can also use symbols (<code>:datetime</code>).</p>
-<div id="64f8e205" class="cell" data-execution_count="7">
+<div id="64f8e205" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb12-1"><a href="#cb12-1"></a>df <span class="op">=</span> <span class="pp">@select</span>(df, <span class="op">:</span>datetime, <span class="op">:</span>lsl)</span>
 <span id="cb12-2"><a href="#cb12-2"></a><span class="fu">first</span>(df, <span class="fl">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="8">
@@ -702,7 +702,7 @@ f(2.1)</code></pre>
 <section id="time-series-plot" class="level2">
 <h2 class="anchored" data-anchor-id="time-series-plot">Time series plot</h2>
 <p>Now we’re ready to make some plots of our data. Let’s start with a simple time series plot of the water levels. Our data is collected hourly, so we have a lot of data points! Still, we can plot them all.</p>
-<div id="8d939b4b" class="cell" data-execution_count="8">
+<div id="8d939b4b" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource julia number-lines code-with-copy"><code class="sourceCode julia"><span id="cb13-1"><a href="#cb13-1"></a><span class="fu">plot</span>(</span>
 <span id="cb13-2"><a href="#cb13-2"></a>    df.datetime,</span>
 <span id="cb13-3"><a href="#cb13-3"></a>    df.lsl;</span>
@@ -759,7 +759,7 @@ f(2.1)</code></pre>
 </div>
 </div>
 <p>Focusing on the entire time series means we can’t dig into the details. Let’s zoom in on a single month (October 1928) using the <code>@subset</code> function.</p>
-<div id="b429475a" class="cell" data-execution_count="9">
+<div id="b429475a" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="annotated-cell-17"><pre class="sourceCode numberSource julia code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode julia"><button class="code-annotation-anchor" data-target-cell="annotated-cell-17" data-target-annotation="1">1</button><span id="annotated-cell-17-1" class="code-annotation-target"><a href="#annotated-cell-17-1"></a>t_start <span class="op">=</span> <span class="bu">Dates</span>.<span class="fu">DateTime</span>(<span class="fl">1928</span>, <span class="fl">10</span>, <span class="fl">1</span>, <span class="fl">0</span>)</span>
 <span id="annotated-cell-17-2"><a href="#annotated-cell-17-2"></a>t_end <span class="op">=</span> <span class="bu">Dates</span>.<span class="fu">DateTime</span>(<span class="fl">1928</span>, <span class="fl">10</span>, <span class="fl">31</span>, <span class="fl">23</span>)</span>
 <button class="code-annotation-anchor" data-target-cell="annotated-cell-17" data-target-annotation="2">2</button><span id="annotated-cell-17-3" class="code-annotation-target"><a href="#annotated-cell-17-3"></a>df_month <span class="op">=</span> <span class="pp">@subset</span>(df, t_start <span class="op">.&lt;=</span> <span class="op">:</span>datetime <span class="op">.&lt;=</span> t_end)</span>
@@ -813,7 +813,7 @@ f(2.1)</code></pre>
 </div>
 </div>
 <p>Now we can plot it as above:</p>
-<div id="66de2471" class="cell" data-execution_count="10">
+<div id="66de2471" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="annotated-cell-18"><pre class="sourceCode numberSource julia code-annotation-code number-lines code-with-copy"><code class="sourceCode julia"><span id="annotated-cell-18-1"><a href="#annotated-cell-18-1"></a><span class="fu">plot</span>(</span>
 <span id="annotated-cell-18-2"><a href="#annotated-cell-18-2"></a>    df_month.datetime,</span>
 <span id="annotated-cell-18-3"><a href="#annotated-cell-18-3"></a>    df_month.lsl;</span>
@@ -868,7 +868,7 @@ f(2.1)</code></pre>
 <h2 class="anchored" data-anchor-id="climatology">Climatology</h2>
 <p>An essential idea in working with tabular data (and other data formats) is “split-apply-combine”. Essentially: split the data into groups, apply some function to each group, and then combine the results.</p>
 <p>We can use this workflow to answer an interesting question: <strong>what is the average water level for each month?</strong><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> Of course, we’re only looking at one year of data here – we should ideally look at a long record!</p>
-<div id="d04f90eb" class="cell" data-execution_count="11">
+<div id="d04f90eb" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="annotated-cell-19"><pre class="sourceCode numberSource julia code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode julia"><button class="code-annotation-anchor" data-target-cell="annotated-cell-19" data-target-annotation="1">1</button><span id="annotated-cell-19-1" class="code-annotation-target"><a href="#annotated-cell-19-1"></a>df[!, <span class="op">:</span>month] <span class="op">=</span> <span class="bu">Dates</span>.<span class="fu">month</span>.(df.datetime)</span>
 <button class="code-annotation-anchor" data-target-cell="annotated-cell-19" data-target-annotation="2">2</button><span id="annotated-cell-19-2" class="code-annotation-target"><a href="#annotated-cell-19-2"></a><span class="fu">dropmissing!</span>(df, <span class="op">:</span>lsl)</span>
 <button class="code-annotation-anchor" data-target-cell="annotated-cell-19" data-target-annotation="3">3</button><span id="annotated-cell-19-3" class="code-annotation-target"><a href="#annotated-cell-19-3"></a>df_bymonth <span class="op">=</span> <span class="fu">groupby</span>(df, <span class="op">:</span>month)</span>
@@ -895,7 +895,7 @@ f(2.1)</code></pre>
 </div>
 </div>
 <p>We can now plot the climatology.</p>
-<div id="82c08137" class="cell" data-execution_count="12">
+<div id="82c08137" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="annotated-cell-20"><pre class="sourceCode numberSource julia code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode julia"><span id="annotated-cell-20-1"><a href="#annotated-cell-20-1"></a><span class="fu">plot</span>(</span>
 <button class="code-annotation-anchor" data-target-cell="annotated-cell-20" data-target-annotation="1">1</button><span id="annotated-cell-20-2" class="code-annotation-target"><a href="#annotated-cell-20-2"></a>    df_climatology.month,</span>
 <span id="annotated-cell-20-3"><a href="#annotated-cell-20-3"></a>    df_climatology.lsl_avg;</span>
