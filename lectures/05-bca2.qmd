@@ -35,7 +35,7 @@ Here's a brief recap, with a few additional points.
     1. Utility: "rational" people make decisions as though maximizing some internal, invisible utility function. This leads to useful insights from the field of economics.
         - Key insight: decreasing marginal utility. When you have a lot of most things, getting a little bit more is not as valuable as when you have very little of it. For example, $1,000 is worth a lot more to a poor person than to a rich person. 100 gallons of water are more valuable to someone who walks 5 miles a day carrying water than to someone who has a tap in their kitchen.
         - We should be skeptical of utility as a framework for predicting human behavior, but that's not necessarily our goal.
-    1. Social welfare: even if you believe everyone has a utility function, it turns out that there's not a a single "right" way to combine many peoples' utility functions into a single number describing social welfare.
+    1. Social welfare: even if you believe everyone has a utility function, it turns out that there's not a single "right" way to combine many peoples' utility functions into a single number describing social welfare.
     1. Cash flow: often, we put things into dollar terms. This is not because we think money is the most important thing. Instead, we can look at **opportunity costs** to try to put dollar values on things that are hard to value. For example, if we can protect one square mile of pristine wetland for $1 million, then arguably we shouldn't spend more than that to protect another square mile of wetland. (But are they really substitutes?)
     1. Discounted cash flow: a dollar today is worth more than a dollar tomorrow. To compute the **net present value (NPV)** of a future cost or benefit, we discount it to the present using a discount rate $\gamma$. If we define $\gamma = 2\%$ then a dollar in 10 years is worth $(1 - \gamma)^{10} =  \$0.82$ today.
 1. Cost-benefit analysis under uncertainty
@@ -69,7 +69,7 @@ Today, we'll focus on discounting.
 1. Future growth rates are uncertain -- for example, in a world with catastrophic climate change, future generations are unlikely to be richer!
 
 A simple way to understand these problems is that if you use a large discount rate, your model will always tell you that you to do things like burning more fossil fuels whose consequences are rather distant.
-However, the consequences of doing this at scale violate the key justificatinos for discounting future benefits!
+However, the consequences of doing this at scale violate the key justifications for discounting future benefits!
 
 ![New Yorker](../_assets/img/new-yorker-shareholders.jpg)
 
