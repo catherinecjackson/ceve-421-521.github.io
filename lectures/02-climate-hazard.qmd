@@ -31,7 +31,7 @@ template-partials:
 1. **Lab 1:** about half of you have turned in; looks like the Python problems less severe than anticipated 😄; let's troubleshoot after class (email if that doesn't work for you)
 1. **Signup:** see [Google Sheet](https://docs.google.com/spreadsheets/d/1BfmwCmo63Vh9b3QDuAkpq4Jo_uRSGbKKQqWEDx_kfkw/edit?usp=sharing) to sign up as note taker (421 + 521) and discussion leader (521 only)
 1. **Next week:** I'll post readings by Friday.
-1. **Good question:** readings on the syllabus are suggestions -- go with what's on the "Redings" page of the website.
+1. **Good question:** readings on the syllabus are suggestions -- go with what's on the "Readings" page of the website.
 :::
 
 ## Extra credit opportunity
