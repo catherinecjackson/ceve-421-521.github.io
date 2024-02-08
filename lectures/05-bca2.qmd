@@ -18,9 +18,7 @@ format:
     include-in-header:
       text: |
         \renewcommand\toprule[2]\relax
-        \renewcommand\bottomrule[2]\relax
-    title: "{{< var course.number >}} ({{< var course.title >}}) Syllabus"
-    subtitle: "{{< var course.semester >}}"
+        \renewcommand\bottomrule[2]\rela
 
 author: "{{< var instructor.name >}}"
 course: "{{< var course.number >}}, {{< var course.title >}}"
