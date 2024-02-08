@@ -76,7 +76,7 @@ What are some of the challenges of using climate models to predict future impact
 ### Observations and models
 
 What are some of the challenges of using observations to understand future climate?
-What are some of the challenges of using ~~observations~~models to understand future impacts of climate change?
+What are some of the challenges of using models to understand future impacts of climate change?
 
 ## Discussion questions
 ### Some additional questions
