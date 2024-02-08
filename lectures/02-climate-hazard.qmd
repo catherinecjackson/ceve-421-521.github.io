@@ -82,7 +82,7 @@ What are some of the challenges of using models to understand future impacts of 
 ### Some additional questions
 
 - Your questions?
-- How were did the focus areas of @seneviratne_wg1ch11:2021 and @lall_ncawater:2018 differ?
+- How did the focus areas of @seneviratne_wg1ch11:2021 and @lall_ncawater:2018 differ?
 - What is the difference between **climate risks** and **climate change risks**?
 - How should we plan for climate change impacts that are highly uncertain?
 
