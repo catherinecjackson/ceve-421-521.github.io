@@ -8,4 +8,25 @@ format: html
 ---
 
 Please read @bankes_exploratory:1993.
-We will post discussion questions by Monday.
+
+## Discussion Questions
+
+- For these 2 questions, be ready to share 1-2 sentences for each of them by writing them on the
+whiteboard at the front at the beginning of the discussion.
+    - What is the main idea of this paper?
+    - Why did the author write this paper?
+- The author outlines 2 main types of modeling (consolidative and exploratory). Be ready to
+discuss the key differences of both of these main approaches.
+- The author uses a consolidative modeling example of the "ultimate combat model" to illustrate
+the main issues with consolidative models.
+    - What are some of the problems?
+    - Are there ways to avoid these problems in consolidative modeling?
+- What are the uses of exploratory modeling, according to this paper? (so what?)
+- What do we do with the uncertainty we discovered in our model?
+    - i.e. what is the role of sensitivity analysis? If we find the bounds in our model, then
+what?
+    - Follow up: how would we use model uncertainty for our case study on building
+elevations?
+- The author discusses a hierarchy of exploratory modeling types (data-driven, question-driven,
+model-driven). Let’s talk about the goals of each of them and how that may lead to differences in
+our modeling approach.
