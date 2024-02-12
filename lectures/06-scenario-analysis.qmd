@@ -8,13 +8,110 @@ categories:
   - Lecture
 
 # do not edit anything below this line
-format: revealjs
+format:
+  html: default
+  pdf:
+    documentclass: article
+    fontsize: 11pt
+    geometry:
+      - margin=1in  
+    include-in-header:
+      text: |
+        \renewcommand\toprule[2]\relax
+        \renewcommand\bottomrule[2]\relax
 
-author: "{{< var instructor.name >}}!"
+author: "{{< var instructor.name >}}"
 course: "{{< var course.number >}}, {{< var course.title >}}"
 institution: "{{< var course.institution >}}}"
-template-partials:
-    - title-slide.html
 ---
 
-This is a placeholder.
+# Context and recap
+
+## Notation
+
+Let's tighten our notation just a little bit
+
+::: {#fig-notation}
+![](../_assets/img/bayes-rdm-I.png)
+
+Notation for our system dynamics.
+:::
+
+- State of the world: encapsulates all inputs to our model.
+- Decisions: can be very simple (how high do we elevate a house right now?) or very complex (spatial and/or temporal optimization problems)
+- Outcomes: can be a single number (scalar) or a vector if there are multiple outcomes we care about.
+
+## Cost-benefit analysis
+
+- Do this for a single state of the world
+- Emphasis on discounted cash flow to define "outcomes"
+
+## Uncertainty
+
+Uncertainty commonly divided into two broad classes:
+
+- Aleatory uncertainty, or uncertainties resulting from randomness;
+- Epistemic uncertainty, or uncertainties resulting from lack of knowledge.
+
+We can also categorize uncertainty based on the source of the uncertainty:
+
+- Parameter uncertainty
+- Model structure uncertainty
+- External / boundary condition / scenario uncertainty
+
+Uncertainty is represented in models in many different ways.
+For example:
+
+- Deterministic: hold some things fixed (we always do this!)
+- Probabilistic with expectations (lab)
+- Probabilistic with sampling
+
+These are all assumptions, and these assumptions can be varied.
+
+# Scenario analysis
+
+Scenario analysis is a broad class of methods that are used in many fields.
+They fall into two very broad categories:
+
+1. Stress-testing: pick a few scenarios and make sure the system performs acceptably
+    1. Financial stress testing [@condon_myopia:2021]
+    1. Design storms for flooding
+1. Traditional scenario analysis: explore several scenarios and see how the system performs
+    1. Optimizing energy systems [see @doss-gollin_review:2023 for a critical review 😉]
+    1. Climate science (where RCP scenarios are a key input)
+    1. Often a focus on scenarios that are difficult to put probabilities on
+
+::: {.callout-important}
+## Key point
+
+Scenario analysis is a way to explore the consequences of different assumptions.
+However, decisions that perform well on some scenarios may not perform well on others.
+Scenario analysis does not attempt to quantify the likelihood of different scenarios.
+Recall that estimating expectations requres a probability distribution.
+:::
+
+## Examples
+
+Let's return to our house elevation problem.
+What are some things we could consider?
+
+- Sea-level rise: could consider a few different scenarios of sea-level rise [e.g., @sweet_slr:2022]
+- Discount rate
+
+## Experiment design
+
+1. Number of scenarios
+    1. A few = interpretable
+    1. Many = more systematic analysis. Interactions between different sources of uncertainty are important.
+1. What is a scenario?
+    1. Parameter values
+    1. Model structure
+1. How to generate / sample scenarios
+
+# Wednesday
+
+Grant will lead a discussion of @bankes_exploratory:1993.
+
+- Emphasis on the "exploratory" nature of the work
+- Key insight: iteratively re-frame the problem and generate insight
+- Discussion questions are posted.
