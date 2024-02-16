@@ -7,11 +7,16 @@ categories: [Reading]
 format: html
 ---
 
-::: {.callout-tip}
-Discussion questions will be posted here.
-:::
+Please read @schwetschenau_optimizing:2023.
+This is a fairly technical paper that uses optimization techniques that I do not expect you to know or even be able to follow!
+Please focus on the introduction, discussion, and conclusions; look at the methods to understand what the authors are optimizing (what are the decision variables and what is the objective function), but don’t worry about the details of the optimization itself.
+Do not spend lots of time following the math unless you find it personally interesting!
 
-Assigned reading will be drawn from:
+## Discussion questions:
 
-- @vanberchum_coastal:2019
-- @schwetschenau_optimizing:2023
+- Who is the intended audience of this paper?
+- This paper uses an exploratory model to suggest infrastructure and financial decisions.  What might be some risks associated with this? What do the authors do to mitigate this risk?
+- What problem is facing the community of UnionTown? How do the authors hope to address this problem?
+- Do you think that the results, as presented, are useful from a policy making perspective?  Why or why not?
+- Are there any externalities or things that are being unaccounted for that we might also want to consider in this paper?  If yes, what are they?
+-= (Optional bonus for anyone who’s done a bit of AI or wants to do a bit of extra research)  The authors here use Dijkstra’s algorithm.  Can you foresee any risks with applying that to this situation?
