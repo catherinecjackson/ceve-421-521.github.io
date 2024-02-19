@@ -75,8 +75,7 @@ Take 2-3 minutes, then share.
 
 ## Linear programming {.smaller}
 
-- $\min f(x) \quad \textrm{s.t.} \quad g(x)$
-- $f(x)$ and $g(x)$ are linear functions: $a_1x_1 + a_2x_2 + \ldots + a_n x_n$
+Find a vector $\mathbf{x}$ that maximizes $c^T \mathbf{x}$ subject to $A \mathbf{x} \leq \mathbf{b}$ and $\mathbf{x} \geq 0$ ([Wikipiedia](https://en.wikipedia.org/wiki/Linear_programming))
 
 :::: {.columns}
 ::: {.column width=50%}
