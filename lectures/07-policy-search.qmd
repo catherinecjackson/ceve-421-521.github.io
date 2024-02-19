@@ -17,4 +17,168 @@ template-partials:
     - title-slide.html
 ---
 
-This is a placeholder.
+```{julia}
+#| echo: false
+#| output: false
+
+using Plots
+using Random
+using StatsPlots
+using LaTeXStrings
+
+Plots.default(; margin=5Plots.mm)
+
+Random.seed!(1)
+```
+
+# Overview
+
+## Review of notation
+
+::: {#fig-notation}
+![](../_assets/img/bayes-rdm-I.png)
+
+Notation for our system dynamics.
+:::
+
+## Key components of an optimization problem
+
+::: {.incremental}
+1. Objective function
+1. Constraints
+1. Decision variables
+:::
+
+::: {.callout-tip .fragment}
+## Reflect
+To what extent is this [in]consistent with exploratory modeling?
+:::
+
+## Why optimize?
+
+#### Large action spaces (many decision variables) make it difficult to find the best solution by trial and error.
+
+::: {.callout-important .fragment}
+Today we'll say _optimization_ but even an exact solution is only optimal in our model, not the real world.
+I prefer the term _policy search_ which emphasizes the use of computers to suggest promising strategies.
+:::
+
+# Optimization in the wild
+
+## Where have you seen optimization used?
+
+::: {.callout-tip}
+## Reflect
+
+Take 2-3 minutes, then share.
+:::
+
+## Linear programming {.smaller}
+
+- $\min f(x) \quad \textrm{s.t.} \quad g(x)$
+- $f(x)$ and $g(x)$ are linear functions: $a_1x_1 + a_2x_2 + \ldots + a_n x_n$
+
+:::: {.columns}
+::: {.column width=50%}
+```{julia, lp-sketch}
+#| echo: false
+x = 2:0.1:11
+f1(x) = 4.5 .* x
+f2(x) = -x .+ 16
+f3(x) = -1.5 .* x .+ 12
+f4(x) = 0.5 .* x
+
+p = plot(
+    x,
+    max.(f3(x), f4(x));
+    fillrange=min.(f1(x), f2(x)),
+    color=:lightblue,
+    grid=true,
+    legend=false,
+    xlabel=L"$x_1$",
+    ylabel=L"$y$",
+    xlims=(-2, 20),
+    framestyle=:origin,
+    ylims=(-2, 20),
+    minorticks=5,
+    tickfontsize=16,
+    guidefontsize=16,
+)
+plot!(-2:0.1:20, f1.(-2:0.1:20); color=:green, linewidth=3)
+plot!(-2:0.1:20, f2.(-2:0.1:20); color=:red, linewidth=3)
+plot!(-2:0.1:20, f3.(-2:0.1:20); color=:brown, linewidth=3)
+plot!(-2:0.1:20, f4.(-2:0.1:20); color=:purple, linewidth=3)
+```
+:::
+::: {.column width=50%}
+1. **Limitations:** requires strong assumptions (is linearizing your function a good approximation?)
+1. **Strengths:** very fast (can scale to large problems)
+1. **Examples:** how much should each pump in a water distribution network be run at a given time step to maintain pressure?
+
+
+::: {style="font-size: 0.8em"}
+[Graphic: V. Srikrishnan](https://github.com/vsrikrish/environmental-systems-analysis/blob/Fall23/slides/lecture06-3.qmd)
+:::
+:::
+::::
+
+## Linear programming with discrete decisions
+
+::: {.incremental}
+- Fixed costs create discontinuitites in the objective function
+- Example: which electricity generators should be on/off?
+- Need to create new indicator variables which flag on/off status: $\mathbb{I}_i = \begin{cases} 0 & \textrm{off} \\ 1 & \textrm{on} \end{cases}$.
+- Can be solved with mixed-integer linear programming (MILP)
+:::
+
+## Gradient descent
+If you have a differentiable function, you can use gradient descent to find the minimum.
+
+:::: {.columns}
+::: {.column width=50%}
+$$
+\mathbf{x}_{n+1} = \mathbf{x}_n - \alpha \nabla f(\mathbf{x}_n)
+$$
+
+See illustration [here](https://upload.wikimedia.org/wikipedia/commons/transcoded/4/4c/Gradient_Descent_in_2D.webm/Gradient_Descent_in_2D.webm.720p.vp9.webm)
+:::
+::: {.column width=50%}
+![[V. Srikrishnan](https://viveks.me/environmental-systems-analysis/slides/figures/stochastic-gradient-descent-meme.png)](../_assets/img/meme-vivek-stochastic-gradient-descent.png)
+:::
+::::
+
+## Simulation-optimization
+
+::: {.incremental}
+- **Strengths:** can handle complex, non-linear systems (model can be a black box)
+- **Limitations:** slow ("guess and check"), rely on "heuristics" to decide a solution is good enough
+- **Examples:** design of water resource systems under uncertainty
+:::
+
+::: {.callout-tip .fragment}
+We'll  use simulation-optimization in our lab next week.
+:::
+
+# Wrapup
+
+## Key points
+
+::: {.incremental}
+1. Optimization can be used at a high level (e.g., system design) or can be embedded in a problem (e.g., operations at each time step).
+1. Every optimization problem has an objective and decision variables. Many have constraints.
+1. Optimization is a field, with many techniques.
+1. In this course, I want you to understand and critique how optimization problems are framed in the wild. Take other courses to focus on the techniques.
+:::
+
+## Wednesday
+
+We will discuss @@schwetschenau_optimizing:2023.
+Discussion questions are [posted](../readings/week-07-reading.qmd).
+Please focus on the framing of the problem and the assumptions made when you read; don't get bogged down in the technical details.
+
+## Learn more
+
+- Vivek Srikrishnan's [BEE 4750](https://viveks.me/environmental-systems-analysis/schedule.html) at Cornell has lecture notes on optimization
+- Our [CMOR](https://cmor.rice.edu/) department (and others) offers numerous courses on optimization
+
+## References
