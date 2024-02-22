@@ -19,4 +19,4 @@ Do not spend lots of time following the math unless you find it personally inter
 - What problem is facing the community of UnionTown? How do the authors hope to address this problem?
 - Do you think that the results, as presented, are useful from a policy making perspective?  Why or why not?
 - Are there any externalities or things that are being unaccounted for that we might also want to consider in this paper?  If yes, what are they?
--= (Optional bonus for anyone who’s done a bit of AI or wants to do a bit of extra research)  The authors here use Dijkstra’s algorithm.  Can you foresee any risks with applying that to this situation?
+- (Optional bonus for anyone who’s done a bit of AI or wants to do a bit of extra research)  The authors here use Dijkstra’s algorithm.  Can you foresee any risks with applying that to this situation?
