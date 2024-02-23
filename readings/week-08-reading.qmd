@@ -7,10 +7,8 @@ categories: [Reading]
 format: html
 ---
 
-::: {.callout-tip}
-Discussion questions will be posted here.
-:::
+Please read @zarekarizi_suboptimal:2020.
 
-Assigned reading will be drawn from:
-
-- @zarekarizi_suboptimal:2020
+1. Create a table of the uncertainties considered, why they are important, and how they are treated in the paper. Be prepared to share your table with the class.
+1. What objectives are considered in the paper? Why might it be difficult to combine these objectives into a single objective function?
+1. What processes or phenomena are omitted from the model? What are the potential impacts of these omissions?
