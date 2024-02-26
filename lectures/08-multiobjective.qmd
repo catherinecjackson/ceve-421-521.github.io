@@ -17,4 +17,250 @@ template-partials:
     - title-slide.html
 ---
 
-This is a placeholder.
+```{julia}
+#| output: false
+#| echo: false
+using Plots
+using LaTeXStrings
+
+Plots.default(; margin=5Plots.mm)
+```
+
+## Credit
+
+I borrow heavily from
+
+> [Lecture 9](https://engineering.purdue.edu/~sudhoff/ee630/Lecture09.pdf) of S.D. Sudhoff's course "Engineering Analysis and Design Using Genetic Algorithms" taught at Purdue
+
+# Motivation
+
+## Enriching our notation
+
+![](../_assets/img/bayes-rdm-II.png)
+
+## Single-objective policy search
+
+Using this notation,  we want to $\min / \max g(a)$,
+subject to constraints.
+
+::: {.fragment}
+In other words, we want *a single solution* that scores the best according to $g(a)$.
+:::
+
+## Objectives can be hard to combine
+
+Sometimes, combining objectives into a single function is difficult.
+
+::: {.incremental}
+1. Operating a reservoir to maximize power generation, minimize flood risk, and supply water to a city.
+1. Designing a levee to balance cost, financial flood risk, ecological impact, and human safety.
+1. Your examples?
+:::
+
+::: {.fragment}
+Addressing multiple, sometimes-competing, needs is often called "multi-criteria decision analysis"
+:::
+
+# Multiobjective optimization
+
+## Goals
+
+Goal: find a **set of solutions** that are not **dominated** by any other solution
+
+::: {.fragment}
+We call this the *Pareto front* or *Pareto set*.
+:::
+
+## Mathematical formulation
+
+$$
+\begin{align}
+& \min / \max f_m(x), & \quad m = 1, 2, \ldots, M \\
+\text{subject to} \quad &g_j(x) \leq 0, &\quad  j = 1, 2, \ldots, J \\
+ &h_k(x) = 0, &\quad  k = 1, 2, \ldots, K \\
+ &x_i^{(L)} \leq x_i \leq x_i^{(U)}, &\quad  i = 1, 2, \ldots, N
+\end{align}
+$$
+
+::: {.callout-note .fragment}
+## What's new?
+
+- $M$ objective functions
+- Lots of notation for constraints
+:::
+
+## Dominance
+
+::: {.incremental}
+1. Single-objective: goodness of solution defined by objective function
+1. Multiobjective: goodness of solution defined by dominance
+1. Definition: $a_1$ dominates $a_2$ if:
+    1. $a_1$ is no worse than $a_2$ in all objectives
+    1. $a_1$ is strictly better than $a_2$ in at least one objective
+:::
+
+## Dominance example
+
+:::: {.columns}
+::: {.column width="60%"} 
+```{julia}
+#| code-fold: true
+let
+    points = [(2, 2), (1, 4), (4, 1), (3, 3), (5, 2)]
+    p = plot(;
+        xlims=(0, 5.5),
+        ylims=(0, 5.5),
+        xlabel=L"$f_1$ (Maximize)",
+        ylabel=L"$f_2$ (Minimize)",
+        legend=false,
+        xticks=[],
+        yticks=[],
+        margin=10Plots.mm,
+        aspect_ratio=:equal,
+        size=(500, 500),
+    )
+    for (idx, point) in enumerate(points)
+        plot!(
+            [0, point[1]],
+            [point[2], point[2]];
+            color=:black,
+            alpha=0.5,
+            label=false,
+            style=:dash,
+        )
+        plot!(
+            [point[1], point[1]],
+            [0, point[2]];
+            color=:black,
+            alpha=0.5,
+            label=false,
+            style=:dash,
+        )
+        scatter!([point[1]], [point[2]]; label=false, markersize=15, color=:orange)
+        annotate!(point[1] - 0.25, point[2] + 0.25, text("$idx", 14, :left))
+    end
+    p
+end
+```
+
+:::
+::: {.column width="40%"} 
+::: {.incremental}
+- 1 vs 2: 1 dominates
+- 1 vs 5: 5 dominates
+- 1 vs 4: neither dominates
+:::
+:::
+::::
+
+## 
+
+![@smith_pareto:2022](../_assets/img/smith_pareto_2022_fig1.png)
+
+## Goals of multiobjective optimization
+
+::: {.incremental}
+1. Find solutions as close to Pareto front as possible
+1. Find solutions as diverse as possible (since infinite points lie along the Pareto front but we can only sample a finite number)
+:::
+
+# Implementation
+
+## Weighted sum
+
+We can *scalarize* the multiobjective problem into a single-objective problem by using a weighted sum:
+
+$$
+\min F(x) =\sum_{m=1}^M w_m f_m(x)
+$$
+subject to the same constraints as before.
+
+::: {.incremental}
+- **Strength:** simple
+- **Weakness:** have to choose weights
+- **Opportunity:** can vary weights to explore Pareto front
+- **Threat:** may miss parts of the Pareto front
+:::
+
+## Weighted sum: convex and nonconvex
+
+::: {#fig-moo-convex-nonconvex layout-ncol=2}
+![](../_assets/img/Sudhoff-convex.png)
+
+::: {.fragment}
+![](../_assets/img/Sudhoff-nonconvex.png)
+:::
+
+From Sudhoff slides.
+:::
+
+## Genetic algorithms
+
+::: {.incremental}
+1. GAs operate on a set ("population" or "generation") of solutions
+1. Inspired by evolution: the best solutions are more likely to survive and reproduce
+1. At each time step, compute a *fitness score* for each solution based on objectives and diversity
+1. Use this score to select solutions for reproduction (crossover)
+1. Add noise (mutation) to the next "generation"
+1. Many algorithms! We won't try to keep track of them all.
+:::
+
+## A population of solutions
+
+What do we get at the end?
+
+::: {.incremental}
+1. A set of solutions that are not dominated by any other solution
+1. Each represents 
+    1. a different tradeoff between objectives
+    1. a different part of the Pareto front
+:::
+
+## 
+:::: {.columns}
+::: {.column width="55%"}
+One interpretation of multi-objective optimization is that it maps out the trade-offs between objectives.
+:::
+::: {.column width="45%"}
+![Figure 5 of @kasprzyk_mordm:2013](../_assets/img/kasprzyk_mordm_2013_fig5.png)
+:::
+::::
+
+## Checking convergence
+
+Genetic / algorithms are not exact methods.
+They rely on **heuristics** to decide a solution is "good enough" even if it's not a global optimum.
+However, we can and should test our solutions for convergence and quality.
+
+::: {.incremental}
+1. Repeat the optimization with different initial conditions ("random seeds"). Do results change?
+1. Use diagnostics like **hypervolume** to measure how much of the Pareto front we've found.
+1. Compare to other methods (e.g., weighted sum) to see if we're missing parts of the Pareto front.
+1. Compare solutions to human-generated benchmarks.
+:::
+
+# Wrapup
+
+## Key ideas
+
+1. Policy search
+1. Multiobjective optimization
+1. Genetic algorithms
+
+## How many objectives do we need?
+
+There are drawbacks to adding more objectives:
+
+- Computational cost (exponentially more solutions needed)
+- Conceptual complexity
+- Difficulty communicating results
+
+so we want as few as possible.
+Thus, combining objectives into a single function is often a good idea, when appropriate.
+
+## Logistics
+
+- Wednesday: read @zarekarizi_suboptimal:2020
+- Friday: lab on multiobjective optimization
+
+## References
