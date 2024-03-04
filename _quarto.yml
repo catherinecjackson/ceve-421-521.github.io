@@ -102,7 +102,7 @@ format:
     date-format: "ddd., MMM. D"
 
 # references
-bibliography: references.bib
+bibliography: "references.bib"
 csl: _assets/references/american-geophysical-union.csl
 
 # code to use
