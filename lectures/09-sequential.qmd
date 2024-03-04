@@ -171,3 +171,5 @@ This is a real option, and it has value.
 This has motivated study of options in engineering and policy design.
 It turns out that creating flexibility in decision making can be very valuable, but it's not always easy to generate designs that are naturally flexible.
 An example we'll see on Friday gives a simple example: build a parking garage to a few floors, build it to many floors, or build a few floors but extra-strong so we can add levels in the future if needed? [@deneufville_parkinggarage:2006].
+
+# References
