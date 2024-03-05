@@ -14,3 +14,28 @@ Please read from @quinn_dps:2017 and answer the following questions:
 1. The authors discussed that this work creates two new technological contributions: "(1) demonstrating the value and use of direct policy search (DPS) (Rosenstein & Barto, 2001) for identifying adaptive robust operational control strategies for socio-ecological systems and (2) demonstrating how nonlinear environmental thresholds, or tipping points, pose fundamental challenges for balancing economic benefits and their consequent risks
 to socio-ecological systems". Why do you think these contributions are important? 
 1. This paper explores the modeling of "socio-ecological systems with tipping points," specifically the classical shallow lake problem. Discuss other examples of these types of systems. Do you think climate change will produce similar systems?
+
+Group 1:
+1. Andres Calvo
+2. Jonah Schaechter
+3. Anna Delesalle
+4. Owen Jin
+
+Group 2:
+1. Catherine Jackson
+2. Jonathan Gan
+3. Kyle Olcott
+4. Wanqi Yuan
+
+Group 3:
+1. Solomon Nyamekye
+2. Jiayue Yin
+3. Patricia Hashimoto
+4. Lucia Romero-Alston
+
+Group 4:
+1. Grant Parajuli
+2. Taigen Hunter-Galvan
+3. Leanh Nguyen
+
+Each group will spend the first 40 minutes of class discussing the following questions. In the last 10 minutes, each group can select whichever question they found most interesting, and one person can share their thoughts with the class.
