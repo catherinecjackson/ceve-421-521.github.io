@@ -17,4 +17,152 @@ template-partials:
     - title-slide.html
 ---
 
-This is a placeholder.
+# Refresher
+
+## Course organization
+
+1. Module 1: background knowledge (climate risk, etc.)
+1. Module 2: quantitative tools for decision-making under uncertainty
+1. Module 3: getting more philosophical and practical
+
+## Notation
+
+![](../_assets/img/bayes-rdm-II.png)
+
+## Why do we use computers?
+
+::: {.callout-important}
+## Your turn
+:::
+
+# Robustness motivation
+
+---
+
+:::: {.columns}
+::: {.column width="54%"}
+![](../_assets/img/abraham_demandforecast_2020_fig2.jpg)
+:::
+::: {.column width="44%"}
+### The problem
+
+@abraham_demandforecasts:2020 show that water utilities systematically over-estimate future demand.
+Using a single, certain, forecast of future water demand might motivate over-building infrastructure.
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="54%"}
+![](../_assets/img/abraham_demandforecast_2020_fig2.jpg)
+:::
+::: {.column width="44%"}
+### Robustness
+
+We want to make choices / design infrastructure that are **robust** to errors in demand forecasts.
+:::
+::::
+
+## Definition
+
+> The insensitivity of system design to errors, random or otherwise, in the estimates of those parameters affecting design choice [@matalas:1977]
+
+Mathematical definitions differ dramatically, however [@@herman_robustness:2015]!
+Today we will discuss some overlapping perspectives and ideas about robustness.
+
+## Bottom-up analysis
+
+::: {.incremental}
+1. **Top-down, certain:** experts develop a "best" forecast of future conditions, then choose a design that is optimal under that forecast
+1. **Top-down, uncertain:** experts assign likelihoods to uncertain states of the world, then choose a design that optimizes expected performance [@herman_robustness:2015]
+1. **Bottom-up:** first **explore** to identify SOWs a solution is vulnerable to, then assess likelihood (more Wednesday!)
+:::
+
+# Robustness metrics
+
+## Taxonomy
+
+![@herman_robustness:2015](../_assets/img/herman_robustness_2015_fig1.png)
+
+## Regret
+
+Regret measures how sorry you are with your choice.
+There are two main definitions [@herman_robustness:2015]:
+
+::: {.incremental}
+1. Deviation of a single solution in the real world or a simulated SOW from its baseline (expected) performance
+1. Difference between the performance of a solution in the real world or a simulated SOW and the best possible performance in that SOW
+:::
+
+## Satistficing
+
+Satisficing measures whether solutions achieve specific minimum requirements, condensing performance into a binary "satisfactory" or "unsatisfactory".
+
+::: {.incremental}
+1. With many SOWs, many studies use a **domain criterion**: over what fraction of SOWs does a solution satisfy a performance threshold [@herman_robustness:2015]?
+1. *Note:* this is equivalent to asking what is the probability that a solution satisfies a performance threshold, although many people who calculate robustness metrics are allergic to the word "probability"
+1. More complex satisficing criteria: see @mcphail_robustness:2019.
+:::
+
+# Critiques and alternative perspectives
+
+## Parameters?
+
+::: {.fragment}
+The robustness metrics we've seen are defined in terms of parameters: we have a model with parameters, and we define SOWs as different values of those parameters.
+:::
+
+::: {.fragment}
+Is this a good way to quantify our conceptual ideas about robustness?
+:::
+
+## Combinations of uncertianties
+
+In practice, we often have a combination of parametric uncertainties and "model structure" uncertainties [@doss-gollin_subjective:2022].
+And **not all SOWs are equally likely**!
+
+![](../_assets/img/lsl-evolution.png)
+
+---
+
+:::: {.columns}
+::: {.column width="45%"}
+![](../_assets/img/hausfather_scenarios_2020.jpg)
+:::
+::: {.column width="55%"}
+Climate scenario uncertainties are "deep" (more next week!), but it would be a mistake to say we don't know _anything_ and all futures are equally likely [@hausfather_scenarios:2020]
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="55%"}
+![@doss-gollin_subjective:2022](../_assets/img/lsl-priors-weights.png)
+:::
+::: {.column width="45%"}
+### Alternative perspective
+
+::: {.incremental}
+1. Using "prior beliefs" assign likelihoods to different SOWs
+1. Use quantiative toolkit (optimization, sensitivity analysis, etc.)
+1. Vary prior belefs: a solution that is robust to different **probability distributions** rather than to different **parameter values**.
+:::
+:::
+::::
+
+# Logistics
+
+## Exam 2
+
+- Exam 2 was scheduled for 3/22
+- It will be postponed to 3/29
+- 3/22: review session
+- Lake problem lab will be postponed to 4/5
+- I will have Exam 1 graded by 3/22 so you know where you stand!
+
+## References 
+
+:::{#refs}
+:::

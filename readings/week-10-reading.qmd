@@ -7,11 +7,20 @@ categories: [Reading]
 format: html
 ---
 
-::: {.callout-tip}
-Discussion questions will be posted here.
-:::
+Please read @steinschneider_expanded:2015 and consider the following questions:
 
-Assigned reading will be drawn from:
+1. **"Arbitrary" inputs**
+What were some expert-based or arbitrary input values (e.g. failure definition) that were used in the analysis? How can they determine the analysis results and the decision making process?
+1. **Limited actions**
+What are some advantages/disadvantages of using a small and discrete group of actions in comparison to model the actions as continuous variables or even sequential policies.
+1. **Uncertainty modeling**
+What were the main sources of uncertainty in the problem, how they were handled and how do they impact the robustness of actions?
+1. **Robustness**
+How is robustness defined by the author for the case study and how is useful within a decision making framework? Think in two or three other case analyses (e.g. our house elevation problem) and propose how to measure the robustness of actions.
+1, **Computational burden**
+If you could have unlimited computational resources what parts of the analysis would you have done differently or how would you improve the framework?
+1. **States of the world**
+Besides climate and demand, what are other considerations (sow's) in the analysis that you think should be included for having a broader picture of the problem for the decision makers? Particularly for such a long-time planning window. Prepare two for sharing with the class.
+1. **Limitations**
+What could be some limitations or potential issues of robustness analysis. Think in one case when robustness might not be very informative to decision makers.
 
-- @herman_robustness:2015
-- @mcphail_robustness:2019
