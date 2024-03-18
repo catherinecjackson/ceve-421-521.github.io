@@ -162,6 +162,17 @@ Climate scenario uncertainties are "deep" (more next week!), but it would be a m
 - Lake problem lab will be postponed to 4/5
 - I will have Exam 1 graded by 3/22 so you know where you stand!
 
+## Final project
+
+In your final project, you will add something that's misisng to the house-elevation problem.
+This might be:
+
+- More complexity / realisim for a model component (e.g., depth-damage function, nonstationary storm surge probability, household financial constraints, etc.)
+- A new model component (e.g., a better decision alternative, etc.)
+- Applying a decision tool from class (e.g., sequential decision analysis, robustness checks, etc.)
+
+Timeline coming soon -- don't worry about Canvas for now.
+
 ## References 
 
 :::{#refs}
