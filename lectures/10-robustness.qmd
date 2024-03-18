@@ -117,7 +117,7 @@ The robustness metrics we've seen are defined in terms of parameters: we have a 
 Is this a good way to quantify our conceptual ideas about robustness?
 :::
 
-## Combinations of uncertianties
+## Combinations of uncertainties
 
 In practice, we often have a combination of parametric uncertainties and "model structure" uncertainties [@doss-gollin_subjective:2022].
 And **not all SOWs are equally likely**!
@@ -146,8 +146,8 @@ Climate scenario uncertainties are "deep" (more next week!), but it would be a m
 
 ::: {.incremental}
 1. Using "prior beliefs" assign likelihoods to different SOWs
-1. Use quantiative toolkit (optimization, sensitivity analysis, etc.)
-1. Vary prior belefs: a solution that is robust to different **probability distributions** rather than to different **parameter values**.
+1. Use quantitative toolkit (optimization, sensitivity analysis, etc.)
+1. Vary prior beliefs: a solution that is robust to different **probability distributions** rather than to different **parameter values**.
 :::
 :::
 ::::
@@ -164,10 +164,10 @@ Climate scenario uncertainties are "deep" (more next week!), but it would be a m
 
 ## Final project
 
-In your final project, you will add something that's misisng to the house-elevation problem.
+In your final project, you will add something that's missing to the house-elevation problem.
 This might be:
 
-- More complexity / realisim for a model component (e.g., depth-damage function, nonstationary storm surge probability, household financial constraints, etc.)
+- More complexity / realism for a model component (e.g., depth-damage function, nonstationary storm surge probability, household financial constraints, etc.)
 - A new model component (e.g., a better decision alternative, etc.)
 - Applying a decision tool from class (e.g., sequential decision analysis, robustness checks, etc.)
 
